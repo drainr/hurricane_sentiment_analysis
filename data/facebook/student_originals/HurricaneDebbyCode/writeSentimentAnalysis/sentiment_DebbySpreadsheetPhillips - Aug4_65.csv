@@ -1,0 +1,7 @@
+A Tornado Warning has been issued for parts of Manatee County. Download the ABC Action News App for the latest information.,Pos,Neu,Neg,Compound,Overall Sentiment
+Is the arrow point to where a tornado was seen? Or just to the red triangle?,0.0,1.0,0.0,0.0,NEU
+"the red is the area for the warning",0.0,0.745,0.255,-0.34,NEG
+"I know that. The arrow looks to be pointing to a specific spot, I wanted to know if that’s the location of here a tornado was seen…",0.0,1.0,0.0,0.0,NEU
+no tornados have formed. Just radar noticed rotations. That's all,0.0,0.804,0.196,-0.296,NEG
+"Warning is over. We are good now",0.282,0.485,0.233,0.128,POS
+Is anyone else getting notifications of this now ? 🫠,0.0,1.0,0.0,0.0,NEU

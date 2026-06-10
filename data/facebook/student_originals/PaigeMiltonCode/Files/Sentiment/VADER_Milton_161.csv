@@ -1,0 +1,10 @@
+Comments,NEG,NEU,POS,Compound,Sentiment
+We’ve even had tornadoes in west Broward county earlier today. Very dangerous storm.,0.22,0.78,0.0,-0.5256,NEG
+"I agree
+Stay safe!!",0.0,0.143,0.857,0.717,POS
+likewise!!,0.0,1.0,0.0,0.0,NEU
+"Please stream RYAN HALL, YALL on YouTube. He's giving exact locations for tornadoes!!",0.0,0.676,0.324,0.6467,POS
+Shouldn’t you be napping. You got a long night ahead of you.,0.0,1.0,0.0,0.0,NEU
+"He is 100% fueled on Diet Doctor Pepper, baseball, and Publix bakery items. Sleep is not needed.",0.0,1.0,0.0,0.0,NEU
+I’ve been trying to download the app,0.0,1.0,0.0,0.0,NEU
+Thanks Facebook for the late warning ,0.258,0.43,0.312,0.128,POS

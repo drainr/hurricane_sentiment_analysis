@@ -1,0 +1,9 @@
+Comments,NEG,NEU,POS,Compound,Sentiment
+I have a very dear friend in Lake Wales. Has anyone see an active tornado moving through Lake Wales?,0.0,0.607,0.393,0.8431,POS
+My ABC station has been replaced by PBS via Directv. Anyone else experiencing this?,0.0,1.0,0.0,0.0,NEU
+Which direction are they moving,0.0,1.0,0.0,0.0,NEU
+watching ABC news... they are showing exactly where the rotation clouds are and where in the map they are...awesome coverage,0.0,1.0,0.0,0.0,NEU
+Tornadoes to our east.,0.0,1.0,0.0,0.0,NEU
+Thank you for all your updates,0.0,0.667,0.333,0.3612,POS
+"Great. What’s next, locusts?",0.0,0.423,0.577,0.6249,POS
+ Yep,0.0,0.0,1.0,0.296,POS

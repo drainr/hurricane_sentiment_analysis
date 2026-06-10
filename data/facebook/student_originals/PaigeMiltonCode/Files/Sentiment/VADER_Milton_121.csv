@@ -1,0 +1,14 @@
+Comments,NEG,NEU,POS,Compound,Sentiment
+The tornados have already started down in Broward County.,0.0,1.0,0.0,0.0,NEU
+"I understand why it is difficult to narrow down the exact track, BUT there are wild discrepancies in predicted wind gusts like by almost 50MPH from model to model and weather site to weather site. I mean it makes a huge difference if you are in the path and about to get hit with 95mph gusts and it ends up being 135mph gusts!!!!!! #DenisPhillips",0.026,0.864,0.11,0.7662,POS
+How far does storm surge go in? Does anyone know this question,0.0,1.0,0.0,0.0,NEU
+"just my warped sense of humor, but your question made me think of another question. Where does an elephant sit? Answer: anywhere it wants. I think our community will survive this, hopefully our homes will, too. Stay safe, and prepare to know what choice we have, sometime tomorrow.",0.0,0.821,0.179,0.862,POS
+you good!? Safe?,0.0,0.36,0.64,0.5502,POS
+"yes we are, are you, Ken, Aldo okay?",0.0,0.566,0.434,0.5574,POS
+we are together in Orlando.. Your with family? What about Gary!?,0.0,1.0,0.0,0.0,NEU
+"we are in Gainsville, Gary is with Sigy",0.0,1.0,0.0,0.0,NEU
+ good to hear.,0.0,0.408,0.592,0.4404,POS
+What time is anticipated landfall??,0.0,1.0,0.0,0.0,NEU
+" praying for You guys. My daughter lives close to Tampa.
+God protects You.",0.0,0.592,0.408,0.7096,POS
+thank you,0.0,0.286,0.714,0.3612,POS

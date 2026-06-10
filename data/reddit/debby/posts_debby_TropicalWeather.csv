@@ -1,0 +1,2026 @@
+id,subreddit,author,created_utc,created_date,num_comments,score,title,selftext,hurricane,source_type,keyword_hit
+1egd16s,TropicalWeather,Galileos_grandson,1722395988,2024-07-31 03:19,0,36,An ISS Success Story: CyMISS (Tropical Cyclone Intensity Measurements from the ISS) to the Hurricane Hunter Satellites,,debby,community_discussion,hurricane
+1eh2b36,TropicalWeather,Euronotus,1722469917,2024-07-31 23:51,1,20,Carlotta (03E — Eastern Pacific),"# Latest observation
+- - - - - - - - - - - - - - - - - - - -
+**Last updated:** Wednesday, 31 July — 2:00 PM Mountain Standard Time (MST; 21:00 UTC)
+
+NHC Advisory #2  |     |  2:00 PM MST (21:00 UTC)
+:-|:-:|:-
+**Current location:**   |     |  16.2°N 108.0°W
+**Relative location:**  |     |  1,689 km (1,049 mi) SSW of Corpus Christi, Texas
+**Forward motion:**     |     |  NW (305°) at 19 km/h (10 knots)
+**Maximum winds:**      |     |  75 km/h (40 knots)
+**Intensity:**          |     |  **Tropical Storm**                      
+**Minimum pressure:**   |     |  1003 millibars (29.62 inches)
+
+# Official forecast
+- - - - - - - - - - - - - - - - - - - -
+**Last updated:** Wednesday, 31 July — 11:00 AM MST (18:00 UTC)
+
+Hour  | Date  | Time  |    |  Intensity  |    |  Winds  |    |  Lat  |  Long
+:-:|:-:|:-:|:-:|:-|:-:|:-:|:-:|:-:|:-:
+&nbsp;  | -  | UTC  |  MST  |  Saffir-Simpson  |    |  knots  |  km/h  |  °N  |  °W
+ **00**  | 31 Jul  | 18:00  |  11AM Wed  |  **Tropical Storm**                        |     |  40  |   75  |  16.2  |  108.0
+ **12**  | 01 Aug  | 06:00  |  11PM Wed  |  **Tropical Storm**                        |  ▲  |  50  |   95  |  16.8  |  109.8
+ **24**  | 01 Aug  | 18:00  |  11AM Thu  |  **Tropical Storm**                        |  ▲  |  60  |  110  |  17.3  |  111.8
+ **36**  | 02 Aug  | 06:00  |  11PM Thu  |  **Hurricane (Category 1)**                |  ▲  |  70  |  130  |  17.7  |  113.9
+ **48**  | 02 Aug  | 18:00  |  11AM Fri  |  **Hurricane (Category 1)**                |  ▲  |  80  |  150  |  17.8  |  116.0
+ **60**  | 03 Aug  | 06:00  |  11PM Fri  |  **Hurricane (Category 2)**                |  ▲  |  85  |  155  |  17.8  |  118.2
+ **72**  | 03 Aug  | 18:00  |  11AM Sat  |  **Hurricane (Category 2)**                |     |  85  |  155  |  17.8  |  120.2
+ **96**  | 04 Aug  | 18:00  |  11AM Sun  |  **Hurricane (Category 1)**                |  ▼  |  75  |  140  |  18.3  |  122.2
+**120**  | 05 Aug  | 18:00  |  11AM Mon  |  **Hurricane (Category 1)**                |  ▼  |  65  |  120  |  19.3  |  124.0
+
+
+# Official information
+- - - - - - - - - - - - - - - - - - - - 
+## National Hurricane Center
+
+### Advisories
+
+* [**Public advisory**](https://www.nhc.noaa.gov/text/refresh/MIATCPEP3+shtml/DDHHMM.shtml)
+
+* [**Forecast advisory**](https://www.nhc.noaa.gov/text/refresh/MIATCMEP3+shtml/DDHHMM.shtml)
+
+* [**Forecast discussion**](https://www.nhc.noaa.gov/text/refresh/MIATCDEP3+shtml/DDHHMM.shtml)
+
+### Graphics
+
+* [**Forecast graphic**](https://www.nhc.noaa.gov/refresh/graphics_ep3+shtml/DDHHMM.shtml?cone#contents)
+
+* [**Wind speed probabilities**](https://www.nhc.noaa.gov/refresh/graphics_ep3+shtml/DDHHMM.shtml?tswind120#contents)
+
+* [**Arrival time of winds**](https://www.nhc.noaa.gov/refresh/graphics_ep3+shtml/DDHHMM.shtml?mltoa34#contents)
+
+### Productos en español
+
+* [**Aviso publico**](https://www.nhc.noaa.gov/text/refresh/MIATASEP3+shtml/DDHHMM.shtml)
+
+* [**Pronóstico discusión**](https://www.nhc.noaa.gov/text/refresh/MIATDSEP3+shtml/DDHHMM.shtml)
+
+
+## Servicio Meteorológico Nacional (Mexico)
+
+* [**Inicio**](https://smn.conagua.gob.mx/es/)
+
+* [**Aviso de Ciclón Tropical en el Océano Pacífico**](https://smn.conagua.gob.mx/es/pronosticos/avisos/aviso-de-ciclon-tropical-en-el-oceano-pacifico)
+
+
+# Radar imagery
+- - - - - - - - - - - - - - - - - - - -
+## Unavailable 
+
+Radar imagery is not currently available for this system.
+
+
+# Satellite imagery
+- - - - - - - - - - - - - - - - - - - -
+## Storm-specific imagery
+
+* **Tropical Tidbits:** [Visible / Shortwave Infrared](https://www.tropicaltidbits.com/sat/satlooper.php?region=03E&product=vis-swir)
+
+* **Tropical Tidbits:** [Enhanced Infrared](https://www.tropicaltidbits.com/sat/satlooper.php?region=03E&product=ir)
+
+* **Tropical Tidbits:** [Enhanced Infrared (Dvorak)](https://www.tropicaltidbits.com/sat/satlooper.php?region=03E&product=ir-dvorak)
+
+* **Tropical Tidbits:** [Water Vapor](https://www.tropicaltidbits.com/sat/satlooper.php?region=03E&product=wv-mid)
+
+* **CIMSS:** [Multiple bands](http://tropic.ssec.wisc.edu/real-time/storm.php?&basin=eastpac&sname=03E&invest=NO&zoom=4&img=1&vars=11111000000000000000000&loop=0)
+
+* **RAMMB:** [Multiple bands](http://rammb.cira.colostate.edu/products/tc_realtime/storm.asp?storm_identifier=ep032024)
+
+* **Navy Research Laboratory:** [Multiple bands](https://www.nrlmry.navy.mil/tc-bin/tc_home2.cgi?YEAR=2024&MO=07&BASIN=EPAC&STORM_NAME=03E.CARLOTTA)
+
+## Regional imagery
+
+### NOAA GOES Image Viewer
+
+* [**Enhanced infrared**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=tpw&band=13&length=24)
+
+* [**Water vapor**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=tpw&band=09&length=24&dim=1)
+
+* [**Visible (true color)**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=tpw&band=GEOCOLOR&length=24&dim=1)
+
+### Cooperative Institute for Meteorological Satellite Studies (CIMSS)
+
+* [**Infrared**](https://realearth.ssec.wisc.edu/s/330rMC)
+
+* [**Water vapor** (upper-level)](https://realearth.ssec.wisc.edu/s/I30rPg)
+
+* [**Visible** (true color)](https://realearth.ssec.wisc.edu/s/730rQz)
+
+### Tropical Tidbits
+
+* [**Enhanced infrared**](https://www.tropicaltidbits.com/sat/satlooper.php?region=epac&product=ir)
+
+* [**Water vapor**](https://www.tropicaltidbits.com/sat/satlooper.php?region=epac&product=wv_mid)
+
+* [**Visible (true color)**](https://www.tropicaltidbits.com/sat/satlooper.php?region=epac&product=vis_swir)
+
+### Weather Nerds
+
+* [**Enhanced infrared**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-W&initsattype=ir&initcscheme=ir1&initimdimx=1050&initimdimy=672&initrange=40.000:-155.000:0:-80.000&initloop=True&initnframes=20&initlightningge=Off&initlightninggw=On&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+* [**Water vapor**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-W&initsattype=wv&initcscheme=ir1&initimdimx=1050&initimdimy=672&initrange=40.000:-155.000:0:-80.000&initloop=True&initnframes=20&initlightningge=Off&initlightninggw=On&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+* [**Visible**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-W&initsattype=vis&initcscheme=vis1&initimdimx=1050&initimdimy=672&initrange=40.000:-155.000:0:-80.000&initloop=True&initnframes=20&initlightningge=Off&initlightninggw=On&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+# Analysis graphics and data
+- - - - - - - - - - - - - - - - - - - -
+## Wind analyses
+
+* **NESDIS:** [Dvorak Fix Bulletins](https://www.ssd.noaa.gov/PS/TROP/storms/03E.html)
+
+* **NESDIS:** [Dvorak Fix History](https://www.ssd.noaa.gov/PS/TROP/DATA/2024/tdata/epac/03E.html)
+
+* **NESDIS:** [Multi-platform Surface Wind Analysis](http://www.ssd.noaa.gov/PS/TROP/mtcswa.html?storm=ep032024)
+
+* **CIMSS:** [Advanced Dvorak Technique (ADT)](http://tropic.ssec.wisc.edu/real-time/adt/odt03E.html)
+
+* **CIMSS:** [Tropical Cyclone Intensity Consensus (SATCON)](http://tropic.ssec.wisc.edu/real-time/satcon/202403E.html)
+
+* **CIMSS:** [SATCON Intensity History](http://tropic.ssec.wisc.edu/real-time/satcon/archive/2024/satconhist_202403E.txt)
+
+* **EUMETSAT:** [Advanced Scatterometer Data](https://scatterometer.knmi.nl/tile_prod/)
+
+## Sea-surface Temperatures
+
+*  **NOAA OSPO:** [Sea Surface Temperature Contour Charts](https://www.ospo.noaa.gov/Products/ocean/sst/contour/index.html)
+
+*  **Tropical Tidbits:** [Ocean Analysis](https://www.tropicaltidbits.com/analysis/ocean/)
+
+# Model guidance
+- - - - - - - - - - - - - - - - - - - -
+## Storm-specific guidance
+
+* [**Tropical Tidbits**](https://www.tropicaltidbits.com/storminfo/#03E)
+
+* [**University of Albany**](http://www.atmos.albany.edu/facstaff/tang/tcguidance/ep032024/)
+
+* [**National Center for Atmospheric Research** (NCAR)](http://www.ral.ucar.edu/hurricanes/realtime/plots/northeastpacific/2024/ep032024/)
+
+* [**Weather Nerds**](https://www.weathernerds.org/tc_guidance/storm.html?tcid=EP03)
+
+## Regional single-model guidance
+
+*  **Tropical Tidbits:** [GFS](https://www.tropicaltidbits.com/analysis/models/?model=gfs&region=epac&pkg=mslp_pcpn)
+
+*  **Tropical Tidbits:** [ECMWF](https://www.tropicaltidbits.com/analysis/models/?model=ecmwf&region=epac&pkg=mslp_pcpn)
+
+*  **Tropical Tidbits:** [CMC](https://www.tropicaltidbits.com/analysis/models/?model=gem&region=epac&pkg=mslp_pcpn)
+
+*  **Tropical Tidbits:** [ICON](https://www.tropicaltidbits.com/analysis/models/?model=icon&region=epac&pkg=mslp_pcpn)
+
+## Regional ensemble model guidance
+
+* **Weather Nerds:** [GEFS (120 hours)](https://www.weathernerds.org/models/gefs.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=06&initfhour=120&initimdimx=1050&initimdimy=458&initrange=20.428571428600:236.028571428520:5.785714285720:276.314285714230&initcx1=542&initcy1=279&initcx2=1002&initcy2=474&initcross=False&initsound=False&initsoundx=537&initsoundy=274&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
+    
+* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=06&initfhour=120&initimdimx=1050&initimdimy=458&initrange=20.428571428600:236.028571428520:5.785714285720:276.314285714230&initcx1=542&initcy1=279&initcx2=1002&initcy2=474&initcross=False&initsound=False&initsoundx=537&initsoundy=274&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",debby,community_discussion,hurricane|storm|weather|category|noaa
+1eh2ytl,TropicalWeather,SnooAdvice1952,1722471744,2024-08-01 00:22,1,1,Survey participation request for information needs for extra tropical cyclones in the UK,[removed],debby,community_discussion,
+1ehlzzn,TropicalWeather,[deleted],1722532137,2024-08-01 17:08,0,1,97L (Invest — Northern Atlantic),[deleted],debby,community_discussion,
+1ehm0lw,TropicalWeather,Euronotus,1722532175,2024-08-01 17:09,220,148,97L (Invest — Northern Atlantic),"# Latest Observation
+- - - - - - - - - - - - - - - - - - - -
+**Last updated:** Thursday, 1 August — 8:00 AM Atlantic Standard Time (AST; 12:00 UTC)
+
+ATCF  |    |  8:00 AM AST (12:00 UTC)
+:-|:-:|:-
+**Current location:**   |     |  19.5°N 70.5°W
+**Relative location:**  |     |  20 km (12 mi) E of Santiago, Dominican Republic
+**Forward motion:**     |     |  W (290°) at 37 km/h (20 knots)
+**Maximum winds:**      |  ▲  |  35 km/h (20 knots)
+**Minimum pressure:**   |  ▼  |  1013 millibars (29.91 inches)
+**Potential** (2-day):  |  ▲  |  **low** (20 percent)
+**Potential** (7-day):  |     |  **medium** (60 percent)
+
+
+# Outlook discussion
+- - - - - - - - - - - - - - - - - - - -
+**Last updated:** Thursday, 1 August – 8:00 AM EDT (12:00 UTC)
+
+> **Discussion by: Dr. Jack Beven** — NHC Hurricane Specialist Unit
+
+> A well-defined tropical wave is producing a large area of disorganized showers and thunderstorms over Hispaniola, Puerto Rico, the Virgin Islands, and the adjacent waters of the southwestern Atlantic and northeastern Caribbean Sea. Development of this system should be slow to occur during the next couple of days while it moves west-northwestward over portions of the Greater Antilles. However, environmental conditions are forecast to be more conducive for development after the wave passes the Greater Antilles, and a tropical depression could form this weekend or early next week over the eastern Gulf of Mexico or near the Florida Peninsula. Interests across the Greater Antilles, the Bahamas, and Florida should continue to monitor the progress of this system.
+ 
+# Official information
+- - - - - - - 
+## National Hurricane Center
+
+### Text products
+
+* [**Tropical Weather Outlook**](https://www.nhc.noaa.gov/gtwo.php?basin=atlc&fdays=7)
+
+* [**Tropical Weather Discussion**](https://www.nhc.noaa.gov/text/MIATWDAT.shtml)
+
+### Graphical products
+
+* [**Surface analysis graphic**](https://www.nhc.noaa.gov/tafb/USA_12Z.gif)
+
+* [**2-day outlook graphic**](https://www.nhc.noaa.gov/xgtwo/two_atl_2d0.png)
+
+* [**7-day outlook graphic**](https://www.nhc.noaa.gov/xgtwo/two_atl_7d0.png)
+
+
+# Aircraft reconnaissance
+- - - - - - - - - - - - - - - - - - - - 
+## National Hurricane Center
+
+* [**Aircraft reconnaissance main page**](https://www.nhc.noaa.gov/recon.php)
+
+* [**Plan of the Day** (For Today)](https://www.nhc.noaa.gov/text/MIAREPRPD_last.shtml)
+
+* [**Plan of the Day** (For Tomorrow)](https://www.nhc.noaa.gov/text/MIAREPRPD_last.shtml)
+
+
+# Radar imagery
+- - - - - - -
+## Instituto Dominicano de Aviación Civil (Dominican Republic)
+
+* [**Dominican Republic radar**](https://www.idac.gob.do/es/radar-meteorologico/)
+
+## Instituto de Meteorología de la República de Cuba
+
+* [**Main radar page**](http://www.insmet.cu/asp/genesis.asp?TB0=PLANTILLAS&TB1=RADARES)
+
+* [**Pilón radar**](http://www.insmet.cu/asp/genesis.asp?TB0=PLANTILLAS&TB1=RADAR&TB2=../Radar/05Pilon/plnMAXw01a.gif)
+
+
+
+# Satellite imagery
+- - - - - - - - - - - - - - - - - - - -
+## Storm-specific imagery
+
+* **Tropical Tidbits:** [Visible / Shortwave Infrared](https://www.tropicaltidbits.com/sat/satlooper.php?region=97L&product=vis-swir)    
+
+* **Tropical Tidbits:** [Enhanced Infrared](https://www.tropicaltidbits.com/sat/satlooper.php?region=97L&product=ir)   
+
+* **Tropical Tidbits:** [Enhanced Infrared (Dvorak)](https://www.tropicaltidbits.com/sat/satlooper.php?region=97L&product=ir-dvorak)    
+
+* **Tropical Tidbits:** [Water Vapor](https://www.tropicaltidbits.com/sat/satlooper.php?region=97L&product=wv-mid)
+
+* **CIMSS:** [Multiple bands](http://tropic.ssec.wisc.edu/real-time/storm.php?&basin=atlantic&sname=97L&invest=YES&zoom=4&img=1&vars=11111000000000000000000&loop=0)
+
+* **RAMMB:** [Multiple bands](http://rammb.cira.colostate.edu/products/tc_realtime/storm.asp?storm_identifier=al972024)
+
+* **Navy Research Laboratory:** [Multiple bands](https://www.nrlmry.navy.mil/tc-bin/tc_home2.cgi?YEAR=2024&MO=08&BASIN=ATL&STORM_NAME=97L.INVEST)
+
+## Regional imagery
+
+### NOAA GOES Image Viewer
+
+* [**Enhanced infrared**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=taw&band=13&length=24)
+
+* [**Water vapor**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=taw&band=09&length=24&dim=1)
+
+* [**Visible (true color)**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=taw&band=GEOCOLOR&length=24&dim=1)
+
+### Cooperative Institute for Meteorological Satellite Studies (CIMSS)
+
+* [**Enhanced infrared**](https://realearth.ssec.wisc.edu/s/o30spf)
+
+* [**Water vapor**](https://realearth.ssec.wisc.edu/s/E30snv)
+
+* [**Visible**](https://realearth.ssec.wisc.edu/s/G30slW)
+
+### Tropical Tidbits
+
+* [**Enhanced infrared**](https://www.tropicaltidbits.com/sat/satlooper.php?region=eatl&product=ir)
+
+* [**Water vapor**](https://www.tropicaltidbits.com/sat/satlooper.php?region=eatl&product=wv_mid)
+
+* [**Visible (true color)**](https://www.tropicaltidbits.com/sat/satlooper.php?region=eatl&product=vis_swir)
+
+### Weather Nerds
+
+* [**Enhanced infrared**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-E&initsattype=ir&initcscheme=ir1&initimdimx=1050&initimdimy=583&initrange=50.000:-103.000:0:5.000&initloop=True&initnframes=20&initlightningge=On&initlightninggw=Off&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+* [**Water vapor**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-E&initsattype=wv&initcscheme=ir1&initimdimx=1050&initimdimy=583&initrange=50.000:-103.000:0:5.000&initloop=True&initnframes=20&initlightningge=On&initlightninggw=Off&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+* [**Visible**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-E&initsattype=vis&initcscheme=vis1&initimdimx=1050&initimdimy=583&initrange=50.000:-103.000:0:5.000&initloop=True&initnframes=20&initlightningge=On&initlightninggw=Off&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+# Analysis graphics and data
+- - - - - - - - - - - - - - - - - - - -
+## Wind analyses
+
+* **EUMETSAT:** [Advanced Scatterometer Data](https://scatterometer.knmi.nl/tile_prod/)  
+
+## Sea-surface Temperatures
+
+*  **NOAA OSPO:** [Sea Surface Temperature Contour Charts](https://www.ospo.noaa.gov/Products/ocean/sst/contour/index.html)  
+
+*  **Tropical Tidbits:** [Ocean Analysis](https://www.tropicaltidbits.com/analysis/ocean/)
+
+# Model guidance
+- - - - - - - - - - - - - - - - - - - -
+## Storm-specific guidance
+
+* [**Tropical Tidbits**](https://www.tropicaltidbits.com/storminfo/#97L)  
+
+* [**University of Albany**](http://www.atmos.albany.edu/facstaff/tang/tcguidance/al972024/)    
+
+* [**National Center for Atmospheric Research** (NCAR)](http://www.ral.ucar.edu/hurricanes/realtime/plots/northatlantic/2024/al972024/)    
+
+* [**Weather Nerds**](https://www.weathernerds.org/tc_guidance/storm.html?tcid=AL97)    
+
+## Regional single-model guidance
+
+*  **Tropical Tidbits:** [GFS](https://www.tropicaltidbits.com/analysis/models/?model=gfs&region=eatl&pkg=mslp_pcpn)
+
+*  **Tropical Tidbits:** [ECMWF](https://www.tropicaltidbits.com/analysis/models/?model=ecmwf&region=eatl&pkg=mslp_pcpn)
+
+*  **Tropical Tidbits:** [CMC](https://www.tropicaltidbits.com/analysis/models/?model=gem&region=eatl&pkg=mslp_pcpn)
+
+*  **Tropical Tidbits:** [ICON](https://www.tropicaltidbits.com/analysis/models/?model=icon&region=eatl&pkg=mslp_pcpn)
+
+## Regional ensemble model guidance
+
+* **Weather Nerds:** [GEFS (120 hours)](https://www.weathernerds.org/models/gefs.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=638&initrange=39.428571428673:266.468571428472:22.000000000096:300.891428571312&initcx1=411&initcy1=20&initcx2=903&initcy2=315&initcross=False&initsound=False&initsoundx=406&initsoundy=15&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
+
+* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=638&initrange=39.428571428673:266.468571428472:22.000000000096:300.891428571312&initcx1=411&initcy1=20&initcx2=903&initcy2=315&initcross=False&initsound=False&initsoundx=406&initsoundy=15&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",debby,community_discussion,hurricane|storm|weather|noaa
+1ehmdk2,TropicalWeather,giantspeck,1722533035,2024-08-01 17:23,12,129,"Tropical Tidbits for Thursday, 1 August: Tropical Wave may Develop in Gulf of Mexico or Near Florida this Weekend",,debby,community_discussion,
+1eidc3d,TropicalWeather,ZookeepergameRich689,1722613403,2024-08-02 15:43,0,1,Outer Banks,[removed],debby,community_discussion,
+1eiem6m,TropicalWeather,Euronotus,1722616475,2024-08-02 16:34,402,98,04L (Northern Atlantic),"# Latest observation
+- - - - - - - - - - - - - - - - - - - -
+**Last updated:** Friday, 2 August — 11:00 AM Eastern Daylight Time (EDT; 15:00 UTC)
+
+NHC Advisory #1  |     |  11:00 AM EDT (15:00 UTC)
+:-|:-:|:-
+**Current location:**   |     |  20.9°N 76.6°W
+**Relative location:**  |     |  36 km (23 mi) W of Holguín, Cuba
+&nbsp;                  |     |  647 km (402 mi) ESE of Havana, Cuba
+**Forward motion:**     |     |  WNW (290°) at 16 knots (14 mph)
+**Maximum winds:**      |  ▲  |  30 mph (25 knots)
+**Minimum pressure:**   |  ▼  |  1012 millibars (29.89 inches)
+**Potential** (2-day):  |  ▲  |  **medium** (60 percent)
+**Potential** (7-day):  |  ▲  |  **high** (90 percent)
+
+# Official forecast
+- - - - - - - - - - - - - - - - - - - -
+**Last updated:** Friday, 2 August — 8:00 AM EDT (12:00 UTC)
+
+Hour  | Date  | Time  |    |  Intensity  |    |  Winds  |    |  Lat  |  Long
+:-:|:-:|:-:|:-:|:-|:-:|:-:|:-:|:-:|:-:
+&nbsp;  | -  | UTC  |  EDT  |  Saffir-Simpson  |    |  knots  |  mph  |  °N  |  °W
+ **00**  | 02 Aug  | 12:00  |  8AM Fri  |    Potential Cyclone         |     |  25  |  30  |  20.9  |  76.6
+ **12**  | 03 Aug  | 00:00  |  8PM Fri  |    Potential Cyclone ^1      |     |  25  |  30  |  21.7  |  78.3
+ **24**  | 03 Aug  | 12:00  |  8AM Sat  |  **Tropical Depression** ^2  |  ▲  |  30  |  35  |  23.3  |  80.7
+ **36**  | 04 Aug  | 00:00  |  8PM Sat  |  **Tropical Storm**          |  ▲  |  35  |  40  |  25.1  |  82.3
+ **48**  | 04 Aug  | 12:00  |  8AM Sun  |  **Tropical Storm**          |  ▲  |  45  |  50  |  27.2  |  83.0
+ **60**  | 05 Aug  | 00:00  |  8PM Sun  |  **Tropical Storm** ^3       |  ▲  |  55  |  65  |  29.2  |  82.7
+ **72**  | 05 Aug  | 12:00  |  8AM Mon  |  **Tropical Storm** ^4       |  ▼  |  40  |  45  |  30.7  |  81.7
+ **96**  | 06 Aug  | 12:00  |  8AM Tue  |  **Tropical Storm** ^5       |     |  40  |  45  |  32.0  |  80.0
+**120**  | 07 Aug  | 12:00  |  8AM Wed  |  **Tropical Storm**          |  ▲  |  50  |  60  |  33.6  |  77.5
+
+^1 ^- ^Inland ^over ^Cuba
+^2 ^- ^Over ^the ^Straits ^of ^Florida
+^3 ^- ^Inland ^over ^Florida
+^4 ^- ^Inland ^over ^Georgia
+^5 ^- ^Offshore ^near ^South ^Carolina
+
+
+ 
+ # Official information
+- - - - - - - - - - - - - - - - - - - - 
+
+## Weather Prediction Center (United States)
+
+### Text products
+
+* [**Public advisory**](https://www.nhc.noaa.gov/text/refresh/MIAWPCAT4+shtml/DDHHMM.shtml)
+
+* [**Forecast advisory**](https://www.nhc.noaa.gov/text/refresh/MIATCMAT4+shtml/DDHHMM.shtml?)
+
+* [**Forecast discussion**](https://www.nhc.noaa.gov/text/refresh/MIATCDAT4+shtml/DDHHMM.shtml)
+
+* [**Key messages**](https://www.nhc.noaa.gov/refresh/graphics_at4+shtml/DDHHMM.shtml?key_messages#contents)
+
+### Productos de texto (en español)
+
+* [**Aviso publico**](https://www.nhc.noaa.gov/text/refresh/MIATASAT4+shtml/DDHHMM.shtml?)
+
+* [**Discusión de pronóstico**](https://www.nhc.noaa.gov/text/refresh/MIATDSAT4+shtml/DDHHMM.shtml?)
+
+* [**Mensajes claves**](https://www.nhc.noaa.gov/refresh/graphics_at4+shtml/DDHHMM.shtml?spanish_key_messages#contents)
+
+### Graphical products
+
+* [**Rainfall potential**](https://www.nhc.noaa.gov/refresh/graphics_at4+shtml/104403.shtml?rainqpf#contents)
+
+* [**Flash flood potential**](https://www.nhc.noaa.gov/refresh/graphics_at4+shtml/104403.shtml?ero#contents)
+
+* [**Tornado potential**](http://www.spc.noaa.gov/)
+
+## Instituto de Meteorología de la República de Cuba
+
+* [**Inicio**](https://www.insmet.cu)
+
+## National Weather Service (United States)
+
+### WFO Key West
+
+* [**Homepage**](https://www.weather.gov/key/)
+
+* [**Forecast discussion**](http://forecast.weather.gov/product.php?site=NWS&issuedby=KEY&product=AFD&format=CI&version=1&glossary=1)
+
+* [**X** (Formerly Twitter)](https://www.x.com/NWSKeyWest)
+
+* [**Facebook**](https://www.facebook.com/NWSKeyWest/)
+
+### WFO Miami
+
+* [**Homepage**](https://www.weather.gov/mfl/)
+
+* [**Forecast discussion**](http://forecast.weather.gov/product.php?site=NWS&issuedby=MFL&product=AFD&format=CI&version=1&glossary=1)
+
+* [**X** (Formerly Twitter)](https://www.x.com/NWSMiami)
+
+* [**Facebook**](https://www.facebook.com/NWSMiami/)
+
+* [**YouTube**](https://www.youtube.com/user/NWSMiami)
+
+### WFO Tampa
+
+* [**Homepage**](https://www.weather.gov/tbw/)
+
+* [**Forecast discussion**](http://forecast.weather.gov/product.php?site=NWS&issuedby=TBW&product=AFD&format=CI&version=1&glossary=1)
+
+* [**X** (Formerly Twitter)](https://www.x.com/NWSTampaBay)
+
+* [**Facebook**](https://www.facebook.com/NWSTampaBay/)
+
+* [**YouTube**](https://www.youtube.com/user/NWSTampa)
+
+
+
+
+# Radar imagery
+- - - - - - -
+
+## Instituto de Meteorología de la República de Cuba
+
+* [**Radares**](http://www.insmet.cu/asp/genesis.asp?TB0=PLANTILLAS&TB1=RADARES)
+
+* [**Camagüey radar**](http://www.insmet.cu/asp/genesis.asp?TB0=PLANTILLAS&TB1=RADARES)
+
+
+# Satellite imagery
+- - - - - - - - - - - - - - - - - - - -
+## Storm-specific imagery
+
+* **Tropical Tidbits:** [Visible / Shortwave Infrared](https://www.tropicaltidbits.com/sat/satlooper.php?region=04L&product=vis_swir) 
+
+* **Tropical Tidbits:** [Enhanced Infrared](https://www.tropicaltidbits.com/sat/satlooper.php?region=04L&product=ir) 
+
+* **Tropical Tidbits:** [Enhanced Infrared (Dvorak)](https://www.tropicaltidbits.com/sat/satlooper.php?region=04L&product=ir-dvorak)
+
+* **Tropical Tidbits:** [Water Vapor](https://www.tropicaltidbits.com/sat/satlooper.php?region=04L&product=wv-mid)
+
+* **CIMSS:** [Multiple bands](http://tropic.ssec.wisc.edu/real-time/storm.php?&basin=atlantic&sname=04L&invest=NO&zoom=4&img=1&vars=11111000000000000000000&loop=0)
+
+* **RAMMB:** [Multiple bands](http://rammb.cira.colostate.edu/products/tc_realtime/storm.asp?storm_identifier=al042024)
+
+* **Navy Research Laboratory:** [Multiple bands](https://www.nrlmry.navy.mil/tc-bin/tc_home2.cgi?YEAR=2024&MO=07&BASIN=ATL&STORM_NAME=04L.FOUR)
+
+## Regional imagery
+
+### NOAA GOES Image Viewer
+
+* [**Enhanced infrared**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=umv&band=13&length=24)
+
+* [**Water vapor**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=umv&band=09&length=24&dim=1)
+
+* [**Visible (true color)**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=umv&band=GEOCOLOR&length=24&dim=1)
+
+### Tropical Tidbits
+
+* [**Enhanced infrared**](https://www.tropicaltidbits.com/sat/satlooper.php?region=us&product=ir)
+
+* [**Water vapor**](https://www.tropicaltidbits.com/sat/satlooper.php?region=us&product=wv_mid)
+
+* [**Visible (true color)**](https://www.tropicaltidbits.com/sat/satlooper.php?region=us&product=vis_swir)
+
+### Weather Nerds
+
+* [**Enhanced infrared**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-E&initsattype=ir&initcscheme=ir1&initimdimx=1050&initimdimy=676&initrange=47.000:-104.500:30.500:-73.750&initloop=True&initnframes=20&initlightningge=On&initlightninggw=Off&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+* [**Water vapor**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-E&initsattype=wv&initcscheme=ir1&initimdimx=1050&initimdimy=676&initrange=47.000:-104.500:30.500:-73.750&initloop=True&initnframes=20&initlightningge=On&initlightninggw=Off&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+* [**Visible**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-E&initsattype=vis&initcscheme=vis1&initimdimx=1050&initimdimy=676&initrange=47.000:-104.500:30.500:-73.750&initloop=True&initnframes=20&initlightningge=On&initlightninggw=Off&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+# Analysis graphics and data
+- - - - - - - - - - - - - - - - - - - -
+## Wind analyses
+
+* **NESDIS:** [Dvorak Fix Bulletins](https://www.ssd.noaa.gov/PS/TROP/storms/04L.html)
+
+* **NESDIS:** [Dvorak Fix History](https://www.ssd.noaa.gov/PS/TROP/DATA/2023/tdata/atl/04L.html)
+
+* **NESDIS:** [Multi-platform Surface Wind Analysis](http://www.ssd.noaa.gov/PS/TROP/mtcswa.html?storm=al042024)
+
+* **CIMSS:** [Advanced Dvorak Technique (ADT)](http://tropic.ssec.wisc.edu/real-time/adt/odt04L.html)
+
+* **CIMSS:** [Tropical Cyclone Intensity Consensus (SATCON)](http://tropic.ssec.wisc.edu/real-time/satcon/202404L.html)
+
+* **CIMSS:** [SATCON Intensity History](http://tropic.ssec.wisc.edu/real-time/satcon/archive/2023/satconhist_202404L.txt)
+
+* **EUMETSAT:** [Advanced Scatterometer Data](https://scatterometer.knmi.nl/tile_prod/)
+
+## Sea-surface Temperatures
+
+*  **NOAA OSPO:** [Sea Surface Temperature Contour Charts](https://www.ospo.noaa.gov/Products/ocean/sst/contour/index.html)  
+
+*  **Tropical Tidbits:** [Ocean Analysis](https://www.tropicaltidbits.com/analysis/ocean/)
+
+# Model guidance
+- - - - - - - - - - - - - - - - - - - -
+## Storm-specific guidance
+
+* [**Tropical Tidbits**](https://www.tropicaltidbits.com/storminfo/#04L)
+
+* [**University of Albany**](http://www.atmos.albany.edu/facstaff/tang/tcguidance/al042024/)
+
+* [**National Center for Atmospheric Research** (NCAR)](http://www.ral.ucar.edu/hurricanes/realtime/plots/northatlantic/2024/al042024/)
+
+* [**Weather Nerds**](https://www.weathernerds.org/tc_guidance/storm.html?tcid=AL04)
+
+## Regional single-model guidance
+
+* **Tropical Tidbits:** [GFS](https://www.tropicaltidbits.com/analysis/models/?model=gfs&region=catl&pkg=mslp_pcpn)
+
+* **Tropical Tidbits:** [ECMWF](https://www.tropicaltidbits.com/analysis/models/?model=ecmwf&region=catl&pkg=mslp_pcpn)
+
+* **Tropical Tidbits:** [CMC](https://www.tropicaltidbits.com/analysis/models/?model=gem&region=catl&pkg=mslp_pcpn)
+
+* **Tropical Tidbits:** [ICON](https://www.tropicaltidbits.com/analysis/models/?model=icon&region=catl&pkg=mslp_pcpn)
+
+## Regional ensemble model guidance
+
+* **Weather Nerds:** [GEFS (120 hours)](https://www.weathernerds.org/models/gefs.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=685&initrange=50.000000000000:258.000000000000:0:350.000000000000&initcx1=0&initcy1=0&initcx2=0&initcy2=0&initcross=False&initsound=False&initsoundx=1&initsoundy=1&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
+    
+* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=685&initrange=50.000000000000:258.000000000000:0:350.000000000000&initcx1=0&initcy1=0&initcx2=0&initcy2=0&initcross=False&initsound=False&initsoundx=1&initsoundy=1&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",debby,community_discussion,storm|flood|weather|noaa
+1eim97x,TropicalWeather,giantspeck,1722635276,2024-08-02 21:47,17,93,"Tropical Tidbits for Friday, 2 August: Tropical Storm to Form and Impact Florida",,debby,community_discussion,storm
+1ein1he,TropicalWeather,Euronotus,1722637296,2024-08-02 22:21,1,9,96E (Invest — Eastern Pacific),"# Latest Observation
+- - - - - - - - - - - - - - - - - - - -
+**Last updated:** Friday, 2 August — 12:00 PM Central Standard Time (CST; 18:00 UTC)
+
+ATCF  |    |  12:00 PM CST (18:00 UTC)
+:-|:-:|:-
+**Current location:**   |     |  10.5°N 96.4°W
+**Relative location:**  |     |  599 km (372 mi) SSE of Puerto Escondido, Oaxaca (Mexico)
+**Forward motion:**     |  ▼  |  W (280°) at 9 km/h (5 knots)
+**Maximum winds:**      |     |  45 km/h (25 knots)
+**Minimum pressure:**   |     |  1011 millibars (29.85 inches)
+**Potential** (2-day):  |     |  **medium** (50 percent)
+**Potential** (7-day):  |     |  **high** (90 percent)
+
+# Outlook discussion
+- - - - - - - - - - - - - - - - - - - -
+**Last updated:** Friday, 2 August — 12:00 PM CST (12:00 UTC)
+
+> **Discussion by: Dr. Philippe Papin and Dave Roberts** — NHC Hurricane Specialist Unit
+
+> A broad area of low pressure forming a few hundred miles to the south of southern Mexico is producing a large area of disorganized showers and thunderstorms. Environmental conditions appear conducive for additional development and a tropical depression is likely to form by late this weekend or early next week while the system moves westward to west-northwestward at 10 to 15 mph, staying well offshore of the coast of Mexico. 
+
+# Official information
+- - - - - - - - - - - - - - - - - - - - 
+## National Hurricane Center
+
+### Text products
+
+* [**Tropical Weather Outlook**](https://www.nhc.noaa.gov/gtwo.php?basin=epac&fdays=7)
+
+* [**Tropical Weather Discussion**](https://www.nhc.noaa.gov/text/MIATWDEP.shtml)
+
+### Graphical products
+
+* [**Surface analysis graphic**](https://www.nhc.noaa.gov/tafb/USA_12Z.gif)
+
+* [**2-day outlook graphic**](https://www.nhc.noaa.gov/xgtwo/two_pac_2d0.png)
+
+* [**7-day outlook graphic**](https://www.nhc.noaa.gov/xgtwo/two_pac_7d0.png)
+
+# Radar imagery
+- - - - - - - - - - - - - - - - - - - -
+## Not available
+
+> Radar imagery is not currently available for this system.
+
+# Satellite imagery
+- - - - - - - - - - - - - - - - - - - -
+## Storm-specific imagery
+
+* **Tropical Tidbits:** [**Visible / Shortwave Infrared**](https://www.tropicaltidbits.com/sat/satlooper.php?region=96E&product=vis-swir)    
+
+* **Tropical Tidbits:** [**Enhanced Infrared**](https://www.tropicaltidbits.com/sat/satlooper.php?region=96E&product=ir)   
+
+* **Tropical Tidbits:** [**Enhanced Infrared (Dvorak)**](https://www.tropicaltidbits.com/sat/satlooper.php?region=96E&product=ir-dvorak)    
+
+* **Tropical Tidbits:** [**Water Vapor**](https://www.tropicaltidbits.com/sat/satlooper.php?region=96E&product=wv-mid)
+
+* **CIMSS:** [**Multiple bands**](http://tropic.ssec.wisc.edu/real-time/storm.php?&basin=eastpac&sname=96E&invest=YES&zoom=4&img=1&vars=11111000000000000000000&loop=0)
+
+* **RAMMB:** [**Multiple bands**](http://rammb.cira.colostate.edu/products/tc_realtime/storm.asp?storm_identifier=ep962023)
+
+* **Navy Research Laboratory:** [**Multiple bands**](https://www.nrlmry.navy.mil/tc-bin/tc_home2.cgi?YEAR=2024&MO=07&BASIN=EPAC&STORM_NAME=96E.INVEST)
+
+## Regional imagery
+
+### NOAA GOES Image Viewer
+
+* [**Enhanced infrared**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=tpw&band=13&length=24)
+
+* [**Water vapor**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=tpw&band=09&length=24&dim=1)
+
+* [**Visible (true color)**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=tpw&band=GEOCOLOR&length=24&dim=1)
+
+### Cooperative Institute for Meteorological Satellite Studies (CIMSS)
+
+* [**Infrared**](https://realearth.ssec.wisc.edu/s/330rMC)
+
+* [**Water vapor** (upper-level)](https://realearth.ssec.wisc.edu/s/I30rPg)
+
+* [**Visible** (true color)](https://realearth.ssec.wisc.edu/s/730rQz)
+
+### Tropical Tidbits
+
+* [**Enhanced infrared**](https://www.tropicaltidbits.com/sat/satlooper.php?region=epac&product=ir)
+
+* [**Water vapor**](https://www.tropicaltidbits.com/sat/satlooper.php?region=epac&product=wv_mid)
+
+* [**Visible (true color)**](https://www.tropicaltidbits.com/sat/satlooper.php?region=epac&product=vis_swir)
+
+### Weather Nerds
+
+* [**Enhanced infrared**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-W&initsattype=ir&initcscheme=ir1&initimdimx=1050&initimdimy=672&initrange=40.000:-155.000:0:-80.000&initloop=True&initnframes=20&initlightningge=Off&initlightninggw=On&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+* [**Water vapor**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-W&initsattype=wv&initcscheme=ir1&initimdimx=1050&initimdimy=672&initrange=40.000:-155.000:0:-80.000&initloop=True&initnframes=20&initlightningge=Off&initlightninggw=On&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+* [**Visible**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-W&initsattype=vis&initcscheme=vis1&initimdimx=1050&initimdimy=672&initrange=40.000:-155.000:0:-80.000&initloop=True&initnframes=20&initlightningge=Off&initlightninggw=On&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+# Analysis graphics and data
+- - - - - - - - - - - - - - - - - - - -
+## Wind analyses
+
+* **EUMETSAT:** [**Advanced Scatterometer Data**](https://scatterometer.knmi.nl/tile_prod/)  
+
+## Sea-surface Temperatures
+
+*  **NOAA OSPO:** [**Sea Surface Temperature Contour Charts**](https://www.ospo.noaa.gov/Products/ocean/sst/contour/index.html)  
+
+*  **Tropical Tidbits:** [**Ocean Analysis**](https://www.tropicaltidbits.com/analysis/ocean/)
+
+# Model guidance
+- - - - - - - - - - - - - - - - - - - -
+## Storm-specific guidance
+
+* [**Tropical Tidbits**](https://www.tropicaltidbits.com/storminfo/#96E)    
+
+* [**University of Albany**](http://www.atmos.albany.edu/facstaff/tang/tcguidance/ep962023/)    
+
+* [**National Center for Atmospheric Research (NCAR)**](http://www.ral.ucar.edu/hurricanes/realtime/plots/northeastpacific/2023/ep962023/)    
+
+* [**Weather Nerds**](https://www.weathernerds.org/tc_guidance/storm.html?tcid=EP96)    
+
+## Regional single-model guidance
+
+*  **Tropical Tidbits:** [**GFS**](https://www.tropicaltidbits.com/analysis/models/?model=gfs&region=epac&pkg=mslp_pcpn)
+
+*  **Tropical Tidbits:** [**ECMWF**](https://www.tropicaltidbits.com/analysis/models/?model=ecmwf&region=epac&pkg=mslp_pcpn)
+
+*  **Tropical Tidbits:** [**CMC**](https://www.tropicaltidbits.com/analysis/models/?model=gem&region=epac&pkg=mslp_pcpn)
+
+*  **Tropical Tidbits:** [**ICON**](https://www.tropicaltidbits.com/analysis/models/?model=icon&region=epac&pkg=mslp_pcpn)
+
+## Regional ensemble model guidance
+
+* **Weathernerds:** [**GEFS (120 hours)**](https://www.weathernerds.org/models/gefs.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=06&initfhour=120&initimdimx=1050&initimdimy=560&initrange=40.000000000000:190.000000000000:0:280.000000000000&initcx1=0&initcy1=0&initcx2=0&initcy2=0&initcross=False&initsound=False&initsoundx=1&initsoundy=1&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
+    
+* **Weathernerds:** [**ECENS (120 hours)**](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=06&initfhour=120&initimdimx=1050&initimdimy=560&initrange=40.000000000000:190.000000000000:0:280.000000000000&initcx1=0&initcy1=0&initcx2=0&initcy2=0&initcross=False&initsound=False&initsoundx=1&initsoundy=1&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",debby,community_discussion,hurricane|storm|weather|noaa
+1eioi0t,TropicalWeather,Legitimate-Insect170,1722641219,2024-08-02 23:26,1,1,GOES high-resolution gifs,[removed],debby,community_discussion,
+1eir8lc,TropicalWeather,Ok_Breath_9473,1722649121,2024-08-03 01:38,1,1,GFS Predicting Another Tropical Storm?,[removed],debby,community_discussion,storm
+1eix28u,TropicalWeather,Galileos_grandson,1722668576,2024-08-03 07:02,32,44,"Birth of Tropical Storm Debby - August 2, 2024",,debby,community_discussion,storm|debby
+1ej4yad,TropicalWeather,Stateof10,1722696125,2024-08-03 14:42,53,67,Is there a reason why Tampa is less prone to tropical cyclones vs other areas of the Florida Gulf Coast?,"In recent years the Big Bend of Florida and Ft Myers have suffered from the impacts of tropical cyclones. Tampa can get them, but it seems they don't have the same level of risk. Is this due to luck or is there another reason?",debby,community_discussion,
+1ej7e76,TropicalWeather,Euronotus,1722702344,2024-08-03 16:25,1,22,Daniel (04E — Eastern Pacific),"# Latest observation
+- - - - - - - - - - - - - - - - - - - -
+**Last updated:** Saturday, 3 August — 8:00 AM Pacific Daylight Time (PDT; 15:00 UTC)
+
+NHC Advisory #1  |     |  8:00 AM PDT (15:00 UTC)
+:-|:-:|:-
+**Current location:**   |     |  12.6°N 130.0°W
+**Relative location:**  |     |  2,316 km (1,439 mi) SW of Cabo San Lucas, Baja California Sur (Mexico)
+**Forward motion:**     |     |  NW (315°) at 7 km/h (4 knots)
+**Maximum winds:**      |  ▲  |  65 km/h (35 knots)
+**Intensity:**          |  ▲  |  **Tropical Storm**                      
+**Minimum pressure:**   |  ▼  |  1007 millibars (29.74 inches)
+
+# Official forecast
+- - - - - - - - - - - - - - - - - - - -
+**Last updated:** Saturday, 3 August — 5:00 AM PDT (12:00 UTC)
+
+Hour  | Date  | Time  |    |  Intensity  |    |  Winds  |    |  Lat  |  Long
+:-:|:-:|:-:|:-:|:-|:-:|:-:|:-:|:-:|:-:
+&nbsp;  | -  | UTC  |  PDT  |  Saffir-Simpson  |    |  knots  |  km/h  |  °N  |  °W
+ **00**  | 03 Aug  | 12:00  |  5AM Sat  |  **Tropical Storm**                        |     |  35  |  65  |  12.6  |  130.0
+ **12**  | 04 Aug  | 00:00  |  5PM Sat  |  **Tropical Storm**                        |     |  35  |  65  |  12.8  |  130.2
+ **24**  | 04 Aug  | 12:00  |  5AM Sun  |  **Tropical Storm**                        |  ▲  |  40  |  75  |  13.3  |  130.0
+ **36**  | 05 Aug  | 00:00  |  5PM Sun  |  **Tropical Storm**                        |     |  40  |  75  |  14.4  |  128.8
+ **48**  | 05 Aug  | 12:00  |  5AM Mon  |  **Tropical Storm**                        |  ▼  |  35  |  65  |  15.9  |  127.0
+ **60**  | 06 Aug  | 00:00  |  5PM Mon  |  **Tropical Depression**                   |  ▼  |  30  |  55  |  17.7  |  125.8
+ **72**  | 06 Aug  | 12:00  |  5AM Tue  |    Remnant Low                             |  ▼  |  25  |  45  |  19.3  |  126.0
+ **96**  | 07 Aug  | 12:00  |  5AM Wed  |    Dissipated       
+
+
+# Official information
+- - - - - - - - - - - - - - - - - - - - 
+## National Hurricane Center
+
+### Advisories
+
+* [**Public advisory**](https://www.nhc.noaa.gov/text/refresh/MIATCPEP4+shtml/DDHHMM.shtml)
+
+* [**Forecast advisory**](https://www.nhc.noaa.gov/text/refresh/MIATCMEP4+shtml/DDHHMM.shtml)
+
+* [**Forecast discussion**](https://www.nhc.noaa.gov/text/refresh/MIATCDEP4+shtml/DDHHMM.shtml)
+
+### Graphics
+
+* [**Forecast graphic**](https://www.nhc.noaa.gov/refresh/graphics_ep4+shtml/DDHHMM.shtml?cone#contents)
+
+* [**Wind speed probabilities**](https://www.nhc.noaa.gov/refresh/graphics_ep4+shtml/DDHHMM.shtml?tswind120#contents)
+
+* [**Arrival time of winds**](https://www.nhc.noaa.gov/refresh/graphics_ep4+shtml/DDHHMM.shtml?mltoa34#contents)
+
+### Productos en español
+
+* [**Aviso publico**](https://www.nhc.noaa.gov/text/refresh/MIATASEP4+shtml/DDHHMM.shtml)
+
+* [**Pronóstico discusión**](https://www.nhc.noaa.gov/text/refresh/MIATDSEP4+shtml/DDHHMM.shtml)
+
+
+## Servicio Meteorológico Nacional (Mexico)
+
+* [**Inicio**](https://smn.conagua.gob.mx/es/)
+
+* [**Aviso de Ciclón Tropical en el Océano Pacífico**](https://smn.conagua.gob.mx/es/pronosticos/avisos/aviso-de-ciclon-tropical-en-el-oceano-pacifico)
+
+
+# Radar imagery
+- - - - - - - - - - - - - - - - - - - -
+## Unavailable 
+
+Radar imagery is not currently available for this system.
+
+
+# Satellite imagery
+- - - - - - - - - - - - - - - - - - - -
+## Storm-specific imagery
+
+* **Tropical Tidbits:** [Visible / Shortwave Infrared](https://www.tropicaltidbits.com/sat/satlooper.php?region=04E&product=vis-swir)
+
+* **Tropical Tidbits:** [Enhanced Infrared](https://www.tropicaltidbits.com/sat/satlooper.php?region=04E&product=ir)
+
+* **Tropical Tidbits:** [Enhanced Infrared (Dvorak)](https://www.tropicaltidbits.com/sat/satlooper.php?region=04E&product=ir-dvorak)
+
+* **Tropical Tidbits:** [Water Vapor](https://www.tropicaltidbits.com/sat/satlooper.php?region=04E&product=wv-mid)
+
+* **CIMSS:** [Multiple bands](http://tropic.ssec.wisc.edu/real-time/storm.php?&basin=eastpac&sname=04E&invest=NO&zoom=4&img=1&vars=11111000000000000000000&loop=0)
+
+* **RAMMB:** [Multiple bands](http://rammb.cira.colostate.edu/products/tc_realtime/storm.asp?storm_identifier=ep042024)
+
+* **Navy Research Laboratory:** [Multiple bands](https://www.nrlmry.navy.mil/tc-bin/tc_home2.cgi?YEAR=2024&MO=08&BASIN=EPAC&STORM_NAME=04E.DANIEL)
+
+## Regional imagery
+
+### NOAA GOES Image Viewer
+
+* [**Enhanced infrared**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=tpw&band=13&length=24)
+
+* [**Water vapor**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=tpw&band=09&length=24&dim=1)
+
+* [**Visible (true color)**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=tpw&band=GEOCOLOR&length=24&dim=1)
+
+### Cooperative Institute for Meteorological Satellite Studies (CIMSS)
+
+* [**Infrared**](https://realearth.ssec.wisc.edu/s/330rMC)
+
+* [**Water vapor** (upper-level)](https://realearth.ssec.wisc.edu/s/I30rPg)
+
+* [**Visible** (true color)](https://realearth.ssec.wisc.edu/s/730rQz)
+
+### Tropical Tidbits
+
+* [**Enhanced infrared**](https://www.tropicaltidbits.com/sat/satlooper.php?region=epac&product=ir)
+
+* [**Water vapor**](https://www.tropicaltidbits.com/sat/satlooper.php?region=epac&product=wv_mid)
+
+* [**Visible (true color)**](https://www.tropicaltidbits.com/sat/satlooper.php?region=epac&product=vis_swir)
+
+### Weather Nerds
+
+* [**Enhanced infrared**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-W&initsattype=ir&initcscheme=ir1&initimdimx=1050&initimdimy=672&initrange=40.000:-155.000:0:-80.000&initloop=True&initnframes=20&initlightningge=Off&initlightninggw=On&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+* [**Water vapor**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-W&initsattype=wv&initcscheme=ir1&initimdimx=1050&initimdimy=672&initrange=40.000:-155.000:0:-80.000&initloop=True&initnframes=20&initlightningge=Off&initlightninggw=On&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+* [**Visible**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-W&initsattype=vis&initcscheme=vis1&initimdimx=1050&initimdimy=672&initrange=40.000:-155.000:0:-80.000&initloop=True&initnframes=20&initlightningge=Off&initlightninggw=On&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+# Analysis graphics and data
+- - - - - - - - - - - - - - - - - - - -
+## Wind analyses
+
+* **NESDIS:** [Dvorak Fix Bulletins](https://www.ssd.noaa.gov/PS/TROP/storms/04E.html)
+
+* **NESDIS:** [Dvorak Fix History](https://www.ssd.noaa.gov/PS/TROP/DATA/2024/tdata/epac/04E.html)
+
+* **NESDIS:** [Multi-platform Surface Wind Analysis](http://www.ssd.noaa.gov/PS/TROP/mtcswa.html?storm=ep042024)
+
+* **CIMSS:** [Advanced Dvorak Technique (ADT)](http://tropic.ssec.wisc.edu/real-time/adt/odt04E.html)
+
+* **CIMSS:** [Tropical Cyclone Intensity Consensus (SATCON)](http://tropic.ssec.wisc.edu/real-time/satcon/202404E.html)
+
+* **CIMSS:** [SATCON Intensity History](http://tropic.ssec.wisc.edu/real-time/satcon/archive/2024/satconhist_202404E.txt)
+
+* **EUMETSAT:** [Advanced Scatterometer Data](https://scatterometer.knmi.nl/tile_prod/)
+
+## Sea-surface Temperatures
+
+*  **NOAA OSPO:** [Sea Surface Temperature Contour Charts](https://www.ospo.noaa.gov/Products/ocean/sst/contour/index.html)
+
+*  **Tropical Tidbits:** [Ocean Analysis](https://www.tropicaltidbits.com/analysis/ocean/)
+
+# Model guidance
+- - - - - - - - - - - - - - - - - - - -
+## Storm-specific guidance
+
+* [**Tropical Tidbits**](https://www.tropicaltidbits.com/storminfo/#04E)
+
+* [**University of Albany**](http://www.atmos.albany.edu/facstaff/tang/tcguidance/ep042024/)
+
+* [**National Center for Atmospheric Research** (NCAR)](http://www.ral.ucar.edu/hurricanes/realtime/plots/northeastpacific/2024/ep042024/)
+
+* [**Weather Nerds**](https://www.weathernerds.org/tc_guidance/storm.html?tcid=EP04)
+
+## Regional single-model guidance
+
+*  **Tropical Tidbits:** [GFS](https://www.tropicaltidbits.com/analysis/models/?model=gfs&region=epac&pkg=mslp_pcpn)
+
+*  **Tropical Tidbits:** [ECMWF](https://www.tropicaltidbits.com/analysis/models/?model=ecmwf&region=epac&pkg=mslp_pcpn)
+
+*  **Tropical Tidbits:** [CMC](https://www.tropicaltidbits.com/analysis/models/?model=gem&region=epac&pkg=mslp_pcpn)
+
+*  **Tropical Tidbits:** [ICON](https://www.tropicaltidbits.com/analysis/models/?model=icon&region=epac&pkg=mslp_pcpn)
+
+## Regional ensemble model guidance
+
+* **Weather Nerds:** [GEFS (120 hours)](https://www.weathernerds.org/models/gefs.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=06&initfhour=120&initimdimx=1050&initimdimy=458&initrange=20.428571428600:236.028571428520:5.785714285720:276.314285714230&initcx1=542&initcy1=279&initcx2=1002&initcy2=474&initcross=False&initsound=False&initsoundx=537&initsoundy=274&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
+    
+* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=06&initfhour=120&initimdimx=1050&initimdimy=458&initrange=20.428571428600:236.028571428520:5.785714285720:276.314285714230&initcx1=542&initcy1=279&initcx2=1002&initcy2=474&initcross=False&initsound=False&initsoundx=537&initsoundy=274&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",debby,community_discussion,hurricane|storm|weather|noaa
+1ejae8f,TropicalWeather,m1chaelgr1mes,1722709758,2024-08-03 18:29,15,0,"I've never heard of ""Areal Flooding"" ",Evidently this is a real thing caused by excessive rainfall. Since we have the tropical storm/cyclone coming I guess it's time to batten down the hatches! ,debby,community_discussion,storm
+1ejc7oh,TropicalWeather,PinkJazz,1722714497,2024-08-03 19:48,19,16,What can we expect for NOAA's August hurricane forecast?,"I was wondering, even though we had Beryl, the overall number of named storms so far has been quite low in recent years. Do you think NOAA will increase or decrease the number of forecasted named storms in their August outlook?",debby,community_discussion,hurricane|noaa
+1ejcq87,TropicalWeather,Purple-Cut1932,1722715903,2024-08-03 20:11,1,1,is it possible tropical depression four could escalate to a major hurricane?,[removed],debby,community_discussion,hurricane
+1ejcsi7,TropicalWeather,giantspeck,1722716075,2024-08-03 20:14,10,66,"Tropical Tidbits for Saturday, 3 August: TD4 to Strengthen Before Landfall in Northern Florida",,debby,community_discussion,
+1ejft0o,TropicalWeather,giantspeck,1722724187,2024-08-03 22:29,0,2,Debby (04L — Northern Atlantic),"# Latest observation
+- - - - - - - - - - - - - - - - - - - -
+**Last updated:** Saturday, 3 August — 5:00 PM Eastern Daylight Time (EDT; 21:00 UTC)
+
+NHC Advisory #6  |     |  5:00 PM EDT (21:00 UTC)
+:-|:-:|:-
+**Current location:**   |     |  23.9°N 83.2°W
+**Relative location:**  |     |  101 mi (162 km) WSW of Key West, Florida
+**Forward motion:**     |     |  NW (310°) at 15 knots (13 mph)
+**Maximum winds:**      |  ▲  |  40 mph (35 knots)
+**Intensity:**          |  ▲  |  **Tropical Storm**                      
+**Minimum pressure:**   |  ▼  |  1007 millibars (29.74 inches)
+
+# Official forecast
+- - - - - - - - - - - - - - - - - - - -
+**Last updated:** Saturday, 3 August — 2:00 PM EDT (18:00 UTC)
+
+Hour  | Date  | Time  |    |  Intensity  |    |  Winds  |    |  Lat  |  Long
+:-:|:-:|:-:|:-:|:-|:-:|:-:|:-:|:-:|:-:
+&nbsp;  | -  | UTC  |  EDT  |  Saffir-Simpson  |    |  knots  |  mph  |  °N  |  °W
+ **00**  | 03 Aug  | 18:00  |  2PM Sat  |  **Tropical Storm**                        |     |  35  |  40  |  23.9  |  83.2
+ **12**  | 04 Aug  | 06:00  |  2AM Sun  |  **Tropical Storm**                        |  ▲  |  40  |  45  |  25.3  |  84.1
+ **24**  | 04 Aug  | 18:00  |  2PM Sun  |  **Tropical Storm**                        |  ▲  |  45  |  50  |  27.2  |  84.6
+ **36**  | 05 Aug  | 06:00  |  2AM Mon  |  **Tropical Storm**                        |  ▲  |  55  |  65  |  28.9  |  84.4
+ **48**  | 05 Aug  | 18:00  |  2PM Mon  |  **Hurricane (Category 1)** ^1             |  ▲  |  65  |  75  |  30.2  |  83.8
+ **60**  | 06 Aug  | 06:00  |  2AM Tue  |  **Tropical Storm** ^2                     |  ▼  |  40  |  45  |  31.0  |  83.0
+ **72**  | 06 Aug  | 18:00  |  2PM Tue  |  **Tropical Storm**                        |  ▼  |  35  |  40  |  31.3  |  82.0
+ **96**  | 07 Aug  | 18:00  |  2PM Wed  |  **Tropical Storm** ^3                     |  ▲  |  40  |  45  |  31.5  |  80.5
+**120**  | 08 Aug  | 18:00  |  2PM Thu  |  **Tropical Storm** ^4                     |  ▲  |  50  |  60  |  33.0  |  80.4
+
+^1 ^- ^Inland ^over ^Florida       
+^2 ^- ^Inland ^over ^Georgia    
+^3 ^- ^Offshore ^over ^the ^Atlantic ^Ocean        
+^4 ^- ^Inland ^over ^South ^Carolina       
+
+# Official information
+- - - - - - - - - - - - - - - - - - - - 
+
+## Weather Prediction Center (United States)
+
+### Text products
+
+* [**Public advisory**](https://www.nhc.noaa.gov/text/refresh/MIAWPCAT4+shtml/DDHHMM.shtml)
+
+* [**Forecast advisory**](https://www.nhc.noaa.gov/text/refresh/MIATCMAT4+shtml/DDHHMM.shtml?)
+
+* [**Forecast discussion**](https://www.nhc.noaa.gov/text/refresh/MIATCDAT4+shtml/DDHHMM.shtml)
+
+* [**Key messages**](https://www.nhc.noaa.gov/refresh/graphics_at4+shtml/DDHHMM.shtml?key_messages#contents)
+
+### Productos de texto (en español)
+
+* [**Aviso publico**](https://www.nhc.noaa.gov/text/refresh/MIATASAT4+shtml/DDHHMM.shtml?)
+
+* [**Discusión de pronóstico**](https://www.nhc.noaa.gov/text/refresh/MIATDSAT4+shtml/DDHHMM.shtml?)
+
+* [**Mensajes claves**](https://www.nhc.noaa.gov/refresh/graphics_at4+shtml/DDHHMM.shtml?spanish_key_messages#contents)
+
+### Graphical products
+
+* [**Rainfall potential**](https://www.nhc.noaa.gov/refresh/graphics_at4+shtml/104403.shtml?rainqpf#contents)
+
+* [**Flash flood potential**](https://www.nhc.noaa.gov/refresh/graphics_at4+shtml/104403.shtml?ero#contents)
+
+* [**Tornado potential**](http://www.spc.noaa.gov/)
+
+## Instituto de Meteorología de la República de Cuba
+
+* [**Inicio**](https://www.insmet.cu)
+
+## National Weather Service (United States)
+
+### WFO Key West
+
+* [**Homepage**](https://www.weather.gov/key/)
+
+* [**Forecast discussion**](http://forecast.weather.gov/product.php?site=NWS&issuedby=KEY&product=AFD&format=CI&version=1&glossary=1)
+
+* [**X** (Formerly Twitter)](https://www.x.com/NWSKeyWest)
+
+* [**Facebook**](https://www.facebook.com/NWSKeyWest/)
+
+### WFO Miami
+
+* [**Homepage**](https://www.weather.gov/mfl/)
+
+* [**Forecast discussion**](http://forecast.weather.gov/product.php?site=NWS&issuedby=MFL&product=AFD&format=CI&version=1&glossary=1)
+
+* [**X** (Formerly Twitter)](https://www.x.com/NWSMiami)
+
+* [**Facebook**](https://www.facebook.com/NWSMiami/)
+
+* [**YouTube**](https://www.youtube.com/user/NWSMiami)
+
+### WFO Tampa
+
+* [**Homepage**](https://www.weather.gov/tbw/)
+
+* [**Forecast discussion**](http://forecast.weather.gov/product.php?site=NWS&issuedby=TBW&product=AFD&format=CI&version=1&glossary=1)
+
+* [**X** (Formerly Twitter)](https://www.x.com/NWSTampaBay)
+
+* [**Facebook**](https://www.facebook.com/NWSTampaBay/)
+
+* [**YouTube**](https://www.youtube.com/user/NWSTampa)
+
+
+
+
+# Radar imagery
+- - - - - - -
+
+## Instituto de Meteorología de la República de Cuba
+
+* [**Radares**](http://www.insmet.cu/asp/genesis.asp?TB0=PLANTILLAS&TB1=RADARES)
+
+* [**Camagüey radar**](http://www.insmet.cu/asp/genesis.asp?TB0=PLANTILLAS&TB1=RADARES)
+
+
+# Satellite imagery
+- - - - - - - - - - - - - - - - - - - -
+## Storm-specific imagery
+
+* **Tropical Tidbits:** [Visible / Shortwave Infrared](https://www.tropicaltidbits.com/sat/satlooper.php?region=04L&product=vis_swir) 
+
+* **Tropical Tidbits:** [Enhanced Infrared](https://www.tropicaltidbits.com/sat/satlooper.php?region=04L&product=ir) 
+
+* **Tropical Tidbits:** [Enhanced Infrared (Dvorak)](https://www.tropicaltidbits.com/sat/satlooper.php?region=04L&product=ir-dvorak)
+
+* **Tropical Tidbits:** [Water Vapor](https://www.tropicaltidbits.com/sat/satlooper.php?region=04L&product=wv-mid)
+
+* **CIMSS:** [Multiple bands](http://tropic.ssec.wisc.edu/real-time/storm.php?&basin=atlantic&sname=04L&invest=NO&zoom=4&img=1&vars=11111000000000000000000&loop=0)
+
+* **RAMMB:** [Multiple bands](http://rammb.cira.colostate.edu/products/tc_realtime/storm.asp?storm_identifier=al042024)
+
+* **Navy Research Laboratory:** [Multiple bands](https://www.nrlmry.navy.mil/tc-bin/tc_home2.cgi?YEAR=2024&MO=07&BASIN=ATL&STORM_NAME=04L.DEBBY)
+
+## Regional imagery
+
+### NOAA GOES Image Viewer
+
+* [**Enhanced infrared**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=umv&band=13&length=24)
+
+* [**Water vapor**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=umv&band=09&length=24&dim=1)
+
+* [**Visible (true color)**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=umv&band=GEOCOLOR&length=24&dim=1)
+
+### Tropical Tidbits
+
+* [**Enhanced infrared**](https://www.tropicaltidbits.com/sat/satlooper.php?region=us&product=ir)
+
+* [**Water vapor**](https://www.tropicaltidbits.com/sat/satlooper.php?region=us&product=wv_mid)
+
+* [**Visible (true color)**](https://www.tropicaltidbits.com/sat/satlooper.php?region=us&product=vis_swir)
+
+### Weather Nerds
+
+* [**Enhanced infrared**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-E&initsattype=ir&initcscheme=ir1&initimdimx=1050&initimdimy=676&initrange=47.000:-104.500:30.500:-73.750&initloop=True&initnframes=20&initlightningge=On&initlightninggw=Off&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+* [**Water vapor**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-E&initsattype=wv&initcscheme=ir1&initimdimx=1050&initimdimy=676&initrange=47.000:-104.500:30.500:-73.750&initloop=True&initnframes=20&initlightningge=On&initlightninggw=Off&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+* [**Visible**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-E&initsattype=vis&initcscheme=vis1&initimdimx=1050&initimdimy=676&initrange=47.000:-104.500:30.500:-73.750&initloop=True&initnframes=20&initlightningge=On&initlightninggw=Off&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+# Analysis graphics and data
+- - - - - - - - - - - - - - - - - - - -
+## Wind analyses
+
+* **NESDIS:** [Dvorak Fix Bulletins](https://www.ssd.noaa.gov/PS/TROP/storms/04L.html)
+
+* **NESDIS:** [Dvorak Fix History](https://www.ssd.noaa.gov/PS/TROP/DATA/2023/tdata/atl/04L.html)
+
+* **NESDIS:** [Multi-platform Surface Wind Analysis](http://www.ssd.noaa.gov/PS/TROP/mtcswa.html?storm=al042024)
+
+* **CIMSS:** [Advanced Dvorak Technique (ADT)](http://tropic.ssec.wisc.edu/real-time/adt/odt04L.html)
+
+* **CIMSS:** [Tropical Cyclone Intensity Consensus (SATCON)](http://tropic.ssec.wisc.edu/real-time/satcon/202404L.html)
+
+* **CIMSS:** [SATCON Intensity History](http://tropic.ssec.wisc.edu/real-time/satcon/archive/2023/satconhist_202404L.txt)
+
+* **EUMETSAT:** [Advanced Scatterometer Data](https://scatterometer.knmi.nl/tile_prod/)
+
+## Sea-surface Temperatures
+
+*  **NOAA OSPO:** [Sea Surface Temperature Contour Charts](https://www.ospo.noaa.gov/Products/ocean/sst/contour/index.html)  
+
+*  **Tropical Tidbits:** [Ocean Analysis](https://www.tropicaltidbits.com/analysis/ocean/)
+
+# Model guidance
+- - - - - - - - - - - - - - - - - - - -
+## Storm-specific guidance
+
+* [**Tropical Tidbits**](https://www.tropicaltidbits.com/storminfo/#04L)
+
+* [**University of Albany**](http://www.atmos.albany.edu/facstaff/tang/tcguidance/al042024/)
+
+* [**National Center for Atmospheric Research** (NCAR)](http://www.ral.ucar.edu/hurricanes/realtime/plots/northatlantic/2024/al042024/)
+
+* [**Weather Nerds**](https://www.weathernerds.org/tc_guidance/storm.html?tcid=AL04)
+
+## Regional single-model guidance
+
+* **Tropical Tidbits:** [GFS](https://www.tropicaltidbits.com/analysis/models/?model=gfs&region=catl&pkg=mslp_pcpn)
+
+* **Tropical Tidbits:** [ECMWF](https://www.tropicaltidbits.com/analysis/models/?model=ecmwf&region=catl&pkg=mslp_pcpn)
+
+* **Tropical Tidbits:** [CMC](https://www.tropicaltidbits.com/analysis/models/?model=gem&region=catl&pkg=mslp_pcpn)
+
+* **Tropical Tidbits:** [ICON](https://www.tropicaltidbits.com/analysis/models/?model=icon&region=catl&pkg=mslp_pcpn)
+
+## Regional ensemble model guidance
+
+* **Weather Nerds:** [GEFS (120 hours)](https://www.weathernerds.org/models/gefs.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=685&initrange=50.000000000000:258.000000000000:0:350.000000000000&initcx1=0&initcy1=0&initcx2=0&initcy2=0&initcross=False&initsound=False&initsoundx=1&initsoundy=1&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
+    
+* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=685&initrange=50.000000000000:258.000000000000:0:350.000000000000&initcx1=0&initcy1=0&initcx2=0&initcy2=0&initcross=False&initsound=False&initsoundx=1&initsoundy=1&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",debby,community_discussion,hurricane|storm|flood|weather|category|noaa|debby
+1ejftpt,TropicalWeather,Euronotus,1722724234,2024-08-03 22:30,892,162,Debby (04L — Northern Atlantic),"# Latest observation
+- - - - - - - - - - - - - - - - - - - -
+**Last updated:** Saturday, 3 August — 5:00 PM Eastern Daylight Time (EDT; 21:00 UTC)
+
+NHC Advisory #6  |     |  5:00 PM EDT (21:00 UTC)
+:-|:-:|:-
+**Current location:**   |     |  23.9°N 83.2°W
+**Relative location:**  |     |  101 mi (162 km) WSW of Key West, Florida
+**Forward motion:**     |     |  NW (310°) at 15 knots (13 mph)
+**Maximum winds:**      |  ▲  |  40 mph (35 knots)
+**Intensity:**          |  ▲  |  **Tropical Storm**                      
+**Minimum pressure:**   |  ▼  |  1007 millibars (29.74 inches)
+
+# Official forecast
+- - - - - - - - - - - - - - - - - - - -
+**Last updated:** Saturday, 3 August — 2:00 PM EDT (18:00 UTC)
+
+Hour  | Date  | Time  |    |  Intensity  |    |  Winds  |    |  Lat  |  Long
+:-:|:-:|:-:|:-:|:-|:-:|:-:|:-:|:-:|:-:
+&nbsp;  | -  | UTC  |  EDT  |  Saffir-Simpson  |    |  knots  |  mph  |  °N  |  °W
+ **00**  | 03 Aug  | 18:00  |  2PM Sat  |  **Tropical Storm**                        |     |  35  |  40  |  23.9  |  83.2
+ **12**  | 04 Aug  | 06:00  |  2AM Sun  |  **Tropical Storm**                        |  ▲  |  40  |  45  |  25.3  |  84.1
+ **24**  | 04 Aug  | 18:00  |  2PM Sun  |  **Tropical Storm**                        |  ▲  |  45  |  50  |  27.2  |  84.6
+ **36**  | 05 Aug  | 06:00  |  2AM Mon  |  **Tropical Storm**                        |  ▲  |  55  |  65  |  28.9  |  84.4
+ **48**  | 05 Aug  | 18:00  |  2PM Mon  |  **Hurricane (Category 1)** ^1             |  ▲  |  65  |  75  |  30.2  |  83.8
+ **60**  | 06 Aug  | 06:00  |  2AM Tue  |  **Tropical Storm** ^2                     |  ▼  |  40  |  45  |  31.0  |  83.0
+ **72**  | 06 Aug  | 18:00  |  2PM Tue  |  **Tropical Storm**                        |  ▼  |  35  |  40  |  31.3  |  82.0
+ **96**  | 07 Aug  | 18:00  |  2PM Wed  |  **Tropical Storm** ^3                     |  ▲  |  40  |  45  |  31.5  |  80.5
+**120**  | 08 Aug  | 18:00  |  2PM Thu  |  **Tropical Storm** ^4                     |  ▲  |  50  |  60  |  33.0  |  80.4
+
+^1 ^- ^Inland ^over ^Florida       
+^2 ^- ^Inland ^over ^Georgia    
+^3 ^- ^Offshore ^over ^the ^Atlantic ^Ocean        
+^4 ^- ^Inland ^over ^South ^Carolina       
+
+# Official information
+- - - - - - - - - - - - - - - - - - - - 
+
+## Weather Prediction Center (United States)
+
+### Text products
+
+* [**Public advisory**](https://www.nhc.noaa.gov/text/refresh/MIAWPCAT4+shtml/DDHHMM.shtml)
+
+* [**Forecast advisory**](https://www.nhc.noaa.gov/text/refresh/MIATCMAT4+shtml/DDHHMM.shtml?)
+
+* [**Forecast discussion**](https://www.nhc.noaa.gov/text/refresh/MIATCDAT4+shtml/DDHHMM.shtml)
+
+* [**Key messages**](https://www.nhc.noaa.gov/refresh/graphics_at4+shtml/DDHHMM.shtml?key_messages#contents)
+
+### Productos de texto (en español)
+
+* [**Aviso publico**](https://www.nhc.noaa.gov/text/refresh/MIATASAT4+shtml/DDHHMM.shtml?)
+
+* [**Discusión de pronóstico**](https://www.nhc.noaa.gov/text/refresh/MIATDSAT4+shtml/DDHHMM.shtml?)
+
+* [**Mensajes claves**](https://www.nhc.noaa.gov/refresh/graphics_at4+shtml/DDHHMM.shtml?spanish_key_messages#contents)
+
+### Graphical products
+
+* [**Rainfall potential**](https://www.nhc.noaa.gov/refresh/graphics_at4+shtml/104403.shtml?rainqpf#contents)
+
+* [**Flash flood potential**](https://www.nhc.noaa.gov/refresh/graphics_at4+shtml/104403.shtml?ero#contents)
+
+* [**Tornado potential**](http://www.spc.noaa.gov/)
+
+## Instituto de Meteorología de la República de Cuba
+
+* [**Inicio**](https://www.insmet.cu)
+
+## National Weather Service (United States)
+
+### WFO Key West
+
+* [**Homepage**](https://www.weather.gov/key/)
+
+* [**Forecast discussion**](http://forecast.weather.gov/product.php?site=NWS&issuedby=KEY&product=AFD&format=CI&version=1&glossary=1)
+
+* [**X** (Formerly Twitter)](https://www.x.com/NWSKeyWest)
+
+* [**Facebook**](https://www.facebook.com/NWSKeyWest/)
+
+### WFO Miami
+
+* [**Homepage**](https://www.weather.gov/mfl/)
+
+* [**Forecast discussion**](http://forecast.weather.gov/product.php?site=NWS&issuedby=MFL&product=AFD&format=CI&version=1&glossary=1)
+
+* [**X** (Formerly Twitter)](https://www.x.com/NWSMiami)
+
+* [**Facebook**](https://www.facebook.com/NWSMiami/)
+
+* [**YouTube**](https://www.youtube.com/user/NWSMiami)
+
+### WFO Tampa
+
+* [**Homepage**](https://www.weather.gov/tbw/)
+
+* [**Forecast discussion**](http://forecast.weather.gov/product.php?site=NWS&issuedby=TBW&product=AFD&format=CI&version=1&glossary=1)
+
+* [**X** (Formerly Twitter)](https://www.x.com/NWSTampaBay)
+
+* [**Facebook**](https://www.facebook.com/NWSTampaBay/)
+
+* [**YouTube**](https://www.youtube.com/user/NWSTampa)
+
+
+
+
+# Radar imagery
+- - - - - - -
+
+## Instituto de Meteorología de la República de Cuba
+
+* [**Radares**](http://www.insmet.cu/asp/genesis.asp?TB0=PLANTILLAS&TB1=RADARES)
+
+* [**Camagüey radar**](http://www.insmet.cu/asp/genesis.asp?TB0=PLANTILLAS&TB1=RADARES)
+
+
+# Satellite imagery
+- - - - - - - - - - - - - - - - - - - -
+## Storm-specific imagery
+
+* **Tropical Tidbits:** [Visible / Shortwave Infrared](https://www.tropicaltidbits.com/sat/satlooper.php?region=04L&product=vis_swir) 
+
+* **Tropical Tidbits:** [Enhanced Infrared](https://www.tropicaltidbits.com/sat/satlooper.php?region=04L&product=ir) 
+
+* **Tropical Tidbits:** [Enhanced Infrared (Dvorak)](https://www.tropicaltidbits.com/sat/satlooper.php?region=04L&product=ir-dvorak)
+
+* **Tropical Tidbits:** [Water Vapor](https://www.tropicaltidbits.com/sat/satlooper.php?region=04L&product=wv-mid)
+
+* **CIMSS:** [Multiple bands](http://tropic.ssec.wisc.edu/real-time/storm.php?&basin=atlantic&sname=04L&invest=NO&zoom=4&img=1&vars=11111000000000000000000&loop=0)
+
+* **RAMMB:** [Multiple bands](http://rammb.cira.colostate.edu/products/tc_realtime/storm.asp?storm_identifier=al042024)
+
+* **Navy Research Laboratory:** [Multiple bands](https://www.nrlmry.navy.mil/tc-bin/tc_home2.cgi?YEAR=2024&MO=07&BASIN=ATL&STORM_NAME=04L.DEBBY)
+
+## Regional imagery
+
+### NOAA GOES Image Viewer
+
+* [**Enhanced infrared**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=umv&band=13&length=24)
+
+* [**Water vapor**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=umv&band=09&length=24&dim=1)
+
+* [**Visible (true color)**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=umv&band=GEOCOLOR&length=24&dim=1)
+
+### Tropical Tidbits
+
+* [**Enhanced infrared**](https://www.tropicaltidbits.com/sat/satlooper.php?region=us&product=ir)
+
+* [**Water vapor**](https://www.tropicaltidbits.com/sat/satlooper.php?region=us&product=wv_mid)
+
+* [**Visible (true color)**](https://www.tropicaltidbits.com/sat/satlooper.php?region=us&product=vis_swir)
+
+### Weather Nerds
+
+* [**Enhanced infrared**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-E&initsattype=ir&initcscheme=ir1&initimdimx=1050&initimdimy=676&initrange=47.000:-104.500:30.500:-73.750&initloop=True&initnframes=20&initlightningge=On&initlightninggw=Off&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+* [**Water vapor**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-E&initsattype=wv&initcscheme=ir1&initimdimx=1050&initimdimy=676&initrange=47.000:-104.500:30.500:-73.750&initloop=True&initnframes=20&initlightningge=On&initlightninggw=Off&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+* [**Visible**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-E&initsattype=vis&initcscheme=vis1&initimdimx=1050&initimdimy=676&initrange=47.000:-104.500:30.500:-73.750&initloop=True&initnframes=20&initlightningge=On&initlightninggw=Off&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+# Analysis graphics and data
+- - - - - - - - - - - - - - - - - - - -
+## Wind analyses
+
+* **NESDIS:** [Dvorak Fix Bulletins](https://www.ssd.noaa.gov/PS/TROP/storms/04L.html)
+
+* **NESDIS:** [Dvorak Fix History](https://www.ssd.noaa.gov/PS/TROP/DATA/2023/tdata/atl/04L.html)
+
+* **NESDIS:** [Multi-platform Surface Wind Analysis](http://www.ssd.noaa.gov/PS/TROP/mtcswa.html?storm=al042024)
+
+* **CIMSS:** [Advanced Dvorak Technique (ADT)](http://tropic.ssec.wisc.edu/real-time/adt/odt04L.html)
+
+* **CIMSS:** [Tropical Cyclone Intensity Consensus (SATCON)](http://tropic.ssec.wisc.edu/real-time/satcon/202404L.html)
+
+* **CIMSS:** [SATCON Intensity History](http://tropic.ssec.wisc.edu/real-time/satcon/archive/2023/satconhist_202404L.txt)
+
+* **EUMETSAT:** [Advanced Scatterometer Data](https://scatterometer.knmi.nl/tile_prod/)
+
+## Sea-surface Temperatures
+
+*  **NOAA OSPO:** [Sea Surface Temperature Contour Charts](https://www.ospo.noaa.gov/Products/ocean/sst/contour/index.html)  
+
+*  **Tropical Tidbits:** [Ocean Analysis](https://www.tropicaltidbits.com/analysis/ocean/)
+
+# Model guidance
+- - - - - - - - - - - - - - - - - - - -
+## Storm-specific guidance
+
+* [**Tropical Tidbits**](https://www.tropicaltidbits.com/storminfo/#04L)
+
+* [**University of Albany**](http://www.atmos.albany.edu/facstaff/tang/tcguidance/al042024/)
+
+* [**National Center for Atmospheric Research** (NCAR)](http://www.ral.ucar.edu/hurricanes/realtime/plots/northatlantic/2024/al042024/)
+
+* [**Weather Nerds**](https://www.weathernerds.org/tc_guidance/storm.html?tcid=AL04)
+
+## Regional single-model guidance
+
+* **Tropical Tidbits:** [GFS](https://www.tropicaltidbits.com/analysis/models/?model=gfs&region=catl&pkg=mslp_pcpn)
+
+* **Tropical Tidbits:** [ECMWF](https://www.tropicaltidbits.com/analysis/models/?model=ecmwf&region=catl&pkg=mslp_pcpn)
+
+* **Tropical Tidbits:** [CMC](https://www.tropicaltidbits.com/analysis/models/?model=gem&region=catl&pkg=mslp_pcpn)
+
+* **Tropical Tidbits:** [ICON](https://www.tropicaltidbits.com/analysis/models/?model=icon&region=catl&pkg=mslp_pcpn)
+
+## Regional ensemble model guidance
+
+* **Weather Nerds:** [GEFS (120 hours)](https://www.weathernerds.org/models/gefs.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=685&initrange=50.000000000000:258.000000000000:0:350.000000000000&initcx1=0&initcy1=0&initcx2=0&initcy2=0&initcross=False&initsound=False&initsoundx=1&initsoundy=1&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
+    
+* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=685&initrange=50.000000000000:258.000000000000:0:350.000000000000&initcx1=0&initcy1=0&initcx2=0&initcy2=0&initcross=False&initsound=False&initsoundx=1&initsoundy=1&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",debby,community_discussion,hurricane|storm|flood|weather|category|noaa|debby
+1ejhoey,TropicalWeather,TTA1108,1722729456,2024-08-03 23:57,1,1,Most reliable weather site?,[removed],debby,community_discussion,weather
+1ejhv95,TropicalWeather,Toes1456,1722729996,2024-08-04 00:06,0,1,Everyone be safe out there!!,[removed],debby,community_discussion,
+1ejkicg,TropicalWeather,Flaky-Gas-9174,1722738153,2024-08-04 02:22,1,1,8PM tropical Update,,debby,community_discussion,
+1ejm3bh,TropicalWeather,Mybuttyourfart,1722743325,2024-08-04 03:48,7,6,Biggest modeling bust? ,I keep reading that the models were wrong with Katrina. All had it going to the panhandle but hit New Orleans instead. What do you think were big busts? ,debby,community_discussion,
+1ejs8og,TropicalWeather,Immediate-Offer7662,1722767726,2024-08-04 10:35,1,1,TS Debby 6:30am ET (5:30am CT) Update,[removed],debby,community_discussion,debby
+1ejw8fq,TropicalWeather,HurricaneQuest,1722780843,2024-08-04 14:14,1,1,TS Debby on Total Precipital Water MIMIC-TPW ver.2 Imagery,[removed],debby,community_discussion,debby
+1ejx0rl,TropicalWeather,m1chaelgr1mes,1722783045,2024-08-04 14:50,1,1,Not the first Tropical Storm named Debbie ,[removed],debby,community_discussion,storm
+1ejyo71,TropicalWeather,petabread91,1722787346,2024-08-04 16:02,5,6,Is Zoom Earth not a good source for wind gusts/speeds?,"https://preview.redd.it/2l75x4vv6ogd1.png?width=2497&format=png&auto=webp&s=b7322486256e8714f2709439586af7183f4c52a4
+
+I'm looking at wind gusts for the GFS model on here at the current time. Absolutely no wind at all. Is Google Earth even a good source to get potential accurate wind information? I'm currently not in a rain cell so maybe that is why there is no wind but still, this model on Zoom Earth seems blown out of proportion. ",debby,community_discussion,
+1ek11j3,TropicalWeather,KingValhallaTV,1722793328,2024-08-04 17:42,1,1,Hurricane Debby to drop almost 30-inches of rain,,debby,community_discussion,hurricane|debby
+1ek1xad,TropicalWeather,[deleted],1722795541,2024-08-04 18:19,0,1,The NHC is monitoring the Lesser and Greater Antilles for potential tropical cyclone development,[deleted],debby,community_discussion,
+1ek1xv9,TropicalWeather,giantspeck,1722795583,2024-08-04 18:19,47,103,The NHC is monitoring the Caribbean Sea for potential tropical cyclone development,"# Observational data
+- - - - - - - - - - - - - - - - - - - - 
+**Last updated:** Sunday, 4 August – 2:00 PM Atlantic Standard Time (AST; 18:00 UTC)
+
+> Please note that the following information is inferred from the National Hurricane Center's Tropical Weather Outlook (TWO) graphics.  This system does not yet have a closed low-level circulation.  Thus, this disturbance does not yet have a defined ""center"" and estimates of its current position and movement may shift greatly between updates.  Once a closed low-level circulation develops, this system will likely be designated as an investigation area and observational data will be provided by the Automated Tropical Cyclone Forecast (ATCF) system.
+
+NHC TAFB                   |     |  2:00 PM AST (18:00 UTC)
+:-|:-:|:-
+**Approximate location:**  |     |  11.0°N 55.5°W ^1
+**Relative location:**     |     |  505 km (314 mi) ESE of Bridgetown, Barbados
+**Forward motion:**        |     |  WNW (290°) at 37 km/h (20 knots) ^2
+**Maximum winds:**         |     |  30 km/h (15 knots) ^3
+**Minimum pressure:**      |     |  1013 millibars (29.91 inches) ^4
+**2-day potential:**       |     |  **low** (10 percent)
+**7-day potential:**       |     |  **low** (20 percent)
+
+^1 ^- ^Estimated ^from ^the ^2:00 ^PM ^AST ^Tropical ^Weather ^Outlook ^(TWO) ^graphic.    
+^2 ^- ^Estimated ^from ^comparison ^between ^the ^8:00 ^AM ^AST ^and ^2:00 ^PM ^AST ^TWO ^graphics.    
+^3 ^- ^Estimated ^from ^available ^scatterometer ^and/or ^buoy ^data.    
+^4 ^- ^Estimated ^from ^the ^latest ^surface ^analysis ^graphic.      
+
+# Outlook discussion
+- - - - - - - - - - - - - - - - - - - -
+**Last updated:** Sunday, 4 August – 2:00 PM AST (18:00 UTC)
+
+> **Discussion by: Dr. Philippe Papin** — NHC Hurricane Specialist Unit
+
+> A tropical wave located a few hundred miles to the east of the Windward Islands continues to produce an area of showers and thunderstorms, and earlier satellite wind data showed winds of 30-35 mph just north of the wave axis. Environmental conditions appear generally favorable for some slow development of this system over the next week as the system moves quickly westward at around 20 mph, crossing the Windward Islands early this week and moving into the central and western Caribbean by the mid to latter part of this week. 
+
+
+# Official information
+- - - - - - - 
+## National Hurricane Center
+
+### Text products
+
+* [**Tropical Weather Outlook**](https://www.nhc.noaa.gov/gtwo.php?basin=atlc&fdays=7)
+
+* [**Tropical Weather Discussion**](https://www.nhc.noaa.gov/text/MIATWDAT.shtml)
+
+### Graphical products
+
+* [**Surface analysis graphic**](https://www.nhc.noaa.gov/tafb/USA_12Z.gif)
+
+* [**2-day outlook graphic**](https://www.nhc.noaa.gov/xgtwo/two_atl_2d0.png)
+
+* [**7-day outlook graphic**](https://www.nhc.noaa.gov/xgtwo/two_atl_7d0.png)
+
+
+
+# Radar imagery
+- - - - - - -
+## Barbados Weather Service
+
+* [**Eastern Caribbean radar composite**](https://www.barbadosweather.org/Composite/kidbuuComposite_Lionel_displayer2.php?Product=Reflectivity&Sector=EC_Bar&Composite=Sabre&ANISP=700&MAPP=1&PlanetOfTheApes=535906.6366549358)
+
+
+# Satellite imagery
+- - - - - - - 
+
+## Regional imagery
+
+* **CIMSS:** [Infrared](https://realearth.ssec.wisc.edu/s/T30sg0)
+
+* **CIMSS:** [Water vapor (Upper-level)](https://realearth.ssec.wisc.edu/s/330shu)
+
+* **CIMSS:** [Visible (True Color)](https://realearth.ssec.wisc.edu/s/G30sj4)
+
+
+
+# Forecast models
+- - - - - - - 
+## Dynamical models
+
+* **Tropical Tidbits:** [**GFS**](https://www.tropicaltidbits.com/analysis/models/?model=gfs&region=watl&pkg=mslp_pcpn)
+
+* **Tropical Tidbits:** [**ECMWF**](https://www.tropicaltidbits.com/analysis/models/?model=ecmwf&region=watl&pkg=mslp_pcpn)
+
+* **Tropical Tidbits:** [**CMC**](https://www.tropicaltidbits.com/analysis/models/?model=gem&region=watl&pkg=mslp_pcpn)
+
+* **Tropical Tidbits:** [**ICON**](https://www.tropicaltidbits.com/analysis/models/?model=icon&region=watl&pkg=mslp_pcpn)
+
+## Ensemble models
+
+* **Weather Nerds:** [**GEFS** (120 hours)](https://www.weathernerds.org/models/gefs.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=00&initfhour=144&initimdimx=1050&initimdimy=750&initrange=35.036496350400:268.601904761896:10.072992700750:308.994285714220&initcx1=126&initcy1=210&initcx2=577&initcy2=542&initcross=False&initsound=False&initsoundx=121&initsoundy=205&initloop=False&initoverlay=False&initlstart=000&initlend=240&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
+
+* **Weather Nerds:** [**ECENS** (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=00&initfhour=144&initimdimx=1050&initimdimy=750&initrange=35.036496350400:268.601904761896:10.072992700750:308.994285714220&initcx1=126&initcy1=210&initcx2=577&initcy2=542&initcross=False&initsound=False&initsoundx=121&initsoundy=205&initloop=False&initoverlay=False&initlstart=000&initlend=240&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
+
+## Tropical Cyclogenesis Products
+
+* **Florida State University:** [**Experimental tropical cyclone genesis graphics**](http://moe.met.fsu.edu/modelgen/)",debby,community_discussion,hurricane|weather|noaa
+1ek2j08,TropicalWeather,Euronotus,1722797049,2024-08-04 18:44,2,13,05E (Eastern Pacific),"# Latest observation
+- - - - - - - - - - - - - - - - - - - -
+**Last updated:** Sunday, 4 August — 8:00 AM Mountain Standard Time (MST; 15:00 UTC)
+
+NHC Advisory #1  |     |  8:00 AM MST (15:00 UTC)
+:-|:-:|:-
+**Current location:**   |     |  15.8°N 112.9°W
+**Relative location:**  |     |  2,080 km (1,292 mi) SW of Corpus Christi, Texas
+**Forward motion:**     |     |  Stationary
+**Maximum winds:**      |     |  55 km/h (30 knots)
+**Intensity:**          |  ▲  |  **Tropical Depression**                 
+**Minimum pressure:**   |     |  1007 millibars (29.74 inches)
+
+# Official forecast
+- - - - - - - - - - - - - - - - - - - -
+**Last updated:** Sunday, 4 August — 5:00 AM MST (12:00 UTC)
+
+Hour  | Date  | Time  |    |  Intensity  |    |  Winds  |    |  Lat  |  Long
+:-:|:-:|:-:|:-:|:-|:-:|:-:|:-:|:-:|:-:
+&nbsp;  | -  | UTC  |  MST  |  Saffir-Simpson  |    |  knots  |  km/h  |  °N  |  °W
+ **00**  |  04 Aug  |  12:00  |  5AM Sun  |  **Tropical Depression**                   |     |  30  |  55  |  15.8  |  112.9
+ **12**  |  05 Aug  |  00:00  |  5PM Sun  |  **Tropical Storm**                        |  ▲  |  35  |  65  |  15.4  |  113.0
+ **24**  |  05 Aug  |  12:00  |  5AM Mon  |  **Tropical Storm**                        |  ▲  |  40  |  75  |  14.5  |  113.4
+ **36**  |  06 Aug  |  00:00  |  5PM Mon  |  **Tropical Storm**                        |  ▲  |  45  |  85  |  13.8  |  113.4
+ **48**  |  06 Aug  |  12:00  |  5AM Tue  |  **Tropical Storm**                        |     |  45  |  85  |  14.1  |  112.8
+ **60**  |  07 Aug  |  00:00  |  5PM Tue  |    Dissipated
+
+
+# Official information
+- - - - - - - - - - - - - - - - - - - - 
+## National Hurricane Center
+
+### Advisories
+
+* [**Public advisory**](https://www.nhc.noaa.gov/text/refresh/MIATCPEP5+shtml/DDHHMM.shtml)
+
+* [**Forecast advisory**](https://www.nhc.noaa.gov/text/refresh/MIATCMEP5+shtml/DDHHMM.shtml)
+
+* [**Forecast discussion**](https://www.nhc.noaa.gov/text/refresh/MIATCDEP5+shtml/DDHHMM.shtml)
+
+### Graphics
+
+* [**Forecast graphic**](https://www.nhc.noaa.gov/refresh/graphics_ep5+shtml/DDHHMM.shtml?cone#contents)
+
+* [**Wind speed probabilities**](https://www.nhc.noaa.gov/refresh/graphics_ep5+shtml/DDHHMM.shtml?tswind120#contents)
+
+* [**Arrival time of winds**](https://www.nhc.noaa.gov/refresh/graphics_ep5+shtml/DDHHMM.shtml?mltoa34#contents)
+
+### Productos en español
+
+* [**Aviso publico**](https://www.nhc.noaa.gov/text/refresh/MIATASEP5+shtml/DDHHMM.shtml)
+
+* [**Pronóstico discusión**](https://www.nhc.noaa.gov/text/refresh/MIATDSEP5+shtml/DDHHMM.shtml)
+
+
+## Servicio Meteorológico Nacional (Mexico)
+
+* [**Inicio**](https://smn.conagua.gob.mx/es/)
+
+* [**Aviso de Ciclón Tropical en el Océano Pacífico**](https://smn.conagua.gob.mx/es/pronosticos/avisos/aviso-de-ciclon-tropical-en-el-oceano-pacifico)
+
+
+# Radar imagery
+- - - - - - - - - - - - - - - - - - - -
+## Unavailable 
+
+Radar imagery is not currently available for this system.
+
+
+# Satellite imagery
+- - - - - - - - - - - - - - - - - - - -
+## Storm-specific imagery
+
+* **Tropical Tidbits:** [Visible / Shortwave Infrared](https://www.tropicaltidbits.com/sat/satlooper.php?region=05E&product=vis-swir)
+
+* **Tropical Tidbits:** [Enhanced Infrared](https://www.tropicaltidbits.com/sat/satlooper.php?region=05E&product=ir)
+
+* **Tropical Tidbits:** [Enhanced Infrared (Dvorak)](https://www.tropicaltidbits.com/sat/satlooper.php?region=05E&product=ir-dvorak)
+
+* **Tropical Tidbits:** [Water Vapor](https://www.tropicaltidbits.com/sat/satlooper.php?region=05E&product=wv-mid)
+
+* **CIMSS:** [Multiple bands](http://tropic.ssec.wisc.edu/real-time/storm.php?&basin=eastpac&sname=05E&invest=NO&zoom=4&img=1&vars=11111000000000000000000&loop=0)
+
+* **RAMMB:** [Multiple bands](http://rammb.cira.colostate.edu/products/tc_realtime/storm.asp?storm_identifier=ep052024)
+
+* **Navy Research Laboratory:** [Multiple bands](https://www.nrlmry.navy.mil/tc-bin/tc_home2.cgi?YEAR=2024&MO=08&BASIN=EPAC&STORM_NAME=05E.FIVE)
+
+## Regional imagery
+
+### NOAA GOES Image Viewer
+
+* [**Enhanced infrared**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=tpw&band=13&length=24)
+
+* [**Water vapor**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=tpw&band=09&length=24&dim=1)
+
+* [**Visible (true color)**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=tpw&band=GEOCOLOR&length=24&dim=1)
+
+### Cooperative Institute for Meteorological Satellite Studies (CIMSS)
+
+* [**Infrared**](https://realearth.ssec.wisc.edu/s/330rMC)
+
+* [**Water vapor** (upper-level)](https://realearth.ssec.wisc.edu/s/I30rPg)
+
+* [**Visible** (true color)](https://realearth.ssec.wisc.edu/s/730rQz)
+
+### Tropical Tidbits
+
+* [**Enhanced infrared**](https://www.tropicaltidbits.com/sat/satlooper.php?region=epac&product=ir)
+
+* [**Water vapor**](https://www.tropicaltidbits.com/sat/satlooper.php?region=epac&product=wv_mid)
+
+* [**Visible (true color)**](https://www.tropicaltidbits.com/sat/satlooper.php?region=epac&product=vis_swir)
+
+### Weather Nerds
+
+* [**Enhanced infrared**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-W&initsattype=ir&initcscheme=ir1&initimdimx=1050&initimdimy=672&initrange=40.000:-155.000:0:-80.000&initloop=True&initnframes=20&initlightningge=Off&initlightninggw=On&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+* [**Water vapor**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-W&initsattype=wv&initcscheme=ir1&initimdimx=1050&initimdimy=672&initrange=40.000:-155.000:0:-80.000&initloop=True&initnframes=20&initlightningge=Off&initlightninggw=On&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+* [**Visible**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-W&initsattype=vis&initcscheme=vis1&initimdimx=1050&initimdimy=672&initrange=40.000:-155.000:0:-80.000&initloop=True&initnframes=20&initlightningge=Off&initlightninggw=On&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+# Analysis graphics and data
+- - - - - - - - - - - - - - - - - - - -
+## Wind analyses
+
+* **NESDIS:** [Dvorak Fix Bulletins](https://www.ssd.noaa.gov/PS/TROP/storms/05E.html)
+
+* **NESDIS:** [Dvorak Fix History](https://www.ssd.noaa.gov/PS/TROP/DATA/2024/tdata/epac/05E.html)
+
+* **NESDIS:** [Multi-platform Surface Wind Analysis](http://www.ssd.noaa.gov/PS/TROP/mtcswa.html?storm=ep052024)
+
+* **CIMSS:** [Advanced Dvorak Technique (ADT)](http://tropic.ssec.wisc.edu/real-time/adt/odt05E.html)
+
+* **CIMSS:** [Tropical Cyclone Intensity Consensus (SATCON)](http://tropic.ssec.wisc.edu/real-time/satcon/202405E.html)
+
+* **CIMSS:** [SATCON Intensity History](http://tropic.ssec.wisc.edu/real-time/satcon/archive/2024/satconhist_202405E.txt)
+
+* **EUMETSAT:** [Advanced Scatterometer Data](https://scatterometer.knmi.nl/tile_prod/)
+
+## Sea-surface Temperatures
+
+*  **NOAA OSPO:** [Sea Surface Temperature Contour Charts](https://www.ospo.noaa.gov/Products/ocean/sst/contour/index.html)
+
+*  **Tropical Tidbits:** [Ocean Analysis](https://www.tropicaltidbits.com/analysis/ocean/)
+
+# Model guidance
+- - - - - - - - - - - - - - - - - - - -
+## Storm-specific guidance
+
+* [**Tropical Tidbits**](https://www.tropicaltidbits.com/storminfo/#05E)
+
+* [**University of Albany**](http://www.atmos.albany.edu/facstaff/tang/tcguidance/ep052024/)
+
+* [**National Center for Atmospheric Research** (NCAR)](http://www.ral.ucar.edu/hurricanes/realtime/plots/northeastpacific/2024/ep052024/)
+
+* [**Weather Nerds**](https://www.weathernerds.org/tc_guidance/storm.html?tcid=EP05)
+
+## Regional single-model guidance
+
+*  **Tropical Tidbits:** [GFS](https://www.tropicaltidbits.com/analysis/models/?model=gfs&region=epac&pkg=mslp_pcpn)
+
+*  **Tropical Tidbits:** [ECMWF](https://www.tropicaltidbits.com/analysis/models/?model=ecmwf&region=epac&pkg=mslp_pcpn)
+
+*  **Tropical Tidbits:** [CMC](https://www.tropicaltidbits.com/analysis/models/?model=gem&region=epac&pkg=mslp_pcpn)
+
+*  **Tropical Tidbits:** [ICON](https://www.tropicaltidbits.com/analysis/models/?model=icon&region=epac&pkg=mslp_pcpn)
+
+## Regional ensemble model guidance
+
+* **Weather Nerds:** [GEFS (120 hours)](https://www.weathernerds.org/models/gefs.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=06&initfhour=120&initimdimx=1050&initimdimy=458&initrange=20.428571428600:236.028571428520:5.785714285720:276.314285714230&initcx1=542&initcy1=279&initcx2=1002&initcy2=474&initcross=False&initsound=False&initsoundx=537&initsoundy=274&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
+    
+* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=06&initfhour=120&initimdimx=1050&initimdimy=458&initrange=20.428571428600:236.028571428520:5.785714285720:276.314285714230&initcx1=542&initcy1=279&initcx2=1002&initcy2=474&initcross=False&initsound=False&initsoundx=537&initsoundy=274&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",debby,community_discussion,hurricane|storm|weather|noaa
+1ek36gb,TropicalWeather,set-monkey,1722798635,2024-08-04 19:10,0,1,"Florida man ❤️s little Debby cooling down dreaded & unusual south wind, responsible for 2023 record high sea surface temps.
+Debby dropping wonderful, ice-cold rain from 20k ft in the atmosphere, keeping ocean temperature normal is like natural A/C
+SAD, drought plagued California can't buy a drop.",,debby,community_discussion,debby
+1ek3oou,TropicalWeather,[deleted],1722799891,2024-08-04 19:31,0,1,"Hello, Little Debby!",[removed],debby,community_discussion,debby
+1ek6vsk,TropicalWeather,giantspeck,1722808052,2024-08-04 21:47,30,113,"Tropical Tidbits for Sunday, 4 August: Debby to Hit Florida as a Hurricane; High Flooding Risk for Southeast U.S.",,debby,community_discussion,hurricane|debby
+1ekaaq4,TropicalWeather,Christophertravis,1722817440,2024-08-05 00:24,2,1,‘Broken’ truck lights turn on during storm,,debby,community_discussion,storm
+1ekdh0t,TropicalWeather,Content-Swimmer2325,1722827133,2024-08-05 03:05,27,229,"#Debby is now a #hurricane - the 2nd of the 2024 Atlantic hurricane season (Beryl was 1st). On average, the 2nd Atlantic hurricane forms on 26 August.",,debby,community_discussion,hurricane|debby
+1ekdhg8,TropicalWeather,feetyyeer,1722827171,2024-08-05 03:06,1,1,A little humor to break the stress,,debby,community_discussion,
+1ekdmng,TropicalWeather,Euronotus,1722827627,2024-08-05 03:13,2,14,Emilia (05E — Eastern Pacific),"# Latest observation
+- - - - - - - - - - - - - - - - - - - -
+**Last updated:** Sunday, 4 August — 8:00 PM Mountain Standard Time (MST; 03:00 UTC)
+
+NHC Advisory #3  |     |  8:00 PM MST (03:00 UTC)
+:-|:-:|:-
+**Current location:**   |     |  15.0°N 113.2°W
+**Relative location:**  |     |  939 km (583 mi) SSW of Cabo San Lucas, Baja California Sur (Mexico)
+**Forward motion:**     |     |  SSW (200°) at 7 km/h (4 knots)
+**Maximum winds:**      |  ▲  |  65 km/h (35 knots)
+**Intensity:**          |  ▲  |  **Tropical Storm**                      
+**Minimum pressure:**   |  ▼  |  1003 millibars (29.62 inches)
+
+# Official forecast
+- - - - - - - - - - - - - - - - - - - -
+**Last updated:** Sunday, 4 August — 5:00 PM MST (00:00 UTC)
+
+Hour  | Date  | Time  |    |  Intensity  |    |  Winds  |    |  Lat  |  Long
+:-:|:-:|:-:|:-:|:-|:-:|:-:|:-:|:-:|:-:
+&nbsp;  | -  | UTC  |  MST  |  Saffir-Simpson  |    |  knots  |  km/h  |  °N  |  °W
+ **00**  |  05 Aug  |  00:00  |  5PM Sun  |  **Tropical Storm**                        |     |  35  |   65  |  15.0  |  113.2
+ **12**  |  05 Aug  |  12:00  |  5AM Mon  |  **Tropical Storm**                        |  ▲  |  40  |   75  |  14.2  |  113.4
+ **24**  |  06 Aug  |  00:00  |  5PM Mon  |  **Tropical Storm**                        |  ▲  |  50  |   95  |  13.8  |  113.5
+ **36**  |  06 Aug  |  12:00  |  5AM Tue  |  **Tropical Storm**                        |  ▲  |  55  |  100  |  14.3  |  113.8
+ **48**  |  07 Aug  |  00:00  |  5PM Tue  |  **Tropical Storm**                        |     |  55  |  100  |  15.6  |  114.8
+ **60**  |  07 Aug  |  12:00  |  5AM Wed  |    Dissipated
+
+# Official information
+- - - - - - - - - - - - - - - - - - - - 
+## National Hurricane Center
+
+### Advisories
+
+* [**Public advisory**](https://www.nhc.noaa.gov/text/refresh/MIATCPEP5+shtml/DDHHMM.shtml)
+
+* [**Forecast advisory**](https://www.nhc.noaa.gov/text/refresh/MIATCMEP5+shtml/DDHHMM.shtml)
+
+* [**Forecast discussion**](https://www.nhc.noaa.gov/text/refresh/MIATCDEP5+shtml/DDHHMM.shtml)
+
+### Graphics
+
+* [**Forecast graphic**](https://www.nhc.noaa.gov/refresh/graphics_ep5+shtml/DDHHMM.shtml?cone#contents)
+
+* [**Wind speed probabilities**](https://www.nhc.noaa.gov/refresh/graphics_ep5+shtml/DDHHMM.shtml?tswind120#contents)
+
+* [**Arrival time of winds**](https://www.nhc.noaa.gov/refresh/graphics_ep5+shtml/DDHHMM.shtml?mltoa34#contents)
+
+### Productos en español
+
+* [**Aviso publico**](https://www.nhc.noaa.gov/text/refresh/MIATASEP5+shtml/DDHHMM.shtml)
+
+* [**Pronóstico discusión**](https://www.nhc.noaa.gov/text/refresh/MIATDSEP5+shtml/DDHHMM.shtml)
+
+
+## Servicio Meteorológico Nacional (Mexico)
+
+* [**Inicio**](https://smn.conagua.gob.mx/es/)
+
+* [**Aviso de Ciclón Tropical en el Océano Pacífico**](https://smn.conagua.gob.mx/es/pronosticos/avisos/aviso-de-ciclon-tropical-en-el-oceano-pacifico)
+
+
+# Radar imagery
+- - - - - - - - - - - - - - - - - - - -
+## Unavailable 
+
+Radar imagery is not currently available for this system.
+
+
+# Satellite imagery
+- - - - - - - - - - - - - - - - - - - -
+## Storm-specific imagery
+
+* **Tropical Tidbits:** [Visible / Shortwave Infrared](https://www.tropicaltidbits.com/sat/satlooper.php?region=05E&product=vis-swir)
+
+* **Tropical Tidbits:** [Enhanced Infrared](https://www.tropicaltidbits.com/sat/satlooper.php?region=05E&product=ir)
+
+* **Tropical Tidbits:** [Enhanced Infrared (Dvorak)](https://www.tropicaltidbits.com/sat/satlooper.php?region=05E&product=ir-dvorak)
+
+* **Tropical Tidbits:** [Water Vapor](https://www.tropicaltidbits.com/sat/satlooper.php?region=05E&product=wv-mid)
+
+* **CIMSS:** [Multiple bands](http://tropic.ssec.wisc.edu/real-time/storm.php?&basin=eastpac&sname=05E&invest=NO&zoom=4&img=1&vars=11111000000000000000000&loop=0)
+
+* **RAMMB:** [Multiple bands](http://rammb.cira.colostate.edu/products/tc_realtime/storm.asp?storm_identifier=ep052024)
+
+* **Navy Research Laboratory:** [Multiple bands](https://www.nrlmry.navy.mil/tc-bin/tc_home2.cgi?YEAR=2024&MO=08&BASIN=EPAC&STORM_NAME=05E.EMILIA)
+
+## Regional imagery
+
+### NOAA GOES Image Viewer
+
+* [**Enhanced infrared**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=tpw&band=13&length=24)
+
+* [**Water vapor**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=tpw&band=09&length=24&dim=1)
+
+* [**Visible (true color)**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=tpw&band=GEOCOLOR&length=24&dim=1)
+
+### Cooperative Institute for Meteorological Satellite Studies (CIMSS)
+
+* [**Infrared**](https://realearth.ssec.wisc.edu/s/330rMC)
+
+* [**Water vapor** (upper-level)](https://realearth.ssec.wisc.edu/s/I30rPg)
+
+* [**Visible** (true color)](https://realearth.ssec.wisc.edu/s/730rQz)
+
+### Tropical Tidbits
+
+* [**Enhanced infrared**](https://www.tropicaltidbits.com/sat/satlooper.php?region=epac&product=ir)
+
+* [**Water vapor**](https://www.tropicaltidbits.com/sat/satlooper.php?region=epac&product=wv_mid)
+
+* [**Visible (true color)**](https://www.tropicaltidbits.com/sat/satlooper.php?region=epac&product=vis_swir)
+
+### Weather Nerds
+
+* [**Enhanced infrared**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-W&initsattype=ir&initcscheme=ir1&initimdimx=1050&initimdimy=672&initrange=40.000:-155.000:0:-80.000&initloop=True&initnframes=20&initlightningge=Off&initlightninggw=On&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+* [**Water vapor**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-W&initsattype=wv&initcscheme=ir1&initimdimx=1050&initimdimy=672&initrange=40.000:-155.000:0:-80.000&initloop=True&initnframes=20&initlightningge=Off&initlightninggw=On&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+* [**Visible**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-W&initsattype=vis&initcscheme=vis1&initimdimx=1050&initimdimy=672&initrange=40.000:-155.000:0:-80.000&initloop=True&initnframes=20&initlightningge=Off&initlightninggw=On&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+# Analysis graphics and data
+- - - - - - - - - - - - - - - - - - - -
+## Wind analyses
+
+* **NESDIS:** [Dvorak Fix Bulletins](https://www.ssd.noaa.gov/PS/TROP/storms/05E.html)
+
+* **NESDIS:** [Dvorak Fix History](https://www.ssd.noaa.gov/PS/TROP/DATA/2024/tdata/epac/05E.html)
+
+* **NESDIS:** [Multi-platform Surface Wind Analysis](http://www.ssd.noaa.gov/PS/TROP/mtcswa.html?storm=ep052024)
+
+* **CIMSS:** [Advanced Dvorak Technique (ADT)](http://tropic.ssec.wisc.edu/real-time/adt/odt05E.html)
+
+* **CIMSS:** [Tropical Cyclone Intensity Consensus (SATCON)](http://tropic.ssec.wisc.edu/real-time/satcon/202405E.html)
+
+* **CIMSS:** [SATCON Intensity History](http://tropic.ssec.wisc.edu/real-time/satcon/archive/2024/satconhist_202405E.txt)
+
+* **EUMETSAT:** [Advanced Scatterometer Data](https://scatterometer.knmi.nl/tile_prod/)
+
+## Sea-surface Temperatures
+
+*  **NOAA OSPO:** [Sea Surface Temperature Contour Charts](https://www.ospo.noaa.gov/Products/ocean/sst/contour/index.html)
+
+*  **Tropical Tidbits:** [Ocean Analysis](https://www.tropicaltidbits.com/analysis/ocean/)
+
+# Model guidance
+- - - - - - - - - - - - - - - - - - - -
+## Storm-specific guidance
+
+* [**Tropical Tidbits**](https://www.tropicaltidbits.com/storminfo/#05E)
+
+* [**University of Albany**](http://www.atmos.albany.edu/facstaff/tang/tcguidance/ep052024/)
+
+* [**National Center for Atmospheric Research** (NCAR)](http://www.ral.ucar.edu/hurricanes/realtime/plots/northeastpacific/2024/ep052024/)
+
+* [**Weather Nerds**](https://www.weathernerds.org/tc_guidance/storm.html?tcid=EP05)
+
+## Regional single-model guidance
+
+*  **Tropical Tidbits:** [GFS](https://www.tropicaltidbits.com/analysis/models/?model=gfs&region=epac&pkg=mslp_pcpn)
+
+*  **Tropical Tidbits:** [ECMWF](https://www.tropicaltidbits.com/analysis/models/?model=ecmwf&region=epac&pkg=mslp_pcpn)
+
+*  **Tropical Tidbits:** [CMC](https://www.tropicaltidbits.com/analysis/models/?model=gem&region=epac&pkg=mslp_pcpn)
+
+*  **Tropical Tidbits:** [ICON](https://www.tropicaltidbits.com/analysis/models/?model=icon&region=epac&pkg=mslp_pcpn)
+
+## Regional ensemble model guidance
+
+* **Weather Nerds:** [GEFS (120 hours)](https://www.weathernerds.org/models/gefs.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=06&initfhour=120&initimdimx=1050&initimdimy=458&initrange=20.428571428600:236.028571428520:5.785714285720:276.314285714230&initcx1=542&initcy1=279&initcx2=1002&initcy2=474&initcross=False&initsound=False&initsoundx=537&initsoundy=274&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
+    
+* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=06&initfhour=120&initimdimx=1050&initimdimy=458&initrange=20.428571428600:236.028571428520:5.785714285720:276.314285714230&initcx1=542&initcy1=279&initcx2=1002&initcy2=474&initcross=False&initsound=False&initsoundx=537&initsoundy=274&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",debby,community_discussion,hurricane|storm|weather|noaa
+1ekgz2y,TropicalWeather,Allfendis,1722839513,2024-08-05 06:31,1,1,Why is this storm swirling in weird places? ,[removed],debby,community_discussion,storm
+1ekjw3j,TropicalWeather,Euronotus,1722851744,2024-08-05 09:55,22,26,Global Tropical Outlook & Discussion: 5-11 August 2024,"# Active cyclones
+- - - - - - - - - - - - - - - - - - - -
+
+## Northern Atlantic
+
+[**Debby (04L)**](https://redd.it/1ejftpt)
+
+## Eastern Pacific
+
+[**Carlotta (03E)**](https://redd.it/1eh2b36)
+
+[**Daniel (04E)**](https://redd.it/1ej7e76)
+
+[**Emilia (05E)**](https://redd.it/1ekdmng)
+
+
+# Active disturbances
+- - - - - - - - - - - - - - - - - - - -
+
+## Northern Atlantic
+
+[**Caribbean Sea disturbance**](https://redd.it/1ek1xv9)
+
+
+## Eastern Pacific
+
+[**Disturbance to the south of Mexico (Invest 96E)**](https://redd.it/1ein1he)
+
+
+
+# Satellite imagery
+- - - - - - - - - - - - - - - - - - - - - - 
+## Regional imagery
+
+### Infrared imagery
+
+* [**Western Pacific**](https://realearth.ssec.wisc.edu/s/H30rsG)
+
+* [**Eastern Pacific**](https://www.tropicaltidbits.com/sat/satlooper.php?region=epac&product=ir) 
+
+* [**Northern Atlantic**](https://www.tropicaltidbits.com/sat/satlooper.php?region=atl&product=ir)
+
+* [**Northern Indian** (Arabian Sea)](https://realearth.ssec.wisc.edu/s/u30qOZ)
+
+* [**Northern Indian** (Bay of Bengal)](https://realearth.ssec.wisc.edu/s/E30qQQ)
+
+* [**Southwestern Indian**](https://realearth.ssec.wisc.edu/s/q30qyl)
+
+* [**Southeastern Indian**](https://realearth.ssec.wisc.edu/s/G30r2f)
+
+# Model guidance
+- - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+## Regional guidance (GFS)
+
+* [**Western Pacific**](https://www.tropicaltidbits.com/analysis/models/?model=gfs&region=wpac&pkg=mslp_pcpn_frzn)
+
+* [**Eastern Pacific**](https://www.tropicaltidbits.com/analysis/models/?model=gfs&region=epac&pkg=mslp_pcpn_frzn)
+
+* [**Northern Atlantic**](https://www.tropicaltidbits.com/analysis/models/?model=gfs&region=atl&pkg=mslp_pcpn_frzn)
+
+* [**Northern Indian**](https://www.tropicaltidbits.com/analysis/models/?model=gfs&region=india&pkg=mslp_pcpn_frzn)
+
+* [**Southern Indian**](https://www.tropicaltidbits.com/analysis/models/?model=gfs&region=india&pkg=mslp_pcpn_frzn)
+
+
+# Information sources
+- - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+## Regional Specialized Meteorological Centers (RSMC)
+
+* [**National Hurricane Center** (United States)](https://www.nhc.noaa.gov/)
+
+* [**Japan Meteorological Agency**](https://www.jma.go.jp/bosai/map.html)
+
+* [**India Meteorological Department**](https://rsmcnewdelhi.imd.gov.in/)
+
+## Other sources
+
+* [**Joint Typhoon Warning Center** (United States)](https://www.metoc.navy.mil/jtwc/jtwc.html)
+
+
+# Global outlooks
+- - - - - - - - - - - - - - - - - - - - - - - - - - - 
+
+## Climate Prediction Center
+
+*  [**Global Tropics Hazards Outlook**](https://www.cpc.ncep.noaa.gov/products/precip/CWlink/ghazards/index.php)",debby,community_discussion,hurricane|noaa|debby
+1ekosph,TropicalWeather,set-monkey,1722867100,2024-08-05 14:11,0,1,"Do we really need all the ""storm porn""? ""Twisters"" glamourizing storm chasing makes gullible people think they'll be next Jim Cantore. No concern for unnecessary risk speeding on crowded roads w overloaded, unstable rigs, while distracted. Looking at the sky, instead of where they're going.",[removed],debby,community_discussion,storm
+1ekubuq,TropicalWeather,giantspeck,1722880419,2024-08-05 17:53,3,73,"Tropical Tidbits for Monday, 5 August: Debby a Severe Flooding Threat to Southeast U.S.",,debby,community_discussion,debby
+1ekuuww,TropicalWeather,[deleted],1722881658,2024-08-05 18:14,0,1,Fabio (06E — Eastern Pacific),[deleted],debby,community_discussion,
+1ekuvdm,TropicalWeather,Euronotus,1722881691,2024-08-05 18:14,1,6,Fabio (06E — Eastern Pacific),"# Latest observation
+- - - - - - - - - - - - - - - - - - - -
+**Last updated:** Monday, 5 August — 8:00 AM Mountain Standard Time (MST; 15:00 UTC)
+
+NHC Advisory #1  |     |  8:00 AM MST (15:00 UTC)
+:-|:-:|:-
+**Current location:**   |     |  14.8°N 106.9°W
+**Relative location:**  |     |  545 km (338 mi) SSW of Manzanillo, Colima (Mexico)
+**Forward motion:**     |     |  NW (310°) at 19 km/h (10 knots)
+**Maximum winds:**      |  ▲  |  65 km/h (35 knots)
+**Intensity:**          |  ▲  |  **Tropical Storm**                      
+**Minimum pressure:**   |  ▼  |  1006 millibars (29.71 inches)
+
+# Official forecast
+- - - - - - - - - - - - - - - - - - - -
+**Last updated:** Monday, 5 August — 5:00 AM MST (12:00 UTC)
+
+Hour  | Date  | Time  |    |  Intensity  |    |  Winds  |    |  Lat  |  Long
+:-:|:-:|:-:|:-:|:-|:-:|:-:|:-:|:-:|:-:
+&nbsp;  | -  | UTC  |  MST  |  Saffir-Simpson  |    |  knots  |  km/h  |  °N  |  °W
+ **00**  |  05 Aug  |  12:00  |  5AM Mon  |  **Tropical Storm**                        |     |  35  |  65  |  14.8  |  106.9
+ **12**  |  06 Aug  |  00:00  |  5PM Mon  |  **Tropical Storm**                        |  ▲  |  40  |  75  |  16.3  |  109.0
+ **24**  |  06 Aug  |  12:00  |  5AM Tue  |  **Tropical Storm**                        |     |  40  |  75  |  17.6  |  112.2
+ **36**  |  07 Aug  |  00:00  |  5PM Tue  |  **Tropical Storm**                        |  ▼  |  35  |  65  |  18.2  |  115.5
+ **48**  |  07 Aug  |  12:00  |  5AM Wed  |  **Tropical Depression**                   |  ▼  |  30  |  55  |  18.0  |  118.0
+ **60**  |  08 Aug  |  00:00  |  5PM Thu  |    Dissipated
+
+# Official information
+- - - - - - - - - - - - - - - - - - - - 
+## National Hurricane Center
+
+### Advisories
+
+* [**Public advisory**](https://www.nhc.noaa.gov/text/refresh/MIATCPEP1+shtml/DDHHMM.shtml)
+
+* [**Forecast advisory**](https://www.nhc.noaa.gov/text/refresh/MIATCMEP1+shtml/DDHHMM.shtml)
+
+* [**Forecast discussion**](https://www.nhc.noaa.gov/text/refresh/MIATCDEP1+shtml/DDHHMM.shtml)
+
+### Graphics
+
+* [**Forecast graphic**](https://www.nhc.noaa.gov/refresh/graphics_ep1+shtml/DDHHMM.shtml?cone#contents)
+
+* [**Wind speed probabilities**](https://www.nhc.noaa.gov/refresh/graphics_ep1+shtml/DDHHMM.shtml?tswind120#contents)
+
+* [**Arrival time of winds**](https://www.nhc.noaa.gov/refresh/graphics_ep1+shtml/DDHHMM.shtml?mltoa34#contents)
+
+### Productos en español
+
+* [**Aviso publico**](https://www.nhc.noaa.gov/text/refresh/MIATASEP1+shtml/DDHHMM.shtml)
+
+* [**Pronóstico discusión**](https://www.nhc.noaa.gov/text/refresh/MIATDSEP1+shtml/DDHHMM.shtml)
+
+
+## Servicio Meteorológico Nacional (Mexico)
+
+* [**Inicio**](https://smn.conagua.gob.mx/es/)
+
+* [**Aviso de Ciclón Tropical en el Océano Pacífico**](https://smn.conagua.gob.mx/es/pronosticos/avisos/aviso-de-ciclon-tropical-en-el-oceano-pacifico)
+
+
+# Radar imagery
+- - - - - - - - - - - - - - - - - - - -
+## Unavailable 
+
+Radar imagery is not currently available for this system.
+
+
+# Satellite imagery
+- - - - - - - - - - - - - - - - - - - -
+## Storm-specific imagery
+
+* **Tropical Tidbits:** [Visible / Shortwave Infrared](https://www.tropicaltidbits.com/sat/satlooper.php?region=06E&product=vis-swir)
+
+* **Tropical Tidbits:** [Enhanced Infrared](https://www.tropicaltidbits.com/sat/satlooper.php?region=06E&product=ir)
+
+* **Tropical Tidbits:** [Enhanced Infrared (Dvorak)](https://www.tropicaltidbits.com/sat/satlooper.php?region=06E&product=ir-dvorak)
+
+* **Tropical Tidbits:** [Water Vapor](https://www.tropicaltidbits.com/sat/satlooper.php?region=06E&product=wv-mid)
+
+* **CIMSS:** [Multiple bands](http://tropic.ssec.wisc.edu/real-time/storm.php?&basin=eastpac&sname=06E&invest=NO&zoom=4&img=1&vars=11111000000000000000000&loop=0)
+
+* **RAMMB:** [Multiple bands](http://rammb.cira.colostate.edu/products/tc_realtime/storm.asp?storm_identifier=ep062024)
+
+* **Navy Research Laboratory:** [Multiple bands](https://www.nrlmry.navy.mil/tc-bin/tc_home2.cgi?YEAR=2024&MO=08&BASIN=EPAC&STORM_NAME=06E.FABIO)
+
+## Regional imagery
+
+### NOAA GOES Image Viewer
+
+* [**Enhanced infrared**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=tpw&band=13&length=24)
+
+* [**Water vapor**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=tpw&band=09&length=24&dim=1)
+
+* [**Visible (true color)**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=tpw&band=GEOCOLOR&length=24&dim=1)
+
+### Cooperative Institute for Meteorological Satellite Studies (CIMSS)
+
+* [**Infrared**](https://realearth.ssec.wisc.edu/s/330rMC)
+
+* [**Water vapor** (upper-level)](https://realearth.ssec.wisc.edu/s/I30rPg)
+
+* [**Visible** (true color)](https://realearth.ssec.wisc.edu/s/730rQz)
+
+### Tropical Tidbits
+
+* [**Enhanced infrared**](https://www.tropicaltidbits.com/sat/satlooper.php?region=epac&product=ir)
+
+* [**Water vapor**](https://www.tropicaltidbits.com/sat/satlooper.php?region=epac&product=wv_mid)
+
+* [**Visible (true color)**](https://www.tropicaltidbits.com/sat/satlooper.php?region=epac&product=vis_swir)
+
+### Weather Nerds
+
+* [**Enhanced infrared**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-W&initsattype=ir&initcscheme=ir1&initimdimx=1050&initimdimy=672&initrange=40.000:-155.000:0:-80.000&initloop=True&initnframes=20&initlightningge=Off&initlightninggw=On&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+* [**Water vapor**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-W&initsattype=wv&initcscheme=ir1&initimdimx=1050&initimdimy=672&initrange=40.000:-155.000:0:-80.000&initloop=True&initnframes=20&initlightningge=Off&initlightninggw=On&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+* [**Visible**](https://www.weathernerds.org/satellite/?initsatsrc=On&initsatname=GOES-W&initsattype=vis&initcscheme=vis1&initimdimx=1050&initimdimy=672&initrange=40.000:-155.000:0:-80.000&initloop=True&initnframes=20&initlightningge=Off&initlightninggw=On&initltngfed=Off&initltngtoe=Off&initinterstates=On&initwarnings=On&initlatlon=Off&initascatb=Off&initascatc=Off&initascatambb=Off&initascatambc=Off&initsst=Off&initecens=Off&initgefs=Off)
+
+# Analysis graphics and data
+- - - - - - - - - - - - - - - - - - - -
+## Wind analyses
+
+* **NESDIS:** [Dvorak Fix Bulletins](https://www.ssd.noaa.gov/PS/TROP/storms/06E.html)
+
+* **NESDIS:** [Dvorak Fix History](https://www.ssd.noaa.gov/PS/TROP/DATA/2024/tdata/epac/06E.html)
+
+* **NESDIS:** [Multi-platform Surface Wind Analysis](http://www.ssd.noaa.gov/PS/TROP/mtcswa.html?storm=ep062024)
+
+* **CIMSS:** [Advanced Dvorak Technique (ADT)](http://tropic.ssec.wisc.edu/real-time/adt/odt06E.html)
+
+* **CIMSS:** [Tropical Cyclone Intensity Consensus (SATCON)](http://tropic.ssec.wisc.edu/real-time/satcon/202406E.html)
+
+* **CIMSS:** [SATCON Intensity History](http://tropic.ssec.wisc.edu/real-time/satcon/archive/2024/satconhist_202406E.txt)
+
+* **EUMETSAT:** [Advanced Scatterometer Data](https://scatterometer.knmi.nl/tile_prod/)
+
+## Sea-surface Temperatures
+
+*  **NOAA OSPO:** [Sea Surface Temperature Contour Charts](https://www.ospo.noaa.gov/Products/ocean/sst/contour/index.html)
+
+*  **Tropical Tidbits:** [Ocean Analysis](https://www.tropicaltidbits.com/analysis/ocean/)
+
+# Model guidance
+- - - - - - - - - - - - - - - - - - - -
+## Storm-specific guidance
+
+* [**Tropical Tidbits**](https://www.tropicaltidbits.com/storminfo/#06E)
+
+* [**University of Albany**](http://www.atmos.albany.edu/facstaff/tang/tcguidance/ep062024/)
+
+* [**National Center for Atmospheric Research** (NCAR)](http://www.ral.ucar.edu/hurricanes/realtime/plots/northeastpacific/2024/ep062024/)
+
+* [**Weather Nerds**](https://www.weathernerds.org/tc_guidance/storm.html?tcid=EP06)
+
+## Regional single-model guidance
+
+*  **Tropical Tidbits:** [GFS](https://www.tropicaltidbits.com/analysis/models/?model=gfs&region=epac&pkg=mslp_pcpn)
+
+*  **Tropical Tidbits:** [ECMWF](https://www.tropicaltidbits.com/analysis/models/?model=ecmwf&region=epac&pkg=mslp_pcpn)
+
+*  **Tropical Tidbits:** [CMC](https://www.tropicaltidbits.com/analysis/models/?model=gem&region=epac&pkg=mslp_pcpn)
+
+*  **Tropical Tidbits:** [ICON](https://www.tropicaltidbits.com/analysis/models/?model=icon&region=epac&pkg=mslp_pcpn)
+
+## Regional ensemble model guidance
+
+* **Weather Nerds:** [GEFS (120 hours)](https://www.weathernerds.org/models/gefs.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=06&initfhour=120&initimdimx=1050&initimdimy=458&initrange=20.428571428600:236.028571428520:5.785714285720:276.314285714230&initcx1=542&initcy1=279&initcx2=1002&initcy2=474&initcross=False&initsound=False&initsoundx=537&initsoundy=274&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
+    
+* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=06&initfhour=120&initimdimx=1050&initimdimy=458&initrange=20.428571428600:236.028571428520:5.785714285720:276.314285714230&initcx1=542&initcy1=279&initcx2=1002&initcy2=474&initcross=False&initsound=False&initsoundx=537&initsoundy=274&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",debby,community_discussion,hurricane|storm|weather|noaa
+1ekvb0o,TropicalWeather,Due_Parfait8227,1722882734,2024-08-05 18:32,1,1,Tropical storm Debby/ St. Pete beach,[removed],debby,community_discussion,storm|debby
+1ekvvez,TropicalWeather,kmzview,1722884077,2024-08-05 18:54,33,135,What is happening in the eastern pacific? Is this typical?,,debby,community_discussion,
+1el2spr,TropicalWeather,Content-Swimmer2325,1722901051,2024-08-05 23:37,16,153,"The eastern North Pacific currently has four named storms (>=39 mph) simultaneously: Carlotta, Daniel, Emilia and Fabio. This is the first time since August 1974 that the eastern North Pacific has had four named storms simultaneously.",,debby,community_discussion,

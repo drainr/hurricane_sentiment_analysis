@@ -1,0 +1,5 @@
+Comments,NEG,NEU,POS,Compound,Sentiment
+What time do you go on air?,0.0,1.0,0.0,0.0,NEU
+Denis Phillips we evacuated to Jacksonville do you think we'll be ok!,0.0,0.815,0.185,0.3595,POS
+his family is staying in jacksonville so it must be safe enough lol,0.0,0.659,0.341,0.6908,POS
+"wow, i guess that is a good sign ",0.0,0.374,0.626,0.7717,POS

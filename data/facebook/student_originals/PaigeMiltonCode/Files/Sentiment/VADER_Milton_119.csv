@@ -1,0 +1,16 @@
+Comments,NEG,NEU,POS,Compound,Sentiment
+Hi Denis I live in Colorado but have family in Gulfport Florida. I really appreciated your coverage during the last few weeks!!!,0.0,0.767,0.233,0.776,POS
+Praying for Florida ,0.0,0.444,0.556,0.3612,POS
+Any indication if these warnings are just radar indicated or a visual of a tornado on the ground?,0.128,0.872,0.0,-0.296,NEG
+maybe both. We had some here near Orlando during Helene. The clouds were favorite for a tornado any second. Sometimes it’s on the ground sometimes it’s close to being on the ground. Unfortunately take shelter and wait it out. I’m so sorry.,0.092,0.842,0.066,-0.0364,NEU
+"thanks, not my 1st hurricane! Went through Andrew! We're listening to what's going on but it would be nice to know if a tornado touched down and where!",0.0,0.793,0.207,0.7598,POS
+ thanks I know that! Was checking on if a tornado was seen on the ground! Sorry for asking,0.069,0.745,0.185,0.4912,POS
+oh gosh. I’m sorry. You should never apologize for asking a question in a time like this ,0.152,0.702,0.146,0.2273,POS
+ they said there was debris on radar,0.0,1.0,0.0,0.0,NEU
+ Do you even understand what a hurricane warning is?,0.255,0.745,0.0,-0.34,NEG
+yes I know what the difference is I wanted to know if the tornado warning was a detection on radar or a visual as I'm in the middle of it!,0.082,0.817,0.102,0.1511,POS
+That's a fair question! Best to take cover either way though.,0.0,0.541,0.459,0.7777,POS
+" "" watch"" means potential ""warning"" one has been spotted",0.0,1.0,0.0,0.0,NEU
+I know the difference! Reread my question,0.0,1.0,0.0,0.0,NEU
+" there's a big difference between one being spotted on radar (which may not have actually ever touched ground) and one that has actually touched ground and been reported. Both situations fall under ""warning"".",0.0,1.0,0.0,0.0,NEU
+Not drinking the KOOL AIDE anymore!,0.0,1.0,0.0,0.0,NEU

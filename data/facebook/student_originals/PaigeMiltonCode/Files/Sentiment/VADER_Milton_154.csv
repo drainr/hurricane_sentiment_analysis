@@ -1,0 +1,11 @@
+Comments,NEG,NEU,POS,Compound,Sentiment
+"Denis Phillips could you tell us what direction the tornados are heading? Based on the last few images you shared they look like they are headed North, North West - is that right?",0.0,0.851,0.149,0.644,POS
+Seeing A LOT of tornado on the east coast,0.0,1.0,0.0,0.0,NEU
+"Yes, we have tornado’s west of us.",0.0,0.69,0.31,0.4019,POS
+I don’t understand the weather pattern with a tornadoes on the East Coast. This is crazy. My family is both west and east those on the west went to safe grounds. The East Coast is buckling down.,0.063,0.862,0.076,0.128,POS
+Heard it lowered and is now a Cat 3 ,0.2,0.8,0.0,-0.128,NEG
+Stay safe everyone,0.0,0.408,0.592,0.4404,POS
+What’s up with COLD FRONTDenis Phillips,0.0,1.0,0.0,0.0,NEU
+Are you still in Tampa or have you moved to New York near your son? I'm concerned,0.0,1.0,0.0,0.0,NEU
+"I’ve moved, Elizabeth - coincidentally, the weekend before the last hurricane, H. Helene. But I’m very worried about my friends who are still in the area. And Steven is down there now on vacation. He’s in a safe place and with a friend, but still. . . Thank you for checking in. ",0.053,0.691,0.256,0.9233,POS
+Hoping for the best for you friends and mine! I know people who owe condos in Tampa and St. Petersburg and Fort Lauderdale. They aren't there now but their condos were soaked by a recent hurricane. Scary. I'm glad you are no longer there!,0.131,0.664,0.205,0.465,POS

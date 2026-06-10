@@ -1,0 +1,5 @@
+Comments,NEG,NEU,POS,Compound,Sentiment
+"shouldn’t those Tornado Warnings be in effect until Thursday afternoon,,, not Wednesday ??
+Milton didn’t reach land until late Wednesday afternoon",0.113,0.838,0.049,-0.3527,NEG
+Any tornadoes predicted for Hillsborough? Thanks in advance.,0.0,0.707,0.293,0.4404,POS
+That little red peninsula is us,0.0,1.0,0.0,0.0,NEU

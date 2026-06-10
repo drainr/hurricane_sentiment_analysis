@@ -1,0 +1,9 @@
+Comments,NEG,NEU,POS,Compound,Sentiment
+How can we watch abc news live,0.0,1.0,0.0,0.0,NEU
+can you download the app? I’m not sure…,0.0,1.0,0.0,0.0,NEU
+someone had posted a link in one of the comments. I was just about to look for it again myself.,0.0,1.0,0.0,0.0,NEU
+You can download the app on your cell phone or TV,0.0,1.0,0.0,0.0,NEU
+youtube,0.0,1.0,0.0,0.0,NEU
+do you have Hulu ?,0.0,1.0,0.0,0.0,NEU
+I just saw someone post that you can watch it on youtube,0.0,1.0,0.0,0.0,NEU
+"Please stream RYAN HALL, YALL on YouTube. He's giving exact locations for tornadoes",0.0,0.701,0.299,0.5719,POS

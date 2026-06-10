@@ -1,0 +1,52 @@
+id,hurricane,type,orig_student,exact,text,orig_compound,vader_compound,delta,orig_label,vader_label,label_flip,cause
+phi_deb_July31_2_c059,Debby,comment,Bowers/Debby,True,😂😂😂,0.0,0.8271,0.8271,neutral,positive,True,library: emoji lexicon (std scores emoji; NLTK=0)
+phi_deb_Aug1_12_c056,Debby,comment,Bowers/Debby,True,Denis are you sure you can’t tell these people if their flight is going to be canceled 🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣🤣😂😂😂😂😂😂😂😂😂,0.3182,0.9966,0.6784000000000001,positive,positive,False,library: emoji lexicon (std scores emoji; NLTK=0)
+phi_deb_Aug4_6_c068,Debby,comment,Bowers/Debby,True,yep this storm is a really Debby downer!😂,0.3595,0.6588,0.29930000000000007,positive,positive,False,library: emoji lexicon (std scores emoji; NLTK=0)
+phi_deb_Aug2_18_c007,Debby,comment,Bowers/Debby,True,glass is half full! I love it! 😂😂😂,0.6988,0.9258,0.22699999999999998,positive,positive,False,library: emoji lexicon (std scores emoji; NLTK=0)
+phi_mil_62_c159,Milton,comment,Grimes/Milton,True,"Because right now it is a Cat5 and it is pushing water at that level. There is momentum with the water, that will not go down, even when the winds drop in speed. People are evacuating due to danger of extreme surge (created by the CAT5.)",-0.6705,-0.4976,0.1729,negative,negative,False,library: word-lexicon/punctuation version drift
+phi_deb_Aug4_41_c005,Debby,comment,Bowers/Debby,True,"yes, it was so good. Check it out online - Calvary Chapel St Pete😊",0.7537,0.9089,0.1552,positive,positive,False,library: emoji lexicon (std scores emoji; NLTK=0)
+phi_deb_July31_2_c081,Debby,comment,Bowers/Debby,True,"Landing in Orlando, coming from New England- do you foresee any problems Monday night?",-0.4019,-0.4019,0.0,negative,negative,False,reproduced
+phi_deb_Aug1_13_c152,Debby,comment,Bowers/Debby,False,"Thank you, Denis!",0.4199,0.4199,0.0,positive,positive,False,reproduced
+phi_mil_22_c164,Milton,comment,Grimes/Milton,True,Thank you!!! How many Diet Dr Peppers have you had already!?,0.5673,0.5673,0.0,positive,positive,False,reproduced
+phi_deb_Aug2_19_c088,Debby,comment,Bowers/Debby,True,are you here?,0.0,0.0,0.0,neutral,neutral,False,reproduced
+phi_mil_182_c077,Milton,comment,Grimes/Milton,False,very strong in Pasco County. Stay safe,0.7574,0.7574,0.0,positive,positive,False,reproduced
+phi_deb_Aug5_21_c155,Debby,comment,Bowers/Debby,True,my friend’s family lives in Venice and I am worried. Any idea how that area is affected?,-0.4215,-0.4215,0.0,negative,negative,False,reproduced
+phi_deb_Aug5_21_c035,Debby,comment,Bowers/Debby,True,"I would highly suggest to call off and stay off the roads. It’s not worth risking your life or vehicle! All of our first responders are inundated at the moment, and 911 calls are taking upwards of 5 minutes to be answered.",0.1501,0.1501,0.0,positive,positive,False,reproduced
+phi_mil_67_c110,Milton,comment,Grimes/Milton,True,Does storm surge affect the Hillsborough River?,0.0,0.0,0.0,neutral,neutral,False,reproduced
+phi_mil_22_c083,Milton,comment,Grimes/Milton,True,100%! We are sending our daughter to PHL tonight. One less thing to worry about,-0.4457,-0.4457,0.0,negative,negative,False,reproduced
+phi_deb_Aug3_12_c172,Debby,comment,Bowers/Debby,False,only if no heat lightning,-0.296,-0.296,0.0,negative,negative,False,reproduced
+phi_mil_7_c136,Milton,comment,Grimes/Milton,True,Is a storm surge likely with the storm?,0.0,0.0,0.0,neutral,neutral,False,reproduced
+phi_hel_22_c073,Helene,comment,Bowers/Debby,True,yes,0.4019,0.4019,0.0,positive,positive,False,reproduced
+phi_mil_101_c154,Milton,comment,Grimes/Milton,True,Prayers Wendy,0.0,0.0,0.0,neutral,neutral,False,reproduced
+phi_deb_Aug3_22_c090,Debby,comment,Bowers/Debby,False,High tide is at 1225 tomorrow.,0.0,0.0,0.0,neutral,neutral,False,reproduced
+phi_mil_80_c182,Milton,comment,Grimes/Milton,True,When is Milton supposed to make landfall?,0.0,0.0,0.0,neutral,neutral,False,reproduced
+phi_deb_Aug4_85_c053,Debby,comment,Bowers/Debby,True,absolutely relentless!,0.1986,0.1986,0.0,positive,positive,False,reproduced
+phi_deb_Aug5_20_c036,Debby,comment,Bowers/Debby,True,Those poor babies in the non-air-conditioned outdoor kennels at that hellish Polk County Animal Services. Sheriff Judd needs to do better.,-0.6597,-0.6597,0.0,negative,negative,False,reproduced
+phi_mil_82_c151,Milton,comment,Grimes/Milton,True,this was similar to a devotion I had during Helene. God bless you. I am praying for safety and protection for all,0.9042,0.9042,0.0,positive,positive,False,reproduced
+phi_deb_Aug4_59_c023,Debby,comment,Bowers/Debby,False,“Take shelter in your basement “ said no Floridian ever!,-0.3595,-0.3595,0.0,negative,negative,False,reproduced
+phi_mil_180_c100,Milton,comment,Grimes/Milton,True,Local News Update-Here is the actual footage,0.0,0.0,0.0,neutral,neutral,False,reproduced
+phi_mil_177_c117,Milton,comment,Grimes/Milton,True,Already lost power in holiday,0.1027,0.1027,0.0,positive,positive,False,reproduced
+phi_deb_Aug4_6_c118,Debby,comment,Bowers/Debby,True,so far our flight is still on,0.0,0.0,0.0,neutral,neutral,False,reproduced
+phi_mil_189_c112,Milton,comment,Grimes/Milton,True,Wind hasn’t stopped in northern western Lutz!!!,-0.4168,-0.4168,0.0,negative,negative,False,reproduced
+phi_mil_43_c192,Milton,comment,Grimes/Milton,True,"I think you're better off farther north, but I don't know. I guess it depends where in Miami.",0.2382,0.2382,0.0,positive,positive,False,reproduced
+phi_mil_184_c025,Milton,comment,Grimes/Milton,True,thank godyou took the time to message,0.3612,0.3612,0.0,positive,positive,False,reproduced
+phi_mil_40_c140,Milton,comment,Grimes/Milton,True,Thank you for your efforts Denis Phillips. Could you also share the situation about university of miami.. I am a concerned parent in the other part of the world and really appreciate your work,0.7713,0.7713,0.0,positive,positive,False,reproduced
+phi_mil_65_c013,Milton,comment,Grimes/Milton,True,They're all different; lots of different variables and moving parts!,0.0,0.0,0.0,neutral,neutral,False,reproduced
+phi_mil_31_c079,Milton,comment,Grimes/Milton,True,Why is it a perfect circle? Such a weird hurricane,0.4588,0.4588,0.0,positive,positive,False,reproduced
+phi_mil_103_c107,Milton,comment,Grimes/Milton,True,Do we think the bay is going to empty before it surges?,-0.2023,-0.2023,0.0,negative,negative,False,reproduced
+phi_deb_Aug4_31_c004,Debby,comment,Bowers/Debby,True,You are very welcome. Heard we might be getting between 5-10 inches of rain. I know it has to be difficult being so far away!,0.2698,0.2698,0.0,positive,positive,False,reproduced
+phi_deb_Aug2_17_c052,Debby,comment,Bowers/Debby,True,Indian grounds 🙏,0.0,0.0,0.0,neutral,neutral,False,reproduced
+phi_mil_58_c096,Milton,comment,Grimes/Milton,True,"Denis, Do you want me to say it?",0.0772,0.0772,0.0,positive,positive,False,reproduced
+phi_deb_Aug1_9_c008,Debby,comment,Bowers/Debby,True,it has a significantly higher percentage of accuracy over the years.,0.0,0.0,0.0,neutral,neutral,False,reproduced
+phi_deb_Aug4_64_c021,Debby,comment,Bowers/Debby,False,"Stay inside, don't ever drive through flooded roads.",0.0,0.0,0.0,neutral,neutral,False,reproduced
+phi_mil_19_c083,Milton,comment,Grimes/Milton,True,check with your airline bc they should have a travel advisory in effect right now allowing you to move up your flight for free to allow you to leave sooner. i work at the airport and i’m almost positive they will close sometime tuesday night to prepare for wednesday.,0.8078,0.8078,0.0,positive,positive,False,reproduced
+phi_mil_184_c021,Milton,comment,Grimes/Milton,True,calm before the storm?,0.3182,0.3182,0.0,positive,positive,False,reproduced
+phi_mil_2_c086,Milton,comment,Grimes/Milton,True,the worst that will happen is you didn’t need them. Better than wishing you had put them up.,-0.0772,-0.0772,0.0,negative,negative,False,reproduced
+phi_deb_Aug3_11_c095,Debby,comment,Bowers/Debby,False,dang! Now I’m on a mission to find them,0.0,0.0,0.0,neutral,neutral,False,reproduced
+phi_deb_Aug4_64_c144,Debby,comment,Bowers/Debby,False,"doesn’t appear so
+You can add the accuweather app and it will send you an alert also if anything 🌪️🚩",0.296,0.296,0.0,positive,positive,False,reproduced
+phi_deb_Aug4_5_c113,Debby,comment,Bowers/Debby,True,whatever the predicted rainfall for your area is,0.0,0.0,0.0,neutral,neutral,False,reproduced
+phi_deb_Aug3_9_c046,Debby,comment,Bowers/Debby,False,I would leave today for a cornucopia of reasons.,-0.0516,-0.0516,0.0,negative,negative,False,reproduced
+phi_mil_49_c112,Milton,comment,Grimes/Milton,True,He's already striving for Cat 5 status.,0.0,0.0,0.0,neutral,neutral,False,reproduced
+phi_mil_188_c044,Milton,comment,Grimes/Milton,True,The wind is still wicked in Palm Harbor !!!,-0.6458,-0.6458,0.0,negative,negative,False,reproduced
+phi_mil_13_c101,Milton,comment,Grimes/Milton,True,Fyi many hotels are already booked with Helene victims,-0.128,-0.128,0.0,negative,negative,False,reproduced
