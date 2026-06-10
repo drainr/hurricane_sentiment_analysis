@@ -1,5 +1,4 @@
 id,subreddit,author,created_utc,num_comments,title,selftext,score,hurricane,keyword_hit
-1fwdldd,TropicalWeather,OriginalPianoProdigy,2024-10-05T00:02:17+00:00,1,This is why they differentiate VE (wave “velocity”) zones from AE zones,[removed],1,,
 1fwfhf1,TropicalWeather,Euronotus,2024-10-05T01:41:40+00:00,294,92L (Invest — Gulf of Mexico),"# Latest Observation
 - - - - - - - - - - - - - - - - - - - -
 **Last updated:** Friday, 4 October — 8:00 PM Eastern Daylight Time (EDT; 00:00 UTC)
@@ -145,12 +144,12 @@ ATCF  |    |  8:00 PM EDT (00:00 UTC)
 
 * **Weather Nerds:** [GEFS (120 hours)](https://www.weathernerds.org/models/gefs.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=748&initrange=38.000000000160:253.371428571240:8.285714285760:303.428571428520&initcx1=744&initcy1=187&initcx2=880&initcy2=281&initcross=False&initsound=False&initsoundx=739&initsoundy=182&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
 
-* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=748&initrange=38.000000000160:253.371428571240:8.285714285760:303.428571428520&initcx1=744&initcy1=187&initcx2=880&initcy2=281&initcross=False&initsound=False&initsoundx=739&initsoundy=182&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",87,,
-1fwhfbz,TropicalWeather,Content-Swimmer2325,2024-10-05T03:30:44+00:00,10,"Leslie is the 4th Atlantic hurricane formation in just 9 1/2 days (Helene, Isaac, Kirk). That's the shortest amount of time between 4 Atlantic hurricane formations since 2012 when 4 hurricanes formed in 8 days, 6 hours between Aug 28 - Sep 5.",,106,,
-1fwhfkj,TropicalWeather,Content-Swimmer2325,2024-10-05T03:31:09+00:00,18,"Leslie has become a hurricane at 34.2°W, the farthest east that Atlantic hurricane has formed in tropics (<=23.5°N) this late in calendar year in satellite era (1966-present). Prior record for easternmost post-Sep tropical hurricane formation was set 3 days ago by Kirk (40.1°W)",,208,,
-1fwi28m,TropicalWeather,Galileos_grandson,2024-10-05T04:08:51+00:00,2,"Hurricane Kirk - October 3, 2024",,26,,
-1fwr4bp,TropicalWeather,tommywiseauswife,2024-10-05T14:03:32+00:00,1,Time ran out for Zone A residents killed in Hurricane Helene,,1,,
-1fwrjkx,TropicalWeather,2016TRDPro,2024-10-05T14:23:59+00:00,1,"Our government gave illegals all of our money, now there's only $750 fir citizens and now we have a 2nd hurricane coming!!!",[removed],1,,
+* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=748&initrange=38.000000000160:253.371428571240:8.285714285760:303.428571428520&initcx1=744&initcy1=187&initcx2=880&initcy2=281&initcross=False&initsound=False&initsoundx=739&initsoundy=182&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",87,milton,hurricane
+1fwhfbz,TropicalWeather,Content-Swimmer2325,2024-10-05T03:30:44+00:00,10,"Leslie is the 4th Atlantic hurricane formation in just 9 1/2 days (Helene, Isaac, Kirk). That's the shortest amount of time between 4 Atlantic hurricane formations since 2012 when 4 hurricanes formed in 8 days, 6 hours between Aug 28 - Sep 5.",,106,milton,hurricane
+1fwhfkj,TropicalWeather,Content-Swimmer2325,2024-10-05T03:31:09+00:00,18,"Leslie has become a hurricane at 34.2°W, the farthest east that Atlantic hurricane has formed in tropics (<=23.5°N) this late in calendar year in satellite era (1966-present). Prior record for easternmost post-Sep tropical hurricane formation was set 3 days ago by Kirk (40.1°W)",,208,milton,hurricane
+1fwi28m,TropicalWeather,Galileos_grandson,2024-10-05T04:08:51+00:00,2,"Hurricane Kirk - October 3, 2024",,26,milton,hurricane
+1fwr4bp,TropicalWeather,tommywiseauswife,2024-10-05T14:03:32+00:00,1,Time ran out for Zone A residents killed in Hurricane Helene,,1,milton,hurricane
+1fwrjkx,TropicalWeather,2016TRDPro,2024-10-05T14:23:59+00:00,1,"Our government gave illegals all of our money, now there's only $750 fir citizens and now we have a 2nd hurricane coming!!!",[removed],1,milton,hurricane
 1fwseam,TropicalWeather,Euronotus,2024-10-05T15:04:04+00:00,281,14L (Gulf of Mexico),"# Latest observation
 - - - - - - - - - - - - - - - - - - - -
 **Last updated:** Saturday, 5 October — 10:00 AM Central Daylight Time (CDT; 15:00 UTC)
@@ -359,10 +358,9 @@ Hour  | Date  | Time  |    |  Intensity  |    |  Winds  |    |  Lat  |  Long
 
 * **Weather Nerds:** [GEFS (120 hours)](https://www.weathernerds.org/models/gefs.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=748&initrange=38.000000000160:253.371428571240:8.285714285760:303.428571428520&initcx1=744&initcy1=187&initcx2=880&initcy2=281&initcross=False&initsound=False&initsoundx=739&initsoundy=182&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
 
-* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=748&initrange=38.000000000160:253.371428571240:8.285714285760:303.428571428520&initcx1=744&initcy1=187&initcx2=880&initcy2=281&initcross=False&initsound=False&initsoundx=739&initsoundy=182&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",161,,
-1fwtt6t,TropicalWeather,evilpigclone,2024-10-05T16:07:50+00:00,1,Is there any chance that hurricane Leslie and the system that is forming in the gulf of Mexico will collide in the Atlantic?,[removed],1,,
-1fwuytq,TropicalWeather,Apprehensive_Pain870,2024-10-05T16:59:16+00:00,1,Politics,,1,,
-1fwv3qe,TropicalWeather,chitown12341234,2024-10-05T17:05:06+00:00,1,What’s the strongest a hurricane can actually get in the Gulf of Mexico?? N is a 200+ MPH hurricane possible?,[removed],0,,
+* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=748&initrange=38.000000000160:253.371428571240:8.285714285760:303.428571428520&initcx1=744&initcy1=187&initcx2=880&initcy2=281&initcross=False&initsound=False&initsoundx=739&initsoundy=182&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",161,milton,hurricane
+1fwtt6t,TropicalWeather,evilpigclone,2024-10-05T16:07:50+00:00,1,Is there any chance that hurricane Leslie and the system that is forming in the gulf of Mexico will collide in the Atlantic?,[removed],1,milton,hurricane
+1fwv3qe,TropicalWeather,chitown12341234,2024-10-05T17:05:06+00:00,1,What’s the strongest a hurricane can actually get in the Gulf of Mexico?? N is a 200+ MPH hurricane possible?,[removed],0,milton,hurricane
 1fwvn2x,TropicalWeather,Euronotus,2024-10-05T17:29:37+00:00,2857,Milton (14L — Gulf of Mexico),"# Latest observation
 - - - - - - - - - - - - - - - - - - - -
 **Last updated:** Saturday, 5 October — 12:00 PM Central Daylight Time (CDT; 17:00 UTC)
@@ -570,9 +568,9 @@ Hour  | Date  | Time  |    |  Intensity  |    |  Winds  |    |  Lat  |  Long
 
 * **Weather Nerds:** [GEFS (120 hours)](https://www.weathernerds.org/models/gefs.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=748&initrange=38.000000000160:253.371428571240:8.285714285760:303.428571428520&initcx1=744&initcy1=187&initcx2=880&initcy2=281&initcross=False&initsound=False&initsoundx=739&initsoundy=182&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
 
-* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=748&initrange=38.000000000160:253.371428571240:8.285714285760:303.428571428520&initcx1=744&initcy1=187&initcx2=880&initcy2=281&initcross=False&initsound=False&initsoundx=739&initsoundy=182&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",258,,
-1fwvobi,TropicalWeather,Nakatomi2010,2024-10-05T17:31:07+00:00,1,Apologies. Milton coming to Tampa may be my fault...,,1,,
-1fww35e,TropicalWeather,giantspeck,2024-10-05T17:50:17+00:00,55,"Tropical Tidbits for Saturday, 5 October: Newly-Formed Tropical Storm Milton Expected to Hit Florida as a Hurricane",,208,,
+* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=748&initrange=38.000000000160:253.371428571240:8.285714285760:303.428571428520&initcx1=744&initcy1=187&initcx2=880&initcy2=281&initcross=False&initsound=False&initsoundx=739&initsoundy=182&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",258,milton,milton
+1fwvobi,TropicalWeather,Nakatomi2010,2024-10-05T17:31:07+00:00,1,Apologies. Milton coming to Tampa may be my fault...,,1,milton,milton
+1fww35e,TropicalWeather,giantspeck,2024-10-05T17:50:17+00:00,55,"Tropical Tidbits for Saturday, 5 October: Newly-Formed Tropical Storm Milton Expected to Hit Florida as a Hurricane",,208,milton,milton
 1fwwaw5,TropicalWeather,giantspeck,2024-10-05T18:00:03+00:00,742,Milton Preparations Discussion,"# Preparations Discussion
 
 ## Introduction
@@ -601,32 +599,28 @@ Our hurricane supplies megathread can be found [**here**](https://www.reddit.com
 
 * [How to Prepare for a Hurricane](https://www.ready.gov/sites/default/files/2020-03/fema_how-to-prepare-for-hurricane.pdf) (PDF) — This guide from the Federal Emergency Management Agency (FEMA) is designed to help you properly prepare for a hurricane and know how to protect yourself during and after one.    
 
-*  [Evacuation Guidelines](https://www.ready.gov/evacuating-yourself-and-your-family)",160,,
-1fwwg6u,TropicalWeather,AuburnJunky,2024-10-05T18:06:30+00:00,1,Milton looking at Florida like ,,1,,
-1fwwgd5,TropicalWeather,giantspeck,2024-10-05T18:06:43+00:00,2,"National Hurricane Center afternoon video update for Tropical Storm Milton — Saturday, 5 October",,56,,
+*  [Evacuation Guidelines](https://www.ready.gov/evacuating-yourself-and-your-family)",160,milton,milton
+1fwwg6u,TropicalWeather,AuburnJunky,2024-10-05T18:06:30+00:00,1,Milton looking at Florida like ,,1,milton,milton
+1fwwgd5,TropicalWeather,giantspeck,2024-10-05T18:06:43+00:00,2,"National Hurricane Center afternoon video update for Tropical Storm Milton — Saturday, 5 October",,56,milton,milton
 1fwzlbv,TropicalWeather,CareOutrageous897,2024-10-05T20:29:53+00:00,21,Odd Flash Flood Risk % Map for Florida,"https://i.redd.it/moj9r7bdyzsd1.gif
 
-As Milton has just formed and is projected to target Florida, I have been monitoring the projected outlooks for Milton on multiple aspects like tracks, winds, and rainfall. Something odd I've just noticed with Milton's flash flood risks in Florida is the chances areas are being given. How does majority of Florida is getting 15% but there's an clump of southern Florida with a 5% chance? For northern inland Florida it's 15% but for southern inland Florida, it's only 5% and Lake Okeechobee is in the area. That doesn't add up with me. ",43,,
-1fx6u07,TropicalWeather,Galileos_grandson,2024-10-06T02:44:21+00:00,0,"First Pictures: Color View of the Earth & A Tropical Depression from Space – October 5, 1954",,36,,
-1fxd3mr,TropicalWeather,ACEasterling,2024-10-06T09:58:25+00:00,1,Lookin pretty wild out there ,,1,,
-1fxdmjb,TropicalWeather,2016TRDPro,2024-10-06T10:36:49+00:00,1,Please don't procrastinate. Take this seriously.,,0,,
-1fxf9m2,TropicalWeather,Tailsefox,2024-10-06T12:23:05+00:00,1,Does anyone else think the hurricane models are a bit extreme?,[removed],1,,
-1fxlode,TropicalWeather,giantspeck,2024-10-06T17:21:29+00:00,6,"Tropical Tidbits for Sunday, 6 October: Milton Strengthening; Expected to Bring Life-Threatening Impacts to Florida",,206,,
-1fxlp11,TropicalWeather,giantspeck,2024-10-06T17:22:17+00:00,2,"National Hurricane Center morning update for Tropical Storm Milton — Sunday, 6 October",,83,,
-1fxlpqk,TropicalWeather,kmzview,2024-10-06T17:23:05+00:00,1,NHC Milton wind forecast appears to have storm strengthening after crossing Florida,,1,,
-1fxmsku,TropicalWeather,Content-Swimmer2325,2024-10-06T18:09:44+00:00,54,"For the first time on record, the Atlantic has 3 hurricanes simultaneously after September (Kirk, Leslie, Milton).",,601,,
+As Milton has just formed and is projected to target Florida, I have been monitoring the projected outlooks for Milton on multiple aspects like tracks, winds, and rainfall. Something odd I've just noticed with Milton's flash flood risks in Florida is the chances areas are being given. How does majority of Florida is getting 15% but there's an clump of southern Florida with a 5% chance? For northern inland Florida it's 15% but for southern inland Florida, it's only 5% and Lake Okeechobee is in the area. That doesn't add up with me. ",43,milton,milton
+1fxf9m2,TropicalWeather,Tailsefox,2024-10-06T12:23:05+00:00,1,Does anyone else think the hurricane models are a bit extreme?,[removed],1,milton,hurricane
+1fxlode,TropicalWeather,giantspeck,2024-10-06T17:21:29+00:00,6,"Tropical Tidbits for Sunday, 6 October: Milton Strengthening; Expected to Bring Life-Threatening Impacts to Florida",,206,milton,milton
+1fxlp11,TropicalWeather,giantspeck,2024-10-06T17:22:17+00:00,2,"National Hurricane Center morning update for Tropical Storm Milton — Sunday, 6 October",,83,milton,milton
+1fxlpqk,TropicalWeather,kmzview,2024-10-06T17:23:05+00:00,1,NHC Milton wind forecast appears to have storm strengthening after crossing Florida,,1,milton,milton
+1fxmsku,TropicalWeather,Content-Swimmer2325,2024-10-06T18:09:44+00:00,54,"For the first time on record, the Atlantic has 3 hurricanes simultaneously after September (Kirk, Leslie, Milton).",,601,milton,milton
 1fxmyqs,TropicalWeather,Weekly_Solid_5884,2024-10-06T18:16:58+00:00,9,What's the average or median heading for each latitude?,"Did anyone ever calculate the latitude where half the longitudes are going up and half are going down?
 
-Wouldn't that weird differential Coriolis strength thing give stronger and larger storms a tendency to recurve further from the equator?",14,,
-1fxqlpg,TropicalWeather,Real-Cup-1270,2024-10-06T20:52:57+00:00,1,Hurricane Milton,,1,,
-1fxqsw3,TropicalWeather,FiscallyMindedHobo,2024-10-06T21:01:34+00:00,34,"""Why don't you just leave?""",,106,,
-1fxrxew,TropicalWeather,primoslate,2024-10-06T21:51:43+00:00,1,Hurricane Milton GFS vs ECMWF model runs,,13,,
-1fxsja2,TropicalWeather,smart_stable_genius_,2024-10-06T22:19:49+00:00,2,In West Palm Beach for Milton - hotel tips?,[removed],1,,
-1fxsk54,TropicalWeather,darus214,2024-10-06T22:20:50+00:00,2,What to expect inside my house when in the middle of a cat 3/4 hurricane?,[removed],1,,
-1fxuafp,TropicalWeather,Real-Cup-1270,2024-10-06T23:45:58+00:00,1,Hurricane Milton,,1,,
-1fxuvl6,TropicalWeather,Stevecat032,2024-10-07T00:16:13+00:00,1,Tropical Storm Josephine 1996,,3,,
-1fxwttw,TropicalWeather,Real-Cup-1270,2024-10-07T01:58:56+00:00,71,Hurricane Milton,,689,,
-1fxykyk,TropicalWeather,giantspeck,2024-10-07T03:33:44+00:00,1,"National Hurricane Center afternoon update for Hurricane Milton — Sunday, 6 October",,72,,
+Wouldn't that weird differential Coriolis strength thing give stronger and larger storms a tendency to recurve further from the equator?",14,milton,storm
+1fxqlpg,TropicalWeather,Real-Cup-1270,2024-10-06T20:52:57+00:00,1,Hurricane Milton,,1,milton,milton
+1fxrxew,TropicalWeather,primoslate,2024-10-06T21:51:43+00:00,1,Hurricane Milton GFS vs ECMWF model runs,,13,milton,milton
+1fxsja2,TropicalWeather,smart_stable_genius_,2024-10-06T22:19:49+00:00,2,In West Palm Beach for Milton - hotel tips?,[removed],1,milton,milton
+1fxsk54,TropicalWeather,darus214,2024-10-06T22:20:50+00:00,2,What to expect inside my house when in the middle of a cat 3/4 hurricane?,[removed],1,milton,hurricane
+1fxuafp,TropicalWeather,Real-Cup-1270,2024-10-06T23:45:58+00:00,1,Hurricane Milton,,1,milton,milton
+1fxuvl6,TropicalWeather,Stevecat032,2024-10-07T00:16:13+00:00,1,Tropical Storm Josephine 1996,,3,milton,storm
+1fxwttw,TropicalWeather,Real-Cup-1270,2024-10-07T01:58:56+00:00,71,Hurricane Milton,,689,milton,milton
+1fxykyk,TropicalWeather,giantspeck,2024-10-07T03:33:44+00:00,1,"National Hurricane Center afternoon update for Hurricane Milton — Sunday, 6 October",,72,milton,milton
 1fy0lml,TropicalWeather,Euronotus,2024-10-07T05:43:09+00:00,0,21W (Western Pacific),"# Latest observation
 - - - - - - - - - - - - - - - - - - - -
 **Last updated:** Monday, 7 October — 10:00 AM Chamorro Standard Time (CHST; 00:00 UTC)
@@ -804,7 +798,7 @@ The options to select individual bandwidths on each of the following websites ma
 ## Regional ensemble model guidance
 
 * **Weather Nerds:** [GEFS (120 hours)](https://www.weathernerds.org/models/gefs.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=711&initrange=32.908000000038:104.590476190440:7.524000000000:149.557142857075&initcx1=111&initcy1=322&initcx2=598&initcy2=646&initcross=False&initsound=False&initsoundx=106&initsoundy=317&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
-* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=711&initrange=32.908000000038:104.590476190440:7.524000000000:149.557142857075&initcx1=111&initcy1=322&initcx2=598&initcy2=646&initcross=False&initsound=False&initsoundx=106&initsoundy=317&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",13,,
+* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=711&initrange=32.908000000038:104.590476190440:7.524000000000:149.557142857075&initcx1=111&initcy1=322&initcx2=598&initcy2=646&initcross=False&initsound=False&initsoundx=106&initsoundy=317&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",13,milton,hurricane
 1fy0opr,TropicalWeather,Euronotus,2024-10-07T05:49:05+00:00,0,99E (Invest — Southwest of Mexico),"# Latest Observation
 - - - - - - - - - - - - - - - - - - - -
 **Last updated:** Sunday, 6 October — 6:00 PM Central Standard Time (CST; 00:00 UTC)
@@ -926,40 +920,35 @@ ATCF  |    |  6:00 PM CST (00:00 UTC)
 
 ## Tropical Cyclogenesis Products
 
-* **Florida State University:** [Experimental tropical cyclone genesis guidance](http://moe.met.fsu.edu/modelgen/ep.php)",39,,
-1fy0ykc,TropicalWeather,Icy-Umpire-7521,2024-10-07T06:08:35+00:00,1,North Dakota girl seeks knowledge about impending hurricane . . . ,[removed],1,,
-1fy2jdy,TropicalWeather,WankstaWilbthe2nd,2024-10-07T08:07:33+00:00,4,Frequency of Hurricane Updates,"I can’t find a solid updated answer. My question is how often is the forecast updated. I know further out they are usually every 6 hours but at what points do they go to every 4, 2 and 1? If this is an easy search sorry but I did give it a google just maybe didn’t use the right words. ",44,,
+* **Florida State University:** [Experimental tropical cyclone genesis guidance](http://moe.met.fsu.edu/modelgen/ep.php)",39,milton,hurricane
+1fy0ykc,TropicalWeather,Icy-Umpire-7521,2024-10-07T06:08:35+00:00,1,North Dakota girl seeks knowledge about impending hurricane . . . ,[removed],1,milton,hurricane
+1fy2jdy,TropicalWeather,WankstaWilbthe2nd,2024-10-07T08:07:33+00:00,4,Frequency of Hurricane Updates,"I can’t find a solid updated answer. My question is how often is the forecast updated. I know further out they are usually every 6 hours but at what points do they go to every 4, 2 and 1? If this is an easy search sorry but I did give it a google just maybe didn’t use the right words. ",44,milton,hurricane
 1fy56zq,TropicalWeather,Boring-Safe-7178,2024-10-07T11:20:29+00:00,1,"Today weather update news
- watch live",,1,,
+ watch live",,1,milton,weather
 1fy6p3c,TropicalWeather,FakeGamer2,2024-10-07T12:43:55+00:00,30,"If you had all of the info, would it be possible to predict a hurricane path/energy exactly? ","I see a lot of discussion here about models and how they track and predict the path and intensity of hurricanes. Sometimes the models are even really wrong and events outside the models occur. 
 
 So my question is, what if you had a magic device that gave you fully accurate and real-time data about exact wind speeds, temps, and all that stuff. Would it then be possible to fully predict a hurricane? 
 
 After all they are a consequence of physics right and theoretically if you had all the info you should be able to predict. Or is there some element of chaos where you can't predict even given full info? 
 
-If it is possible then that means the only thing stopping our models from being fully accurate is lack of data collection no? ",0,,
-1fy71ew,TropicalWeather,2016TRDPro,2024-10-07T13:01:05+00:00,1,Hurricane Milton is now a Cat3. This is the updated prediction of areas expected to receive 100+ mph winds.,,1,,
-1fy735t,TropicalWeather,2016TRDPro,2024-10-07T13:03:06+00:00,1,Current Hurricane Milton spaghetti models as of 8am on Monday morning,,1,,
-1fy7phd,TropicalWeather,Overall_Channel_2012,2024-10-07T13:32:26+00:00,1,Radar fluke? ,I was checking the radar and I noticed this ring of green that shows up. I wanna know what people think this might be. Is there anyone who can give some sort of explanation on what this might be??,1,,
-1fy8pc6,TropicalWeather,primoslate,2024-10-07T14:16:14+00:00,7,Milton Now Category 4,,8,,
+If it is possible then that means the only thing stopping our models from being fully accurate is lack of data collection no? ",0,milton,hurricane
+1fy71ew,TropicalWeather,2016TRDPro,2024-10-07T13:01:05+00:00,1,Hurricane Milton is now a Cat3. This is the updated prediction of areas expected to receive 100+ mph winds.,,1,milton,milton
+1fy735t,TropicalWeather,2016TRDPro,2024-10-07T13:03:06+00:00,1,Current Hurricane Milton spaghetti models as of 8am on Monday morning,,1,milton,milton
+1fy8pc6,TropicalWeather,primoslate,2024-10-07T14:16:14+00:00,7,Milton Now Category 4,,8,milton,milton
 1fy94eo,TropicalWeather,Amazing_Bar_5733,2024-10-07T14:34:16+00:00,75,"An extraordinary amount of lightning within Hurricane Milton's eye wall this morning.
 
-Milton is now a powerful, Category 4 storm. This is from CIRA",,912,,
+Milton is now a powerful, Category 4 storm. This is from CIRA",,912,milton,milton
 1fy9jjf,TropicalWeather,Jerry_202,2024-10-07T14:51:53+00:00,12,Double Storm?,"So I was looking at the hurricane trackers and I see obvs Milton listed, then Kirk and Leslie. But there's another one right next to Kirk with no name on it in AccuWeather. Can anybody explain why this storm hasn't been named?
 
 https://preview.redd.it/bewbzzy0lctd1.png?width=1277&format=png&auto=webp&s=99140fb10f3df73830f834ef6c4a6405e307f4f2
 
-",44,,
-1fya8xm,TropicalWeather,Patient-Panda4178,2024-10-07T15:21:13+00:00,0,Milton will be worse than katrina,[removed],1,,
-1fyahbi,TropicalWeather,MeatSuitRiot,2024-10-07T15:30:45+00:00,1,Now that there is what you call muy rapido!,,1,,
-1fyaiar,TropicalWeather,ruddb,2024-10-07T15:31:54+00:00,4,NHC Morning of Oct 7th Video Update,,44,,
-1fyb3oa,TropicalWeather,Longjumping_Driver_6,2024-10-07T15:56:05+00:00,2,Flights cancelled?,[removed],1,,
-1fybewp,TropicalWeather,reaccess,2024-10-07T16:08:39+00:00,1,From Tropical Storm to Cat 5 in 24 hours,[removed],1,,
-1fybg7r,TropicalWeather,primoslate,2024-10-07T16:10:08+00:00,3,Milton Now Category 5,,2,,
-1fybt5h,TropicalWeather,Phandex_Smartz,2024-10-07T16:25:02+00:00,1,Hurricane Milton is now a category 5 *sigh* ,,1,,
-1fyd5xk,TropicalWeather,giantspeck,2024-10-07T17:20:48+00:00,37,"Tropical Tidbits for Monday, 7 October: Milton Becomes a Cat 5 Hurricane; Major Impacts to Florida Expected Wednesday & Thursday",,248,,
-1fyd6h9,TropicalWeather,k3nd0gg,2024-10-07T17:21:23+00:00,274,How to respond to dad who won’t evacuate?,,21,,
-1fyd75t,TropicalWeather,Seeking_Singularity,2024-10-07T17:22:10+00:00,1,"Tropical Tidbits for Monday, 7 October: Milton Becomes a Cat 5 Hurricane",,1,,
+",44,milton,milton
+1fya8xm,TropicalWeather,Patient-Panda4178,2024-10-07T15:21:13+00:00,0,Milton will be worse than katrina,[removed],1,milton,milton
+1fybewp,TropicalWeather,reaccess,2024-10-07T16:08:39+00:00,1,From Tropical Storm to Cat 5 in 24 hours,[removed],1,milton,storm
+1fybg7r,TropicalWeather,primoslate,2024-10-07T16:10:08+00:00,3,Milton Now Category 5,,2,milton,milton
+1fybt5h,TropicalWeather,Phandex_Smartz,2024-10-07T16:25:02+00:00,1,Hurricane Milton is now a category 5 *sigh* ,,1,milton,milton
+1fyd5xk,TropicalWeather,giantspeck,2024-10-07T17:20:48+00:00,37,"Tropical Tidbits for Monday, 7 October: Milton Becomes a Cat 5 Hurricane; Major Impacts to Florida Expected Wednesday & Thursday",,248,milton,milton
+1fyd75t,TropicalWeather,Seeking_Singularity,2024-10-07T17:22:10+00:00,1,"Tropical Tidbits for Monday, 7 October: Milton Becomes a Cat 5 Hurricane",,1,milton,milton
 1fydq9y,TropicalWeather,giantspeck,2024-10-07T17:44:06+00:00,3,The NHC is monitoring an area near the Bahamas for potential tropical cyclone development,"# Gulf of Mexico
 - - - - - - - - - - - - - - - - - - - -
 **Last updated:** Monday, 7 October — 2:00 PM Eastern Daylight Time (EDT; 18:00 UTC)  
@@ -1073,53 +1062,39 @@ Time frame |  | Potential
 
 ## Tropical Cyclogenesis Products
 
-* **Florida State University:** [**Experimental tropical cyclone genesis graphics**](http://moe.met.fsu.edu/modelgen/)",136,,
-1fyef8w,TropicalWeather,JosephPlayz,2024-10-07T18:12:15+00:00,182,One of the most insane photos I’ve ever seen..,,936,,
-1fyefb0,TropicalWeather,auriebryce,2024-10-07T18:12:19+00:00,2,Can someone please be frank with me about the potential impacts of Milton? I am separated from my kids in Florida.,[removed],1,,
-1fyenoi,TropicalWeather,NuBlu42,2024-10-07T18:21:47+00:00,8,"I updated HurricaneTracker.net for Milton. All of the maps and charts you want in one place. As always please let me know if there is anything you would like to see added to the site, I'm happy to update it for the community. Everyone please stay safe. Thank you all for your support! ",,160,,
+* **Florida State University:** [**Experimental tropical cyclone genesis graphics**](http://moe.met.fsu.edu/modelgen/)",136,milton,hurricane
+1fyefb0,TropicalWeather,auriebryce,2024-10-07T18:12:19+00:00,2,Can someone please be frank with me about the potential impacts of Milton? I am separated from my kids in Florida.,[removed],1,milton,milton
+1fyenoi,TropicalWeather,NuBlu42,2024-10-07T18:21:47+00:00,8,"I updated HurricaneTracker.net for Milton. All of the maps and charts you want in one place. As always please let me know if there is anything you would like to see added to the site, I'm happy to update it for the community. Everyone please stay safe. Thank you all for your support! ",,160,milton,milton
 1fyery3,TropicalWeather,Amazing_Bar_5733,2024-10-07T18:26:45+00:00,30,"Hurricane Milton, now a Category 5 Major Hurricane, shown in GOES-19 30-second visible imagery. 
-",,433,,
-1fyevcl,TropicalWeather,alley00pster,2024-10-07T18:30:42+00:00,2,AccuWeather Projection of Milton at 4pm today,[removed],1,,
-1fyfj32,TropicalWeather,oklahomasooner55,2024-10-07T18:58:00+00:00,87,"Did any weather models predict Milton, intensity?",It seems like a couple days ago the forecasters were saying there would just be some rain hitting Florida is all. Is the GFS broken or underfunded?,51,,
-1fygj1f,TropicalWeather,giantspeck,2024-10-07T19:38:43+00:00,3,"Dr. Andy Hazelton discussion on Hurricane Milton — Monday, 7 October",,51,,
-1fygoxe,TropicalWeather,TheAerial,2024-10-07T19:45:39+00:00,1,"Confession: It's not a perfect fitting way to phrase it, but my whole life I've found Hurricanes ""Exciting"" in a way few things can rival.",[removed],1,,
-1fyh6fi,TropicalWeather,evanbbirds,2024-10-07T20:05:35+00:00,752,Since we are posting stupid parent responses…,Parents are right on manatee river in Bradenton. ,1702,,
-1fyi3te,TropicalWeather,cindylooboo,2024-10-07T20:43:54+00:00,1,Sorry for the tiktok sharing but it's relevant. John Morales is pretty emotional when discussing Milton but all the models I'm seeing project weakening? ,[removed],1,,
-1fyifym,TropicalWeather,Affectionate-Map8045,2024-10-07T20:57:50+00:00,1,Let’s eat pizza,,1,,
-1fyihqh,TropicalWeather,Calm_Improvement659,2024-10-07T20:59:50+00:00,1,NOAA HAFS-A forecasting ~200 MPH max winds,,1,,
-1fyjuo1,TropicalWeather,giantspeck,2024-10-07T21:56:22+00:00,26,"National Hurricane Center afternoon video update for Hurricane Milton — Monday, 7 October",,132,,
-1fykbw2,TropicalWeather,Silver_Tart_11,2024-10-07T22:17:09+00:00,1,Hi there.,[removed],1,,
-1fymac3,TropicalWeather,Gregreynolds111,2024-10-07T23:47:31+00:00,0, CJ,[removed],1,,
-1fymi8r,TropicalWeather,pinpanpunani,2024-10-07T23:58:19+00:00,2,Milton... 180 mph,,1,,
-1fymi9x,TropicalWeather,Real-Cup-1270,2024-10-07T23:58:20+00:00,125,GOES-16 imagery of a storm currently below 900mb (897mb) ,,744,,
-1fymld4,TropicalWeather,Consistent_Room7344,2024-10-08T00:02:08+00:00,2,It’s official. Milton has gone sub 900mb,,1,,
-1fymnd3,TropicalWeather,dazey_blue,2024-10-08T00:04:50+00:00,2,I am seeing news reports that Milton should downgrade from a 5 to a 3. Can someone explain why that is expected?,[removed],1,,
-1fymr1r,TropicalWeather,King-Valkyrie,2024-10-08T00:09:46+00:00,1,EN VIVO - Cobertura Especial Huracán Milton de Huracán Info,[removed],1,,
-1fymx9w,TropicalWeather,somethingfortoday,2024-10-08T00:18:26+00:00,1,Can anyone else track the NOAA hurricane Hunter?,[removed],1,,
-1fyn59s,TropicalWeather,js8420,2024-10-08T00:29:28+00:00,1,Another storm coming to FL next week?,[removed],1,,
-1fynvz2,TropicalWeather,switchsk8r,2024-10-08T01:06:25+00:00,1,"""This hurricane is nearing the mathematical limit of what Earth's atmosphere over this ocean water can produce""",,1,,
-1fyop6v,TropicalWeather,[deleted],2024-10-08T01:47:34+00:00,1,"When the lifetime meteorologists are at a loss for words, we’re in uncharted territory…",[removed],1,,
-1fyotjn,TropicalWeather,Galileos_grandson,2024-10-08T01:53:47+00:00,20,Three Storms Churn in an Active Atlantic,,103,,
-1fyp2i5,TropicalWeather,Helicopter-Mission,2024-10-08T02:06:38+00:00,30,Do the tropical storms remove heat from the seas they draw from?,As title. Do these tropical storms remove heat as they form in a measurable way?,86,,
-1fypap5,TropicalWeather,drailCA,2024-10-08T02:18:19+00:00,2,"Windy's projection is bad, right?",[removed],1,,
-1fypxjl,TropicalWeather,saash82,2024-10-08T02:51:56+00:00,1,Is Hurricane Milton going to reach South Georgia? (Tifton area) ,[removed],1,,
-1fyqhe8,TropicalWeather,Tommy27,2024-10-08T03:21:36+00:00,1,NOAA Documentary on the 1921 Tampa/Tarpon Hurricane,,12,,
-1fyqmsl,TropicalWeather,phishpatch,2024-10-08T03:30:06+00:00,1,Milton will travel over the Chicxulub crater from the meteor that took out the Dinosaurs 66 MYA,[removed],1,,
-1fyquqv,TropicalWeather,Ilikep0tatoes,2024-10-08T03:42:34+00:00,1,What is the difference between the P-Surge and CERA Storm Surge prediction tools?,,1,,
-1fyr14w,TropicalWeather,PantherkittySoftware,2024-10-08T03:52:33+00:00,1,Milton vs Pacific,[removed],1,,
-1fys5ro,TropicalWeather,milesgloriosis,2024-10-08T05:02:01+00:00,2,Milton,[removed],1,,
-1fyuazq,TropicalWeather,pearl_st,2024-10-08T07:37:48+00:00,1,Apartment for sale for details WhatsApp me on +1(904)2396480 now,,1,,
-1fyuvcm,TropicalWeather,Critical-Mongoose650,2024-10-08T08:22:50+00:00,0,Can you ride this one out when it is a cat5 now,,1,,
-1fyw2ml,TropicalWeather,CowLivid6496,2024-10-08T09:55:45+00:00,1,Home Insurance?,[removed],1,,
-1fyxbhd,TropicalWeather,Stuckin2021,2024-10-08T11:18:43+00:00,1,"I went on a vacation in Florida, now I can’t leave it’s too dangerous",[removed],1,,
-1fyxw33,TropicalWeather,reaccess,2024-10-08T11:52:14+00:00,1,From Tropical Storm to Cat 5 in 24 hours.,,1,,
-1fyy5za,TropicalWeather,doomgrin,2024-10-08T12:07:06+00:00,1,Milton showing an IR face like Hurricane Mathew ,[removed],1,,
-1fyy8rn,TropicalWeather,wildflower022,2024-10-08T12:11:07+00:00,2,How to help friends in FL?,[removed],1,,
-1fyybs5,TropicalWeather,primoslate,2024-10-08T12:15:35+00:00,1,Milton as seen from Cancun,,2,,
-1fyydbw,TropicalWeather,DrBurst,2024-10-08T12:17:51+00:00,2,"Wimauma, Florida evacuation?",[removed],1,,
-1fyyjjg,TropicalWeather,UpsetEmergency5248,2024-10-08T12:26:45+00:00,1,How badly will Milton hit Orlando and Titusville? ,[removed],1,,
-1fyyw9i,TropicalWeather,WippitGuud,2024-10-08T12:44:31+00:00,28,The Atlantic side of Florida has storm surge warning up. How does that happen if the hurricane is coming over land?,"I was under the impression a storm surge is basically a large tide being pushed by the hurricane, but when it comes out into the Atlantic, that side is forecast for a 2-4 ft storm surge. What is causing that?",107,,
-1fyyzdh,TropicalWeather,Inner-Ad-1021,2024-10-08T12:48:45+00:00,2,South FL RN,[removed],1,,
+",,433,milton,milton
+1fyevcl,TropicalWeather,alley00pster,2024-10-07T18:30:42+00:00,2,AccuWeather Projection of Milton at 4pm today,[removed],1,milton,milton
+1fyfj32,TropicalWeather,oklahomasooner55,2024-10-07T18:58:00+00:00,87,"Did any weather models predict Milton, intensity?",It seems like a couple days ago the forecasters were saying there would just be some rain hitting Florida is all. Is the GFS broken or underfunded?,51,milton,milton
+1fygj1f,TropicalWeather,giantspeck,2024-10-07T19:38:43+00:00,3,"Dr. Andy Hazelton discussion on Hurricane Milton — Monday, 7 October",,51,milton,milton
+1fygoxe,TropicalWeather,TheAerial,2024-10-07T19:45:39+00:00,1,"Confession: It's not a perfect fitting way to phrase it, but my whole life I've found Hurricanes ""Exciting"" in a way few things can rival.",[removed],1,milton,hurricane
+1fyi3te,TropicalWeather,cindylooboo,2024-10-07T20:43:54+00:00,1,Sorry for the tiktok sharing but it's relevant. John Morales is pretty emotional when discussing Milton but all the models I'm seeing project weakening? ,[removed],1,milton,milton
+1fyihqh,TropicalWeather,Calm_Improvement659,2024-10-07T20:59:50+00:00,1,NOAA HAFS-A forecasting ~200 MPH max winds,,1,milton,noaa
+1fyjuo1,TropicalWeather,giantspeck,2024-10-07T21:56:22+00:00,26,"National Hurricane Center afternoon video update for Hurricane Milton — Monday, 7 October",,132,milton,milton
+1fymi8r,TropicalWeather,pinpanpunani,2024-10-07T23:58:19+00:00,2,Milton... 180 mph,,1,milton,milton
+1fymi9x,TropicalWeather,Real-Cup-1270,2024-10-07T23:58:20+00:00,125,GOES-16 imagery of a storm currently below 900mb (897mb) ,,744,milton,storm
+1fymld4,TropicalWeather,Consistent_Room7344,2024-10-08T00:02:08+00:00,2,It’s official. Milton has gone sub 900mb,,1,milton,milton
+1fymnd3,TropicalWeather,dazey_blue,2024-10-08T00:04:50+00:00,2,I am seeing news reports that Milton should downgrade from a 5 to a 3. Can someone explain why that is expected?,[removed],1,milton,milton
+1fymr1r,TropicalWeather,King-Valkyrie,2024-10-08T00:09:46+00:00,1,EN VIVO - Cobertura Especial Huracán Milton de Huracán Info,[removed],1,milton,milton
+1fymx9w,TropicalWeather,somethingfortoday,2024-10-08T00:18:26+00:00,1,Can anyone else track the NOAA hurricane Hunter?,[removed],1,milton,hurricane
+1fyn59s,TropicalWeather,js8420,2024-10-08T00:29:28+00:00,1,Another storm coming to FL next week?,[removed],1,milton,storm
+1fynvz2,TropicalWeather,switchsk8r,2024-10-08T01:06:25+00:00,1,"""This hurricane is nearing the mathematical limit of what Earth's atmosphere over this ocean water can produce""",,1,milton,hurricane
+1fyotjn,TropicalWeather,Galileos_grandson,2024-10-08T01:53:47+00:00,20,Three Storms Churn in an Active Atlantic,,103,milton,storm
+1fyp2i5,TropicalWeather,Helicopter-Mission,2024-10-08T02:06:38+00:00,30,Do the tropical storms remove heat from the seas they draw from?,As title. Do these tropical storms remove heat as they form in a measurable way?,86,milton,storm
+1fypxjl,TropicalWeather,saash82,2024-10-08T02:51:56+00:00,1,Is Hurricane Milton going to reach South Georgia? (Tifton area) ,[removed],1,milton,milton
+1fyqhe8,TropicalWeather,Tommy27,2024-10-08T03:21:36+00:00,1,NOAA Documentary on the 1921 Tampa/Tarpon Hurricane,,12,milton,hurricane
+1fyqmsl,TropicalWeather,phishpatch,2024-10-08T03:30:06+00:00,1,Milton will travel over the Chicxulub crater from the meteor that took out the Dinosaurs 66 MYA,[removed],1,milton,milton
+1fyquqv,TropicalWeather,Ilikep0tatoes,2024-10-08T03:42:34+00:00,1,What is the difference between the P-Surge and CERA Storm Surge prediction tools?,,1,milton,storm
+1fyr14w,TropicalWeather,PantherkittySoftware,2024-10-08T03:52:33+00:00,1,Milton vs Pacific,[removed],1,milton,milton
+1fys5ro,TropicalWeather,milesgloriosis,2024-10-08T05:02:01+00:00,2,Milton,[removed],1,milton,milton
+1fyxw33,TropicalWeather,reaccess,2024-10-08T11:52:14+00:00,1,From Tropical Storm to Cat 5 in 24 hours.,,1,milton,storm
+1fyy5za,TropicalWeather,doomgrin,2024-10-08T12:07:06+00:00,1,Milton showing an IR face like Hurricane Mathew ,[removed],1,milton,milton
+1fyybs5,TropicalWeather,primoslate,2024-10-08T12:15:35+00:00,1,Milton as seen from Cancun,,2,milton,milton
+1fyyjjg,TropicalWeather,UpsetEmergency5248,2024-10-08T12:26:45+00:00,1,How badly will Milton hit Orlando and Titusville? ,[removed],1,milton,milton
+1fyyw9i,TropicalWeather,WippitGuud,2024-10-08T12:44:31+00:00,28,The Atlantic side of Florida has storm surge warning up. How does that happen if the hurricane is coming over land?,"I was under the impression a storm surge is basically a large tide being pushed by the hurricane, but when it comes out into the Atlantic, that side is forecast for a 2-4 ft storm surge. What is causing that?",107,milton,hurricane
 1fyz567,TropicalWeather,CoachAccomplished107,2024-10-08T12:56:56+00:00,17,"How does Gulf of Mexico give birth to and harbour such powerful Hurricanes/Cyclones so frequently, despite its relatively small size ?","I want to know the science behind this. I tried reading online, but I couldn't find any explanation that answers my question. All I get is the generic information that The Gulf has hot waters.
 
 Gulf of Mexico isn't too small but at the same time it isn't too big . I get that it has hot water and has help of the gulf stream which helps in forming the hurricane, but in order for a hurricane to increase its speeds and gather power , the hurricane/system needs to be in water for quite some time so that it can gather speed.
@@ -1130,13 +1105,12 @@ Surrounding India there are have Arabian Sea and Bay of Bengal , both of which f
 
 Anwers are highly appreciated.
 
-Thank you",34,,
-1fyz9lv,TropicalWeather,Fluffy_Yesterday_468,2024-10-08T13:02:38+00:00,50,Is contraflow a real thing? ,I keep seeing tweets like this suggesting that the state turn the other direction of the highway around so most lanes are leaving the state. Is that a thing that is regularly done? https://x.com/geauxgabrielle/status/1843471753349402963?s=46,28,,
+Thank you",34,milton,hurricane
 1fz0h1d,TropicalWeather,giantspeck,2024-10-08T13:59:56+00:00,0,A new discussion for Milton will be posted after the next full NHC advisory at 10:00 AM CDT (15:00 UTC) today.,"# Moderator note
 
 Because this post has surpassed 10,000 comments and has become nearly completely unmanageable, a new one will be posted after the National Hurricane Center issues the next full advisory at 10:00 AM CDT (15:00 UTC).
 
-This post will be locked before the new discussion is posted.  Please do not panic or message the moderators when this happens.  It will only take a couple minutes to get the new discussion posted and stickied.",154,,
+This post will be locked before the new discussion is posted.  Please do not panic or message the moderators when this happens.  It will only take a couple minutes to get the new discussion posted and stickied.",154,milton,milton
 1fz1yts,TropicalWeather,Euronotus,2024-10-08T15:04:05+00:00,6754,Milton (14L — Gulf of Mexico): Meteorological Discussion (Day 4),"# Latest observation
 - - - - - - - - - - - - - - - - - - - -
 **Last updated:** Tuesday, 8 October — 10:00 AM Central Daylight Time (CDT; 15:00 UTC)
@@ -1344,25 +1318,21 @@ Hour  | Date  | Time  |    |  Intensity  |    |  Winds  |    |  Lat  |  Long
 
 * **Weather Nerds:** [GEFS (120 hours)](https://www.weathernerds.org/models/gefs.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=748&initrange=38.000000000160:253.371428571240:8.285714285760:303.428571428520&initcx1=744&initcy1=187&initcx2=880&initcy2=281&initcross=False&initsound=False&initsoundx=739&initsoundy=182&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
 
-* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=748&initrange=38.000000000160:253.371428571240:8.285714285760:303.428571428520&initcx1=744&initcy1=187&initcx2=880&initcy2=281&initcross=False&initsound=False&initsoundx=739&initsoundy=182&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",343,,
-1fz21ma,TropicalWeather,Puzzleheaded-Use3635,2024-10-08T15:07:11+00:00,1,X,[removed],1,,
-1fz2jlm,TropicalWeather,_Dihydrogen_Monoxide,2024-10-08T15:28:10+00:00,1,"Cape Coral, FL. Surge Map",[removed],1,,
+* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=748&initrange=38.000000000160:253.371428571240:8.285714285760:303.428571428520&initcx1=744&initcy1=187&initcx2=880&initcy2=281&initcross=False&initsound=False&initsoundx=739&initsoundy=182&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",343,milton,milton
 1fz2ltq,TropicalWeather,tmpkn,2024-10-08T15:30:51+00:00,30,Storm Surge vs distance from water,"Is there a way to find out how much inland the storm surge level holds?
 
 In other words: let's say it's 15ft. Does it mean we simply draw an infinite line inland at 15ft elevation, or does it decrease the further away from water you go?
 
 For context: we're in in Sarasota, FL (UTC Mall). According to FL maps, our elevation is 25-30 ft. We are \~10 miles away from the Gulf / \~7 miles away from the inner coast channel. I am trying to decide if there's a risk of water getting into our garage - wife's car is EV.
 
-In other words: do we evacuate with 1 or 2 cars?",102,,
-1fz4arm,TropicalWeather,thegr8northern,2024-10-08T16:41:10+00:00,1,Will Milton affect Carribean? ,[removed],1,,
-1fz4cbh,TropicalWeather,tinyadorablebabyfox,2024-10-08T16:42:57+00:00,27,If you have chosen to stay in FL during Milton PLEASE GO TO A SHELTER. There are FREE RIDES AVAILABLE,,165,,
-1fz4gsd,TropicalWeather,tinyadorablebabyfox,2024-10-08T16:48:01+00:00,1,If you are in a location in which you might lose power during Hurricane Milton and have an iPhone. Please UPDATE TO IOS18. There is an SOS radar function that could save your life or let you connect with loved ones. ,[removed],1,,
-1fz4j63,TropicalWeather,Block-Forsaken,2024-10-08T16:50:47+00:00,1,coconuts revolution,,1,,
-1fz4zns,TropicalWeather,_yeahdawg,2024-10-08T17:09:38+00:00,1,Is it still possible for Milton to hit Florida as a Category 5?,[removed],1,,
-1fz597k,TropicalWeather,giantspeck,2024-10-08T17:20:35+00:00,16,"Tropical Tidbits for Tuesday, 8 October: Hurricane Milton to Bring Extreme Impacts to Florida Wednesday and Thursday",,192,,
-1fz59rw,TropicalWeather,giantspeck,2024-10-08T17:21:11+00:00,2,"National Hurricane Center morning update for Hurricane Milton — Tuesday, 8 October",,61,,
-1fz6k9x,TropicalWeather,Featherhate,2024-10-08T18:14:30+00:00,2,Mesovortices in Milton's eye?,,1,,
-1fz78l2,TropicalWeather,christianmel96,2024-10-08T18:43:23+00:00,1,Any tip on how to tell a friend to leave Tampa? Tells me Evacs are for the weak.,,1,,
+In other words: do we evacuate with 1 or 2 cars?",102,milton,storm
+1fz4arm,TropicalWeather,thegr8northern,2024-10-08T16:41:10+00:00,1,Will Milton affect Carribean? ,[removed],1,milton,milton
+1fz4cbh,TropicalWeather,tinyadorablebabyfox,2024-10-08T16:42:57+00:00,27,If you have chosen to stay in FL during Milton PLEASE GO TO A SHELTER. There are FREE RIDES AVAILABLE,,165,milton,milton
+1fz4gsd,TropicalWeather,tinyadorablebabyfox,2024-10-08T16:48:01+00:00,1,If you are in a location in which you might lose power during Hurricane Milton and have an iPhone. Please UPDATE TO IOS18. There is an SOS radar function that could save your life or let you connect with loved ones. ,[removed],1,milton,milton
+1fz4zns,TropicalWeather,_yeahdawg,2024-10-08T17:09:38+00:00,1,Is it still possible for Milton to hit Florida as a Category 5?,[removed],1,milton,milton
+1fz597k,TropicalWeather,giantspeck,2024-10-08T17:20:35+00:00,16,"Tropical Tidbits for Tuesday, 8 October: Hurricane Milton to Bring Extreme Impacts to Florida Wednesday and Thursday",,192,milton,milton
+1fz59rw,TropicalWeather,giantspeck,2024-10-08T17:21:11+00:00,2,"National Hurricane Center morning update for Hurricane Milton — Tuesday, 8 October",,61,milton,milton
+1fz6k9x,TropicalWeather,Featherhate,2024-10-08T18:14:30+00:00,2,Mesovortices in Milton's eye?,,1,milton,milton
 1fz79gm,TropicalWeather,Stunning-Field8535,2024-10-08T18:44:26+00:00,14,Have any other hurricanes formed in the gulf to hit FL? ,"My thoughts and prayers are with everyone in FL. My heart is breaking for our family and even strangers being affected by these storms back to back. 
 
 Helene and now Milton have gotten me thinking - why are we just now seeing so many extremely intense storms forming in the gulf and what do we think is causing them to form in the Bay of Campeche and move eastward when historically these storms move west? 
@@ -1373,29 +1343,20 @@ Are there other hurricanes formed in the gulf that made landfall in FL I’m una
 
 As we know, most hurricanes form in the Atlantic and either strike the east coast of the  US or intensify through the gulf. However, very few storms actually form in the Gulf and even fewer of those seem to hit Florida. 
 
-Charley was technically the Caribbean Sea and Ivan and Andrew formed out in the Atlantic. ",0,,
-1fz7hu8,TropicalWeather,thisrockismyboone,2024-10-08T18:53:53+00:00,6,How do you view the old version of the hurricane tracker from NOAA?,I can't figure out how to use this new website and I'm used to the traditional maps and models.,15,,
-1fz8u1z,TropicalWeather,Opening_Confidence52,2024-10-08T19:50:09+00:00,2,How I finally got my mother to leave for Katrina ,[removed],1,,
-1fz951z,TropicalWeather,Lue_lue_lueX,2024-10-08T20:03:00+00:00,2,Live cam?,[removed],1,,
-1fz992p,TropicalWeather,SOC_FreeDiver,2024-10-08T20:07:41+00:00,1,EPAC Status and 99E,[removed],4,,
-1fz9un1,TropicalWeather,EmergencyStomach8351,2024-10-08T20:33:20+00:00,65,"Milton's new eye, 10/8/24, 4:30pm ET",,544,,
-1fzayt9,TropicalWeather,Old-Atmosphere-7957,2024-10-08T21:21:03+00:00,1,Anything helps ,[removed],1,,
-1fzb92i,TropicalWeather,011010-,2024-10-08T21:33:18+00:00,2,Timelapse of hurricane Milton from the International Space Station captured few hours ago.,,324,,
-1fzbgqq,TropicalWeather,Practical_Toe_9627,2024-10-08T21:42:34+00:00,1,Is it just me or does Milton remind me so much of Rita,[removed],1,,
-1fzbmhi,TropicalWeather,giantspeck,2024-10-08T21:49:36+00:00,4,"National Hurricane Center afternoon update on Hurricane Milton — Tuesday, 8 October",,94,,
-1fzce78,TropicalWeather,Content-Swimmer2325,2024-10-08T22:24:03+00:00,19,A close-up of Hurricane Milton's eye.,,106,,
-1fzd8m2,TropicalWeather,Real-Cup-1270,2024-10-08T23:03:14+00:00,1,Milton being spooky (905mb as of 4:30pm CDT 10/8/24),,1,,
-1fze3us,TropicalWeather,Weekly-Bread4394,2024-10-08T23:45:16+00:00,0,Uh oh… let’s pray for the people who are going through this crisis ,[removed],1,,
-1fzeot2,TropicalWeather,Kitchen_Mixture1601,2024-10-09T00:13:51+00:00,0,I'm here looking for serious relationship ,[removed],1,,
-1fzepba,TropicalWeather,IcyLocal9214,2024-10-09T00:14:31+00:00,1,Working during hurricane,[removed],1,,
-1fzf1ii,TropicalWeather,batture,2024-10-09T00:31:36+00:00,1,"I noticed that the trajectories of this year's hurricanes appear to be very similar and ""ordered"" compared to previous years where the different paths seemed to be way more chaotic. Is there a particular underlying reason for this or is it just meaningless pattern recognition on my part?",,1,,
-1fzgpkn,TropicalWeather,Disastrous-Sun774,2024-10-09T01:57:49+00:00,2,Aww it’s smiling!,,1,,
-1fzhgco,TropicalWeather,linux_blog,2024-10-09T02:37:34+00:00,2,Sub reddit with live chat?,[removed],1,,
-1fzhwn1,TropicalWeather,Content-Swimmer2325,2024-10-09T03:02:13+00:00,19,"The 2024 Atlantic hurricane season has now generated 127 ACE (Accumulated Cyclone Energy), officially meeting NOAA's definition of an above-normal season.",,222,,
-1fzi75h,TropicalWeather,Sad_Pen_8677,2024-10-09T03:18:32+00:00,1,Tropical Storm Helene strengthens as hurricane warnings cover parts of Florida and Mexico,,1,,
-1fzidwm,TropicalWeather,sunset_valley_,2024-10-09T03:29:34+00:00,0,"Why is heavy rain expected on the north (left) side of hurricane Milton even though the south(east) is the dirty side (right side in northern hemisphere)? Also, which side will have stronger wind?",,1,,
-1fzigu0,TropicalWeather,Next_Hawk_6816,2024-10-09T03:34:11+00:00,2,Why does it look like another form of storm is developing ahead of Milton? ,[removed],1,,
-1fzizh4,TropicalWeather,RomanosTheMelodist,2024-10-09T04:05:18+00:00,1,My cousin isn't evacuating and I'm terrified for his safety,[removed],2,,
+Charley was technically the Caribbean Sea and Ivan and Andrew formed out in the Atlantic. ",0,milton,milton
+1fz7hu8,TropicalWeather,thisrockismyboone,2024-10-08T18:53:53+00:00,6,How do you view the old version of the hurricane tracker from NOAA?,I can't figure out how to use this new website and I'm used to the traditional maps and models.,15,milton,hurricane
+1fz9un1,TropicalWeather,EmergencyStomach8351,2024-10-08T20:33:20+00:00,65,"Milton's new eye, 10/8/24, 4:30pm ET",,544,milton,milton
+1fzb92i,TropicalWeather,011010-,2024-10-08T21:33:18+00:00,2,Timelapse of hurricane Milton from the International Space Station captured few hours ago.,,324,milton,milton
+1fzbgqq,TropicalWeather,Practical_Toe_9627,2024-10-08T21:42:34+00:00,1,Is it just me or does Milton remind me so much of Rita,[removed],1,milton,milton
+1fzbmhi,TropicalWeather,giantspeck,2024-10-08T21:49:36+00:00,4,"National Hurricane Center afternoon update on Hurricane Milton — Tuesday, 8 October",,94,milton,milton
+1fzce78,TropicalWeather,Content-Swimmer2325,2024-10-08T22:24:03+00:00,19,A close-up of Hurricane Milton's eye.,,106,milton,milton
+1fzd8m2,TropicalWeather,Real-Cup-1270,2024-10-08T23:03:14+00:00,1,Milton being spooky (905mb as of 4:30pm CDT 10/8/24),,1,milton,milton
+1fzepba,TropicalWeather,IcyLocal9214,2024-10-09T00:14:31+00:00,1,Working during hurricane,[removed],1,milton,hurricane
+1fzf1ii,TropicalWeather,batture,2024-10-09T00:31:36+00:00,1,"I noticed that the trajectories of this year's hurricanes appear to be very similar and ""ordered"" compared to previous years where the different paths seemed to be way more chaotic. Is there a particular underlying reason for this or is it just meaningless pattern recognition on my part?",,1,milton,hurricane
+1fzhwn1,TropicalWeather,Content-Swimmer2325,2024-10-09T03:02:13+00:00,19,"The 2024 Atlantic hurricane season has now generated 127 ACE (Accumulated Cyclone Energy), officially meeting NOAA's definition of an above-normal season.",,222,milton,hurricane
+1fzi75h,TropicalWeather,Sad_Pen_8677,2024-10-09T03:18:32+00:00,1,Tropical Storm Helene strengthens as hurricane warnings cover parts of Florida and Mexico,,1,milton,hurricane
+1fzidwm,TropicalWeather,sunset_valley_,2024-10-09T03:29:34+00:00,0,"Why is heavy rain expected on the north (left) side of hurricane Milton even though the south(east) is the dirty side (right side in northern hemisphere)? Also, which side will have stronger wind?",,1,milton,milton
+1fzigu0,TropicalWeather,Next_Hawk_6816,2024-10-09T03:34:11+00:00,2,Why does it look like another form of storm is developing ahead of Milton? ,[removed],1,milton,milton
 1fzkycp,TropicalWeather,giantspeck,2024-10-09T06:16:49+00:00,1,This subreddit is now in Storm Mode,"# Overview
 
 **As Hurricane Milton is now within 48 hours of landfall, we have activated Storm Mode.**
@@ -1427,10 +1388,10 @@ We will be posting a series of supplemental discussions over the next few hours:
 * A discussion for post-storm recovery, response, and cleanup. (This post will be locked until after the storm emerges over the Atlantic Ocean on Thursday evening.)
 
 
-**We are also planning to create a Reddit Live post shortly.**  We are in the process of determining the best time to start the Reddit Live post in order to get the most participation out of our moderators and approved users.",513,,
+**We are also planning to create a Reddit Live post shortly.**  We are in the process of determining the best time to start the Reddit Live post in order to get the most participation out of our moderators and approved users.",513,milton,milton
 1fzl29u,TropicalWeather,giantspeck,2024-10-09T06:25:02+00:00,71,Milton (14L — Gulf of Mexico): Live Camera Feeds,"We will be updating this post with links to live camera feeds in areas which are expected to be affected by Hurricane Milton.
 
-Feel free to share links to camera feeds in the comments below and we'll add them to the list.",179,,
+Feel free to share links to camera feeds in the comments below and we'll add them to the list.",179,milton,milton
 1fzl45g,TropicalWeather,giantspeck,2024-10-09T06:28:56+00:00,42,Milton (14L — Gulf of Mexico): Live Streams,"
 Please use this post to discuss live streams in areas which are expected to be affected by Hurricane Milton as it nears landfall over the next 48 hours.  
 
@@ -1440,12 +1401,12 @@ Please use this post to discuss live streams in areas which are expected to be a
 
 
 
-Feel free to share links to live streams in the comments below and we'll add them to the list.",103,,
+Feel free to share links to live streams in the comments below and we'll add them to the list.",103,milton,milton
 1fzl57c,TropicalWeather,giantspeck,2024-10-09T06:31:06+00:00,58,Milton (14L — Gulf of Mexico): On-the-ground observations,"# THIS POST IS TEMPORARILY LOCKED UNTIL HURRICANE MILTON GETS CLOSER TO LANDFALL.
 
 Please use this post to discuss on-the-ground observations before and after Hurricane Milton makes landfall.
 
-**Please keep these comments out of the meteorological discussion.  We will be removing comments from that post which violate this temporary rule.**",120,,
+**Please keep these comments out of the meteorological discussion.  We will be removing comments from that post which violate this temporary rule.**",120,milton,milton
 1fzlbep,TropicalWeather,Euronotus,2024-10-09T06:44:21+00:00,1,Global Tropical Outlook & Discussion: 7-13 October 2024,"# Current discussions
 - - - - - - - - - - - - - - - - - - - - - - 
 **Last updated:** Wednesday, 9 October — 06:30 Coordinated Universal Time (UTC)
@@ -1534,8 +1495,8 @@ Please use this post to discuss on-the-ground observations before and after Hurr
 
 ## Climate Prediction Center
 
-*  [**Global Tropics Hazards Outlook**](https://www.cpc.ncep.noaa.gov/products/precip/CWlink/ghazards/index.php)",18,,
-1fzlc8r,TropicalWeather,Galileos_grandson,2024-10-09T06:46:02+00:00,1,Fuel for Hurricane Milton,,27,,
+*  [**Global Tropics Hazards Outlook**](https://www.cpc.ncep.noaa.gov/products/precip/CWlink/ghazards/index.php)",18,milton,milton
+1fzlc8r,TropicalWeather,Galileos_grandson,2024-10-09T06:46:02+00:00,1,Fuel for Hurricane Milton,,27,milton,milton
 1fzocnm,TropicalWeather,Euronotus,2024-10-09T10:37:52+00:00,6,93L (Invest — Southwestern Atlantic),"# Latest Observation
 - - - - - - - - - - - - - - - - - - - -
 **Last updated:** Wednesday, 9 October — 2:00 AM Atlantic Standard Time (AST; 06:00 UTC)
@@ -1688,7 +1649,7 @@ ATCF  |    |  2:00 AM AST (06:00 UTC)
 
 * **Weather Nerds:** [GEFS (120 hours)](https://www.weathernerds.org/models/gefs.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=748&initrange=38.000000000160:253.371428571240:8.285714285760:303.428571428520&initcx1=744&initcy1=187&initcx2=880&initcy2=281&initcross=False&initsound=False&initsoundx=739&initsoundy=182&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
 
-* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=748&initrange=38.000000000160:253.371428571240:8.285714285760:303.428571428520&initcx1=744&initcy1=187&initcx2=880&initcy2=281&initcross=False&initsound=False&initsoundx=739&initsoundy=182&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",15,,
+* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=748&initrange=38.000000000160:253.371428571240:8.285714285760:303.428571428520&initcx1=744&initcy1=187&initcx2=880&initcy2=281&initcross=False&initsound=False&initsoundx=739&initsoundy=182&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",15,milton,hurricane
 1fzoh1v,TropicalWeather,giantspeck,2024-10-09T10:46:00+00:00,0,Barijat (21W — Western Pacific),"# Latest observation
 - - - - - - - - - - - - - - - - - - - -
 **Last updated:** Wednesday, 9 October — 3:00 AM Japan Standard Time (JST; 18:00 UTC)
@@ -1861,7 +1822,7 @@ The options to select individual bandwidths on each of the following websites ma
 ## Regional ensemble model guidance
 
 * **Weather Nerds:** [GEFS (120 hours)](https://www.weathernerds.org/models/gefs.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=711&initrange=32.908000000038:104.590476190440:7.524000000000:149.557142857075&initcx1=111&initcy1=322&initcx2=598&initcy2=646&initcross=False&initsound=False&initsoundx=106&initsoundy=317&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
-* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=711&initrange=32.908000000038:104.590476190440:7.524000000000:149.557142857075&initcx1=111&initcy1=322&initcx2=598&initcy2=646&initcross=False&initsound=False&initsoundx=106&initsoundy=317&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",1,,
+* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=711&initrange=32.908000000038:104.590476190440:7.524000000000:149.557142857075&initcx1=111&initcy1=322&initcx2=598&initcy2=646&initcross=False&initsound=False&initsoundx=106&initsoundy=317&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",1,milton,hurricane
 1fzohkb,TropicalWeather,Euronotus,2024-10-09T10:46:55+00:00,0,Barijat (21W — Western Pacific),"# Latest observation
 - - - - - - - - - - - - - - - - - - - -
 **Last updated:** Wednesday, 9 October — 3:00 AM Japan Standard Time (JST; 18:00 UTC)
@@ -2034,7 +1995,7 @@ The options to select individual bandwidths on each of the following websites ma
 ## Regional ensemble model guidance
 
 * **Weather Nerds:** [GEFS (120 hours)](https://www.weathernerds.org/models/gefs.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=711&initrange=32.908000000038:104.590476190440:7.524000000000:149.557142857075&initcx1=111&initcy1=322&initcx2=598&initcy2=646&initcross=False&initsound=False&initsoundx=106&initsoundy=317&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
-* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=711&initrange=32.908000000038:104.590476190440:7.524000000000:149.557142857075&initcx1=111&initcy1=322&initcx2=598&initcy2=646&initcross=False&initsound=False&initsoundx=106&initsoundy=317&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",11,,
+* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=711&initrange=32.908000000038:104.590476190440:7.524000000000:149.557142857075&initcx1=111&initcy1=322&initcx2=598&initcy2=646&initcross=False&initsound=False&initsoundx=106&initsoundy=317&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",11,milton,hurricane
 1fzv2ub,TropicalWeather,Euronotus,2024-10-09T16:08:24+00:00,6968,Milton (14L — Gulf of Mexico): Meteorological Discussion (Day 5),"# Latest observation
 - - - - - - - - - - - - - - - - - - - -
 **Last updated:** Wednesday, 9 October — 12:00 PM Eastern Daylight Time (EDT; 16:00 UTC)
@@ -2232,8 +2193,8 @@ Hour  | Date  | Time  |    |  Intensity  |    |  Winds  |    |  Lat  |  Long
 
 * **Weather Nerds:** [GEFS (120 hours)](https://www.weathernerds.org/models/gefs.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=748&initrange=38.000000000160:253.371428571240:8.285714285760:303.428571428520&initcx1=744&initcy1=187&initcx2=880&initcy2=281&initcross=False&initsound=False&initsoundx=739&initsoundy=182&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
 
-* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=748&initrange=38.000000000160:253.371428571240:8.285714285760:303.428571428520&initcx1=744&initcy1=187&initcx2=880&initcy2=281&initcross=False&initsound=False&initsoundx=739&initsoundy=182&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",197,,
-1fzwlk4,TropicalWeather,giantspeck,2024-10-09T17:11:09+00:00,12,"Tropical Tidbits for Wednesday, 9 October: Hurricane Milton on Final Approach to Florida",,151,,
-1fzwomb,TropicalWeather,giantspeck,2024-10-09T17:14:39+00:00,1,"National Hurricane Center morning update on Hurricane Milton — Wednesday, 9 October",,41,,
-1fzxw1c,TropicalWeather,HaydenSD,2024-10-09T18:04:57+00:00,0,/r/TropicalWeather Live Thread for Hurricane Milton,,157,,
-1g043fd,TropicalWeather,giantspeck,2024-10-09T22:31:41+00:00,1,"National Hurricane Center afternoon update on Hurricane Milton — Wednesday, 9 October",,41,,
+* **Weather Nerds:** [ECENS (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=determine&initfhour=120&initimdimx=1050&initimdimy=748&initrange=38.000000000160:253.371428571240:8.285714285760:303.428571428520&initcx1=744&initcy1=187&initcx2=880&initcy2=281&initcross=False&initsound=False&initsoundx=739&initsoundy=182&initloop=False&initoverlay=False&initlstart=000&initlend=336&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)",197,milton,milton
+1fzwlk4,TropicalWeather,giantspeck,2024-10-09T17:11:09+00:00,12,"Tropical Tidbits for Wednesday, 9 October: Hurricane Milton on Final Approach to Florida",,151,milton,milton
+1fzwomb,TropicalWeather,giantspeck,2024-10-09T17:14:39+00:00,1,"National Hurricane Center morning update on Hurricane Milton — Wednesday, 9 October",,41,milton,milton
+1fzxw1c,TropicalWeather,HaydenSD,2024-10-09T18:04:57+00:00,0,/r/TropicalWeather Live Thread for Hurricane Milton,,157,milton,milton
+1g043fd,TropicalWeather,giantspeck,2024-10-09T22:31:41+00:00,1,"National Hurricane Center afternoon update on Hurricane Milton — Wednesday, 9 October",,41,milton,milton

@@ -79,8 +79,7 @@ if __name__ == "__main__":
     keywords = ["milton", "hurricane", "storm", "flood", "power", "weather", "outage", "category", "fema", "noaa"]
     
     # Location-based subreddits
-    location_subreddits = ["georgia", "northcarolina"]
-    # location_subreddits = ["sarasota", "tampa", "florida", "georgia", "northcarolina"]
+    location_subreddits = ["sarasota", "tampa", "florida", "georgia", "northcarolina"]
     
     # Hurricane-based subreddits (no keyword filtering needed)
     hurricane_subreddits = ["hurricane", "tropicalweather"]
@@ -98,7 +97,14 @@ if __name__ == "__main__":
             selftext = (post.get("selftext") or "").lower()
             content = title + " " + selftext
             if any(kw.lower() in content for kw in keywords):
-                posts.append(post)
+                post_copy = post.copy()
+                post_copy["hurricane"] = "milton"
+                # Find which keyword actually matched
+                for keyword in keywords:
+                    if keyword.lower() in content:
+                        post_copy["keyword_hit"] = keyword
+                        break
+                posts.append(post_copy)
         
         print(f"  {len(posts)} posts (from {len(posts_all)} total)")
         save_csv(posts, f"../../data/reddit/milton/{subreddit}_posts.csv", "posts")
@@ -106,7 +112,17 @@ if __name__ == "__main__":
         # Pull all comments from subreddit, then filter to only those from collected posts
         post_ids = {f"t3_{post['id']}" for post in posts}  # API uses t3_ prefix for post IDs
         comments_all = collect("comments", subreddit, None, after, before)
-        comments = [c for c in comments_all if c.get("link_id") in post_ids]
+        comments = []
+        for c in comments_all:
+            if c.get("link_id") in post_ids:
+                comment_copy = c.copy()
+                # Find the matching post to get hurricane and keyword_hit
+                for post in posts:
+                    if c.get("link_id") == f"t3_{post['id']}":
+                        comment_copy["hurricane"] = post["hurricane"]
+                        comment_copy["keyword_hit"] = post.get("keyword_hit")
+                        break
+                comments.append(comment_copy)
         print(f"  {len(comments)} comments (from {len(posts)} posts)")
         save_csv(comments, f"../../data/reddit/milton/{subreddit}_comments.csv", "comments")
     
@@ -114,107 +130,134 @@ if __name__ == "__main__":
     for subreddit in hurricane_subreddits:
         print(f"Pulling from r/{subreddit}...")
         # Pull posts
-        posts = collect("posts", subreddit, None, after, before)
-        print(f"  {len(posts)} posts")
+        posts_all = collect("posts", subreddit, None, after, before)
+        
+        # Filter posts that contain any of the keywords in title or selftext
+        posts = []
+        for post in posts_all:
+            title = (post.get("title") or "").lower()
+            selftext = (post.get("selftext") or "").lower()
+            content = title + " " + selftext
+            if any(kw.lower() in content for kw in keywords):
+                post_copy = post.copy()
+                post_copy["hurricane"] = "milton"
+                # Find which keyword actually matched
+                for keyword in keywords:
+                    if keyword.lower() in content:
+                        post_copy["keyword_hit"] = keyword
+                        break
+                posts.append(post_copy)
+        
+        print(f"  {len(posts)} posts (from {len(posts_all)} total)")
         save_csv(posts, f"../../data/reddit/milton/{subreddit}_posts.csv", "posts")
         
         # Pull all comments from subreddit, then filter to only those from collected posts
         post_ids = {f"t3_{post['id']}" for post in posts}
         comments_all = collect("comments", subreddit, None, after, before)
-        comments = [c for c in comments_all if c.get("link_id") in post_ids]
+        comments = []
+        for c in comments_all:
+            if c.get("link_id") in post_ids:
+                comment_copy = c.copy()
+                # Find the matching post to get hurricane and keyword_hit
+                for post in posts:
+                    if c.get("link_id") == f"t3_{post['id']}":
+                        comment_copy["hurricane"] = post["hurricane"]
+                        comment_copy["keyword_hit"] = post.get("keyword_hit")
+                        break
+                comments.append(comment_copy)
         print(f"  {len(comments)} comments (from {len(posts)} posts)")
         save_csv(comments, f"../../data/reddit/milton/{subreddit}_comments.csv", "comments")
     
-    # Pull from whitehouse46 user
-    print("Pulling from u/whitehouse46...")
+    # # Pull from whitehouse46 user
+    # print("Pulling from u/whitehouse46...")
     
-    # Pull all posts from whitehouse46 (use wide date range to capture all)
-    all_posts = collect(kind="posts", subreddit="", author="whitehouse", after="2024-08-01", before="2024-11-15")
-    print(f"  {len(all_posts)} total posts")
+    # # Pull all posts from whitehouse46 (use wide date range to capture all)
+    # all_posts = collect(kind="posts", subreddit="", author="whitehouse", after="2024-08-01", before="2024-11-15")
+    # print(f"  {len(all_posts)} total posts")
     
-    # Filter posts by milton keyword
-    milton_posts = []
-    for post in all_posts:
-        title = (post.get("title") or "").lower()
-        selftext = (post.get("selftext") or "").lower()
-        content = title + " " + selftext
-        if "milton" in content:
-            post_copy = post.copy()
-            post_copy["hurricane"] = "milton"
-            # Find which keyword actually matched
-            for keyword in keywords:
-                if keyword.lower() in content:
-                    post_copy["keyword_hit"] = keyword
-                    break
-            milton_posts.append(post_copy)
+    # # Filter posts by milton keyword
+    # milton_posts = []
+    # for post in all_posts:
+    #     title = (post.get("title") or "").lower()
+    #     selftext = (post.get("selftext") or "").lower()
+    #     content = title + " " + selftext
+    #     if "milton" in content:
+    #         post_copy = post.copy()
+    #         post_copy["hurricane"] = "milton"
+    #         # Find which keyword actually matched
+    #         for keyword in keywords:
+    #             if keyword.lower() in content:
+    #                 post_copy["keyword_hit"] = keyword
+    #                 break
+    #         milton_posts.append(post_copy)
     
-    save_csv(milton_posts, "../../data/reddit/whitehouse/milton_posts.csv", "posts")
+    # save_csv(milton_posts, "../../data/reddit/whitehouse/milton_posts.csv", "posts")
     
     
-    # Filter posts by helene keyword
-    helene_posts = []
-    for post in all_posts:
-        title = (post.get("title") or "").lower()
-        selftext = (post.get("selftext") or "").lower()
-        content = title + " " + selftext
-        if "helene" in content:
-            post_copy = post.copy()
-            post_copy["hurricane"] = "helene"
-            # Find which keyword actually matched
-            for keyword in keywords:
-                if keyword.lower() in content:
-                    post_copy["keyword_hit"] = keyword
-                    break
-            helene_posts.append(post_copy)
+    # # Filter posts by helene keyword
+    # helene_posts = []
+    # for post in all_posts:
+    #     title = (post.get("title") or "").lower()
+    #     selftext = (post.get("selftext") or "").lower()
+    #     content = title + " " + selftext
+    #     if "helene" in content:
+    #         post_copy = post.copy()
+    #         post_copy["hurricane"] = "helene"
+    #         # Find which keyword actually matched
+    #         for keyword in keywords:
+    #             if keyword.lower() in content:
+    #                 post_copy["keyword_hit"] = keyword
+    #                 break
+    #         helene_posts.append(post_copy)
     
-    save_csv(helene_posts, "../../data/reddit/whitehouse/helene_posts.csv", "posts")
+    # save_csv(helene_posts, "../../data/reddit/whitehouse/helene_posts.csv", "posts")
     
-    # Pull comments for milton posts
-    milton_comments = []
-    for post in milton_posts:
-        cursor = "2000-01-01"
-        while True:
-            params = {"link_id": post["id"], "after": cursor, "before": "2099-12-31",
-                      "limit": 100, "sort": "asc"}
-            r = requests.get(f"{BASE}/comments/search", params=params, timeout=30)
-            r.raise_for_status()
-            data = r.json().get("data", [])
-            if not data:
-                break
-            for c in data:
-                comment_copy = c.copy()
-                comment_copy["hurricane"] = post["hurricane"]
-                comment_copy["keyword_hit"] = post["keyword_hit"]
-                milton_comments.append(comment_copy)
-            cursor = data[-1]["created_utc"]
-            if len(data) < 100:
-                break
-            time.sleep(1)
+    # # Pull comments for milton posts
+    # milton_comments = []
+    # for post in milton_posts:
+    #     cursor = "2000-01-01"
+    #     while True:
+    #         params = {"link_id": post["id"], "after": cursor, "before": "2099-12-31",
+    #                   "limit": 100, "sort": "asc"}
+    #         r = requests.get(f"{BASE}/comments/search", params=params, timeout=30)
+    #         r.raise_for_status()
+    #         data = r.json().get("data", [])
+    #         if not data:
+    #             break
+    #         for c in data:
+    #             comment_copy = c.copy()
+    #             comment_copy["hurricane"] = post["hurricane"]
+    #             comment_copy["keyword_hit"] = post["keyword_hit"]
+    #             milton_comments.append(comment_copy)
+    #         cursor = data[-1]["created_utc"]
+    #         if len(data) < 100:
+    #             break
+    #         time.sleep(1)
     
-    print(f"  {len(milton_posts)} milton posts, {len(milton_comments)} milton comments")
-    save_csv(milton_comments, "../../data/reddit/whitehouse/milton_comments.csv", "comments")
+    # print(f"  {len(milton_posts)} milton posts, {len(milton_comments)} milton comments")
+    # save_csv(milton_comments, "../../data/reddit/whitehouse/milton_comments.csv", "comments")
     
-    # Pull comments for helene posts
-    helene_comments = []
-    for post in helene_posts:
-        cursor = "2000-01-01"
-        while True:
-            params = {"link_id": post["id"], "after": cursor, "before": "2099-12-31",
-                      "limit": 100, "sort": "asc"}
-            r = requests.get(f"{BASE}/comments/search", params=params, timeout=30)
-            r.raise_for_status()
-            data = r.json().get("data", [])
-            if not data:
-                break
-            for c in data:
-                comment_copy = c.copy()
-                comment_copy["hurricane"] = post["hurricane"]
-                comment_copy["keyword_hit"] = post["keyword_hit"]
-                helene_comments.append(comment_copy)
-            cursor = data[-1]["created_utc"]
-            if len(data) < 100:
-                break
-            time.sleep(1)
+    # # Pull comments for helene posts
+    # helene_comments = []
+    # for post in helene_posts:
+    #     cursor = "2000-01-01"
+    #     while True:
+    #         params = {"link_id": post["id"], "after": cursor, "before": "2099-12-31",
+    #                   "limit": 100, "sort": "asc"}
+    #         r = requests.get(f"{BASE}/comments/search", params=params, timeout=30)
+    #         r.raise_for_status()
+    #         data = r.json().get("data", [])
+    #         if not data:
+    #             break
+    #         for c in data:
+    #             comment_copy = c.copy()
+    #             comment_copy["hurricane"] = post["hurricane"]
+    #             comment_copy["keyword_hit"] = post["keyword_hit"]
+    #             helene_comments.append(comment_copy)
+    #         cursor = data[-1]["created_utc"]
+    #         if len(data) < 100:
+    #             break
+    #         time.sleep(1)
     
-    print(f"  {len(helene_posts)} helene posts, {len(helene_comments)} helene comments")
-    save_csv(helene_comments, "../../data/reddit/whitehouse/helene_comments.csv", "comments")
+    # print(f"  {len(helene_posts)} helene posts, {len(helene_comments)} helene comments")
+    # save_csv(helene_comments, "../../data/reddit/whitehouse/helene_comments.csv", "comments")
