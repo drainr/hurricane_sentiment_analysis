@@ -8,10 +8,6 @@ Relevance is judged per thread, not per comment: a reply under a hurricane post
 counts as on-topic even with no keyword of its own, which a comment-level filter
 would wrongly throw away.
 
-Usage:
-    cd "HurricaneScratch"
-    python3 build_relevant.py
-
 Built with help from Claude.
 """
 

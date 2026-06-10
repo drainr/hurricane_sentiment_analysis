@@ -3,7 +3,8 @@ House). VADER is built for social-media text and returns neg/neu/pos plus a
 compound score from -1 to +1; we call compound >= 0.05 positive, <= -0.05
 negative, and anything in between neutral.
 
-Built with help from Claude. See https://github.com/cjhutto/vaderSentiment.
+Built with help from Claude.
+Github repo: https://github.com/cjhutto/vaderSentiment.
 """
 
 from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
