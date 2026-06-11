@@ -65,6 +65,7 @@ def build_comment_rows(df: pd.DataFrame) -> pd.DataFrame:
     out["id"]                 = df["id"]
     out["type"]               = "comment"
     out["platform"]           = "reddit"
+    out["hurricane"]          = df["hurricane"]
     out["days_from_landfall"] = ""
     out["source_type"]        = "government_response"
     out["subreddit"]          = df["subreddit"]
@@ -86,6 +87,7 @@ def build_post_rows(df: pd.DataFrame) -> pd.DataFrame:
     out["id"]                 = df["id"]
     out["type"]               = "post"
     out["platform"]           = "reddit"
+    out["hurricane"]          = df["hurricane"]
     out["days_from_landfall"] = ""
     out["source_type"]        = "government"
     out["subreddit"]          = df["subreddit"]

@@ -1,0 +1,9 @@
+data_source,hurricane,N,mean_compound,pct_positive,pct_negative,pct_neutral
+facebook_comments,Debby,16199,0.199,48.9,15.7,35.4
+facebook_comments,Helene,14229,0.1922,47.7,15.5,36.9
+facebook_comments,Milton,29308,0.1439,42.5,19.3,38.2
+reddit_relevant_comments,debby,8766,0.0864,44.4,29.6,26.0
+reddit_relevant_comments,helene,32707,0.0779,42.8,29.6,27.6
+whitehouse_threads_comments,helene,2979,0.0318,40.5,33.8,25.7
+reddit_relevant_comments,milton,79039,0.0483,41.1,32.4,26.5
+whitehouse_threads_comments,milton,1457,0.0438,39.0,31.0,30.0
