@@ -19,7 +19,6 @@ import time
 
 import requests
 
-# ============================ CONFIG — EDIT ME ============================
 HURRICANES = {
     "debby":  {"after": "2024-07-31", "before": "2024-08-06"},  # Jul 31 - Aug 5
     "helene": {"after": "2024-09-23", "before": "2024-09-28"},  # Sep 23 - Sep 27

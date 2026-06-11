@@ -7,10 +7,6 @@ is restricted to each storm's event window.
 Safe to re-run: it globs whatever hurricane folders exist under data/, so once
 Milton's data lands you just drop it in and run this again.
 
-Usage:
-    cd "HurricaneScratch"
-    python3 merge_reddit.py
-
 Built with help from Claude.
 """
 
@@ -22,7 +18,7 @@ import pandas as pd
 DATA_DIR = Path(__file__).resolve().parents[2] / "data" / "reddit"
 OUT_DIR = DATA_DIR / "combined"
 
-# Landfall day = 0 (from 01 - Plan/Hurricanes.md)
+# Landfall day = 0 (project hurricane timeline)
 LANDFALL = {
     "debby": pd.Timestamp("2024-08-05"),
     "helene": pd.Timestamp("2024-09-26"),
@@ -33,8 +29,8 @@ MIN_WORDS = 3                       # drop comments/posts shorter than this
 DELETED = {"[deleted]", "[removed]", ""}
 
 # Layer 2 only: keep rows whose OWN timestamp falls in the Fall-2024 window
-# (inclusive days_from_landfall bounds, matching the Facebook collection windows
-# from 01 - Plan/Hurricanes.md). Reddit comments carry real timestamps, so threads
+# (inclusive days_from_landfall bounds, matching the Facebook collection
+# windows). Reddit comments carry real timestamps, so threads
 # accrue replies for months; we restrict to the event window for apples-to-apples
 # comparability with the day-bounded Facebook data. Raw Layer-1 files keep ALL rows.
 WINDOW = {            # (min_days_from_landfall, max_days_from_landfall)
