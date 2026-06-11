@@ -1,10 +1,9 @@
 """
-split_facebook.py — splits facebook_master.csv into facebook_posts.csv and
-facebook_comments.csv on the `type` column, leaving the master untouched.
+split_reddit.py — modified ver of split_facebook to split reddit data by type
 
-Outputs (data/facebook/):
-  facebook_posts.csv     rows where type == "post"
-  facebook_comments.csv  rows where type == "comment"
+Outputs (data/reddit/*):
+  *_posts.csv     rows where type == "post"
+  *_comments.csv  rows where type == "comment"
 
 Built with help from Claude.
 """
@@ -12,8 +11,8 @@ Built with help from Claude.
 from pathlib import Path
 import pandas as pd
 
-WH = Path(__file__).resolve().parents[2] / "data" / "reddit" / "whitehouse"
-SRC = WH / "whitehouse_threads.csv"
+WH = Path(__file__).resolve().parents[2] / "data" / "reddit" / "combined"
+SRC = WH / "reddit_relevant_vader.csv"
 
 
 def main() -> int:
@@ -33,8 +32,8 @@ def main() -> int:
     # no rows lost or duplicated
     assert len(posts) + len(comments) == len(df), "split does not add back to master"
 
-    posts.to_csv(WH / "whitehouse_threads_posts.csv", index=False)
-    comments.to_csv(WH / "whitehouse_threads_comments.csv", index=False)
+    posts.to_csv(WH / "reddit_relevant_posts_vader.csv", index=False)
+    comments.to_csv(WH / "reddit_relevant_comments_vader.csv", index=False)
 
     print(f"facebook_posts.csv    {len(posts):,} rows")
     print(f"facebook_comments.csv {len(comments):,} rows")
