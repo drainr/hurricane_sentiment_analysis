@@ -1,7 +1,5 @@
-id,type,platform,hurricane,days_from_landfall,source_type,subreddit,keyword_hit,parent_post_id,text,text_length,vader_neg,vader_neu,vader_pos,vader_compound,vader_label
-1fz6k4f,post,reddit,helene,,government,pics,milton,1fz6k4f,President Biden holds a briefing on Hurricane Milton preparation and Hurricane Helene response.,95,0.0,1.0,0.0,0.0,neutral
-1fz6k4f,post,reddit,milton,,government,pics,milton,1fz6k4f,President Biden holds a briefing on Hurricane Milton preparation and Hurricane Helene response.,95,0.0,1.0,0.0,0.0,neutral
-1fz6m28,post,reddit,helene,,government,NorthCarolina,hurricane,1fz6m28,"Quick Update on the Biden-Harris Administration’s Response to Hurricane Helene.
+id,type,platform,hurricane,days_from_landfall,source_type,subreddit,subreddit_category,keyword_hit,parent_post_id,text,text_length,vader_neg,vader_neu,vader_pos,vader_compound,vader_label
+1fz6m28,post,reddit,helene,12,government,NorthCarolina,statewide,hurricane,1fz6m28,"Quick Update on the Biden-Harris Administration’s Response to Hurricane Helene.
 We’re continuing to surge resources to North Carolina to make sure communities have everything they need to recover and rebuild. So far:  
 - FEMA has approved more than $37 million in assistance for over 28,000 households  
 - More than 1,000 FEMA staff are on the ground, with more arriving daily  
@@ -16,14 +14,14 @@ Our Administration will be here for as long as it takes. We encourage survivors 
 - Calling 1-800-621-3362  
 - Visiting [DisasterAssistance.gov](http://DisasterAssistance.gov)  
 - Using the FEMA App",1375,0.017,0.837,0.146,0.9785,positive
-1fz7y6v,post,reddit,helene,,government,Georgia,hurricane,1fz7y6v,"Quick Update on the Biden-Harris Administration’s Response to Hurricane Helene.
+1fz7y6v,post,reddit,helene,12,government,Georgia,statewide,hurricane,1fz7y6v,"Quick Update on the Biden-Harris Administration’s Response to Hurricane Helene.
 We’re continuing to surge resources to Georgia to make sure communities have everything they need to recover and rebuild. So far, FEMA has approved over $48 million in assistance for more than 59,000 survivors. And, FEMA Disaster Survivor Assistance Teams are on the ground continuing to help survivors apply for FEMA assistance and connect them with additional state, local, federal, and voluntary agency resources.  
   
 Our Administration will be here for as long as it takes to recover and rebuild. We encourage survivors to apply for FEMA assistance, which can be done by:  
 - Calling 1-800-621-3362  
 - Visiting [DisasterAssistance.gov](http://DisasterAssistance.gov)  
 - Using the FEMA App",775,0.033,0.858,0.109,0.8176,positive
-1fzrgqt,post,reddit,helene,,government,HurricaneHelene,hurricane,1fzrgqt,"Pushing Back on Hurricane Helene Misinformation
+1fzrgqt,post,reddit,helene,13,government,HurricaneHelene,meteorological,hurricane,1fzrgqt,"Pushing Back on Hurricane Helene Misinformation
 Since Hurricane Helene made landfall, there’s been an influx of misinformation being spread by former President Trump, Congressional Republicans, bad-faith actors, scam artists, and others. It’s wrong, dangerous, and must stop immediately.  
   
 To address just a few:  
@@ -45,7 +43,7 @@ In addition, survivors may qualify for more FEMA and other Federal financial ass
 **Fact:** **FEMA cannot seize your property or land.** Applying for disaster assistance does not grant FEMA or the federal government authority or ownership of your property or land.  
   
 For more information about the facts, you can head to fema.gov/disaster/current/hurricane-helene/rumor-response. And know that our Administration will continue to marshal a whole-of-government response to Hurricane Helene. We will be here for as long as it takes.",2252,0.175,0.751,0.073,-0.9911,negative
-1fzv27b,post,reddit,helene,,government,NorthCarolina,hurricane,1fzv27b,"Quick Update on the Biden-Harris Administration’s Response to Hurricane Helene.
+1fzv27b,post,reddit,helene,13,government,NorthCarolina,statewide,hurricane,1fzv27b,"Quick Update on the Biden-Harris Administration’s Response to Hurricane Helene.
 Our Administration continues to work around the clock to make sure communities in North Carolina have everything they need to recover and rebuild. So far:  
 - FEMA has approved more than $60 million in assistance for over 51,000 households  
 - More than 1,000 FEMA staff are on the ground, with more arriving daily  
@@ -58,30 +56,30 @@ Our Administration will not leave until the job is done. We encourage survivors 
 - Calling 1-800-621-3362  
 - Visiting [DisasterAssistance.gov](http://DisasterAssistance.gov)  
 - Using the FEMA App",965,0.0,0.855,0.145,0.9672,positive
-1fzv2y0,post,reddit,helene,,government,southcarolina,hurricane,1fzv2y0,"Quick Update on the Biden-Harris Administration’s Response to Hurricane Helene.
+1fzv2y0,post,reddit,helene,13,government,southcarolina,statewide,hurricane,1fzv2y0,"Quick Update on the Biden-Harris Administration’s Response to Hurricane Helene.
 Our Administration continues to work around the clock to make sure communities in South Carolina have everything they need to recover and rebuild. So far, FEMA has approved over $77.2 million in assistance for more than 96,000 households.  
   
 Our Administration will not leave until the job is done. We encourage survivors to apply for FEMA assistance, which can be done by:  
 - Calling 1-800-621-3362  
 - Visiting [DisasterAssistance.gov](http://DisasterAssistance.gov)  
 - Using the FEMA App",574,0.0,0.891,0.109,0.82,positive
-1fzv38m,post,reddit,helene,,government,Georgia,hurricane,1fzv38m,"Quick Update on the Biden-Harris Administration’s Response to Hurricane Helene.
+1fzv38m,post,reddit,helene,13,government,Georgia,statewide,hurricane,1fzv38m,"Quick Update on the Biden-Harris Administration’s Response to Hurricane Helene.
 [removed]",89,0.0,1.0,0.0,0.0,neutral
-1fzv3td,post,reddit,helene,,government,Virginia,hurricane,1fzv3td,"Quick Update on the Biden-Harris Administration’s Response to Hurricane Helene.
+1fzv3td,post,reddit,helene,13,government,Virginia,statewide,hurricane,1fzv3td,"Quick Update on the Biden-Harris Administration’s Response to Hurricane Helene.
 Our Administration continues to work around the clock to make sure communities in Virginia have everything they need to recover and rebuild. So far, FEMA has approved over $1.3 million in assistance for more than 709 households.  
   
 Our Administration will not leave until the job is done. We encourage survivors to apply for FEMA assistance, which can be done by:  
 - Calling 1-800-621-3362  
 - Visiting [DisasterAssistance.gov](http://DisasterAssistance.gov)  
 - Using the FEMA App",564,0.0,0.89,0.11,0.82,positive
-1fzv435,post,reddit,helene,,government,Tennessee,hurricane,1fzv435,"Quick Update on the Biden-Harris Administration’s Response to Hurricane Helene.
+1fzv435,post,reddit,helene,13,government,Tennessee,statewide,hurricane,1fzv435,"Quick Update on the Biden-Harris Administration’s Response to Hurricane Helene.
 Our Administration continues to work around the clock to make sure communities in Tennessee have everything they need to recover and rebuild. So far, FEMA has approved over $5.1 million in assistance for 914 households.  
   
 Our Administration will not leave until the job is done. We encourage survivors to apply for FEMA assistance, which can be done by:  
 - Calling 1-800-621-3362  
 - Visiting [DisasterAssistance.gov](http://DisasterAssistance.gov)  
 - Using the FEMA App",555,0.0,0.887,0.113,0.82,positive
-1fzv4nw,post,reddit,milton,,government,florida,milton,1fzv4nw,"Quick Update on the Biden-Harris Administration’s Response to Hurricane Milton.
+1fzv4nw,post,reddit,milton,0,government,florida,statewide,milton,1fzv4nw,"Quick Update on the Biden-Harris Administration’s Response to Hurricane Milton.
 President Biden has directed his Administration to do everything possible to prepare for Hurricane Milton:
 
 * President Biden granted emergency declarations to the State of Florida and the Seminole Tribe of Florida to help cover costs for life-safety and life-sustaining actions ahead of the storm
@@ -110,9 +108,7 @@ We will be there with you as you weather this new storm.
 We know from previous hurricanes that it’s often the case that more lives are lost in the days following the storm than the actual storm itself. We strongly encourage everyone impacted by this storm to stay inside and off the roads – as downed power lines, debris, and road washouts are creating dangerous conditions. Please continue to shelter in place until local leaders give an all-clear.
 
 We will continue to do everything in our power to help you recover and rebuild.",2678,0.038,0.884,0.078,0.9329,positive
-1g0oels,post,reddit,helene,,government,pics,milton,1g0oels,President Biden Receives a Briefing in the Situation Room on Hurricanes Milton and Helene.,90,0.0,1.0,0.0,0.0,neutral
-1g0oels,post,reddit,milton,,government,pics,milton,1g0oels,President Biden Receives a Briefing in the Situation Room on Hurricanes Milton and Helene.,90,0.0,1.0,0.0,0.0,neutral
-1g236sq,post,reddit,helene,,government,florida,milton,1g236sq,"Update on the Biden-Harris Administration’s Response to Hurricane Milton.
+1g236sq,post,reddit,helene,16,government,florida,statewide,milton,1g236sq,"Update on the Biden-Harris Administration’s Response to Hurricane Milton.
 On Friday night, President Biden immediately approved Florida Governor Ron DeSantis’s request for a Major Disaster Declaration for Florida. People in 34 counties in Florida, in addition to the Miccosukee Tribe of Indians of Florida, can now apply for FEMA assistance – including immediate aid to help with urgent needs like food, water and baby formula, as well as longer term needs like home repairs and rental assistance. If you are in a county eligible for both Helene and Milton disaster assistance, you need to submit separate applications for each disaster. You can apply by:
 
 * Visiting [DisasterAssistance.gov](http://DisasterAssistance.gov)
@@ -127,7 +123,7 @@ We continue to urge people impacted by Hurricane Milton to stay safe. Pay attent
 [President Joseph R. Biden, Jr. Approves Florida Disaster Declaration | The White House](https://www.whitehouse.gov/briefing-room/presidential-actions/2024/10/12/president-joseph-r-biden-jr-approves-florida-disaster-declaration-8/)
 
 https://preview.redd.it/1br7rywvkcud1.png?width=2160&format=png&auto=webp&s=2ba5a445125d43aed0b47e9b2325fa39b8929b89",1591,0.077,0.812,0.111,0.6133,positive
-1g236sq,post,reddit,milton,,government,florida,milton,1g236sq,"Update on the Biden-Harris Administration’s Response to Hurricane Milton.
+1g236sq,post,reddit,milton,3,government,florida,statewide,milton,1g236sq,"Update on the Biden-Harris Administration’s Response to Hurricane Milton.
 On Friday night, President Biden immediately approved Florida Governor Ron DeSantis’s request for a Major Disaster Declaration for Florida. People in 34 counties in Florida, in addition to the Miccosukee Tribe of Indians of Florida, can now apply for FEMA assistance – including immediate aid to help with urgent needs like food, water and baby formula, as well as longer term needs like home repairs and rental assistance. If you are in a county eligible for both Helene and Milton disaster assistance, you need to submit separate applications for each disaster. You can apply by:
 
 * Visiting [DisasterAssistance.gov](http://DisasterAssistance.gov)
@@ -142,7 +138,7 @@ We continue to urge people impacted by Hurricane Milton to stay safe. Pay attent
 [President Joseph R. Biden, Jr. Approves Florida Disaster Declaration | The White House](https://www.whitehouse.gov/briefing-room/presidential-actions/2024/10/12/president-joseph-r-biden-jr-approves-florida-disaster-declaration-8/)
 
 https://preview.redd.it/1br7rywvkcud1.png?width=2160&format=png&auto=webp&s=2ba5a445125d43aed0b47e9b2325fa39b8929b89",1591,0.077,0.812,0.111,0.6133,positive
-1g4c6mn,post,reddit,helene,,government,NorthCarolina,hurricane,1g4c6mn,"Update on the Biden-Harris Administration’s Response to Hurricane Helene.
+1g4c6mn,post,reddit,helene,19,government,NorthCarolina,statewide,hurricane,1g4c6mn,"Update on the Biden-Harris Administration’s Response to Hurricane Helene.
 Our Administration continues to surge resources to North Carolina to ensure families, business owners, farmers, and other impacted communities receive the support and assistance they need and deserve. Here is the latest:
 
 * FEMA has approved more than $97.5 million to survivors in housing and other types of assistance
@@ -160,8 +156,7 @@ Survivors can register for federal assistance by:
 * Calling 1-800-621-3362
 * Using the FEMA App
 * Visiting a Disaster Recovery Center in Asheville, Boone, Lenoir, Marion, or Sylva",1910,0.021,0.839,0.14,0.9858,positive
-1g4c76f,post,reddit,milton,,government,pics,milton,1g4c76f,President Biden in Florida this weekend surveying Hurricane Milton damage.,74,0.262,0.738,0.0,-0.4939,negative
-1g8v0y0,post,reddit,helene,,government,NorthCarolina,hurricane,1g8v0y0,"Quick Update on the Biden-Harris Administration’s Response to Hurricane Helene.
+1g8v0y0,post,reddit,helene,25,government,NorthCarolina,statewide,hurricane,1g8v0y0,"Quick Update on the Biden-Harris Administration’s Response to Hurricane Helene.
 Our Administration continues to work around the clock to help communities in North Carolina recover and rebuild from Hurricane Helene. We continue to surge resources and assist families, business owners, farmers, and others receive the support and assistance they need and deserve. And we won’t leave until the job is done.
 
 https://preview.redd.it/3tr77meu65wd1.png?width=2160&format=png&auto=webp&s=431eca1c7f42f3d4a5cc85e8a206346a9997de1b",521,0.018,0.899,0.082,0.6369,positive

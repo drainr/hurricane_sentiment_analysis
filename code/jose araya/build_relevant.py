@@ -66,7 +66,7 @@ def main() -> int:
     # ---- file 2: analysis corpus -------------------------------------------
     rel = out[out["thread_relevant"] & ~out["is_bot"]].copy()
     rel_cols = ["id", "type", "platform", "hurricane", "days_from_landfall",
-                "source_type", "subreddit", "keyword_hit", "parent_post_id",
+                "source_type", "subreddit", "subreddit_category", "keyword_hit", "parent_post_id",
                 "text", "text_length"]
     rel[rel_cols].to_csv(COMB / "reddit_relevant.csv", index=False)
 

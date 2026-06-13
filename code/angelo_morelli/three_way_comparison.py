@@ -23,7 +23,7 @@ LABELS: list[str | None] = [None, None, None]
  
 # Output path — written next to this script by default
 OUT_DIR = os.path.dirname(os.path.abspath(__file__))
-OUTPUT  = os.path.join(OUT_DIR, "vader_comparison_table_comments.csv")
+OUTPUT  = os.path.join(OUT_DIR, "vader_comparison_table_posts.csv")
  
 # ── Helpers ───────────────────────────────────────────────────────────────────
  
@@ -63,7 +63,7 @@ def summarise(df: pd.DataFrame, label: str) -> pd.DataFrame:
  
 def main(paths: list[str]) -> None:
     if not 1 <= len(paths) <= 3:
-        sys.exit("Usage: python vader_comparison_table.py file1.csv [file2.csv] [file3.csv]")
+        sys.exit("Usage: python three_way_comparison.py file1.csv [file2.csv] [file3.csv]")
  
     parts = []
     for i, path in enumerate(paths):

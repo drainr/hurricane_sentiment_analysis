@@ -16,6 +16,7 @@ Built with help from Claude.
 
 from pathlib import Path
 import sys
+import numpy as np
 import pandas as pd
 
 # --- config -----------------------------------------------------------------
@@ -43,6 +44,11 @@ WINDOW = {            # (min_days_from_landfall, max_days_from_landfall)
     "milton": (-4, 0),    # Oct 5 - Oct 9
 }
 
+# subreddit_category groupings
+METEOROLOGICAL = ["TropicalWeather", "hurricane", "HurricaneHelene"]
+LOCAL          = ["tampa", "sarasota", "asheville"]
+STATEWIDE      = ["florida", "georgia", "virginia", "northcarolina", "southcarolina"]
+
 
 def _read_many(pattern: str) -> pd.DataFrame:
     """Read+concat every CSV matching data/*/<pattern>. Tags nothing extra —
@@ -64,6 +70,16 @@ def _days_from_landfall(df: pd.DataFrame) -> pd.Series:
     dt = pd.to_datetime(df["created_date"], errors="coerce").dt.normalize()
     land = df["hurricane"].str.lower().map(LANDFALL)
     return (dt - land).dt.days
+
+
+def _subreddit_category(subreddit: pd.Series) -> pd.Series:
+    conditions = [
+        subreddit.isin(METEOROLOGICAL),
+        subreddit.isin(LOCAL),
+        subreddit.isin(STATEWIDE),
+    ]
+    choices = ["meteorological", "local", "statewide"]
+    return np.select(conditions, choices, default="general")
 
 
 def main() -> int:
@@ -122,9 +138,10 @@ def main() -> int:
     n_win = pre_win - len(unified)
 
     unified["text_length"] = unified["text"].str.len()
+    unified["subreddit_category"] = _subreddit_category(unified["subreddit"])
 
     final_cols = ["id", "type", "platform", "hurricane", "days_from_landfall",
-                  "source_type", "subreddit", "text", "text_length"]
+                  "source_type", "subreddit", "subreddit_category", "text", "text_length"]
     unified = unified[final_cols]
     unified.to_csv(OUT_DIR / "reddit_clean.csv", index=False)
 

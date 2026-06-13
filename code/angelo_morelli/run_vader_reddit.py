@@ -11,8 +11,8 @@ REPO = os.path.dirname(os.path.dirname(HERE))        # repo root
 sys.path.insert(0, HERE)
 from vader_sentiment import analyze_sentiment, label_sentiment  # noqa: E402 
  
-INPUT  = os.path.join(REPO, "data", "reddit", "whitehouse", "whitehouse_threads.csv")
-OUTPUT = os.path.join(REPO, "data", "reddit", "whitehouse", "whitehouse_threads_vader.csv")
+INPUT  = os.path.join(REPO, "data", "reddit", "combined", "reddit_relevant.csv")
+OUTPUT = os.path.join(REPO, "data", "reddit", "combined", "reddit_relevant_vader.csv")
  
 # ── Score ─────────────────────────────────────────────────────────────────────
  

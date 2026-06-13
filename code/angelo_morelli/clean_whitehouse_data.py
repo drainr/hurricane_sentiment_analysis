@@ -12,7 +12,9 @@ Step 2 — Build whitehouse_threads.csv with unified schema:
   id                : original Reddit id
   type              : 'post' or 'comment'
   platform          : 'reddit' (constant)
-  days_from_landfall: empty (to be filled later)
+  hurricane         : copied over
+  days_from_landfall: created_utc date minus the hurricane's landfall date,
+                       in whole days (negative = before landfall)
   source_type       : 'government' for posts, 'government_response' for comments
   subreddit         : subreddit name
   keyword_hit       : keyword that matched
@@ -27,12 +29,28 @@ Output files (written to DATA_DIR):
 
 import pandas as pd
 from pathlib import Path
+import numpy as np
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
 DATA_DIR = Path("../../data/reddit/whitehouse")
 
+HELENE_LANDFALL = pd.Timestamp("2024-09-26")
+MILTON_LANDFALL = pd.Timestamp("2024-10-09")
+
+LANDFALL = {
+    "helene": HELENE_LANDFALL,
+    "milton": MILTON_LANDFALL,
+}
+
 # ── Helpers ───────────────────────────────────────────────────────────────────
+
+def days_from_landfall(hurricane: pd.Series, created_utc: pd.Series) -> pd.Series:
+    """(created_utc date) - (landfall date), in whole days, per row's hurricane."""
+    created_date = pd.to_datetime(created_utc, utc=True).dt.tz_localize(None).dt.normalize()
+    landfall_date = hurricane.map(LANDFALL)
+    return (created_date - landfall_date).dt.days
+
 
 def word_count(text: str) -> int:
     return len(text.split())
@@ -55,6 +73,10 @@ def clean_comments(path: Path):
     stats["short_body"] = int(mask_short.sum())
     df = df[~mask_short].copy()
 
+    mask_pics = df["subreddit"].astype(str).str.strip() == "pics"
+    stats["removed_pics"] = int(mask_pics.sum())
+    df = df[~mask_pics].copy()
+
     stats["total_dropped"] = original_len - len(df)
     stats["remaining"] = len(df)
     return df, stats
@@ -66,9 +88,24 @@ def build_comment_rows(df: pd.DataFrame) -> pd.DataFrame:
     out["type"]               = "comment"
     out["platform"]           = "reddit"
     out["hurricane"]          = df["hurricane"]
-    out["days_from_landfall"] = ""
+    out["days_from_landfall"] = days_from_landfall(df["hurricane"], df["created_utc"])
     out["source_type"]        = "government_response"
     out["subreddit"]          = df["subreddit"]
+    
+    meteorological = ["TropicalWeather", "Gurricane", "HurricaneHelene"]
+    local          = ["tampa", "sarasota", "asheville"]
+    statewide      = ["florida", "Georgia", "Virginia", "NorthCarolina", "southcarolina", "Tennessee"]
+    
+    conditions = [
+        df["subreddit"].isin(meteorological),
+        df["subreddit"].isin(local),
+        df["subreddit"].isin(statewide),
+    ]
+    
+    choices = ["meteorological", "local", "statewide"]
+    
+    out["subreddit_category"] = np.select(conditions, choices, default="general")
+    
     out["keyword_hit"]        = df["keyword_hit"]
     # link_id is like 't3_abc123' — strip the prefix to match post ids
     out["parent_post_id"]     = df["link_id"].astype(str).str.replace(r"^t\d+_", "", regex=True)
@@ -88,13 +125,28 @@ def build_post_rows(df: pd.DataFrame) -> pd.DataFrame:
     out["type"]               = "post"
     out["platform"]           = "reddit"
     out["hurricane"]          = df["hurricane"]
-    out["days_from_landfall"] = ""
+    out["days_from_landfall"] = days_from_landfall(df["hurricane"], df["created_utc"])
     out["source_type"]        = "government"
     out["subreddit"]          = df["subreddit"]
+    
+    meteorological = ["TropicalWeather", "Gurricane", "HurricaneHelene"]
+    local          = ["tampa", "sarasota", "asheville"]
+    statewide      = ["florida", "Georgia", "Virginia", "NorthCarolina", "southcarolina", "Tennessee"]
+    
+    conditions = [
+        df["subreddit"].isin(meteorological),
+        df["subreddit"].isin(local),
+        df["subreddit"].isin(statewide),
+    ]
+    
+    choices = ["meteorological", "local", "statewide"]
+    
+    out["subreddit_category"] = np.select(conditions, choices, default="general")
     out["keyword_hit"]        = df["keyword_hit"]
     out["parent_post_id"]     = df["id"]          # posts are their own parent
     out["text"]               = text
     out["text_length"]        = out["text"].str.len()
+    
     return out
 
 
@@ -124,11 +176,21 @@ def main():
         all_stats.append({"file": path.name, "type": "comments", **stats})
         thread_rows.append(build_comment_rows(df_clean))
 
-    # ── Posts: no cleaning, just build unified rows ───────────────────────────
+    # ── Posts: drop r/pics, otherwise no cleaning ─────────────────────────────
     for path in post_files:
-        print(f"\nLoading posts (no cleaning): {path.name}")
+        print(f"\nLoading posts: {path.name}")
         df = pd.read_csv(path)
-        print(f"  → {len(df)} rows kept as-is")
+        original_len = len(df)
+
+        mask_pics = df["subreddit"].astype(str).str.strip() == "pics"
+        removed_pics = int(mask_pics.sum())
+        df = df[~mask_pics].copy()
+
+        print(f"  → {len(df)} rows kept ({removed_pics} r/pics rows removed of {original_len})")
+        all_stats.append({"file": path.name, "type": "posts",
+                           "removed_pics": removed_pics,
+                           "total_dropped": removed_pics,
+                           "remaining": len(df)})
         thread_rows.append(build_post_rows(df))
 
     # ── Merge and write whitehouse_threads.csv ────────────────────────────────
@@ -148,16 +210,18 @@ def main():
 
     # ── Summary ───────────────────────────────────────────────────────────────
     print("\n" + "=" * 70)
-    print("CLEANING SUMMARY (comments only — posts untouched)")
+    print("CLEANING SUMMARY")
     print("=" * 70)
 
     for s in all_stats:
-        print(f"\n{s['file']}")
-        print(f"  Deleted author rows removed : {s['deleted_author']}")
-        print(f"  [removed] body rows removed : {s['removed_body']}")
-        print(f"  Under-3-word body removed   : {s['short_body']}")
-        print(f"  Total dropped               : {s['total_dropped']}")
-        print(f"  Rows remaining              : {s['remaining']}")
+        print(f"\n{s['file']} ({s['type']})")
+        if s["type"] == "comments":
+            print(f"  Deleted author rows removed : {s['deleted_author']}")
+            print(f"  [removed] body rows removed : {s['removed_body']}")
+            print(f"  Under-3-word body removed   : {s['short_body']}")
+        print(f"  r/pics rows removed          : {s['removed_pics']}")
+        print(f"  Total dropped                : {s['total_dropped']}")
+        print(f"  Rows remaining               : {s['remaining']}")
 
     print("\nDone.")
 
