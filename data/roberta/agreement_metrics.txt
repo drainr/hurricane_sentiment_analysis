@@ -1,0 +1,186 @@
+VADER vs. RoBERTa Agreement Metrics
+
+
+============================================================
+  Per-file Results
+============================================================
+------------------------------------------------------------
+  roberta/reddit_relevant_posts_vader_roberta.csv
+------------------------------------------------------------
+  Rows analysed   : 3,317
+  Raw agreement   : 0.4661  (46.6%)
+  Cohen's kappa   : 0.2425  [Fair]
+
+  Confusion matrix (rows = VADER, columns = RoBERTa):
+                    RoBERTa_negative  RoBERTa_neutral  RoBERTa_positive
+    VADER_negative               597              418                16
+    VADER_neutral                126              779                11
+    VADER_positive               318              882               170
+
+------------------------------------------------------------
+  roberta/reddit_relevant_comments_vader_roberta.csv
+------------------------------------------------------------
+  Rows analysed   : 120,512
+  Raw agreement   : 0.5148  (51.5%)
+  Cohen's kappa   : 0.3025  [Fair]
+
+  Confusion matrix (rows = VADER, columns = RoBERTa):
+                    RoBERTa_negative  RoBERTa_neutral  RoBERTa_positive
+    VADER_negative             26580            10458               822
+    VADER_neutral               7502            23352              1428
+    VADER_positive             14492            23771             12107
+
+------------------------------------------------------------
+  roberta/facebook_posts_vader_roberta.csv
+------------------------------------------------------------
+  Rows analysed   : 952
+  Raw agreement   : 0.3120  (31.2%)
+  Cohen's kappa   : 0.0923  [Slight]
+
+  Confusion matrix (rows = VADER, columns = RoBERTa):
+                    RoBERTa_negative  RoBERTa_neutral  RoBERTa_positive
+    VADER_negative                66              353                 1
+    VADER_neutral                 11              181                 8
+    VADER_positive                19              263                50
+
+------------------------------------------------------------
+  roberta/facebook_comments_vader_roberta.csv
+------------------------------------------------------------
+  Rows analysed   : 59,736
+  Raw agreement   : 0.6198  (62.0%)
+  Cohen's kappa   : 0.4151  [Moderate]
+
+  Confusion matrix (rows = VADER, columns = RoBERTa):
+                    RoBERTa_negative  RoBERTa_neutral  RoBERTa_positive
+    VADER_negative              6319             3659               414
+    VADER_neutral               2835            17511              1835
+    VADER_positive              3841            10128             13194
+
+------------------------------------------------------------
+  roberta/whitehouse_threads_posts_vader_roberta.csv
+------------------------------------------------------------
+  Rows analysed   : 13
+  Raw agreement   : 0.3846  (38.5%)
+  Cohen's kappa   : 0.1746  [Slight]
+
+  Confusion matrix (rows = VADER, columns = RoBERTa):
+                    RoBERTa_negative  RoBERTa_neutral  RoBERTa_positive
+    VADER_negative                 1                0                 0
+    VADER_neutral                  0                1                 0
+    VADER_positive                 0                8                 3
+
+------------------------------------------------------------
+  roberta/whitehouse_threads_comments_vader_roberta.csv
+------------------------------------------------------------
+  Rows analysed   : 2,239
+  Raw agreement   : 0.4904  (49.0%)
+  Cohen's kappa   : 0.2566  [Fair]
+
+  Confusion matrix (rows = VADER, columns = RoBERTa):
+                    RoBERTa_negative  RoBERTa_neutral  RoBERTa_positive
+    VADER_negative               630              164                12
+    VADER_neutral                179              275                27
+    VADER_positive               392              367               193
+
+
+============================================================
+  Pooled (all 6 files)
+============================================================
+------------------------------------------------------------
+  POOLED
+------------------------------------------------------------
+  Rows analysed   : 186,769
+  Raw agreement   : 0.5462  (54.6%)
+  Cohen's kappa   : 0.3414  [Fair]
+
+  Confusion matrix (rows = VADER, columns = RoBERTa):
+                    RoBERTa_negative  RoBERTa_neutral  RoBERTa_positive
+    VADER_negative             34193            15052              1265
+    VADER_neutral              10653            42099              3309
+    VADER_positive             19062            35419             25717
+
+
+============================================================
+  By Hurricane
+============================================================
+------------------------------------------------------------
+  Hurricane: debby
+------------------------------------------------------------
+  Rows analysed   : 25,465
+  Raw agreement   : 0.5784  (57.8%)
+  Cohen's kappa   : 0.3733  [Fair]
+
+  Confusion matrix (rows = VADER, columns = RoBERTa):
+                    RoBERTa_negative  RoBERTa_neutral  RoBERTa_positive
+    VADER_negative              3328             1799               209
+    VADER_neutral               1296             6118               719
+    VADER_positive              2109             4603              5284
+
+------------------------------------------------------------
+  Hurricane: helene
+------------------------------------------------------------
+  Rows analysed   : 50,139
+  Raw agreement   : 0.5498  (55.0%)
+  Cohen's kappa   : 0.3471  [Fair]
+
+  Confusion matrix (rows = VADER, columns = RoBERTa):
+                    RoBERTa_negative  RoBERTa_neutral  RoBERTa_positive
+    VADER_negative              8796             3900               329
+    VADER_neutral               2765            11403               859
+    VADER_positive              5150             9570              7367
+
+------------------------------------------------------------
+  Hurricane: milton
+------------------------------------------------------------
+  Rows analysed   : 111,165
+  Raw agreement   : 0.5372  (53.7%)
+  Cohen's kappa   : 0.3291  [Fair]
+
+  Confusion matrix (rows = VADER, columns = RoBERTa):
+                    RoBERTa_negative  RoBERTa_neutral  RoBERTa_positive
+    VADER_negative             22069             9353               727
+    VADER_neutral               6592            24578              1731
+    VADER_positive             11803            21246             13066
+
+
+============================================================
+  By Source type
+============================================================
+------------------------------------------------------------
+  Source type: community_discussion
+------------------------------------------------------------
+  Rows analysed   : 184,517
+  Raw agreement   : 0.5469  (54.7%)
+  Cohen's kappa   : 0.3421  [Fair]
+
+  Confusion matrix (rows = VADER, columns = RoBERTa):
+                    RoBERTa_negative  RoBERTa_neutral  RoBERTa_positive
+    VADER_negative             33562            14888              1253
+    VADER_neutral              10474            41823              3282
+    VADER_positive             18670            35044             25521
+
+------------------------------------------------------------
+  Source type: government
+------------------------------------------------------------
+  Rows analysed   : 13
+  Raw agreement   : 0.3846  (38.5%)
+  Cohen's kappa   : 0.1746  [Slight]
+
+  Confusion matrix (rows = VADER, columns = RoBERTa):
+                    RoBERTa_negative  RoBERTa_neutral  RoBERTa_positive
+    VADER_negative                 1                0                 0
+    VADER_neutral                  0                1                 0
+    VADER_positive                 0                8                 3
+
+------------------------------------------------------------
+  Source type: government_response
+------------------------------------------------------------
+  Rows analysed   : 2,239
+  Raw agreement   : 0.4904  (49.0%)
+  Cohen's kappa   : 0.2566  [Fair]
+
+  Confusion matrix (rows = VADER, columns = RoBERTa):
+                    RoBERTa_negative  RoBERTa_neutral  RoBERTa_positive
+    VADER_negative               630              164                12
+    VADER_neutral                179              275                27
+    VADER_positive               392              367               193
