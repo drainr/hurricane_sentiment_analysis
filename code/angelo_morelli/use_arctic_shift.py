@@ -168,96 +168,86 @@ if __name__ == "__main__":
         print(f"  {len(comments)} comments (from {len(posts)} posts)")
         save_csv(comments, f"../../data/reddit/milton/{subreddit}_comments.csv", "comments")
     
-    # # Pull from whitehouse46 user
-    # print("Pulling from u/whitehouse46...")
-    
-    # # Pull all posts from whitehouse46 (use wide date range to capture all)
-    # all_posts = collect(kind="posts", subreddit="", author="whitehouse", after="2024-08-01", before="2024-11-15")
-    # print(f"  {len(all_posts)} total posts")
-    
-    # # Filter posts by milton keyword
-    # milton_posts = []
-    # for post in all_posts:
-    #     title = (post.get("title") or "").lower()
-    #     selftext = (post.get("selftext") or "").lower()
-    #     content = title + " " + selftext
-    #     if "milton" in content:
-    #         post_copy = post.copy()
-    #         post_copy["hurricane"] = "milton"
-    #         # Find which keyword actually matched
-    #         for keyword in keywords:
-    #             if keyword.lower() in content:
-    #                 post_copy["keyword_hit"] = keyword
-    #                 break
-    #         milton_posts.append(post_copy)
-    
-    # save_csv(milton_posts, "../../data/reddit/whitehouse/milton_posts.csv", "posts")
-    
-    
-    # # Filter posts by helene keyword
-    # helene_posts = []
-    # for post in all_posts:
-    #     title = (post.get("title") or "").lower()
-    #     selftext = (post.get("selftext") or "").lower()
-    #     content = title + " " + selftext
-    #     if "helene" in content:
-    #         post_copy = post.copy()
-    #         post_copy["hurricane"] = "helene"
-    #         # Find which keyword actually matched
-    #         for keyword in keywords:
-    #             if keyword.lower() in content:
-    #                 post_copy["keyword_hit"] = keyword
-    #                 break
-    #         helene_posts.append(post_copy)
-    
-    # save_csv(helene_posts, "../../data/reddit/whitehouse/helene_posts.csv", "posts")
-    
-    # # Pull comments for milton posts
-    # milton_comments = []
-    # for post in milton_posts:
-    #     cursor = "2000-01-01"
-    #     while True:
-    #         params = {"link_id": post["id"], "after": cursor, "before": "2099-12-31",
-    #                   "limit": 100, "sort": "asc"}
-    #         r = requests.get(f"{BASE}/comments/search", params=params, timeout=30)
-    #         r.raise_for_status()
-    #         data = r.json().get("data", [])
-    #         if not data:
-    #             break
-    #         for c in data:
-    #             comment_copy = c.copy()
-    #             comment_copy["hurricane"] = post["hurricane"]
-    #             comment_copy["keyword_hit"] = post["keyword_hit"]
-    #             milton_comments.append(comment_copy)
-    #         cursor = data[-1]["created_utc"]
-    #         if len(data) < 100:
-    #             break
-    #         time.sleep(1)
-    
-    # print(f"  {len(milton_posts)} milton posts, {len(milton_comments)} milton comments")
-    # save_csv(milton_comments, "../../data/reddit/whitehouse/milton_comments.csv", "comments")
-    
-    # # Pull comments for helene posts
-    # helene_comments = []
-    # for post in helene_posts:
-    #     cursor = "2000-01-01"
-    #     while True:
-    #         params = {"link_id": post["id"], "after": cursor, "before": "2099-12-31",
-    #                   "limit": 100, "sort": "asc"}
-    #         r = requests.get(f"{BASE}/comments/search", params=params, timeout=30)
-    #         r.raise_for_status()
-    #         data = r.json().get("data", [])
-    #         if not data:
-    #             break
-    #         for c in data:
-    #             comment_copy = c.copy()
-    #             comment_copy["hurricane"] = post["hurricane"]
-    #             comment_copy["keyword_hit"] = post["keyword_hit"]
-    #             helene_comments.append(comment_copy)
-    #         cursor = data[-1]["created_utc"]
-    #         if len(data) < 100:
-    #             break
-    #         time.sleep(1)
-    
-    # print(f"  {len(helene_posts)} helene posts, {len(helene_comments)} helene comments")
-    # save_csv(helene_comments, "../../data/reddit/whitehouse/helene_comments.csv", "comments")
+    # ──────────────────────────────────────────────────────────────────────
+    # White House (u/whitehouse46) collection
+    #
+    # BUG (now fixed): the previous version filtered the SAME wide author-pull
+    # twice — once `if "milton" in text` and once `if "helene" in text` — and
+    # appended each match to a separate list saved independently. A post that
+    # mentioned BOTH storm names (e.g. post 1g236sq, a Milton update that also
+    # references Helene) was therefore written under BOTH hurricanes, and so
+    # were all 46 of its comments. That double-counted 1 post + 46 comments,
+    # inflating Helene's government_response totals for H7.
+    #
+    # FIX: assign each post id to EXACTLY ONE hurricane and guard with a
+    # seen-id set so no post (and no comment) is ever written twice. A post
+    # naming only one storm goes to that storm; a post naming both goes to the
+    # nearer landfall by its own date (it belongs to the event it's dated to).
+    #
+    # Flip COLLECT_WHITEHOUSE to True to re-run this pull.
+    COLLECT_WHITEHOUSE = False
+    if COLLECT_WHITEHOUSE:
+        LANDFALL = {"helene": datetime.date(2024, 9, 26),
+                    "milton": datetime.date(2024, 10, 9)}
+
+        def assign_hurricane(post):
+            """Return exactly one hurricane for this post, or None to skip."""
+            content = ((post.get("title") or "") + " " + (post.get("selftext") or "")).lower()
+            hits = [h for h in ("helene", "milton") if h in content]
+            if not hits:
+                return None
+            if len(hits) == 1:
+                return hits[0]
+            d = datetime.datetime.fromtimestamp(
+                post["created_utc"], datetime.timezone.utc).date()
+            return min(hits, key=lambda h: abs((d - LANDFALL[h]).days))
+
+        print("Pulling from u/whitehouse46...")
+        all_posts = collect(kind="posts", subreddit="", author="whitehouse",
+                            after="2024-08-01", before="2024-11-15")
+        print(f"  {len(all_posts)} total posts")
+
+        # one hurricane per post id; seen-set makes a second save impossible
+        seen_post_ids = set()
+        posts_by_storm = {"helene": [], "milton": []}
+        for post in all_posts:
+            if post["id"] in seen_post_ids:
+                continue
+            storm = assign_hurricane(post)
+            if storm is None:
+                continue
+            seen_post_ids.add(post["id"])
+            content = ((post.get("title") or "") + " " + (post.get("selftext") or "")).lower()
+            pc = post.copy()
+            pc["hurricane"] = storm
+            pc["keyword_hit"] = next((k for k in keywords if k.lower() in content), storm)
+            posts_by_storm[storm].append(pc)
+
+        for storm, posts in posts_by_storm.items():
+            save_csv(posts, f"../../data/reddit/whitehouse/{storm}_posts.csv", "posts")
+            comments, seen_comment_ids = [], set()
+            for post in posts:                      # each post is in exactly one storm
+                cursor = None
+                while True:
+                    params = {"link_id": post["id"], "limit": 100, "sort": "asc"}
+                    if cursor is not None:
+                        params["after"] = cursor
+                    r = requests.get(f"{BASE}/comments/search", params=params, timeout=30)
+                    r.raise_for_status()
+                    data = r.json().get("data", [])
+                    if not data:
+                        break
+                    for c in data:
+                        if c["id"] in seen_comment_ids:   # never save a comment id twice
+                            continue
+                        seen_comment_ids.add(c["id"])
+                        cc = c.copy()
+                        cc["hurricane"] = post["hurricane"]
+                        cc["keyword_hit"] = post["keyword_hit"]
+                        comments.append(cc)
+                    cursor = data[-1]["created_utc"]
+                    if len(data) < 100:
+                        break
+                    time.sleep(1)
+            save_csv(comments, f"../../data/reddit/whitehouse/{storm}_comments.csv", "comments")
+            print(f"  {storm}: {len(posts)} posts, {len(comments)} comments")

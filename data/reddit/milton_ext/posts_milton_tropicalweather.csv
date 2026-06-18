@@ -1,0 +1,224 @@
+id,subreddit,author,created_utc,num_comments,title,selftext,score,hurricane,keyword_hit,created_date,source_type
+1fvn48j,TropicalWeather,ClimateMessiah,2024-10-04T00:54:30+00:00,18,Helene and other storms dumped a whopping 40 trillion gallons of rain on the South,,132,milton,,2024-10-04 00:54,community_discussion
+1fvqwet,TropicalWeather,giantspeck,2024-10-04T04:22:10+00:00,58,The NHC is monitoring the Gulf of Mexico for potential tropical cyclone development,"# Gulf of Mexico
+- - - - - - - - - - - - - - - - - - - -
+**Last updated:** Thursday, 3 October — 6:00 PM Central Standard Time (CST; 00:00 UTC)  
+
+> **Discussion by John Cangialosi** — NHC Hurricane Specialist Unit
+
+> A trough of low pressure is producing a large area of disorganized showers and thunderstorms over portions of the central and western Gulf of Mexico.  A broad area of low pressure is expected to form over the south-central or southwestern Gulf of Mexico this weekend. Gradual development is possible after the low develops, and a tropical or subtropical depression or storm could form during the early or middle portions of next week while the low moves slowly eastward.  Regardless of development, locally heavy rains could occur over portions of Mexico during the next few days and over portions of the Florida Peninsula from late this weekend into next week.
+
+## Development potential
+
+
+Time frame |  | Potential
+:-|:-:|:-
+**2-day potential:** (by 6PM Sat)   |     |  **low** (near 0 percent)
+**7-day potential:** (by 6PM Wed)   |  ▲  |  **low** (40 percent)
+
+# Official information
+- - - - - - - 
+## National Hurricane Center
+
+### Text products
+
+* [**Tropical Weather Outlook**](https://www.nhc.noaa.gov/gtwo.php?basin=atlc&fdays=7)
+
+* [**Tropical Weather Discussion**](https://www.nhc.noaa.gov/text/MIATWDAT.shtml)
+
+### Graphical products
+
+#### Surface analyses
+
+* [**18:00 UTC**](https://www.nhc.noaa.gov/tafb/USA_18Z.gif)
+
+* [**00:00 UTC**](https://www.nhc.noaa.gov/tafb/USA_00Z.gif) **(Most recent)**
+
+* [**06:00 UTC**](https://www.nhc.noaa.gov/tafb/USA_06Z.gif)
+
+* [**12:00 UTC**](https://www.nhc.noaa.gov/tafb/USA_12Z.gif)
+
+
+#### Outlook graphics
+
+**Last updated:** Thursday, 3 October — 8:34 PM CST (02:34 UTC)
+
+* [**2-day outlook**](https://www.nhc.noaa.gov/archive/xgtwo/atl/latest/two_atl_2d0.png) | [**Static image**](https://www.nhc.noaa.gov/archive/xgtwo/atl/202410040234/two_atl_2d0.png)
+
+* [**7-day outlook**](https://www.nhc.noaa.gov/archive/xgtwo/atl/latest/two_atl_7d0.png) | [**Static image**](https://www.nhc.noaa.gov/archive/xgtwo/atl/202410040234/two_atl_7d0.png)
+
+# Aircraft reconnaissance
+- - - - - - - - - - - - - - - - - - - - 
+## National Hurricane Center
+
+* [**Aircraft reconnaissance main page**](https://www.nhc.noaa.gov/recon.php)
+
+* [**Plan of the Day** (For Today)](https://www.nhc.noaa.gov/text/MIAREPRPD_last.shtml)
+
+* [**Plan of the Day** (For Tomorrow)](https://www.nhc.noaa.gov/text/MIAREPRPD_last.shtml)
+
+
+# Radar imagery
+- - - - - - -
+## Unavailable
+
+> Radar imagery is not available for this system.
+
+
+# Satellite imagery
+- - - - - - - 
+
+## National Oceanic and Atmospheric Administration (NOAA)
+
+* [**Enhanced infrared**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=car&band=13&length=24)
+
+* [**Enhanced mid-level water vapor**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=car&band=09&length=24)
+
+* [**Visible (GeoColor-enhanced)**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=car&band=GEOCOLOR&length=24)
+
+## Cooperative Institute for Meteorological Satellite Studies (CMISS)
+
+* [**Infrared**](https://realearth.ssec.wisc.edu/s/h30s3u)
+
+* [**Water vapor (Upper-level)**](https://realearth.ssec.wisc.edu/s/y30s5p)
+
+* [**Visible (true color)**](https://realearth.ssec.wisc.edu/s/R30s7l)
+
+## Tropical Tidbits
+
+* [**Enhanced infrared**](https://www.tropicaltidbits.com/sat/satlooper.php?region=watl&product=ir)
+
+* [**Mid-level Water vapor**](https://www.tropicaltidbits.com/sat/satlooper.php?region=watl&product=wv_mid)
+
+* [**Visible (true color)**](https://www.tropicaltidbits.com/sat/satlooper.php?region=watl&product=wv_rgb)
+
+
+# Forecast models
+- - - - - - - 
+## Dynamical models
+
+* **Tropical Tidbits:** [**GFS**](https://www.tropicaltidbits.com/analysis/models/?model=gfs&region=watl&pkg=mslp_pcpn)
+
+* **Tropical Tidbits:** [**ECMWF**](https://www.tropicaltidbits.com/analysis/models/?model=ecmwf&region=watl&pkg=mslp_pcpn)
+
+* **Tropical Tidbits:** [**CMC**](https://www.tropicaltidbits.com/analysis/models/?model=gem&region=watl&pkg=mslp_pcpn)
+
+* **Tropical Tidbits:** [**ICON**](https://www.tropicaltidbits.com/analysis/models/?model=icon&region=watl&pkg=mslp_pcpn)
+
+## Ensemble models
+
+* **Weather Nerds:** [**GEFS** (120 hours)](https://www.weathernerds.org/models/gefs.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=00&initfhour=144&initimdimx=1050&initimdimy=750&initrange=35.036496350400:268.601904761896:10.072992700750:308.994285714220&initcx1=126&initcy1=210&initcx2=577&initcy2=542&initcross=False&initsound=False&initsoundx=121&initsoundy=205&initloop=False&initoverlay=False&initlstart=000&initlend=240&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
+
+* **Weather Nerds:** [**ECENS** (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=00&initfhour=144&initimdimx=1050&initimdimy=750&initrange=35.036496350400:268.601904761896:10.072992700750:308.994285714220&initcx1=126&initcy1=210&initcx2=577&initcy2=542&initcross=False&initsound=False&initsoundx=121&initsoundy=205&initloop=False&initoverlay=False&initlstart=000&initlend=240&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
+
+## Tropical Cyclogenesis Products
+
+* **Florida State University:** [**Experimental tropical cyclone genesis graphics**](http://moe.met.fsu.edu/modelgen/)",61,milton,hurricane|storm|weather|noaa,2024-10-04 04:22,community_discussion
+1fvwz53,TropicalWeather,Low-Tomatillo-9038,2024-10-04T11:34:58+00:00,1,Weather Forecasting Services Market - Global Opportunity Analysis And Industry Forecast (2024-2030),,1,milton,weather,2024-10-04 11:34,community_discussion
+1fw3ex4,TropicalWeather,OriginalPianoProdigy,2024-10-04T16:30:57+00:00,82,"Timelapse of Helene Storm Surge at my house in St. Petersburg, Florida",https://youtu.be/EDMFRRNOwEE?si=C_y-bZ9nHqDG67Ab,233,milton,storm,2024-10-04 16:30,community_discussion
+1fw81te,TropicalWeather,Galileos_grandson,2024-10-04T19:48:18+00:00,5,Marine Heat Waves Make Tropical Storm Intensification More Likely,,63,milton,storm,2024-10-04 19:48,community_discussion
+1fw9p1t,TropicalWeather,giantspeck,2024-10-04T21:00:31+00:00,4,The NHC is monitoring the eastern tropical Atlantic for potential tropical cyclone development,"# Eastern Tropical Atlantic Outlook
+- - - - - - - - - - - - - - - - - - - -
+**Last updated:** Friday, 4 October — 2:00 PM Atlantic Standard Time (AST; 18:00 UTC)         
+
+> **Discussion by Eric Blake** — NHC Hurricane Specialist Unit
+
+> A tropical wave is expected to move westward from the coast of Africa on Monday or Tuesday.  Some development of this system is possible thereafter as it moves westward or west-northwestward across the eastern tropical Atlantic.
+
+# Development potential
+- - - - - - - - - - - - - - - - - - - -
+**Last updated:** Friday, 4 October — 2:00 PM AST (12:00 UTC)
+
+Time frame |  | Potential
+:-|:-:|:-
+**2-day potential:** (by 2PM Wed)    |  ▲  |  **low** (near 0 percent)
+**7-day potential:** (by 2PM Tue)    |  ▲  |  **low** (20 percent)
+
+
+# Official information
+- - - - - - - 
+## National Hurricane Center
+
+### Text products
+
+* [**Tropical Weather Outlook**](https://www.nhc.noaa.gov/gtwo.php?basin=atlc&fdays=7)
+
+* [**Tropical Weather Discussion**](https://www.nhc.noaa.gov/text/MIATWDAT.shtml)
+
+### Graphical products
+
+#### Surface analyses
+
+* [**18:00 UTC**](https://www.nhc.noaa.gov/tafb/USA_18Z.gif) **(Most recent)**
+
+* [**00:00 UTC**](https://www.nhc.noaa.gov/tafb/USA_00Z.gif)
+
+* [**06:00 UTC**](https://www.nhc.noaa.gov/tafb/USA_06Z.gif)
+
+* [**12:00 UTC**](https://www.nhc.noaa.gov/tafb/USA_12Z.gif)
+
+#### Outlook graphics
+
+**Last updated:** Friday, 4 October — 4:45 PM AST (20:45 UTC)
+
+* [**2-day outlook**](https://www.nhc.noaa.gov/archive/xgtwo/atl/latest/two_atl_2d0.png) | [**Static image**](https://www.nhc.noaa.gov/archive/xgtwo/atl/202410042045/two_atl_2d0.png)
+
+* [**7-day outlook**](https://www.nhc.noaa.gov/archive/xgtwo/atl/latest/two_atl_7d0.png) | [**Static image**](https://www.nhc.noaa.gov/archive/xgtwo/atl/202410042045/two_atl_7d0.png)
+
+
+# Radar imagery
+- - - - - - -
+## Unavailable
+
+> Radar imagery is not available for this system.
+
+
+# Satellite imagery
+- - - - - - - 
+
+## National Oceanic and Atmospheric Administration (NOAA)
+
+* [**Enhanced infrared**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=taw&band=13&length=24)
+
+* [**Enhanced mid-level water vapor**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=taw&band=09&length=24)
+
+* [**Visible (GeoColor-enhanced)**](https://www.star.nesdis.noaa.gov/goes/sector_band.php?sat=G16&sector=taw&band=GEOCOLOR&length=24)
+
+## Cooperative Institute for Meteorological Satellite Studies (CMISS)
+
+* [**Infrared**](https://realearth.ssec.wisc.edu/s/o30spf)
+
+* [**Water vapor (Upper-level)**](https://realearth.ssec.wisc.edu/s/E30snv)
+
+* [**Visible (true color)**](https://realearth.ssec.wisc.edu/s/G30slW)
+
+## Tropical Tidbits
+
+* [**Enhanced infrared**](https://www.tropicaltidbits.com/sat/satlooper.php?region=eatl&product=ir)
+
+* [**Mid-level Water vapor**](https://www.tropicaltidbits.com/sat/satlooper.php?region=eatl&product=wv_mid)
+
+* [**Visible (true color)**](https://www.tropicaltidbits.com/sat/satlooper.php?region=eatl&product=wv_rgb)
+
+
+# Forecast models
+- - - - - - - 
+## Dynamical models
+
+* **Tropical Tidbits:** [**GFS**](https://www.tropicaltidbits.com/analysis/models/?model=gfs&region=watl&pkg=mslp_pcpn)
+
+* **Tropical Tidbits:** [**ECMWF**](https://www.tropicaltidbits.com/analysis/models/?model=ecmwf&region=watl&pkg=mslp_pcpn)
+
+* **Tropical Tidbits:** [**CMC**](https://www.tropicaltidbits.com/analysis/models/?model=gem&region=watl&pkg=mslp_pcpn)
+
+* **Tropical Tidbits:** [**ICON**](https://www.tropicaltidbits.com/analysis/models/?model=icon&region=watl&pkg=mslp_pcpn)
+
+## Ensemble models
+
+* **Weather Nerds:** [**GEFS** (120 hours)](https://www.weathernerds.org/models/gefs.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=00&initfhour=144&initimdimx=1050&initimdimy=750&initrange=35.036496350400:268.601904761896:10.072992700750:308.994285714220&initcx1=126&initcy1=210&initcx2=577&initcy2=542&initcross=False&initsound=False&initsoundx=121&initsoundy=205&initloop=False&initoverlay=False&initlstart=000&initlend=240&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
+
+* **Weather Nerds:** [**ECENS** (120 hours)](https://www.weathernerds.org/models/ecens.html?&inittype=zoom&initfield=MSLP_Surface&initcycle=00&initfhour=144&initimdimx=1050&initimdimy=750&initrange=35.036496350400:268.601904761896:10.072992700750:308.994285714220&initcx1=126&initcy1=210&initcx2=577&initcy2=542&initcross=False&initsound=False&initsoundx=121&initsoundy=205&initloop=False&initoverlay=False&initlstart=000&initlend=240&initlint=6&initol1=MSLP_Surface&initol2=null&initol3=null&initol4=null&initol5=null&initcities=Off&inithgwys=Off&inittracks=On&initlows=On&initlatlon=On)
+
+## Tropical Cyclogenesis Products
+
+* **Florida State University:** [**Experimental tropical cyclone genesis graphics**](http://moe.met.fsu.edu/modelgen/)",34,milton,hurricane|weather|noaa,2024-10-04 21:00,community_discussion

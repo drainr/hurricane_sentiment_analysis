@@ -21,16 +21,16 @@ XTICKS = list(range(XMIN, XMAX + 1))
 # source -> (posts file, comments file)
 FILES = {
     "Facebook": (
-        "data/facebook/facebook_posts_vader.csv",
-        "data/facebook/facebook_comments_vader.csv",
+        "data/vader/facebook_posts_vader.csv",
+        "data/vader/facebook_comments_vader.csv",
     ),
     "Reddit": (
-        "data/reddit/combined/reddit_relevant_posts_vader.csv",
-        "data/reddit/combined/reddit_relevant_comments_vader.csv",
+        "data/vader/reddit_relevant_posts_vader.csv",
+        "data/vader/reddit_relevant_comments_vader.csv",
     ),
     "White House": (
-        "data/reddit/whitehouse/whitehouse_threads_posts_vader.csv",
-        "data/reddit/whitehouse/whitehouse_threads_comments_vader.csv",
+        "data/vader/whitehouse_threads_posts_vader.csv",
+        "data/vader/whitehouse_threads_comments_vader.csv",
     ),
 }
 COLORS = {"Facebook": "tab:blue", "Reddit": "tab:orange", "White House": "tab:green"}

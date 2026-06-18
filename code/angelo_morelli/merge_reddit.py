@@ -40,8 +40,8 @@ DELETED = {"[deleted]", "[removed]", ""}
 # comparability with the day-bounded Facebook data. Raw Layer-1 files keep ALL rows.
 WINDOW = {            # (min_days_from_landfall, max_days_from_landfall)
     "debby":  (-5, 0),    # Jul 31 - Aug 5
-    "helene": (-3, 1),    # Sep 23 - Sep 27
-    "milton": (-4, 0),    # Oct 5 - Oct 9
+    "helene": (-4, 1),    # Sep 22 - Sep 27 (-5/Sep 21 dropped: Helene formed Sep 22 per Wikipedia, no genuine storm content. Tania 2026-06-18)
+    "milton": (-5, 0),    # Oct 4 - Oct 9  (extended back to -5 per Tania 2026-06-18; Reddit-only)
 }
 
 # subreddit_category groupings

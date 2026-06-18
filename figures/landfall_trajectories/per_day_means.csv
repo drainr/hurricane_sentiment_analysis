@@ -28,6 +28,7 @@ Helene,posts,Facebook,-2,0.1137,45
 Helene,posts,Facebook,-1,0.1309,55
 Helene,posts,Facebook,0,-0.1377,160
 Helene,posts,Facebook,1,-0.0576,19
+Helene,posts,Reddit,-4,-0.0104,22
 Helene,posts,Reddit,-3,0.0166,57
 Helene,posts,Reddit,-2,0.1695,80
 Helene,posts,Reddit,-1,0.1197,164
@@ -38,6 +39,7 @@ Helene,comments,Facebook,-2,0.193,3828
 Helene,comments,Facebook,-1,0.2205,3642
 Helene,comments,Facebook,0,0.1633,3902
 Helene,comments,Facebook,1,0.1843,668
+Helene,comments,Reddit,-4,0.097,241
 Helene,comments,Reddit,-3,0.1471,1399
 Helene,comments,Reddit,-2,0.0934,3220
 Helene,comments,Reddit,-1,0.0877,6026
@@ -48,6 +50,7 @@ Milton,posts,Facebook,-3,0.0586,62
 Milton,posts,Facebook,-2,0.1218,61
 Milton,posts,Facebook,-1,0.0697,85
 Milton,posts,Facebook,0,-0.1852,122
+Milton,posts,Reddit,-5,0.0502,79
 Milton,posts,Reddit,-4,0.0783,159
 Milton,posts,Reddit,-3,0.0643,274
 Milton,posts,Reddit,-2,0.081,526
@@ -59,6 +62,7 @@ Milton,comments,Facebook,-3,0.1429,4578
 Milton,comments,Facebook,-2,0.1244,6060
 Milton,comments,Facebook,-1,0.19,3802
 Milton,comments,Facebook,0,0.1469,10262
+Milton,comments,Reddit,-5,0.0203,1273
 Milton,comments,Reddit,-4,0.031,5547
 Milton,comments,Reddit,-3,0.0557,10720
 Milton,comments,Reddit,-2,0.0395,18329
