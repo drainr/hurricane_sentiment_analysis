@@ -46,6 +46,6 @@ Raw counts straight from collection, before any cleaning. A blank means we didn'
 | r/HurricaneHelene | meteorological | — | 244 | — | 244 |
 | **Total** | | **43,065** | **76,495** | **91,262** | **210,822** |
 
-These are raw numbers. After cleaning and keeping only storm-related comments, the set drops to about 124,000. The table can be rebuilt on the cleaned set if needed.
+These are raw numbers. After cleaning and keeping only storm-related comments, the set drops to 122,026 comments (3,418 posts; 125,444 combined). The table can be rebuilt on the cleaned set if needed.
 
 The White House counts are kept separate: 18 posts and 5,381 comments in total. Those can be broken down by subreddit if needed.
