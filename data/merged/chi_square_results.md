@@ -55,3 +55,7 @@ Contingency table (counts):
 - dof = 35
 - p-value = **0.000e+00**  (significant at .05)
 - Cramer's V = **0.2262**
+
+## Facebook comment coverage note
+
+Topic distribution results for Facebook comments are based on the **27,850** comments that received a topic assignment — **46.6%** of the 59,736-comment file, or **55.8%** of the 49,939 comments that entered BERTopic after excluding 9,797 rows under five words. The remaining rows are **22,089** BERTopic outliers (37.0%, topic `-1`) and **9,797** short reactions excluded before modeling (16.4%). All 59,736 comments are retained in the VADER/RoBERTa sentiment analysis; only the topic layer drops them.
