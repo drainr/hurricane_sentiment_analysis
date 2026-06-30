@@ -5,10 +5,10 @@ __pycache__/
 *.pyc
 
 # Data lives on Google Drive, not git (640MB+). Keep code/docs/figures in git.
-data/
-*.csv
-*.zst
-*.zip
+# data/
+# *.csv
+# *.zst
+# *.zip
 
 # Saved BERTopic models (large; on Drive)
 models/
