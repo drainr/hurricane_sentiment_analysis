@@ -1,6 +1,6 @@
 # Topic Codebook
 
-A label and category for every BERTopic topic. The nine project categories: gratitude, preparedness, forecast analysis, evacuation logistics, political / FEMA criticism, misinformation, government resources, personal experience, emotional response. Outlier and short rows are marked excluded.
+A label and category for every BERTopic topic. The nine project categories: gratitude, preparedness, forecast analysis, evacuation logistics, political / FEMA criticism, misinformation, government resources, personal experience, emotional response. Outlier and short rows are marked excluded. **Note (advisor decision 2026-06-29): "misinformation" is retained as a category slot for the chi-square (it is an all-zero row — no BERTopic topic landed there), but it is NOT reported as a standalone category in H6/H7.** Misinformation content is captured within `political / FEMA criticism` (Reddit) and `misinformation removal` (WH). See the misinformation note below and `decision_log.md`.
 
 WH comment threads also carry four WH-specific categories, added 2026-06-26 per advisor request so H7 can measure each rate instead of lumping them into political/FEMA: `subreddit moderation removal`, `misinformation removal`, `Georgia moderator incident`, `reaction to government Reddit presence`. WH comments only (see block below).
 
@@ -28,7 +28,7 @@ Every source's topics grouped into the nine categories, so the same idea gets th
 
 - FEMA and political reaction [Rp, Rc, WHc] · Politics and partisan reaction [Rc] · Climate change debate [Rc]
 
-**misinformation** — nothing landed here. Folded into `political / FEMA criticism` for now, and we'll ask the advisor. BERTopic never split off a misinfo cluster because misinfo is a stance that shows up across other topics, not a topic of its own. See the open questions below. H6 and H7 both mention misinformation. (Not the same as the WH-only `misinformation removal` category below — that's mod notices saying misinfo got taken down, not the stance itself.)
+**misinformation** — nothing landed here. **Per advisor decision 2026-06-29, misinformation is NOT a standalone topic category.** BERTopic never split off a misinfo cluster because misinfo is a cross-cutting stance that rides on other topics (FEMA aid, politics, weather), not a topic of its own. It is captured inside `political / FEMA criticism` on Reddit and inside the WH-only `misinformation removal` category on White House comments. H6 and H7 therefore refer to political / FEMA-critical discourse rather than a "misinformation" category. (Not the same as `misinformation removal` below — that's mod notices saying misinfo got taken down, not the stance itself.) See `decision_log.md` (2026-06-29).
 
 **White House–specific (H7 only)** — WH comments only:
 
