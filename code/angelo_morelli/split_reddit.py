@@ -12,7 +12,7 @@ from pathlib import Path
 import pandas as pd
 
 WH = Path(__file__).resolve().parents[2] / "data" / "reddit" / "combined"
-SRC = WH / "reddit_relevant.csv"
+SRC = WH / "reddit_relevant_vader.csv"
 
 
 def main() -> int:
@@ -32,8 +32,8 @@ def main() -> int:
     # no rows lost or duplicated
     assert len(posts) + len(comments) == len(df), "split does not add back to master"
 
-    posts.to_csv(WH / "reddit_relevant_posts.csv", index=False)
-    comments.to_csv(WH / "reddit_relevant_comments.csv", index=False)
+    posts.to_csv(WH / "reddit_relevant_vader_posts.csv", index=False)
+    comments.to_csv(WH / "reddit_relevant_vader_comments.csv", index=False)
 
     print(f"facebook_posts.csv    {len(posts):,} rows")
     print(f"facebook_comments.csv {len(comments):,} rows")
