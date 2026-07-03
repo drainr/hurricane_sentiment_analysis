@@ -4,8 +4,8 @@ Method validation against the human gold standard + gratitude-inflation estimate
 
 1. Evaluate VADER and RoBERTa against ground_truth_400.csv consensus labels:
    accuracy + per-class precision/recall/F1 + confusion matrix for each method.
-   Only the 362 adjudicated rows (label_consensus filled) are scored; the 38
-   annotator-disagreement rows are reported and excluded.
+   Only rows with a filled label_consensus are scored (counts computed dynamically;
+   all 400 as of the fully-adjudicated ground truth).
 
 2. Gratitude-inflation estimate: among Facebook comments that each method labels
    POSITIVE, the fraction carrying the human gratitude tag (gratitude_consensus=1).
