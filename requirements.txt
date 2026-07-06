@@ -1,0 +1,32 @@
+# Hurricane Sentiment Analysis — Python dependencies
+# Python 3.12 (working env: 3.12.2)
+#
+# Versions below are pinned from the local analysis environment. The RoBERTa and
+# BERTopic steps ran on Google Colab's GPU tier (see code/week3_roberta_agreement/
+# RoBERTa.ipynb and code/week4_bertopic/BERTopic.ipynb); pin their exact Colab
+# versions during the Week 8 reproducibility pass.
+
+# --- Core analysis (local) ---
+pandas==2.2.2
+numpy==1.26.4
+scipy==1.13.1
+scikit-learn==1.4.2
+statsmodels==0.14.2
+matplotlib==3.10.8
+vaderSentiment==3.3.2          # standalone, emoji-aware (cjhutto/vaderSentiment)
+tqdm==4.66.4
+numbers-parser==4.18.5         # reads the .numbers manual-annotation file
+
+# --- Reddit collection ---
+praw                           # WH author search + comment-tree pulls (pin in Wk8)
+
+# --- RoBERTa scoring (Colab GPU) ---
+# model: cardiffnlp/twitter-roberta-base-sentiment-latest
+transformers                   # pin in Wk8
+torch                          # pin in Wk8
+
+# --- BERTopic topic modeling (Colab) ---
+bertopic                       # pin in Wk8
+sentence-transformers          # pin in Wk8
+umap-learn                     # pin in Wk8
+hdbscan                        # pin in Wk8
