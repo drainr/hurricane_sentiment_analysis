@@ -146,6 +146,27 @@ lines.append("- The picture is storm-dependent (see per-hurricane tables): Debby
              "slope conflates approach and post-landfall recovery (Helene/Milton windows include day +1 / day 0).")
 lines.append("")
 
+# -------- in-window WH comment counts per hurricane (the F2 green squares) --------
+# WH government_response comments are only added to the figure where they fall inside
+# a storm's event window. Emit the per-day counts so the plotted N is explicit/traceable.
+wh["hurricane"] = wh["hurricane"].str.lower()
+wh["days_from_landfall"] = pd.to_numeric(wh["days_from_landfall"], errors="coerce")
+lines.append("## In-window White House comments (plotted on F2)")
+lines.append("")
+print("\nIn-window WH comment counts (the F2 green squares):")
+for h in HURRICANES:
+    lo, hi = WINDOWS[h]
+    sub = wh[(wh.hurricane == h) & wh.days_from_landfall.between(lo, hi)]
+    days = sub["days_from_landfall"].value_counts().sort_index()
+    if len(sub):
+        by_day = ", ".join(f"day {int(d)}: {int(n)}" for d, n in days.items())
+        msg = f"{h.capitalize()} window {(lo, hi)}: {len(sub)} in-window ({by_day})"
+    else:
+        msg = f"{h.capitalize()} window {(lo, hi)}: 0 in-window (WH activity outside window)"
+    print("  " + msg)
+    lines.append(f"- {msg}")
+lines.append("")
+
 # -------- figure: 3 panels, mean compound by day with 95% CI --------
 def daily(df, ycol, h, lo, hi):
     sub = df[(df.hurricane == h) & df.days_from_landfall.between(lo, hi)]
@@ -185,7 +206,10 @@ for ycol, suffix, mlabel in [("vader_compound", "", "VADER"),
 lines.append("## Figures")
 lines.append("- `figures/h2_temporal_curves.png/.pdf` (VADER) — 3 panels, FB+Reddit all panels, WH on Milton only.")
 lines.append("- `figures/h2_temporal_curves_roberta.png/.pdf` (RoBERTa cross-check).")
-lines.append("- Note: in-window WH comments exist only for Milton (days 0–1); Helene WH activity is outside the −4..+1 window.")
+lines.append("- Note: in-window WH comments exist only for Milton (day 0 only — the 140 government_response "
+             "comments on landfall day; the other 90 WH Milton comments fall on days 1–7, post-landfall and "
+             "outside the −5..0 window, so they are correctly clipped from this figure). "
+             "Helene WH activity is outside the −4..+1 window.")
 
 (DOCS / "h2_temporal_results.md").write_text("\n".join(lines) + "\n")
 print("\n".join(lines))

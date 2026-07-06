@@ -46,7 +46,13 @@ Per-hurricane slopes:
 - Both methods give a **positive** Reddit−Facebook interaction, i.e. Reddit does NOT decline more steeply than Facebook over the window — **H2 is not supported** in the pooled linear model (and R² is ~0, so the linear day-trend is weak for both).
 - The picture is storm-dependent (see per-hurricane tables): Debby shows a Facebook decline, Helene a sharp Reddit decline, Milton a rise on both — so a single pooled slope conflates approach and post-landfall recovery (Helene/Milton windows include day +1 / day 0).
 
+## In-window White House comments (plotted on F2)
+
+- Debby window (-5, 0): 0 in-window (WH activity outside window)
+- Helene window (-4, 1): 0 in-window (WH activity outside window)
+- Milton window (-5, 0): 140 in-window (day 0: 140)
+
 ## Figures
 - `figures/h2_temporal_curves.png/.pdf` (VADER) — 3 panels, FB+Reddit all panels, WH on Milton only.
 - `figures/h2_temporal_curves_roberta.png/.pdf` (RoBERTa cross-check).
-- Note: in-window WH comments exist only for Milton (days 0–1); Helene WH activity is outside the −4..+1 window.
+- Note: in-window WH comments exist only for Milton (day 0 only — the 140 government_response comments on landfall day; the other 90 WH Milton comments fall on days 1–7, post-landfall and outside the −5..0 window, so they are correctly clipped from this figure). Helene WH activity is outside the −4..+1 window.
