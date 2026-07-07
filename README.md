@@ -22,7 +22,7 @@ code/
   week5_hypotheses/         H1–H7 tests, method validation, data verification
   week6_figures/            publication figures
 data/                     source CSVs (kept in git) — see data/README.md
-docs/                     result write-ups, logs, decision log
+docs/                     result write-ups, logs
 figures/                  exported PNG + PDF (300 dpi)
 requirements.txt          pinned dependencies (Python 3.12)
 ```
@@ -33,16 +33,16 @@ week (including which of the two authors' duplicate scripts is canonical) and
 
 ## Week index
 
-| Week | Focus | Code | Key outputs |
-|---|---|---|---|
-| 1 | Setup, data audit, Reddit exploration | `code/week1_setup_exploration/` | Reddit access decision, `facebook_master.csv` |
-| 2 | Reddit + WH collection, unified VADER, merge | `code/week2_collection_vader/` | `reddit_relevant*`, `whitehouse_threads*`, `*_vader.csv`, three-way tables |
-| 3 | RoBERTa scoring + inter-method agreement | `code/week3_roberta_agreement/` | `*_vader_roberta.csv`, `docs/interannotator_kappa.md`, 400-item sample |
-| 4 | BERTopic topic modeling | `code/week4_bertopic/` | topic-labeled files, `docs/Topic Codebook.md`, master file |
-| 5 | Hypothesis testing (H1–H7) | `code/week5_hypotheses/` | `docs/hypothesis_tests_results.md`, `docs/method_validation_report.md`, H2/H5 figures |
-| 6 | Publication figures + results docs | `code/week6_figures/` | `figures/*`, results documentation |
-| 7 | Paper drafts | — | (writing) |
-| 8 | Reproducibility, archive, handoff | — | full re-run, README, `requirements.txt`, `docs/decision_log.md` |
+| Week | Focus                                        | Code                            | Key outputs                                                                           |
+| ---- | -------------------------------------------- | ------------------------------- | ------------------------------------------------------------------------------------- |
+| 1    | Setup, data audit, Reddit exploration        | `code/week1_setup_exploration/` | Reddit access decision, `facebook_master.csv`                                         |
+| 2    | Reddit + WH collection, unified VADER, merge | `code/week2_collection_vader/`  | `reddit_relevant*`, `whitehouse_threads*`, `*_vader.csv`, three-way tables            |
+| 3    | RoBERTa scoring + inter-method agreement     | `code/week3_roberta_agreement/` | `*_vader_roberta.csv`, `docs/interannotator_kappa.md`, 400-item sample                |
+| 4    | BERTopic topic modeling                      | `code/week4_bertopic/`          | topic-labeled files, `docs/Topic Codebook.md`, master file                            |
+| 5    | Hypothesis testing (H1–H7)                   | `code/week5_hypotheses/`        | `docs/hypothesis_tests_results.md`, `docs/method_validation_report.md`, H2/H5 figures |
+| 6    | Publication figures + results docs           | `code/week6_figures/`           | `figures/*`, results documentation                                                    |
+| 7    | Paper drafts                                 | —                               | (writing)                                                                             |
+| 8    | Reproducibility, archive, handoff            | —                               | full re-run, README, `requirements.txt`, `docs/decision_log.md`                       |
 
 ## Running
 
