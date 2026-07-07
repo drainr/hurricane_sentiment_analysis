@@ -40,6 +40,9 @@ WINDOWS = {"debby": (-5, 0), "helene": (-4, 1), "milton": (-5, 0)}
 HURRICANES = ["debby", "helene", "milton"]
 COLORS = {"facebook": "#1f77b4", "reddit": "#ff7f0e", "whitehouse": "#2ca02c"}
 
+# CSV rows for the combined 7-hypothesis results file (see combine_results_jose.py)
+h2_rows = []
+
 
 def load(name):
     df = pd.read_csv(PROC / name, low_memory=False)
@@ -83,8 +86,13 @@ def report_method(ycol, method):
     lines.append(f"## {method}")
     lines.append("")
     # separate slopes
+    model = "vader" if "VADER" in method else "roberta"
     res_fb = ols_one(fb, ycol, "Facebook")
     res_rd = ols_one(rd, ycol, "Reddit")
+    for res, plat in [(res_fb, "facebook"), (res_rd, "reddit")]:
+        h2_rows.append(dict(hypothesis="H2", model=model, subset="overall", platform=plat,
+                            test="ols", slope=res["slope"], ci_low=res["ci"][0],
+                            ci_high=res["ci"][1], p=res["p"], r2=res["r2"]))
     lines.append("| platform | N | slope (per day toward +) | 95% CI | p | R^2 |")
     lines.append("|---|---|---|---|---|---|")
     for r in (res_fb, res_rd):
@@ -99,6 +107,9 @@ def report_method(ycol, method):
     iname = [c for c in m.params.index if "days_from_landfall:" in c][0]
     ib, ip = m.params[iname], m.pvalues[iname]
     ici = m.conf_int().loc[iname]
+    h2_rows.append(dict(hypothesis="H2", model=model, test="ols_interaction",
+                        group_a="reddit", group_b="facebook", slope=ib,
+                        ci_low=ici[0], ci_high=ici[1], p=ip))
     # H2 predicts Reddit declines MORE steeply approaching landfall than FB,
     # i.e. Reddit slope < FB slope -> interaction (Reddit-FB) significantly NEGATIVE.
     if ip >= 0.05:
@@ -123,6 +134,11 @@ def report_method(ycol, method):
         r1 = ols_one(rd[rd.hurricane == h], ycol, h) if (rd.hurricane == h).any() else None
         fc = f"{f1['slope']:+.5f} ({f1['p']:.1e})" if f1 else "—"
         rc = f"{r1['slope']:+.5f} ({r1['p']:.1e})" if r1 else "—"
+        for res, plat in [(f1, "facebook"), (r1, "reddit")]:
+            if res:
+                h2_rows.append(dict(hypothesis="H2", model=model, hurricane=h, platform=plat,
+                                    test="ols", slope=res["slope"], ci_low=res["ci"][0],
+                                    ci_high=res["ci"][1], p=res["p"], r2=res["r2"]))
         lines.append(f"| {h} | {fc} | {rc} |")
     lines.append("")
     return res_fb, res_rd, (ib, ip)
@@ -130,6 +146,9 @@ def report_method(ycol, method):
 
 vader_res = report_method("vader_compound", "VADER (compound)")
 roberta_res = report_method("roberta_compound", "RoBERTa (pos − neg)")
+
+pd.DataFrame(h2_rows).to_csv(REPO / "data" / "merged" / "h2_results_jose.csv", index=False)
+print(f"Wrote data/merged/h2_results_jose.csv ({len(h2_rows)} rows)")
 
 # cross-method agreement note
 lines.append("## VADER vs RoBERTa cross-check")
