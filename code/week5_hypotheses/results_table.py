@@ -7,7 +7,7 @@ Adds the omnibus Kruskal-Wallis effect size epsilon^2 = (H - k + 1)/(n - k) for
 H4 and H5, which the per-test docs reported only as pairwise rank-biserial.
 
 Reuses the same processed files as the other Week-5 scripts. Read-only.
-Writes docs/statistical_results_table.md.
+Writes docs/week5/statistical_results_table.md.
 """
 from pathlib import Path
 import numpy as np
@@ -17,7 +17,8 @@ from scipy.stats import mannwhitneyu, kruskal, levene, chi2_contingency
 
 REPO = Path(__file__).resolve().parents[2]
 PROC = REPO / "data" / "processed"
-OUT = REPO / "docs" / "statistical_results_table.md"
+OUT = REPO / "docs" / "week5" / "statistical_results_table.md"
+OUT.parent.mkdir(parents=True, exist_ok=True)
 ROBERTA_MAP = {"NEG": "negative", "NEU": "neutral", "NEUTRAL": "neutral", "POS": "positive"}
 HUR = ["debby", "helene", "milton"]
 

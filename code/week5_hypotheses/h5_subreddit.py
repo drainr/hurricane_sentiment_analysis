@@ -15,7 +15,7 @@ Comment-level, each hurricane separately.
           tier averages. Report 4 versions: VADER full / VADER excl / RoBERTa full /
           RoBERTa excl, side by side, with method-agreement + exclusion-effect lines.
 
-Outputs docs/h5_subreddit_results.md + figures/h5_subreddit_box.png/.pdf.
+Outputs docs/week5/h5_subreddit_results.md + figures/h5_subreddit_box.png/.pdf.
 Read-only on inputs.
 """
 from pathlib import Path
@@ -28,7 +28,8 @@ import matplotlib.pyplot as plt
 
 REPO = Path(__file__).resolve().parents[2]
 PROC = REPO / "data" / "processed"
-DOCS = REPO / "docs"
+DOCS = REPO / "docs" / "week5"
+DOCS.mkdir(parents=True, exist_ok=True)
 FIGS = REPO / "figures"
 
 TIERS = {
@@ -193,5 +194,5 @@ lines.append("- `figures/h5_subreddit_box.png/.pdf` — box plots of VADER compo
 pd.DataFrame(h5_rows).to_csv(REPO / "data" / "merged" / "h5_results_jose.csv", index=False)
 
 print("\n".join(lines))
-print("\nWrote docs/h5_subreddit_results.md + figures/h5_subreddit_box.*")
+print("\nWrote docs/week5/h5_subreddit_results.md + figures/h5_subreddit_box.*")
 print(f"Wrote data/merged/h5_results_jose.csv ({len(h5_rows)} rows)")

@@ -9,7 +9,7 @@ required 7-hypothesis x 2-method results table and the RoBERTa cross-check duty.
 Unit: comments. Facebook = Phillips comments; Reddit community = community_discussion;
 White House = government_response comments.
 
-Outputs docs/hypothesis_tests_results.md (consumed by statistical_results_summary.md).
+Outputs docs/week5/hypothesis_tests_results.md (consumed by statistical_results_summary.md).
 Read-only on inputs.
 """
 from pathlib import Path
@@ -19,7 +19,8 @@ from scipy.stats import mannwhitneyu, kruskal, levene, chi2_contingency
 
 REPO = Path(__file__).resolve().parents[2]
 PROC = REPO / "data" / "processed"
-OUT = REPO / "docs" / "hypothesis_tests_results.md"
+OUT = REPO / "docs" / "week5" / "hypothesis_tests_results.md"
+OUT.parent.mkdir(parents=True, exist_ok=True)
 
 ROBERTA_MAP = {"NEG": "negative", "NEU": "neutral", "NEUTRAL": "neutral", "POS": "positive",
                "negative": "negative", "neutral": "neutral", "positive": "positive"}

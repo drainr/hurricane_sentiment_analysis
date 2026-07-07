@@ -12,7 +12,7 @@ Method validation against the human gold standard + gratitude-inflation estimate
    This quantifies how much of Facebook's positive signal is person-directed thanks
    (feeds H1/H2 interpretation).
 
-Outputs docs/method_validation_report.md. Read-only on inputs.
+Outputs docs/week5/method_validation_report.md. Read-only on inputs.
 """
 from pathlib import Path
 import numpy as np
@@ -22,7 +22,8 @@ from sklearn.metrics import classification_report, confusion_matrix, accuracy_sc
 REPO = Path(__file__).resolve().parents[2]
 PROC = REPO / "data" / "processed"
 GT = REPO / "data" / "merged" / "ground_truth_400.csv"
-OUT = REPO / "docs" / "method_validation_report.md"
+OUT = REPO / "docs" / "week5" / "method_validation_report.md"
+OUT.parent.mkdir(parents=True, exist_ok=True)
 
 ROBERTA_MAP = {"NEG": "negative", "NEU": "neutral", "NEUTRAL": "neutral", "POS": "positive",
                "negative": "negative", "neutral": "neutral", "positive": "positive"}

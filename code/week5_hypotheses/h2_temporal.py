@@ -17,7 +17,7 @@ For each method (VADER compound; RoBERTa compound = pos - neg):
   - Per-hurricane slopes for context.
 
 Outputs:
-  docs/h2_temporal_results.md
+  docs/week5/h2_temporal_results.md
   figures/h2_temporal_curves.png / .pdf   (3 panels, one per hurricane)
 
 Reads the canonical processed/*_labeled.csv files. Read-only on inputs.
@@ -32,9 +32,10 @@ import matplotlib.pyplot as plt
 
 REPO = Path(__file__).resolve().parents[2]
 PROC = REPO / "data" / "processed"
-DOCS = REPO / "docs"
+DOCS = REPO / "docs" / "week5"
 FIGS = REPO / "figures"
 FIGS.mkdir(exist_ok=True)
+DOCS.mkdir(parents=True, exist_ok=True)
 
 WINDOWS = {"debby": (-5, 0), "helene": (-4, 1), "milton": (-5, 0)}
 HURRICANES = ["debby", "helene", "milton"]
@@ -232,4 +233,4 @@ lines.append("- Note: in-window WH comments exist only for Milton (day 0 only â€
 
 (DOCS / "h2_temporal_results.md").write_text("\n".join(lines) + "\n")
 print("\n".join(lines))
-print("\nWrote docs/h2_temporal_results.md and figures/h2_temporal_curves*.{png,pdf}")
+print("\nWrote docs/week5/h2_temporal_results.md and figures/h2_temporal_curves*.{png,pdf}")

@@ -15,7 +15,7 @@ Checks:
   6. Key columns: days_from_landfall window bounds, hurricane values, subreddit non-null.
   7. VADER vs RoBERTa raw-agreement tripwire per file.
 
-Writes docs/data_verification_week5.md and prints a report. Modifies nothing.
+Writes docs/week5/data_verification_week5.md and prints a report. Modifies nothing.
 Exit code 0 = all pass, 1 = at least one real problem found.
 """
 import sys
@@ -28,7 +28,8 @@ VADER = REPO / "data" / "vader"
 ROBERTA = REPO / "data" / "roberta"
 PROC = REPO / "data" / "processed"
 MASTER = REPO / "data" / "merged" / "master_vader_roberta_topics.csv"
-OUT = REPO / "docs" / "data_verification_week5.md"
+OUT = REPO / "docs" / "week5" / "data_verification_week5.md"
+OUT.parent.mkdir(parents=True, exist_ok=True)
 
 # source key -> (vader file, roberta file, processed file, canonical row count)
 SOURCES = {

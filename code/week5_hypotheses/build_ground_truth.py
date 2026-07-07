@@ -5,7 +5,7 @@ ground-truth file and compute inter-annotator agreement.
 
 Week 4 deliverables produced:
   - data/merged/ground_truth_400.csv  (both annotators + resolved consensus)
-  - docs/interannotator_kappa.md      (Cohen's kappa, sentiment + gratitude tag)
+  - docs/week4/interannotator_kappa.md      (Cohen's kappa, sentiment + gratitude tag)
 
 Consensus rule: where the two annotators agree, that value is the consensus.
 Where they disagree, the consensus is left blank and flagged for Jose + Angelo
@@ -21,7 +21,8 @@ from sklearn.metrics import cohen_kappa_score, confusion_matrix
 HERE = os.path.dirname(__file__)
 ROOT = os.path.abspath(os.path.join(HERE, "..", ".."))
 MERGED = os.path.join(ROOT, "data", "merged")
-DOCS = os.path.join(ROOT, "docs")
+DOCS = os.path.join(ROOT, "docs", "week4")
+os.makedirs(DOCS, exist_ok=True)
 
 JOSE = os.path.join(MERGED, "manual_label_sample_jose.csv")
 ANGELO = os.path.join(MERGED, "manual_label_sample_angelo.csv")
