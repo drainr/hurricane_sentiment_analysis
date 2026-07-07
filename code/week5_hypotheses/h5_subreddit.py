@@ -103,6 +103,7 @@ lines.append("Corpus (community comments): "
 lines.append("")
 
 results = {}  # (hurricane, method, variant) -> dict
+h5_rows = []  # CSV rows for the combined 7-hypothesis results file
 for h in HURRICANES:
     dfh = rc[rc.hurricane == h]
     thread_ids = largest_thread_ids(dfh)
@@ -118,6 +119,16 @@ for h in HURRICANES:
         for variant, d in [("full data", dfh), ("largest thread excl.", dfh_excl)]:
             r = run_tests(d, col)
             results[(h, method, variant)] = r
+            vtag = "full" if variant == "full data" else "excl_largest_thread"
+            if not np.isnan(r["H"]):
+                h5_rows.append(dict(hypothesis="H5", model=method.lower(), hurricane=h,
+                                    variant=vtag, test="kruskal_wallis", stat=r["H"], p=r["p"]))
+            if r["pairwise"]:
+                for pair, (pbonf, rrb) in r["pairwise"].items():
+                    a, b = pair.split(" vs ")
+                    h5_rows.append(dict(hypothesis="H5", model=method.lower(), hurricane=h,
+                                        variant=vtag, test="pairwise_mann_whitney",
+                                        group_a=a, group_b=b, p_bonferroni=pbonf, rank_biserial=rrb))
             sig = "—" if np.isnan(r["p"]) else ("YES" if r["p"] < ALPHA else "no")
             pw = ""
             if r["pairwise"]:
@@ -178,5 +189,9 @@ lines.append("## Figure")
 lines.append("- `figures/h5_subreddit_box.png/.pdf` — box plots of VADER compound by tier, per hurricane.")
 
 (DOCS / "h5_subreddit_results.md").write_text("\n".join(lines) + "\n")
+
+pd.DataFrame(h5_rows).to_csv(REPO / "data" / "merged" / "h5_results_jose.csv", index=False)
+
 print("\n".join(lines))
 print("\nWrote docs/h5_subreddit_results.md + figures/h5_subreddit_box.*")
+print(f"Wrote data/merged/h5_results_jose.csv ({len(h5_rows)} rows)")
