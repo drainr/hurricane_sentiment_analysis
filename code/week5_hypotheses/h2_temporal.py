@@ -17,7 +17,7 @@ For each method (VADER compound; RoBERTa compound = pos - neg):
   - Per-hurricane slopes for context.
 
 Outputs:
-  docs/h2_temporal_results.md
+  docs/week5/h2_temporal_results.md
   figures/h2_temporal_curves.png / .pdf   (3 panels, one per hurricane)
 
 Reads the canonical processed/*_labeled.csv files. Read-only on inputs.
@@ -32,13 +32,17 @@ import matplotlib.pyplot as plt
 
 REPO = Path(__file__).resolve().parents[2]
 PROC = REPO / "data" / "processed"
-DOCS = REPO / "docs"
+DOCS = REPO / "docs" / "week5"
 FIGS = REPO / "figures"
 FIGS.mkdir(exist_ok=True)
+DOCS.mkdir(parents=True, exist_ok=True)
 
 WINDOWS = {"debby": (-5, 0), "helene": (-4, 1), "milton": (-5, 0)}
 HURRICANES = ["debby", "helene", "milton"]
 COLORS = {"facebook": "#1f77b4", "reddit": "#ff7f0e", "whitehouse": "#2ca02c"}
+
+# CSV rows for the combined 7-hypothesis results file (see combine_results_jose.py)
+h2_rows = []
 
 
 def load(name):
@@ -83,8 +87,13 @@ def report_method(ycol, method):
     lines.append(f"## {method}")
     lines.append("")
     # separate slopes
+    model = "vader" if "VADER" in method else "roberta"
     res_fb = ols_one(fb, ycol, "Facebook")
     res_rd = ols_one(rd, ycol, "Reddit")
+    for res, plat in [(res_fb, "facebook"), (res_rd, "reddit")]:
+        h2_rows.append(dict(hypothesis="H2", model=model, subset="overall", platform=plat,
+                            test="ols", slope=res["slope"], ci_low=res["ci"][0],
+                            ci_high=res["ci"][1], p=res["p"], r2=res["r2"]))
     lines.append("| platform | N | slope (per day toward +) | 95% CI | p | R^2 |")
     lines.append("|---|---|---|---|---|---|")
     for r in (res_fb, res_rd):
@@ -99,6 +108,9 @@ def report_method(ycol, method):
     iname = [c for c in m.params.index if "days_from_landfall:" in c][0]
     ib, ip = m.params[iname], m.pvalues[iname]
     ici = m.conf_int().loc[iname]
+    h2_rows.append(dict(hypothesis="H2", model=model, test="ols_interaction",
+                        group_a="reddit", group_b="facebook", slope=ib,
+                        ci_low=ici[0], ci_high=ici[1], p=ip))
     # H2 predicts Reddit declines MORE steeply approaching landfall than FB,
     # i.e. Reddit slope < FB slope -> interaction (Reddit-FB) significantly NEGATIVE.
     if ip >= 0.05:
@@ -123,6 +135,11 @@ def report_method(ycol, method):
         r1 = ols_one(rd[rd.hurricane == h], ycol, h) if (rd.hurricane == h).any() else None
         fc = f"{f1['slope']:+.5f} ({f1['p']:.1e})" if f1 else "—"
         rc = f"{r1['slope']:+.5f} ({r1['p']:.1e})" if r1 else "—"
+        for res, plat in [(f1, "facebook"), (r1, "reddit")]:
+            if res:
+                h2_rows.append(dict(hypothesis="H2", model=model, hurricane=h, platform=plat,
+                                    test="ols", slope=res["slope"], ci_low=res["ci"][0],
+                                    ci_high=res["ci"][1], p=res["p"], r2=res["r2"]))
         lines.append(f"| {h} | {fc} | {rc} |")
     lines.append("")
     return res_fb, res_rd, (ib, ip)
@@ -130,6 +147,9 @@ def report_method(ycol, method):
 
 vader_res = report_method("vader_compound", "VADER (compound)")
 roberta_res = report_method("roberta_compound", "RoBERTa (pos − neg)")
+
+pd.DataFrame(h2_rows).to_csv(REPO / "data" / "merged" / "h2_results_jose.csv", index=False)
+print(f"Wrote data/merged/h2_results_jose.csv ({len(h2_rows)} rows)")
 
 # cross-method agreement note
 lines.append("## VADER vs RoBERTa cross-check")
@@ -144,6 +164,27 @@ lines.append("- Both methods give a **positive** Reddit−Facebook interaction, 
 lines.append("- The picture is storm-dependent (see per-hurricane tables): Debby shows a Facebook "
              "decline, Helene a sharp Reddit decline, Milton a rise on both — so a single pooled "
              "slope conflates approach and post-landfall recovery (Helene/Milton windows include day +1 / day 0).")
+lines.append("")
+
+# -------- in-window WH comment counts per hurricane (the F2 green squares) --------
+# WH government_response comments are only added to the figure where they fall inside
+# a storm's event window. Emit the per-day counts so the plotted N is explicit/traceable.
+wh["hurricane"] = wh["hurricane"].str.lower()
+wh["days_from_landfall"] = pd.to_numeric(wh["days_from_landfall"], errors="coerce")
+lines.append("## In-window White House comments (plotted on F2)")
+lines.append("")
+print("\nIn-window WH comment counts (the F2 green squares):")
+for h in HURRICANES:
+    lo, hi = WINDOWS[h]
+    sub = wh[(wh.hurricane == h) & wh.days_from_landfall.between(lo, hi)]
+    days = sub["days_from_landfall"].value_counts().sort_index()
+    if len(sub):
+        by_day = ", ".join(f"day {int(d)}: {int(n)}" for d, n in days.items())
+        msg = f"{h.capitalize()} window {(lo, hi)}: {len(sub)} in-window ({by_day})"
+    else:
+        msg = f"{h.capitalize()} window {(lo, hi)}: 0 in-window (WH activity outside window)"
+    print("  " + msg)
+    lines.append(f"- {msg}")
 lines.append("")
 
 # -------- figure: 3 panels, mean compound by day with 95% CI --------
@@ -185,8 +226,11 @@ for ycol, suffix, mlabel in [("vader_compound", "", "VADER"),
 lines.append("## Figures")
 lines.append("- `figures/h2_temporal_curves.png/.pdf` (VADER) — 3 panels, FB+Reddit all panels, WH on Milton only.")
 lines.append("- `figures/h2_temporal_curves_roberta.png/.pdf` (RoBERTa cross-check).")
-lines.append("- Note: in-window WH comments exist only for Milton (days 0–1); Helene WH activity is outside the −4..+1 window.")
+lines.append("- Note: in-window WH comments exist only for Milton (day 0 only — the 140 government_response "
+             "comments on landfall day; the other 90 WH Milton comments fall on days 1–7, post-landfall and "
+             "outside the −5..0 window, so they are correctly clipped from this figure). "
+             "Helene WH activity is outside the −4..+1 window.")
 
 (DOCS / "h2_temporal_results.md").write_text("\n".join(lines) + "\n")
 print("\n".join(lines))
-print("\nWrote docs/h2_temporal_results.md and figures/h2_temporal_curves*.{png,pdf}")
+print("\nWrote docs/week5/h2_temporal_results.md and figures/h2_temporal_curves*.{png,pdf}")
