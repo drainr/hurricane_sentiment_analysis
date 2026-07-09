@@ -20,9 +20,14 @@ LABEL_ORDER = ["negative", "neutral", "positive"]
 # H5: subreddit → category mapping (per hypothesis spec)
 H5_SUBREDDIT_MAP: Dict[str, str] = {
     "TropicalWeather": "expert",
+    "hurricane": "expert",
+    "HurricaneHelene": "expert",
     "tampa": "local",
     "sarasota": "local",
+    "asheville": "local",
     "florida": "statewide",
+    "Georgia": "statewide",
+    "NorthCarolina": "statewide",
 }
 
 
