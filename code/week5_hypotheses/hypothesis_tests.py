@@ -11,8 +11,7 @@ import statsmodels.formula.api as smf
 
 ROOT = Path(__file__).resolve().parents[2]
 DATA_DIR = ROOT / "data"
-VADER_DIR = DATA_DIR / "vader"
-ROBERTA_DIR = DATA_DIR / "roberta"
+PROCESSED_DIR = DATA_DIR / "processed"
 MERGED_DIR = DATA_DIR / "merged"
 MERGED_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -48,23 +47,20 @@ def normalize_hurricane_name(series: pd.Series) -> pd.Series:
 
 
 def load_comment_frames() -> Dict[str, pd.DataFrame]:
-    fb = pd.read_csv(VADER_DIR / "facebook_comments_vader.csv")
-    reddit = pd.read_csv(VADER_DIR / "reddit_relevant_vader_comments.csv")
-    wh = pd.read_csv(VADER_DIR / "whitehouse_threads_comments_vader.csv")
-    fb_roberta = pd.read_csv(ROBERTA_DIR / "facebook_comments_vader_roberta.csv")
-    reddit_roberta = pd.read_csv(ROBERTA_DIR / "reddit_relevant_comments_vader_roberta.csv")
-    wh_roberta = pd.read_csv(ROBERTA_DIR / "whitehouse_threads_comments_vader_roberta.csv")
+    fb = pd.read_csv(PROCESSED_DIR / "facebook_comments_vader_roberta_topics_labeled.csv")
+    reddit = pd.read_csv(PROCESSED_DIR / "reddit_relevant_comments_vader_roberta_topics_labeled.csv")
+    wh = pd.read_csv(PROCESSED_DIR / "whitehouse_threads_comments_vader_roberta_topics_labeled.csv")
 
-    for frame in (fb, reddit, wh, fb_roberta, reddit_roberta, wh_roberta):
+    for frame in (fb, reddit, wh):
         frame["hurricane_norm"] = normalize_hurricane_name(frame["hurricane"])
 
     return {
         "facebook": fb,
         "reddit": reddit,
         "whitehouse": wh,
-        "facebook_roberta": fb_roberta,
-        "reddit_roberta": reddit_roberta,
-        "whitehouse_roberta": wh_roberta,
+        "facebook_roberta": fb,
+        "reddit_roberta": reddit,
+        "whitehouse_roberta": wh,
     }
 
 
