@@ -60,10 +60,10 @@ Results generated from the VADER and RoBERTa sentiment files in the repository.
 | --- | --- | ---: | ---: | --- |
 | vader | debby | 0.113 | 0.000e+00 | [0.101, 0.124] |
 | vader | helene | 0.114 | 0.000e+00 | [0.106, 0.122] |
-| vader | milton | 0.096 | 0.000e+00 | [0.090, 0.101] |
+| vader | milton | 0.096 | 0.000e+00 | [0.090, 0.102] |
 | roberta | debby | 0.369 | 0.000e+00 | [0.351, 0.387] |
 | roberta | helene | 0.340 | 0.000e+00 | [0.327, 0.354] |
-| roberta | milton | 0.285 | 0.000e+00 | [0.277, 0.295] |
+| roberta | milton | 0.285 | 0.000e+00 | [0.276, 0.295] |
 
 
 ## H4: Sequential exposure
