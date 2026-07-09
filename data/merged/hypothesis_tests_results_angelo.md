@@ -12,10 +12,10 @@ Results generated from the VADER and RoBERTa sentiment files in the repository.
 | vader | debby | 80092146.000 | 1.059e-64 | 0.128 |
 | vader | helene | 266146258.000 | 6.920e-124 | 0.135 |
 | vader | milton | 1288405580.500 | 3.624e-169 | 0.108 |
-| roberta | overall | 4516904342.000 | 0.000e+00 | 0.249 |
-| roberta | debby | 90482436.000 | 0.000e+00 | 0.274 |
-| roberta | helene | 295164967.500 | 0.000e+00 | 0.259 |
-| roberta | milton | 1417607885.500 | 0.000e+00 | 0.219 |
+| roberta | overall | 4683262619.000 | 0.000e+00 | 0.295 |
+| roberta | debby | 94042964.500 | 0.000e+00 | 0.325 |
+| roberta | helene | 305703713.500 | 0.000e+00 | 0.304 |
+| roberta | milton | 1464275249.000 | 0.000e+00 | 0.259 |
 
 ### Chi-square on platform × sentiment label
 
@@ -38,21 +38,21 @@ Results generated from the VADER and RoBERTa sentiment files in the repository.
 | vader | helene | reddit | 32948 | -0.01617 | [-0.02033, -0.01200] | 2.929e-14 | 0.0018 |
 | vader | milton | facebook | 29308 | +0.00642 | [+0.00331, +0.00954] | 5.371e-05 | 0.0006 |
 | vader | milton | reddit | 79339 | +0.00488 | [+0.00234, +0.00742] | 1.682e-04 | 0.0002 |
-| roberta | overall | facebook | 59736 | +0.00592 | [+0.00209, +0.00975] | 2.478e-03 | 0.0002 |
-| roberta | overall | reddit | 121053 | +0.00913 | [+0.00646, +0.01180] | 2.093e-11 | 0.0004 |
-| roberta | debby | facebook | 16199 | -0.02593 | [-0.03356, -0.01829] | 2.909e-11 | 0.0027 |
-| roberta | debby | reddit | 8766 | -0.00492 | [-0.01538, +0.00553] | 3.559e-01 | 0.0001 |
-| roberta | helene | facebook | 14229 | -0.01421 | [-0.02390, -0.00452] | 4.059e-03 | 0.0006 |
-| roberta | helene | reddit | 32948 | -0.02770 | [-0.03382, -0.02158] | 7.853e-19 | 0.0024 |
-| roberta | milton | facebook | 29308 | +0.03529 | [+0.03002, +0.04057] | 3.860e-39 | 0.0058 |
-| roberta | milton | reddit | 79339 | +0.01523 | [+0.01168, +0.01879] | 4.709e-17 | 0.0009 |
+| roberta | overall | facebook | 59736 | +0.00436 | [+0.00132, +0.00741] | 4.990e-03 | 0.0001 |
+| roberta | overall | reddit | 121053 | +0.00800 | [+0.00597, +0.01003] | 1.086e-14 | 0.0005 |
+| roberta | debby | facebook | 16199 | -0.02290 | [-0.02900, -0.01680] | 1.996e-13 | 0.0033 |
+| roberta | debby | reddit | 8766 | -0.00512 | [-0.01305, +0.00281] | 2.060e-01 | 0.0002 |
+| roberta | helene | facebook | 14229 | -0.01086 | [-0.01859, -0.00313] | 5.877e-03 | 0.0005 |
+| roberta | helene | reddit | 32948 | -0.02234 | [-0.02698, -0.01769] | 4.641e-21 | 0.0027 |
+| roberta | milton | facebook | 29308 | +0.03022 | [+0.02607, +0.03437] | 4.995e-46 | 0.0069 |
+| roberta | milton | reddit | 79339 | +0.01230 | [+0.00960, +0.01500] | 4.601e-19 | 0.0010 |
 
 ### Interaction model: compound ~ days_from_landfall × platform
 
 | model | subset | interaction coef (reddit − facebook slope) | interaction p | R² |
 | --- | --- | ---: | ---: | ---: |
 | vader | overall | +0.00535 | 6.133e-04 | 0.0137 |
-| roberta | overall | +0.00321 | 1.731e-01 | 0.0503 |
+| roberta | overall | +0.00364 | 4.537e-02 | 0.0604 |
 
 ## H3: Storm intensity interaction
 
@@ -61,9 +61,9 @@ Results generated from the VADER and RoBERTa sentiment files in the repository.
 | vader | debby | 0.113 | 0.000e+00 | [0.101, 0.124] |
 | vader | helene | 0.114 | 0.000e+00 | [0.106, 0.122] |
 | vader | milton | 0.096 | 0.000e+00 | [0.090, 0.101] |
-| roberta | debby | 0.369 | 0.000e+00 | [0.351, 0.387] |
-| roberta | helene | 0.340 | 0.000e+00 | [0.327, 0.354] |
-| roberta | milton | 0.285 | 0.000e+00 | [0.277, 0.295] |
+| roberta | debby | 0.318 | 0.000e+00 | [0.304, 0.331] |
+| roberta | helene | 0.286 | 0.000e+00 | [0.276, 0.296] |
+| roberta | milton | 0.240 | 0.000e+00 | [0.233, 0.247] |
 
 
 ## H4: Sequential exposure
@@ -78,14 +78,14 @@ Results generated from the VADER and RoBERTa sentiment files in the repository.
 | vader | facebook | pairwise MW | 116522777.500 | 8.803e-02 | debby vs helene (Bonferroni p = 2.641e-01) |
 | vader | facebook | pairwise MW | 255662608.500 | 2.512e-44 | debby vs milton (Bonferroni p = 7.537e-44) |
 | vader | facebook | pairwise MW | 222473765.500 | 2.361e-31 | helene vs milton (Bonferroni p = 7.083e-31) |
-| roberta | reddit | Kruskal-Wallis | 150.079 | 2.575e-33 | 3 storms |
-| roberta | reddit | pairwise MW | 143464559.500 | 2.998e-01 | debby vs helene (Bonferroni p = 8.994e-01) |
-| roberta | reddit | pairwise MW | 359316175.500 | 1.627e-08 | debby vs milton (Bonferroni p = 4.880e-08) |
-| roberta | reddit | pairwise MW | 1359484712.000 | 1.517e-31 | helene vs milton (Bonferroni p = 4.550e-31) |
-| roberta | facebook | Kruskal-Wallis | 458.023 | 3.480e-100 | 3 storms |
-| roberta | facebook | pairwise MW | 117414920.000 | 1.871e-03 | debby vs helene (Bonferroni p = 5.613e-03) |
-| roberta | facebook | pairwise MW | 260850088.500 | 5.782e-82 | debby vs milton (Bonferroni p = 1.735e-81) |
-| roberta | facebook | pairwise MW | 225704527.000 | 1.272e-53 | helene vs milton (Bonferroni p = 3.816e-53) |
+| roberta | reddit | Kruskal-Wallis | 245.111 | 5.953e-54 | 3 storms |
+| roberta | reddit | pairwise MW | 143617150.000 | 4.282e-01 | debby vs helene (Bonferroni p = 1.000e+00) |
+| roberta | reddit | pairwise MW | 365092500.000 | 1.619e-14 | debby vs milton (Bonferroni p = 4.857e-14) |
+| roberta | reddit | pairwise MW | 1380014097.500 | 2.784e-49 | helene vs milton (Bonferroni p = 8.353e-49) |
+| roberta | facebook | Kruskal-Wallis | 644.042 | 1.406e-140 | 3 storms |
+| roberta | facebook | pairwise MW | 118999650.500 | 9.223e-07 | debby vs helene (Bonferroni p = 2.767e-06) |
+| roberta | facebook | pairwise MW | 268575977.000 | 1.453e-119 | debby vs milton (Bonferroni p = 4.358e-119) |
+| roberta | facebook | pairwise MW | 229886450.500 | 1.231e-67 | helene vs milton (Bonferroni p = 3.694e-67) |
 
 ## H5: Reddit subreddit-category differences
 
@@ -108,30 +108,30 @@ Subreddit mapping — expert: r/TropicalWeather; local: r/tampa, r/sarasota; sta
 | vader | milton | excl_largest_thread | pairwise MW | expert | local | U = 90184917.000 | 3.736e-01 | 1.000e+00 | 0.006 |
 | vader | milton | excl_largest_thread | pairwise MW | expert | statewide | U = 104455101.000 | 5.875e-05 | 1.763e-04 | 0.027 |
 | vader | milton | excl_largest_thread | pairwise MW | local | statewide | U = 86220103.500 | 5.808e-03 | 1.742e-02 | 0.020 |
-| roberta | debby | full | Kruskal-Wallis | — | — | H = 17.982 | 1.245e-04 | — | — |
-| roberta | debby | full | pairwise MW | expert | local | U = 1210094.500 | 3.191e-02 | 9.573e-02 | 0.041 |
-| roberta | debby | full | pairwise MW | expert | statewide | U = 3216264.500 | 1.853e-05 | 5.558e-05 | 0.065 |
-| roberta | debby | full | pairwise MW | local | statewide | U = 1854092.500 | 2.359e-01 | 7.078e-01 | 0.022 |
-| roberta | debby | excl_largest_thread | Kruskal-Wallis | — | — | H = 69.209 | 9.363e-16 | — | — |
-| roberta | debby | excl_largest_thread | pairwise MW | expert | local | U = 406016.000 | 3.037e-01 | 9.110e-01 | 0.025 |
-| roberta | debby | excl_largest_thread | pairwise MW | expert | statewide | U = 1337934.000 | 1.181e-13 | 3.542e-13 | 0.153 |
-| roberta | debby | excl_largest_thread | pairwise MW | local | statewide | U = 1332146.000 | 2.209e-08 | 6.628e-08 | 0.115 |
-| roberta | helene | full | Kruskal-Wallis | — | — | H = 48.469 | 2.987e-11 | — | — |
-| roberta | helene | full | pairwise MW | expert | local | U = 17479062.000 | 7.154e-01 | 1.000e+00 | 0.004 |
-| roberta | helene | full | pairwise MW | expert | statewide | U = 31978399.500 | 7.144e-12 | 2.143e-11 | 0.059 |
-| roberta | helene | full | pairwise MW | local | statewide | U = 10322390.000 | 7.072e-06 | 2.122e-05 | 0.052 |
-| roberta | helene | excl_largest_thread | Kruskal-Wallis | — | — | H = 49.894 | 1.464e-11 | — | — |
-| roberta | helene | excl_largest_thread | pairwise MW | expert | local | U = 4839111.000 | 3.791e-04 | 1.137e-03 | 0.048 |
-| roberta | helene | excl_largest_thread | pairwise MW | expert | statewide | U = 8258049.500 | 1.105e-12 | 3.314e-12 | 0.086 |
-| roberta | helene | excl_largest_thread | pairwise MW | local | statewide | U = 7955469.000 | 2.801e-03 | 8.404e-03 | 0.036 |
-| roberta | milton | full | Kruskal-Wallis | — | — | H = 635.636 | 9.405e-139 | — | — |
-| roberta | milton | full | pairwise MW | expert | local | U = 232750386.000 | 1.937e-132 | 5.810e-132 | 0.128 |
-| roberta | milton | full | pairwise MW | expert | statewide | U = 220709163.000 | 2.931e-57 | 8.792e-57 | 0.084 |
-| roberta | milton | full | pairwise MW | local | statewide | U = 126152608.500 | 2.547e-12 | 7.642e-12 | -0.041 |
-| roberta | milton | excl_largest_thread | Kruskal-Wallis | — | — | H = 331.486 | 1.044e-72 | — | — |
-| roberta | milton | excl_largest_thread | pairwise MW | expert | local | U = 96896465.500 | 3.207e-37 | 9.621e-37 | 0.081 |
-| roberta | milton | excl_largest_thread | pairwise MW | expert | statewide | U = 112735213.000 | 8.784e-69 | 2.635e-68 | 0.109 |
-| roberta | milton | excl_largest_thread | pairwise MW | local | statewide | U = 86927406.000 | 1.877e-05 | 5.632e-05 | 0.028 |
+| roberta | debby | full | Kruskal-Wallis | — | — | H = 12.977 | 1.521e-03 | — | — |
+| roberta | debby | full | pairwise MW | expert | local | U = 1204341.000 | 9.031e-02 | 2.709e-01 | 0.036 |
+| roberta | debby | full | pairwise MW | expert | statewide | U = 3203884.000 | 2.679e-04 | 8.036e-04 | 0.061 |
+| roberta | debby | full | pairwise MW | local | statewide | U = 1853097.500 | 2.877e-01 | 8.632e-01 | 0.021 |
+| roberta | debby | excl_largest_thread | Kruskal-Wallis | — | — | H = 73.171 | 1.292e-16 | — | — |
+| roberta | debby | excl_largest_thread | pairwise MW | expert | local | U = 397059.000 | 9.197e-01 | 1.000e+00 | 0.003 |
+| roberta | debby | excl_largest_thread | pairwise MW | expert | statewide | U = 1352960.000 | 1.811e-13 | 5.432e-13 | 0.166 |
+| roberta | debby | excl_largest_thread | pairwise MW | local | statewide | U = 1358434.500 | 8.217e-10 | 2.465e-09 | 0.137 |
+| roberta | helene | full | Kruskal-Wallis | — | — | H = 32.849 | 7.362e-08 | — | — |
+| roberta | helene | full | pairwise MW | expert | local | U = 17331618.000 | 6.806e-01 | 1.000e+00 | -0.005 |
+| roberta | helene | full | pairwise MW | expert | statewide | U = 31767029.500 | 4.945e-08 | 1.483e-07 | 0.052 |
+| roberta | helene | full | pairwise MW | local | statewide | U = 10326354.500 | 3.204e-05 | 9.613e-05 | 0.052 |
+| roberta | helene | excl_largest_thread | Kruskal-Wallis | — | — | H = 44.729 | 1.937e-10 | — | — |
+| roberta | helene | excl_largest_thread | pairwise MW | expert | local | U = 4862158.500 | 3.830e-04 | 1.149e-03 | 0.053 |
+| roberta | helene | excl_largest_thread | pairwise MW | expert | statewide | U = 8281622.000 | 1.889e-11 | 5.666e-11 | 0.089 |
+| roberta | helene | excl_largest_thread | pairwise MW | local | statewide | U = 7946477.500 | 7.868e-03 | 2.360e-02 | 0.035 |
+| roberta | milton | full | Kruskal-Wallis | — | — | H = 714.227 | 8.084e-156 | — | — |
+| roberta | milton | full | pairwise MW | expert | local | U = 237701454.000 | 6.046e-151 | 1.814e-150 | 0.152 |
+| roberta | milton | full | pairwise MW | expert | statewide | U = 222609995.000 | 2.364e-57 | 7.092e-57 | 0.093 |
+| roberta | milton | full | pairwise MW | local | statewide | U = 124581301.000 | 1.854e-16 | 5.562e-16 | -0.053 |
+| roberta | milton | excl_largest_thread | Kruskal-Wallis | — | — | H = 328.144 | 5.551e-72 | — | — |
+| roberta | milton | excl_largest_thread | pairwise MW | expert | local | U = 97289747.500 | 1.174e-33 | 3.523e-33 | 0.086 |
+| roberta | milton | excl_largest_thread | pairwise MW | expert | statewide | U = 113865466.500 | 1.168e-68 | 3.504e-68 | 0.120 |
+| roberta | milton | excl_largest_thread | pairwise MW | local | statewide | U = 87675891.500 | 2.717e-07 | 8.152e-07 | 0.037 |
 
 ## H7: Government communication
 
@@ -140,6 +140,6 @@ Subreddit mapping — expert: r/TropicalWeather; local: r/tampa, r/sarasota; sta
 | vader | WH comments vs Reddit community | U = 128427604.500; Levene statistic = 62.722 | p(U) = 8.559e-03; p(Levene) = 2.400e-15 | variance/polarization check |
 | vader | WH comments vs Phillips Facebook | U = 55524380.000 | p = 2.043e-35 | direct platform comparison |
 | vader | WH comments with political keywords vs without | U = 466718.000 | p = 1.716e-02 | n(keyword) = 644; n(non-keyword) = 1549 |
-| roberta | WH comments vs Reddit community | U = 116088881.000; Levene statistic = 13.295 | p(U) = 1.247e-28; p(Levene) = 2.662e-04 | variance/polarization check |
-| roberta | WH comments vs Phillips Facebook | U = 41992197.500 | p = 1.865e-215 | direct platform comparison |
-| roberta | WH comments with political keywords vs without | U = 429232.500 | p = 7.990e-09 | n(keyword) = 644; n(non-keyword) = 1549 |
+| roberta | WH comments vs Reddit community | U = 109785884.000; Levene statistic = 1.086 | p(U) = 6.509e-44; p(Levene) = 2.973e-01 | variance/polarization check |
+| roberta | WH comments vs Phillips Facebook | U = 36921021.000 | p = 1.042e-264 | direct platform comparison |
+| roberta | WH comments with political keywords vs without | U = 417404.000 | p = 1.687e-09 | n(keyword) = 644; n(non-keyword) = 1549 |
