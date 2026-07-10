@@ -20,9 +20,14 @@ LABEL_ORDER = ["negative", "neutral", "positive"]
 # H5: subreddit → category mapping (per hypothesis spec)
 H5_SUBREDDIT_MAP: Dict[str, str] = {
     "TropicalWeather": "expert",
+    "hurricane": "expert",
+    "HurricaneHelene": "expert",
     "tampa": "local",
     "sarasota": "local",
+    "asheville": "local",
     "florida": "statewide",
+    "Georgia": "statewide",
+    "NorthCarolina": "statewide",
 }
 
 
@@ -71,7 +76,10 @@ def clean_for_model(df: pd.DataFrame, model: str) -> pd.DataFrame:
         out["score"] = pd.to_numeric(out["vader_compound"], errors="coerce")
         out["label"] = out["vader_label"].astype(str).str.strip().str.lower()
     elif model == "roberta":
-        out["score"] = encode_roberta_labels(out["roberta_label"])
+        out["score"] = (
+            pd.to_numeric(out["roberta_pos"], errors="coerce")
+            - pd.to_numeric(out["roberta_neg"], errors="coerce")
+        )
         out["label"] = out["roberta_label"].astype(str).str.strip().str.lower()
     else:
         raise ValueError(f"unsupported model {model}")
