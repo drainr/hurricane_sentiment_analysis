@@ -112,7 +112,7 @@ lines += ["",
           "",
           "Figure: `figures/f1_dataset_overview.png/.pdf` (300 dpi).",
           "",
-          "Status: **FINAL** (not blocked on Angelo — composition counts only)."]
+          "Status: **FINAL**."]
 (DOCS / "f1_dataset_overview_results.md").write_text("\n".join(lines) + "\n")
 
 print("\n".join(lines))
