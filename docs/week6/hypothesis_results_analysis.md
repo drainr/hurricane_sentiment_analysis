@@ -30,7 +30,7 @@ Scope: Angelo's file covers H1/H3/H4/H7; H2 and H5 are Jose's. (An earlier RoBER
 | **H4** | Reddit accumulates negativity, FB stable           | across-storm KW sig. both platforms (FB _H_=644 > Reddit 245)        | **Partial**                |
 | **H5** | Expert subs more neutral than local/statewide      | RoBERTa sig. all storms; VADER only Milton                           | **Supported (RoBERTa)**    |
 | **H6** | FB gratitude/prep vs Reddit forecast/misinfo       | topic analysis (BERTopic), source×topic V = 0.39                     | see topic figures          |
-| **H7** | WH more negative/polarized than organic + Phillips | WH vs FB _r_ = −0.44; WH vs Reddit −0.17                             | **Supported (negativity)** |
+| **H7** | WH more negative/polarized than organic + Phillips | **RoBERTa:** WH vs FB _r_ = −0.44, WH vs Reddit −0.17 (WH mean −0.36). **VADER:** WH mean is _positive_ (+0.02); less positive than FB (_r_ = −0.15) but ≈ Reddit (_r_ = −0.03) | **Supported — negativity is RoBERTa-specific** |
 
 ## 3. What the numbers mean (one line each)
 
@@ -39,7 +39,7 @@ Scope: Angelo's file covers H1/H3/H4/H7; H2 and H5 are Jose's. (An earlier RoBER
 - **H3:** The gap _shrinks_ for the stronger later storms — opposite of predicted; intensity and season-order are confounded across only three storms.
 - **H4:** Sentiment shifts across storms, but _both_ platforms move (FB more, not less), so it's a general Milton-is-most-negative effect, not Reddit-specific.
 - **H5:** Expert weather forums stay calmer than general geographic subs. RoBERTa detects it everywhere; VADER only for Milton (Debby/Helene RoBERTa-only, flag).
-- **H7:** Reactions to the government account are markedly more negative than organic Reddit and far more negative than Facebook — the WH-vs-FB gap (−0.44) is one of the largest effects. "More polarized" holds under VADER, not RoBERTa.
+- **H7:** The negativity finding is **RoBERTa-specific — it must be labeled as such, not stated as a general result.** Under RoBERTa, reactions to the government account are markedly more negative than organic Reddit and far more negative than Facebook (WH mean −0.36; WH-vs-FB _r_ = −0.44, one of the study's largest effects). Under **VADER the direction does not hold**: WH comments are mildly _positive_ in absolute terms (+0.02 pooled, +0.06 for Milton) — less positive than Facebook (_r_ = −0.15) but essentially even with Reddit (_r_ = −0.03; for Milton VADER even puts WH slightly _above_ Reddit, n.s.). Separately, the "more polarized = higher variance" reading holds under VADER (Levene p=2e-15) but not RoBERTa (p=0.30). Net: H7's **negativity** claim rests on RoBERTa, its **polarization** claim on VADER — neither is a both-methods finding.
 
 ## 4. Method note
 
