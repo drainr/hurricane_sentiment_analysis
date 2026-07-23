@@ -33,6 +33,7 @@ PER_FILE_EXPECTED = {
 
 
 def stem_of(basename):
+    """Map a filename to its expected source stem, or None if unrecognised."""
     for stem in PER_FILE_EXPECTED:
         if basename.startswith(stem):
             return stem
@@ -40,6 +41,12 @@ def stem_of(basename):
 
 
 def main():
+    """Concatenate the six labeled files into the master snapshot.
+
+    Adds a provenance column naming each row's source file, then checks two
+    guardrails: 187,359 total rows and zero duplicate (id, source) pairs. The
+    master is a derived snapshot — rebuild it, never hand-edit it.
+    """
     ap = argparse.ArgumentParser()
     ap.add_argument("--in_dir", default=".")
     ap.add_argument("--out", default="data/merged/master_vader_roberta_topics.csv")
@@ -63,8 +70,13 @@ def main():
     fieldnames = all_cols + ["provenance"]
     counts, id_source, dupes, total = {}, set(), 0, 0
     os.makedirs(os.path.dirname(args.out) or ".", exist_ok=True)
+    # lineterminator="\n" added in the Week 8 re-run. csv.writer defaults to
+    # "\r\n" on every platform, so this was the one file in the pipeline written
+    # with CRLF; every other output (all pandas to_csv) uses LF. Content was
+    # identical, but the master hashed differently on every rebuild, which
+    # masked real diffs during verification.
     with open(args.out, "w", newline="", encoding="utf-8") as g:
-        writer = csv.DictWriter(g, fieldnames=fieldnames)
+        writer = csv.DictWriter(g, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         for path, rows in per_file:
             stem = stem_of(os.path.basename(path))

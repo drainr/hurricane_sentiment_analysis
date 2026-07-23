@@ -112,6 +112,7 @@ KAPPA_INTERP = [
 
 
 def interpret_kappa(k: float) -> str:
+    """Map a kappa value onto its conventional strength label."""
     for threshold, label in KAPPA_INTERP:
         if k > threshold:
             return label
@@ -119,11 +120,13 @@ def interpret_kappa(k: float) -> str:
 
 
 def section_header(title: str) -> str:
+    """Format a title as a bar-delimited section header."""
     bar = "=" * 60
     return f"\n{bar}\n  {title}\n{bar}"
 
 
 def format_block(title: str, metrics: dict) -> str:
+    """Format one file's agreement metrics as an indented text block."""
     lines = [
         "-" * 60,
         f"  {title}",
@@ -167,6 +170,12 @@ def breakdown_blocks(df: pd.DataFrame, group_col: str, label: str) -> list[str]:
 # -- Main ----------------------------------------------------------------------
 
 def main():
+    """Compute VADER vs RoBERTa agreement for each scored file and write the report.
+
+    Reports raw label agreement, Cohen's kappa and a confusion matrix. Note that
+    this is method-vs-method agreement, distinct from the human inter-annotator
+    kappa in build_ground_truth.py.
+    """
     parser = argparse.ArgumentParser(
         description="Compute VADER vs. RoBERTa agreement metrics.",
         formatter_class=argparse.RawDescriptionHelpFormatter,

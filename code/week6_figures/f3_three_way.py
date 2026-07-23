@@ -41,6 +41,7 @@ m["roberta_compound"] = (pd.to_numeric(m["roberta_pos"], errors="coerce")
 
 
 def source_bucket(st):
+    """Map a source_type onto a display source (NaN = Facebook)."""
     if pd.isna(st):
         return "Facebook"
     if st == "community_discussion":
@@ -58,11 +59,13 @@ h1 = j[j.hypothesis == "H1"]
 
 
 def h1_p(model, hurricane):
+    """Look up the H1 p-value for one model and hurricane, or NaN if absent."""
     r = h1[(h1.model == model) & (h1.subset == hurricane)]
     return float(r["p"].iloc[0]) if len(r) else float("nan")
 
 
 def stars(p):
+    """Significance stars for a p-value: *** < .001, ** < .01, * < .05, else 'ns'."""
     if np.isnan(p):
         return ""
     return "***" if p < 1e-3 else "**" if p < 1e-2 else "*" if p < 0.05 else "ns"
@@ -83,6 +86,7 @@ def stats(col):
 
 
 def plot(col, model, fname):
+    """Draw grouped bars of mean sentiment by source and hurricane, with 95% CIs."""
     st = stats(col)
     fig, ax = plt.subplots(figsize=(9.5, 5.6))
     width = 0.26

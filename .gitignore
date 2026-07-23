@@ -12,3 +12,9 @@ __pycache__/
 
 # Saved BERTopic models (large; on Drive)
 models/
+
+# Week 8 reproducibility evidence (large raw re-pull + RoBERTa re-run outputs).
+# The drift/verification write-ups in docs/week8/ are the kept record; these
+# raw folders are evidence only, not repo artifacts.
+data/reddit_rerun/
+data/roberta_rerun/

@@ -54,8 +54,8 @@ Milton,posts,Reddit,-5,0.0502,79
 Milton,posts,Reddit,-4,0.0783,159
 Milton,posts,Reddit,-3,0.0643,274
 Milton,posts,Reddit,-2,0.081,526
-Milton,posts,Reddit,-1,0.0996,626
-Milton,posts,Reddit,0,0.056,625
+Milton,posts,Reddit,-1,0.0971,624
+Milton,posts,Reddit,0,0.0533,622
 Milton,posts,White House,0,0.9329,1
 Milton,comments,Facebook,-4,0.1255,4606
 Milton,comments,Facebook,-3,0.1429,4578
@@ -66,7 +66,7 @@ Milton,comments,Reddit,-5,0.0203,1273
 Milton,comments,Reddit,-4,0.031,5547
 Milton,comments,Reddit,-3,0.0557,10720
 Milton,comments,Reddit,-2,0.0395,18329
-Milton,comments,Reddit,-1,0.0476,22607
-Milton,comments,Reddit,0,0.0572,21836
+Milton,comments,Reddit,-1,0.0471,22416
+Milton,comments,Reddit,0,0.0588,21054
 Milton,comments,White House,0,0.107,140
 Milton,comments,White House,1,0.0555,38

@@ -40,8 +40,8 @@ DELETED = {"[deleted]", "[removed]", ""}
 # comparability with the day-bounded Facebook data. Raw Layer-1 files keep ALL rows.
 WINDOW = {            # (min_days_from_landfall, max_days_from_landfall)
     "debby":  (-5, 0),    # Jul 31 - Aug 5
-    "helene": (-4, 1),    # Sep 22 - Sep 27 (-5/Sep 21 dropped: Helene formed Sep 22 per Wikipedia, no genuine storm content. Tania 2026-06-18)
-    "milton": (-5, 0),    # Oct 4 - Oct 9  (extended back to -5 per Tania 2026-06-18; Reddit-only)
+    "helene": (-4, 1),    # Sep 22 - Sep 27 (-5/Sep 21 dropped: Helene formed Sep 22 per Wikipedia, no genuine storm content. advisor 2026-06-18)
+    "milton": (-5, 0),    # Oct 4 - Oct 9  (extended back to -5 per advisor 2026-06-18; Reddit-only)
 }
 
 # subreddit_category groupings
@@ -67,12 +67,14 @@ def _read_many(pattern: str) -> pd.DataFrame:
 
 
 def _days_from_landfall(df: pd.DataFrame) -> pd.Series:
+    """Days between each row's date and its hurricane's landfall (negative = before)."""
     dt = pd.to_datetime(df["created_date"], errors="coerce").dt.normalize()
     land = df["hurricane"].str.lower().map(LANDFALL)
     return (dt - land).dt.days
 
 
 def _subreddit_category(subreddit: pd.Series) -> pd.Series:
+    """Tag each subreddit as meteorological, local, statewide, or general."""
     conditions = [
         subreddit.isin(METEOROLOGICAL),
         subreddit.isin(LOCAL),
@@ -83,6 +85,14 @@ def _subreddit_category(subreddit: pd.Series) -> pd.Series:
 
 
 def main() -> int:
+    """Merge every per-subreddit pull into the unified Reddit files.
+
+    Layer 1 keeps posts and comments raw and separate (their schemas differ).
+    Layer 2 writes reddit_clean.csv: both types unified to the project schema,
+    with deleted/removed rows, sub-3-word rows, duplicates, and rows outside
+    each storm's event window removed. Canonical over merge_reddit_jose.py
+    because it carries the final windows, including the 2026-06-18 extension.
+    """
     if not DATA_DIR.exists():
         sys.exit(f"no data dir at {DATA_DIR}")
     OUT_DIR.mkdir(exist_ok=True)

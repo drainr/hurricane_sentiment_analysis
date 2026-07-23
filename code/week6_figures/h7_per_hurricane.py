@@ -23,6 +23,7 @@ OUT.parent.mkdir(parents=True, exist_ok=True)
 
 
 def load(name):
+    """Load one scored file and derive the continuous RoBERTa score (pos - neg)."""
     df = pd.read_csv(PROC / name, low_memory=False)
     df["hurricane"] = df["hurricane"].str.lower()
     df["rob"] = df["roberta_pos"] - df["roberta_neg"]
@@ -45,6 +46,7 @@ def rank_biserial(a, b):
 
 
 def sig(p):
+    """Return ' (n.s.)' when a p-value fails the 0.05 threshold, else ''."""
     return "" if p < 0.05 else " (n.s.)"
 
 

@@ -82,6 +82,16 @@ def load_whitehouse() -> pd.DataFrame:
 
 
 def main() -> int:
+    """Build the thread-relevance corpus from the merged Reddit files.
+
+    Writes reddit_clean_flagged.csv (every in-window row, flagged but nothing
+    dropped) and reddit_relevant.csv (thread-relevant, non-bot rows only).
+    Relevance is measured at THREAD level: if a post matches a storm keyword,
+    its whole comment tree is kept, because replies under a megathread are on
+    topic without carrying a keyword of their own. This version also removes
+    the White House posts and comments that the keyword pull had swept into the
+    Reddit corpus, giving the canonical 3,413 posts / 121,053 comments.
+    """
     for f in ("reddit_clean.csv", "reddit_posts_all.csv", "reddit_comments_all.csv"):
         if not (COMB / f).exists():
             sys.exit(f"missing {COMB / f} — run merge_reddit.py first")

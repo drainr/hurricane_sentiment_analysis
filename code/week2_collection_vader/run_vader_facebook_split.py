@@ -23,6 +23,7 @@ FILES = ["facebook_posts.csv", "facebook_comments.csv"]
 
 
 def score_file(name: str) -> None:
+    """Score one split Facebook file and write it back with a _vader suffix."""
     src = FB / name
     if not src.exists():
         raise SystemExit(f"missing {src} — run split_facebook.py first")
@@ -44,6 +45,7 @@ def score_file(name: str) -> None:
 
 
 def main() -> int:
+    """Score both split Facebook files through the shared VADER scorer."""
     for name in FILES:
         score_file(name)
     return 0

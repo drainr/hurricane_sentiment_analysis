@@ -21,13 +21,22 @@ import pandas as pd
 # ── Optional: override auto-labels (set to None to use filenames) ─────────────
 LABELS: list[str | None] = [None, None, None]
  
-# Output path — written next to this script by default
-OUT_DIR = os.path.dirname(os.path.abspath(__file__))
-OUTPUT  = os.path.join(OUT_DIR, "vader_comparison_table_posts.csv")
+# Output path. Week 8 reproducibility fix: this used to be a constant pointing
+# next to the script and hardcoded to "_posts", so regenerating the comments
+# table meant editing the source between runs and moving the file by hand. It
+# now defaults into data/merged/ (where the canonical tables live) and accepts
+# an optional `--out <path>` override.
+REPO     = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+OUT_DIR  = os.path.join(REPO, "data", "merged")
+DEFAULT_OUTPUT = os.path.join(OUT_DIR, "vader_comparison_table_posts.csv")
  
 # ── Helpers ───────────────────────────────────────────────────────────────────
  
 def infer_label(path: str, override: str | None) -> str:
+    """Derive a data-source label from a filename, unless one is given.
+
+    e.g. 'reddit_relevant_posts_vader.csv' -> 'reddit_relevant_posts'.
+    """
     if override:
         return override
     # e.g. "reddit_relevant_posts_vader.csv" -> "reddit_relevant_posts"
@@ -61,9 +70,22 @@ def summarise(df: pd.DataFrame, label: str) -> pd.DataFrame:
  
 # ── Main ──────────────────────────────────────────────────────────────────────
  
-def main(paths: list[str]) -> None:
+def main(argv: list[str]) -> None:
+    """Summarise up to three VADER-scored files into one comparison table."""
+    output = DEFAULT_OUTPUT
+    paths = []
+    i = 0
+    while i < len(argv):
+        if argv[i] == "--out":
+            output = argv[i + 1]
+            i += 2
+        else:
+            paths.append(argv[i])
+            i += 1
+
     if not 1 <= len(paths) <= 3:
-        sys.exit("Usage: python three_way_comparison.py file1.csv [file2.csv] [file3.csv]")
+        sys.exit("Usage: python three_way_comparison.py [--out PATH] "
+                 "file1.csv [file2.csv] [file3.csv]")
  
     parts = []
     for i, path in enumerate(paths):
@@ -84,8 +106,9 @@ def main(paths: list[str]) -> None:
     # Sort: hurricane first, then data source — easy to scan across sources
     table = table.sort_values(["hurricane", "data_source"]).reset_index(drop=True)
  
-    table.to_csv(OUTPUT, index=False)
-    print(f"\nSaved: {OUTPUT}")
+    os.makedirs(os.path.dirname(os.path.abspath(output)), exist_ok=True)
+    table.to_csv(output, index=False)
+    print(f"\nSaved: {output}")
     print()
     print(table.to_string(index=False))
  

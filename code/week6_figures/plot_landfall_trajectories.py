@@ -11,7 +11,9 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# Week 8 reproducibility fix: this resolved to code/, not the repo root, so
+# every path below became code/data/... and the script could not run at all.
+ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 OUTDIR = os.path.join(ROOT, "figures", "landfall_trajectories")
 os.makedirs(OUTDIR, exist_ok=True)
 
@@ -24,9 +26,11 @@ FILES = {
         "data/vader/facebook_posts_vader.csv",
         "data/vader/facebook_comments_vader.csv",
     ),
+    # Week 8 fix: these two were the pre-2026-07-05 filenames, which no longer
+    # exist. The current files are the WH-deduplicated 3,413 / 121,053 ones.
     "Reddit": (
-        "data/vader/reddit_relevant_posts_vader.csv",
-        "data/vader/reddit_relevant_comments_vader.csv",
+        "data/vader/reddit_relevant_vader_posts.csv",
+        "data/vader/reddit_relevant_vader_comments.csv",
     ),
     "White House": (
         "data/vader/whitehouse_threads_posts_vader.csv",
@@ -38,6 +42,7 @@ HURRICANES = ["Debby", "Helene", "Milton"]
 
 
 def load(path):
+    """Load one VADER file, restricted to the plotted window and to complete rows."""
     d = pd.read_csv(os.path.join(ROOT, path), usecols=lambda c: c in
                     ("hurricane", "days_from_landfall", "vader_compound"))
     d["hurricane"] = d["hurricane"].str.capitalize()        # normalize casing

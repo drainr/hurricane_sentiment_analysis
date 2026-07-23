@@ -1,3 +1,17 @@
+"""
+use_arctic_shift.py — thin client for the Arctic Shift Reddit archive.
+
+Arctic Shift is the project's locked Reddit collection method (2026-06-03),
+chosen over the Pushshift dumps on workflow grounds after both were verified to
+return byte-identical results on the Debby/TropicalWeather window.
+
+Two things to know before editing a query:
+  - `before` is EXCLUSIVE, so including Aug 5 means writing before=2024-08-06.
+  - Requests MUST send a User-Agent header or the archive returns 403.
+
+`collect()` paginates past the API's 100-result cap; `save_csv()` writes the
+result with the right column set for posts or comments.
+"""
 import requests, time, csv, datetime, os
 
 BASE = "https://arctic-shift.photon-reddit.com/api"
@@ -54,6 +68,10 @@ def collect(kind, subreddit, author, after=None, before=None, query=None):
     return rows
 
 def save_csv(rows, path, kind):
+    """Write posts or comments to a CSV, keeping only the schema's columns.
+
+    The two kinds have different fields, so the column list is chosen by `kind`.
+    """
     # Define fields based on whether we're saving posts or comments
     if kind == "posts":
         keep = ["id","subreddit","author","created_utc","num_comments","title","selftext","score","hurricane","keyword_hit"]

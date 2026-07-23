@@ -56,6 +56,11 @@ COMMENT_COLS = ["id", "link_id", "parent_id", "subreddit", "author",
 
 
 def get_json(endpoint, params, tries=5):
+    """GET one Arctic Shift endpoint, retrying on rate limits and timeouts.
+
+    The archive returns 422 with a 'slow down' body when queried too fast, so
+    that is treated as retryable rather than fatal.
+    """
     for attempt in range(tries):
         try:
             r = requests.get(f"{BASE}/{endpoint}", params=params,
@@ -74,21 +79,28 @@ def get_json(endpoint, params, tries=5):
 
 
 def to_date(ts):
+    """Format a Unix timestamp as 'YYYY-MM-DD HH:MM' UTC, or '' if missing."""
     return datetime.datetime.fromtimestamp(
         ts, datetime.UTC).strftime("%Y-%m-%d %H:%M") if ts else ""
 
 
 def make_keyword_matcher(storm):
+    """Build a fn(text) -> 'flood|power' matching storm keywords on word boundaries.
+
+    The storm's own name is added to the shared keyword list.
+    """
     terms = KEYWORDS + [storm]
     patterns = [(t, re.compile(rf"\b{re.escape(t)}\b", re.I)) for t in terms]
 
     def match(text):
+        """Return the keywords found in this text, joined by '|' ('' if none)."""
         text = text or ""
         return "|".join(t for t, p in patterns if p.search(text))
     return match
 
 
 def pull_posts(subreddit, after, before):
+    """Every post in the window for one subreddit, paginating past the 100 cap."""
     cursor, rows = None, []
     while True:
         params = {"subreddit": subreddit, "before": before,
@@ -106,6 +118,7 @@ def pull_posts(subreddit, after, before):
 
 
 def pull_comment_tree(post_id):
+    """Every comment under one post, paginating past the 100 cap."""
     cursor, rows = None, []
     while True:
         params = {"link_id": post_id, "limit": 100, "sort": "asc"}
@@ -123,6 +136,12 @@ def pull_comment_tree(post_id):
 
 
 def collect_one(storm, subreddit, window):
+    """Pull one subreddit's new early-window posts and their comment trees.
+
+    Applies the advisor's strict new-days-only rule: comments dated after the
+    newly added days are dropped, so the per-day counts for days already
+    collected stay exactly as they were.
+    """
     match = make_keyword_matcher(storm)
     posts = pull_posts(subreddit, window["after"], window["before"])
     post_rows, comment_rows = [], []
@@ -165,12 +184,18 @@ def collect_one(storm, subreddit, window):
 
 
 def save(rows, cols, path):
+    """Write rows to a CSV with a fixed column order, ignoring extra keys."""
     with open(path, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore")
         w.writeheader(); w.writerows(rows)
 
 
 def main():
+    """Collect the extra Helene days into data/reddit/helene_ext/, append-only.
+
+    Existing per-subreddit files are left untouched so the extension is
+    reversible.
+    """
     os.makedirs(OUT_DIR, exist_ok=True)
     grand_posts = grand_comments = 0
     print(f"\n{'='*64}\n  HELENE EXT  {WINDOW['after']} -> {WINDOW['before']} (days -5,-4)\n{'='*64}")

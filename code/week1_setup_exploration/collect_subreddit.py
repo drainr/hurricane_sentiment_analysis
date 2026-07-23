@@ -75,6 +75,7 @@ def get_json(endpoint, params, tries=5):
 
 
 def to_date(ts):
+    """Format a Unix timestamp as 'YYYY-MM-DD HH:MM' UTC, or '' if missing."""
     return datetime.datetime.fromtimestamp(
         ts, datetime.UTC).strftime("%Y-%m-%d %H:%M") if ts else ""
 
@@ -85,6 +86,7 @@ def make_keyword_matcher(storm):
     patterns = [(t, re.compile(rf"\b{re.escape(t)}\b", re.I)) for t in terms]
 
     def match(text):
+        """Return the keywords found in this text, joined by '|' ('' if none)."""
         text = text or ""
         return "|".join(t for t, p in patterns if p.search(text))
     return match
@@ -127,6 +129,10 @@ def pull_comment_tree(post_id):
 
 
 def collect_one(storm, subreddit, window):
+    """Pull one subreddit's posts and full comment trees for one storm's window.
+
+    Returns (post_rows, comment_rows) tagged with hurricane and keyword_hit.
+    """
     match = make_keyword_matcher(storm)
     posts = pull_posts(subreddit, window["after"], window["before"])
     post_rows, comment_rows = [], []
@@ -162,12 +168,14 @@ def collect_one(storm, subreddit, window):
 
 
 def save(rows, cols, path):
+    """Write rows to a CSV with a fixed column order, ignoring extra keys."""
     with open(path, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore")
         w.writeheader(); w.writerows(rows)
 
 
 def main():
+    """Collect every configured (storm, subreddit) pair and write one CSV pair each."""
     grand_posts = grand_comments = 0
     for storm, window in HURRICANES.items():
         out = os.path.join(OUT_DIR, storm)

@@ -86,12 +86,12 @@ def run_tests(df, col):
 
 
 lines = ["# H5 — Subreddit-Tier Differences (Student B)", "",
-         "Tiers (Tania 2026-06-30): "
+         "Tiers (advisor 2026-06-30): "
          "**expert**=TropicalWeather/hurricane/HurricaneHelene, "
          "**local**=tampa/sarasota/asheville, "
          "**statewide**=florida/Georgia/NorthCarolina. Comment-level, per hurricane.",
          "",
-         "**Data-integrity confirmation for Tania:** the four excluded subs "
+         "**Data-integrity confirmation for the advisor:** the four excluded subs "
          "(r/southcarolina, r/Tennessee, r/Virginia, r/pics) appear in **0 rows** of the H5 corpus "
          "(`reddit_relevant_comments`); they exist only in the White House files, all tagged "
          "`government_response` (558 comments) — i.e. purely WH-reaction data in the H7 lane, "
@@ -150,6 +150,12 @@ for h in HURRICANES:
                  + ", ".join(f"{t}={rr[t]:.3f}" for t in TIER_ORDER if not np.isnan(rr[t])) + ".")
     # agreement + exclusion-effect summary lines
     def verdict(method):
+        """Whether this method is significant on full data and with the largest thread excluded.
+
+        Returns (significant_full, significant_excluded). The advisor's rule is that
+        if the two disagree, or the two methods disagree, the storm gets discussed
+        before anything is written up.
+        """
         full = results[(h, method, "full data")]["p"]
         excl = results[(h, method, "largest thread excl.")]["p"]
         sf = (not np.isnan(full)) and full < ALPHA
@@ -165,7 +171,7 @@ for h in HURRICANES:
                  f"(VADER {'sig' if vf else 'n.s.'}→{'sig' if ve else 'n.s.'}, "
                  f"RoBERTa {'sig' if rf else 'n.s.'}→{'sig' if re_ else 'n.s.'}).")
     if not methods_agree or excl_changes:
-        lines.append("  - ⚠ **Flag for Tania before paper** (method disagreement or exclusion-sensitive).")
+        lines.append("  - ⚠ **Flag for the advisor before paper** (method disagreement or exclusion-sensitive).")
     lines.append("")
 
 # ---------------- figure: box plots of compound by tier, per hurricane (VADER) ----------------

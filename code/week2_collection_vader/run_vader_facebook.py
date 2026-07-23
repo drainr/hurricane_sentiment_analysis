@@ -29,6 +29,12 @@ def norm(t: str) -> str:
 _EMOJI = re.compile(
     "[\U0001F000-\U0001FAFF\U00002600-\U000027BF\U0001F1E6-\U0001F1FF←-⇿⌀-⏿]")
 def has_emoji(t: str) -> bool:
+    """True if the string contains at least one emoji character.
+
+    Emoji are the main reason our scores differ from the Fall 2024 students':
+    they used NLTK's VADER, which scores emoji as 0, while the standalone
+    package translates them into the compound score.
+    """
     return bool(_EMOJI.search(t)) if isinstance(t, str) else False
 
 def classify(row):
@@ -63,6 +69,11 @@ print(df["vader_label"].value_counts().to_dict())
 orig = {}            # norm(text) -> (compound, orig_label, student, raw_text)
 collisions = 0
 def ingest(pattern, student):
+    """Read one student's original scored CSVs and record their per-row scores.
+
+    The three students used different column names and orders, so each glob
+    pattern is handled separately. Tracks id collisions in the global counter.
+    """
     global collisions
     for path in glob.glob(pattern):
         with open(path, newline="", encoding="utf-8", errors="replace") as f:

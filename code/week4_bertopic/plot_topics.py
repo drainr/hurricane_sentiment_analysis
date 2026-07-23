@@ -38,6 +38,7 @@ SHARED9 = [
 
 
 def save(fig, name):
+    """Write a figure as both 300-dpi PNG and PDF, then close it."""
     for ext in ("png", "pdf"):
         fig.savefig(os.path.join(OUTDIR, f"{name}.{ext}"), dpi=300, bbox_inches="tight")
     plt.close(fig)
@@ -45,6 +46,10 @@ def save(fig, name):
 
 
 def main():
+    """Draw the topic figures: distribution by source, per-hurricane heatmap,
+
+    temporal evolution, and the White House category break-out.
+    """
     m = pd.read_csv(MASTER, low_memory=False)
     m["source_bucket"] = m["source_type"].fillna("facebook")
     shared = m[m["topic_category"].isin(SHARED9)].copy()

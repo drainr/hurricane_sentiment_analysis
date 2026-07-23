@@ -50,6 +50,11 @@ look["roberta_label"] = look["roberta_label"].map(ROBERTA_MAP)
 look = look.drop_duplicates(subset="id")
 
 def _read_csv_robust(path, **kw):
+    """Read a CSV, trying several encodings before giving up.
+
+    ground_truth_400.csv was saved with a non-UTF-8 encoding, so a plain
+    read_csv raises UnicodeDecodeError on a handful of comment bodies.
+    """
     # ground_truth_400.csv was saved latin-1/cp1252 by a teammate; fall back gracefully.
     for enc in ("utf-8", "utf-8-sig", "cp1252", "latin-1"):
         try:
@@ -62,14 +67,22 @@ gt = _read_csv_robust(GT, dtype={"id": str}, low_memory=False)
 merged = gt.merge(look, on="id", how="left", validate="one_to_one")
 unmatched = merged["vader_label"].isna().sum()
 
+# The attribution and script-provenance lines below used to be added to the
+# report by hand after each run, so re-running this script silently deleted
+# them (caught in the Week 8 re-run). They are generated now instead.
 lines = ["# Method Validation Report (Week 5, Student B)", "",
-         f"Gold standard: `ground_truth_400.csv` — {len(gt)} stratified items "
+         "**Authored by Jose Araya. Reviewed and confirmed by Jose Araya, 2026-07-10.**", "",
+         f"Gold standard: `data/merged/ground_truth_400.csv` — {len(gt)} stratified items "
          f"(Facebook {int((gt.platform=='facebook').sum())}, Reddit {int((gt.platform=='reddit').sum())}, "
          f"White House {int((gt.platform=='whitehouse').sum())}).",
          f"Adjudicated (consensus label present): {int(gt['label_consensus'].notna().sum())}; "
          f"unresolved annotator disagreements excluded: {int(gt['label_consensus'].isna().sum())}.",
          f"Rows matched to a scored record: {len(gt) - unmatched}/{len(gt)}"
-         + (f" (⚠ {unmatched} unmatched)" if unmatched else ""), ""]
+         + (f" (⚠ {unmatched} unmatched)" if unmatched else ""),
+         "Scoring / comparison script: `code/week5_hypotheses/evaluate_methods.py` "
+         "(joins the gold standard to the scored `data/processed/*_labeled.csv` records "
+         "and computes the accuracy / per-class P-R-F1 / confusion / gratitude-inflation "
+         "numbers below).", ""]
 
 # ---- Part 1: accuracy + per-class P/R/F1 ----
 ev = merged[merged["label_consensus"].notna()].copy()
@@ -106,9 +119,40 @@ for method, col in [("VADER", "vader_label"), ("RoBERTa", "roberta_label")]:
 acc_v = accuracy_score(y_true, ev["vader_label"])
 acc_r = accuracy_score(y_true, ev["roberta_label"])
 better = "RoBERTa" if acc_r > acc_v else "VADER"
-lines.append(f"**Higher accuracy vs gold standard: {better}** (VADER {acc_v:.3f}, RoBERTa {acc_r:.3f}). "
-             "Note VADER is the project's primary method for continuity with Fall-2024 student work; "
-             "this is the validation evidence for that decision.")
+f1_v = classification_report(y_true, ev["vader_label"], labels=LABELS,
+                             output_dict=True, zero_division=0)["macro avg"]["f1-score"]
+f1_r = classification_report(y_true, ev["roberta_label"], labels=LABELS,
+                             output_dict=True, zero_division=0)["macro avg"]["f1-score"]
+pos_prec_v = classification_report(y_true, ev["vader_label"], labels=LABELS,
+                                   output_dict=True, zero_division=0)["positive"]
+
+# The paragraphs below were hand-written into the report after the 2026-07-10
+# advisor review, which reversed the earlier "the data supports VADER for
+# continuity" framing. They are generated here so re-running does not revert it.
+lines.append(f"**Higher accuracy vs gold standard: {better}, on every metric.** "
+             f"RoBERTa beats VADER on overall accuracy ({acc_r:.3f} vs {acc_v:.3f}), "
+             f"macro-F1 ({f1_r:.3f} vs {f1_v:.3f}), and precision, recall, and F1 for "
+             f"*all three* classes. VADER's core failure is positive precision "
+             f"({pos_prec_v['precision']:.3f}): it reads politeness and gratitude as "
+             f"positive, over-predicting the positive class (recall "
+             f"{pos_prec_v['recall']:.3f} but precision {pos_prec_v['precision']:.3f}).")
+lines.append("")
+lines.append("**Primary-method decision — an explicit tradeoff, not a data endorsement "
+             "of VADER.** The data does not support keeping VADER as primary; only "
+             "continuity does. The two considerations point in opposite directions:")
+lines.append("")
+lines.append("- **Continuity (favors VADER):** VADER was the Fall-2024 students' scorer, "
+             "so keeping it primary makes this season's numbers directly comparable to "
+             "that prior work with no re-baselining.")
+lines.append("- **Accuracy (favors RoBERTa):** RoBERTa is measurably more accurate against "
+             "the human gold standard — every class, every metric — and does not carry "
+             "VADER's positive bias (which also inflates the Facebook side of H1/H3).")
+lines.append("")
+lines.append("This is a value judgment (comparability vs. correctness) for the advisor to "
+             "settle, and should be stated as such wherever the primary method is named — "
+             "not framed as \"the data supports VADER.\" Our recommendation: **lead with "
+             "RoBERTa as the primary reported scorer and carry VADER as the continuity "
+             "baseline / cross-check.**")
 lines.append("")
 
 # ---- Part 2: gratitude inflation on Facebook comments ----

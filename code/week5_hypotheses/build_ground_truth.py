@@ -34,6 +34,7 @@ LABELS = ["negative", "neutral", "positive"]
 
 
 def load(path):
+    """Load one annotator's labels, lowercasing sentiment and coercing the gratitude tag."""
     df = pd.read_csv(path)
     df["label"] = df["label"].astype(str).str.strip().str.lower()
     df["gratitude_tag"] = pd.to_numeric(df["gratitude_tag"], errors="coerce").astype(int)
@@ -41,6 +42,12 @@ def load(path):
 
 
 def main():
+    """Merge both annotators' labels into ground_truth_400.csv and report kappa.
+
+    Consensus is filled only where the two agree; disagreements are left blank
+    for joint adjudication rather than resolved automatically. See the guard
+    below — the adjudicated file must not be silently rebuilt.
+    """
     jose = load(JOSE)
     angelo = load(ANGELO)
 
@@ -70,6 +77,26 @@ def main():
         "label_agree", "gratitude_agree",
     ]
     gt = gt[cols]
+
+    # Guard added in the Week 8 re-run. This script only fills label_consensus
+    # where the two annotators already agree; the 38 sentiment + 4 gratitude
+    # disagreements were adjudicated by hand afterwards (José + Angelo). Blindly
+    # rewriting the file therefore DELETES that adjudication and silently drops
+    # the gold standard from 400 rows to 362. If an adjudicated file is already
+    # on disk, refuse and let the caller decide.
+    if os.path.exists(OUT_CSV) and not os.environ.get("REBUILD_GROUND_TRUTH"):
+        existing = pd.read_csv(OUT_CSV, encoding="utf-8", encoding_errors="replace")
+        # count blanks the way they land after a CSV round-trip ("" -> NaN)
+        would_blank = int(gt["label_consensus"].replace("", pd.NA).isna().sum())
+        if existing["label_consensus"].notna().all():
+            raise SystemExit(
+                f"REFUSING to overwrite {OUT_CSV}: it is fully adjudicated "
+                f"({len(existing)} rows, 0 blank consensus labels) and this script "
+                f"would blank the {would_blank} adjudicated disagreements again. "
+                f"Set REBUILD_GROUND_TRUTH=1 to rebuild from scratch, but the "
+                f"adjudication must then be re-applied by hand."
+            )
+
     gt.to_csv(OUT_CSV, index=False, encoding="utf-8")
 
     # ----- agreement metrics -----
@@ -86,6 +113,7 @@ def main():
     n_grat_disagree = int((gt["gratitude_agree"] == 0).sum())
 
     def interp(k):
+        """Landis & Koch strength label for a kappa value."""
         # Landis & Koch
         if k < 0: return "Poor"
         if k < 0.20: return "Slight"
@@ -110,6 +138,7 @@ def main():
     flagged = lab_k < KAPPA_FLAG or grat_k < KAPPA_FLAG
 
     def cm_md(cm, labels):
+        """Format a confusion matrix as a markdown table."""
         labels = [str(x) for x in labels]
         head = "| Jose \\ Angelo | " + " | ".join(labels) + " |"
         sep = "|" + "---|" * (len(labels) + 1)

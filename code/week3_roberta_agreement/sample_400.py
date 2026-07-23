@@ -37,6 +37,7 @@ COL_MAP = {
 
 
 def find_col(df, aliases):
+    """Return the first alias present in the DataFrame's columns, or None."""
     for a in aliases:
         if a in df.columns:
             return a
@@ -44,6 +45,11 @@ def find_col(df, aliases):
 
 
 def load_and_tag(filepath, platform, post_type):
+    """Load one source file and tag every row with its platform and post type.
+
+    Column names differ across sources, so the id and text columns are resolved
+    through COL_MAP aliases.
+    """
     df = pd.read_csv(filepath, low_memory=False)
 
     id_col   = find_col(df, COL_MAP["id"])
@@ -108,6 +114,7 @@ def proportional_sample(dfs_by_source: dict, total: int) -> pd.DataFrame:
 
 
 def simple_sample(df, n, label):
+    """Take n rows at random, or everything if fewer than n are available."""
     if len(df) == 0:
         print(f"  ⚠  No rows available for '{label}'.")
         return df.copy()
@@ -118,6 +125,11 @@ def simple_sample(df, n, label):
 
 
 def main():
+    """Draw the stratified 400-item annotation sample.
+
+    Targets 150 Facebook, 150 Reddit community and 50 White House comments plus
+    50 posts, which both annotators then label independently.
+    """
     print("Loading source files...")
 
     facebook_comments = []
@@ -144,6 +156,7 @@ def main():
 
     # Pool comment strata
     def pool(dfs):
+        """Concatenate the per-file frames for one platform and drop duplicate ids."""
         return pd.concat(dfs, ignore_index=True).drop_duplicates(subset="id") if dfs else pd.DataFrame()
 
     fb_pool  = pool(facebook_comments)
