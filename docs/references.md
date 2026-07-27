@@ -6,11 +6,11 @@ AAAI author-year style, matching the FLAIRS house format.
 
 ## Related work
 
-**Alam, F.; Ofli, F.; and Imran, M. 2019.** Descriptive and Visual Summaries of Disaster Events Using Artificial Intelligence Techniques: Case Studies of Hurricanes Harvey, Irma, and Maria. _Behaviour & Information Technology_ 39(3): 288–318.
+**Alam, F.; Ofli, F.; and Imran, M. 2020.** Descriptive and Visual Summaries of Disaster Events Using Artificial Intelligence Techniques: Case Studies of Hurricanes Harvey, Irma, and Maria. _Behaviour & Information Technology_ 39(3): 288–318.
 
 **Neppalli, V. K.; Caragea, C.; Squicciarini, A.; Tapia, A.; and Stehle, S. 2017.** Sentiment Analysis During Hurricane Sandy in Emergency Response. _International Journal of Disaster Risk Reduction_ 21: 213–222.
 
-**Vayansky, I.; Kumar, S. A. P.; and Li, Z. 2019.** An Evaluation of Geotagged Twitter Data During Hurricane Irma Using Sentiment Analysis and Topic Modeling for Disaster Resilience. In _2019 IEEE International Symposium on Technology in Society (ISTAS)_, 1–6.
+**Vayansky, I.; Kumar, S. A. P.; and Li, Z. 2019.** An Evaluation of Geotagged Twitter Data During Hurricane Irma Using Sentiment Analysis and Topic Modeling for Disaster Resilience. In _2019 IEEE International Symposium on Technology and Society (ISTAS)_, 1–6.
 
 ## Sentiment analysis
 
