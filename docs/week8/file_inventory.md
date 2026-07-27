@@ -88,7 +88,7 @@ Legend: **✅ present** · **📁 elsewhere** (exists, but not in the repository
 | Detailed methodology section draft | ✅         | Drive document;maintained                                                                                                                                                                                                                                |
 | 5-page literature review           | ⚠️ Partial | In the shared Google Drive (**Week1 Deliverables/"final literature review"**, Google Doc; local PDF `final literature review.pdf`). **Not in the repo.** Note: 4 papers / 5 themes — below the plan's "6 themes," so may need expansion before the paper |
 | Results narrative draft (H1–H7)    | ✅         | Drive document — H1–H7 plus synthesis, Figures 1–12                                                                                                                                                                                                      |
-| Complete reference list            | ❌         | **Not done.** No assembled bibliography                                                                                                                                                                                                                  |
+| Complete reference list            | ✅         | `docs/references.md` — **9 entries**                                                                                                                                                                                                                     |
 
 ### Week 8 — Reproducibility, Archive, Advisor Handoff
 
@@ -124,9 +124,9 @@ Recomputed with pandas (not `wc -l`, which inflates counts because comment text 
 
 ### Gaps found
 
-**Missing outright (1):**
+**Missing outright (0):**
 
-1. **Assembled reference list** — not done. No bibliography section.
+~~1. **Assembled reference list** — not done. No bibliography section.~~ → **CLOSED 2026-07-27.** Built as `docs/references.md` (9 entries). Three citation issues surfaced while assembling it and are flagged at the end of `references.md`: the RoBERTa checkpoint is mis-attributed in the methodology draft (Barbieri et al. 2020 → should be Loureiro et al. 2022 / Camacho-Collados et al. 2022), Helene's formation date is cited to Wikipedia rather than the NHC report, and Milton's category needs a peak-vs-landfall qualifier. Related-work coverage on four themes remains thin (§8) — a paper-writing task, not a reference-list one.
 
 **Named differently than the plan (2):** `results_documentation.md` → `hypothesis_results_analysis.md`; `reddit_collection_log.md` → `subreddit_selection_and_counts.md`. Content is present; only the filenames differ.
 

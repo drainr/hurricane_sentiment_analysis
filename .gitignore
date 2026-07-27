@@ -18,3 +18,9 @@ models/
 # raw folders are evidence only, not repo artifacts.
 data/reddit_rerun/
 data/roberta_rerun/
+
+# Private working notes -- local only, not for the shared repo.
+docs/references_full.md
+docs/references_full.bib
+# BibTeX kept local until we know the paper is LaTeX (see docs/references.md).
+docs/references.bib
