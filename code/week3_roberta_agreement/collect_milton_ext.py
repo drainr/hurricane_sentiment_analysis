@@ -93,15 +93,18 @@ def collect(kind, subreddit, after, before, tries=5):
 
 
 def to_iso(ts):
+    """Format a Unix timestamp as a tz-aware ISO 8601 string, or '' if missing."""
     return datetime.datetime.fromtimestamp(ts, datetime.UTC).isoformat() if ts else ""
 
 
 def to_date(ts):
+    """Format a Unix timestamp as 'YYYY-MM-DD HH:MM' UTC, or '' if missing."""
     return datetime.datetime.fromtimestamp(
         ts, datetime.UTC).strftime("%Y-%m-%d %H:%M") if ts else ""
 
 
 def kw_hit(text):
+    """Return the storm keywords present in this text, joined by '|' ('' if none)."""
     text = text or ""
     return "|".join(t for t, p in _PATS if p.search(text))
 
@@ -113,12 +116,19 @@ def substring_match(post):
 
 
 def save(rows, cols, path):
+    """Write rows to a CSV with a fixed column order, ignoring extra keys."""
     with open(path, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=cols, extrasaction="ignore")
         w.writeheader(); w.writerows(rows)
 
 
 def collect_sub(sub):
+    """Pull one subreddit's keyword-matching posts and their full comment trees.
+
+    Mirrors the teammate's original Milton method (keyword-filtered posts, not a
+    whole-subreddit pull) so the extra day is collected the same way as the rest
+    of Milton.
+    """
     posts_all = collect("posts", sub, AFTER, BEFORE)
     posts = []
     for p in posts_all:
@@ -159,6 +169,7 @@ def collect_sub(sub):
 
 
 def main():
+    """Collect Milton's extra day into data/reddit/milton_ext/, append-only."""
     os.makedirs(OUT_DIR, exist_ok=True)
     gp = gc = 0
     print(f"\n{'='*64}\n  MILTON EXT  {AFTER} -> {BEFORE} (day -5)\n{'='*64}")

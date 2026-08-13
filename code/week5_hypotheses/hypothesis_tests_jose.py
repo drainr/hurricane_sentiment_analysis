@@ -29,6 +29,10 @@ METHODS = [("VADER", "vader_compound"), ("RoBERTa", "roberta_compound")]
 
 
 def load(name):
+    """Load one scored file, normalising casing and deriving the continuous RoBERTa score.
+
+    roberta_compound = roberta_pos - roberta_neg, the project convention.
+    """
     df = pd.read_csv(PROC / name, low_memory=False)
     df["hurricane"] = df["hurricane"].str.lower()
     df["vader_compound"] = pd.to_numeric(df["vader_compound"], errors="coerce")
@@ -69,6 +73,7 @@ rows = []
 
 
 def add(**kw):
+    """Append one result row, filling any unset column with an empty string."""
     rows.append({c: kw.get(c, "") for c in CSV_COLS})
 
 

@@ -12,3 +12,15 @@ __pycache__/
 
 # Saved BERTopic models (large; on Drive)
 models/
+
+# Week 8 reproducibility evidence (large raw re-pull + RoBERTa re-run outputs).
+# The drift/verification write-ups in docs/week8/ are the kept record; these
+# raw folders are evidence only, not repo artifacts.
+data/reddit_rerun/
+data/roberta_rerun/
+
+# Private working notes -- local only, not for the shared repo.
+docs/references_full.md
+docs/references_full.bib
+# BibTeX kept local until we know the paper is LaTeX (see docs/references.md).
+docs/references.bib

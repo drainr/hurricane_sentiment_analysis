@@ -33,7 +33,10 @@ import numpy as np
 
 # ── Config ────────────────────────────────────────────────────────────────────
 
-DATA_DIR = Path("../../data/reddit/whitehouse")
+# Anchored to the repo root, not the working directory. Week 8 reproducibility
+# fix: this was a bare relative path, so the script only ran from its own folder
+# — the one script in the repo that broke the "run from anywhere" convention.
+DATA_DIR = Path(__file__).resolve().parents[2] / "data" / "reddit" / "whitehouse"
 
 HELENE_LANDFALL = pd.Timestamp("2024-09-26")
 MILTON_LANDFALL = pd.Timestamp("2024-10-09")
@@ -53,10 +56,16 @@ def days_from_landfall(hurricane: pd.Series, created_utc: pd.Series) -> pd.Serie
 
 
 def word_count(text: str) -> int:
+    """Number of whitespace-separated words in a string."""
     return len(text.split())
 
 
 def clean_comments(path: Path):
+    """Drop deleted, removed, and very short comments from one raw file.
+
+    Returns (cleaned DataFrame, stats dict) where stats records how many rows
+    each rule removed so the funnel can be reported.
+    """
     df = pd.read_csv(path)
     original_len = len(df)
     stats = {}
@@ -83,6 +92,11 @@ def clean_comments(path: Path):
 
 
 def build_comment_rows(df: pd.DataFrame) -> pd.DataFrame:
+    """Map cleaned White House comments onto the project's unified schema.
+
+    Comments get source_type 'government_response' — they are the public's
+    reaction to an official account, which is what H7 measures.
+    """
     out = pd.DataFrame()
     out["id"]                 = df["id"]
     out["type"]               = "comment"
@@ -115,6 +129,11 @@ def build_comment_rows(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def build_post_rows(df: pd.DataFrame) -> pd.DataFrame:
+    """Map White House posts onto the unified schema.
+
+    Posts get source_type 'government'. Text is the title, plus the selftext
+    below it when the post is not a bare link.
+    """
     # Combine title + selftext; selftext may be NaN for link posts
     selftext = df["selftext"].fillna("").astype(str).str.strip()
     title    = df["title"].fillna("").astype(str).str.strip()
@@ -153,8 +172,18 @@ def build_post_rows(df: pd.DataFrame) -> pd.DataFrame:
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main():
-    comment_files = sorted(DATA_DIR.glob("*_comments.csv"))
-    post_files    = sorted(DATA_DIR.glob("*_posts.csv"))
+    """Clean each hurricane's raw White House files and merge them into whitehouse_threads.csv."""
+    # Only the raw per-hurricane pulls are inputs. Week 8 reproducibility fix:
+    # the glob used to be a bare "*_comments.csv" / "*_posts.csv", which on a
+    # second run also swept up this script's own outputs
+    # (whitehouse_threads_comments.csv / _posts.csv) — those carry the unified
+    # schema, not the raw one, so the re-run died on KeyError: 'author'. The
+    # script was only ever idempotent on a clean directory.
+    SOURCE_HURRICANES = ("helene", "milton")
+    comment_files = sorted(DATA_DIR / f"{h}_comments.csv" for h in SOURCE_HURRICANES)
+    post_files    = sorted(DATA_DIR / f"{h}_posts.csv"    for h in SOURCE_HURRICANES)
+    comment_files = [p for p in comment_files if p.exists()]
+    post_files    = [p for p in post_files    if p.exists()]
 
     if not comment_files and not post_files:
         print(f"No CSV files found in {DATA_DIR}. "

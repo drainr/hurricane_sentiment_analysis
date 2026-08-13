@@ -59,10 +59,10 @@ Results generated from the VADER and RoBERTa sentiment files in the repository.
 | model | hurricane | mean Facebook-Reddit gap | bootstrap p-value | 95% CI |
 | --- | --- | ---: | ---: | --- |
 | vader | debby | 0.113 | 0.000e+00 | [0.101, 0.124] |
-| vader | helene | 0.114 | 0.000e+00 | [0.106, 0.123] |
+| vader | helene | 0.114 | 0.000e+00 | [0.106, 0.122] |
 | vader | milton | 0.096 | 0.000e+00 | [0.090, 0.101] |
 | roberta | debby | 0.318 | 0.000e+00 | [0.304, 0.331] |
-| roberta | helene | 0.286 | 0.000e+00 | [0.276, 0.296] |
+| roberta | helene | 0.286 | 0.000e+00 | [0.276, 0.297] |
 | roberta | milton | 0.240 | 0.000e+00 | [0.233, 0.247] |
 
 

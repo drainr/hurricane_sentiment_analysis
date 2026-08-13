@@ -28,6 +28,7 @@ _PATS = [(t, re.compile(rf"\b{re.escape(t)}\b", re.I)) for t in KEYWORDS + [STOR
 
 
 def keyword_hit(text: str) -> str:
+    """Return the storm keywords present in this text, joined by '|' ('' if none)."""
     text = text or ""
     return "|".join(t for t, p in _PATS if p.search(text))
 
@@ -39,6 +40,14 @@ def to_created_date(s: pd.Series) -> pd.Series:
 
 
 def normalize(path: Path, kind: str) -> int:
+    """Align one of the teammate's Milton files to the shared schema, in place.
+
+    Converts the tz-aware timestamp to a naive created_date (mixing tz-aware and
+    naive breaks days_from_landfall), injects source_type, and re-tags
+    keyword_hit against each row's OWN text. The teammate had propagated each
+    thread's keyword down to all its comments, which means something different
+    from every other storm. Returns the row count.
+    """
     df = pd.read_csv(path, dtype=str, keep_default_na=False)
     df["created_date"] = to_created_date(df["created_utc"])
     df["source_type"] = "community_discussion"
@@ -55,6 +64,7 @@ def normalize(path: Path, kind: str) -> int:
 
 
 def main() -> int:
+    """Normalize every Milton posts/comments file and report the totals."""
     if not MILTON.exists():
         raise SystemExit(f"no milton dir at {MILTON}")
     tp = tc = 0

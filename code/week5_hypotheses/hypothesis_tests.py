@@ -1,3 +1,19 @@
+"""
+hypothesis_tests.py — Angelo's independent run of H1, H3, H4 and H7.
+
+One of two implementations kept on purpose. `hypothesis_tests_jose.py` computes
+the same statistics separately, and the two are cross-checked against each other;
+agreement between independently written code is the strongest evidence we have
+that the numbers are right. As of 2026-07-10 every statistic both compute is
+identical to ~1e-12.
+
+Comment-level throughout. Both scoring methods are run for every hypothesis:
+VADER's compound, and RoBERTa's CONTINUOUS `roberta_pos - roberta_neg` (not the
+discrete label — see encode_roberta_labels).
+
+Reads the six data/processed/*_labeled.csv files; writes
+data/merged/hypothesis_tests_results_angelo.{md,csv}.
+"""
 from __future__ import annotations
 
 import re
@@ -32,6 +48,13 @@ H5_SUBREDDIT_MAP: Dict[str, str] = {
 
 
 def encode_roberta_labels(labels: List[str] | pd.Series | np.ndarray) -> List[float]:
+    """Map RoBERTa's discrete labels onto {-1, 0, +1}, with NaN passed through.
+
+    Used only where a categorical encoding is wanted. The project's headline
+    RoBERTa score is the CONTINUOUS `roberta_pos - roberta_neg` — collapsing a
+    0.9-confidence positive and a 0.51-confidence positive both to +1 throws
+    away magnitude and changes every effect size.
+    """
     mapping = {"neg": -1, "negative": -1, "neu": 0, "neutral": 0, "pos": 1, "positive": 1}
     normalized: List[float] = []
     for value in labels:
@@ -44,14 +67,29 @@ def encode_roberta_labels(labels: List[str] | pd.Series | np.ndarray) -> List[fl
 
 
 def rank_biserial_effect_size(u_stat: float, n1: int, n2: int) -> float:
+    """Rank-biserial correlation from a Mann-Whitney U, as 2U/(n1*n2) - 1.
+
+    Ranges -1 to +1. Reported as the headline instead of p, which is always
+    vanishingly small at 60k-120k comments.
+    """
     return 2 * u_stat / (n1 * n2) - 1
 
 
 def normalize_hurricane_name(series: pd.Series) -> pd.Series:
+    """Lowercase and strip hurricane names.
+
+    Facebook stored them title-cased and Reddit lowercase, so grouping the
+    concatenated data without this silently splits each storm in two.
+    """
     return series.astype(str).str.strip().str.lower()
 
 
 def load_comment_frames() -> Dict[str, pd.DataFrame]:
+    """Load the three comment-level scored files, one per source.
+
+    Returns a dict keyed by source and model, since the VADER and RoBERTa
+    views of each file are cleaned differently.
+    """
     fb = pd.read_csv(PROCESSED_DIR / "facebook_comments_vader_roberta_topics_labeled.csv")
     reddit = pd.read_csv(PROCESSED_DIR / "reddit_relevant_comments_vader_roberta_topics_labeled.csv")
     wh = pd.read_csv(PROCESSED_DIR / "whitehouse_threads_comments_vader_roberta_topics_labeled.csv")
@@ -70,6 +108,11 @@ def load_comment_frames() -> Dict[str, pd.DataFrame]:
 
 
 def clean_for_model(df: pd.DataFrame, model: str) -> pd.DataFrame:
+    """Select and coerce the score and label columns for one scoring method.
+
+    Drops rows with no text, then sets `score` to VADER's compound or RoBERTa's
+    continuous pos - neg, and `label` to a lowercase three-class label.
+    """
     out = df.copy()
     out = out.dropna(subset=["text"]).copy()
     if model == "vader":
@@ -92,6 +135,10 @@ def clean_for_model(df: pd.DataFrame, model: str) -> pd.DataFrame:
 
 
 def mann_whitney_result(x: pd.Series, y: pd.Series) -> Dict[str, float]:
+    """Two-sided Mann-Whitney U with its rank-biserial effect size.
+
+    Returns NaNs rather than raising when either group is empty.
+    """
     x = pd.to_numeric(x, errors="coerce").dropna().to_numpy()
     y = pd.to_numeric(y, errors="coerce").dropna().to_numpy()
     if len(x) == 0 or len(y) == 0:
@@ -102,6 +149,7 @@ def mann_whitney_result(x: pd.Series, y: pd.Series) -> Dict[str, float]:
 
 
 def chi_square_result(df: pd.DataFrame) -> Dict[str, float]:
+    """Chi-square of platform against sentiment label."""
     counts = pd.crosstab(df["platform"], df["label"])
     counts = counts.reindex(index=["facebook", "reddit"], columns=LABEL_ORDER, fill_value=0)
     if counts.shape[0] == 0 or counts.shape[1] == 0:
@@ -111,12 +159,17 @@ def chi_square_result(df: pd.DataFrame) -> Dict[str, float]:
 
 
 def format_p(p: float) -> str:
+    """Format a p-value in scientific notation, or 'n/a' if NaN."""
     if np.isnan(p):
         return "n/a"
     return f"{p:.3e}"
 
 
 def run_h1(frames: Dict[str, pd.DataFrame]) -> List[Dict[str, object]]:
+    """H1: is Facebook sentiment different from organic Reddit community sentiment?
+
+    Comment-level, per hurricane and pooled, under both scoring methods.
+    """
     rows: List[Dict[str, object]] = []
     for model in ("vader", "roberta"):
         fb = frames["facebook"] if model == "vader" else frames["facebook_roberta"]
@@ -251,7 +304,17 @@ def run_h2(frames: Dict[str, pd.DataFrame]) -> List[Dict[str, object]]:
     return rows
 
 
+# Fixed bootstrap seeds for the H3 Facebook-vs-Reddit gap, one per hurricane, so
+# the 95% CI bounds are identical on every run. Values are arbitrary but frozen.
+H3_BOOTSTRAP_SEEDS = {"debby": 101, "helene": 102, "milton": 103}
+
+
 def bootstrap_gap_difference(fb: pd.Series, rd: pd.Series, n_boot: int = 10000, seed: int = 42) -> Dict[str, float]:
+    """Bootstrap the Facebook-minus-Reddit mean gap, with a p-value and 95% CI.
+
+    Resamples both groups n_boot times. The seed must be fixed for the CI
+    bounds to be reproducible — see H3_BOOTSTRAP_SEEDS.
+    """
     fb_vals = pd.to_numeric(fb, errors="coerce").dropna().to_numpy(dtype=float)
     rd_vals = pd.to_numeric(rd, errors="coerce").dropna().to_numpy(dtype=float)
     if len(fb_vals) == 0 or len(rd_vals) == 0:
@@ -270,6 +333,12 @@ def bootstrap_gap_difference(fb: pd.Series, rd: pd.Series, n_boot: int = 10000, 
 
 
 def run_h3(frames: Dict[str, pd.DataFrame]) -> List[Dict[str, object]]:
+    """H3: does the Facebook-Reddit gap track storm intensity?
+
+    Reports the gap per hurricane with a bootstrap CI. Note that intensity and
+    chronological order are confounded across only three storms, so the
+    descriptive decline is reported as order, not intensity.
+    """
     rows: List[Dict[str, object]] = []
     for model in ("vader", "roberta"):
         fb_key = "facebook" if model == "vader" else "facebook_roberta"
@@ -281,7 +350,13 @@ def run_h3(frames: Dict[str, pd.DataFrame]) -> List[Dict[str, object]]:
         for hurricane in ("debby", "helene", "milton"):
             fb_h = fb_all[fb_all["hurricane_norm"] == hurricane]
             rd_h = rd_all[rd_all["hurricane_norm"] == hurricane]
-            gap = bootstrap_gap_difference(fb_h["score"], rd_h["score"], seed=100 + hash(hurricane) % 100)
+            # Fixed per-hurricane seeds. This used to be `100 + hash(hurricane) % 100`,
+            # but Python randomizes str hashing per process (PYTHONHASHSEED), so the
+            # bootstrap drew a different seed on every run and the 95% CI bounds moved
+            # in the third decimal each time — the one genuinely non-reproducible
+            # number in the pipeline. Caught in the Week 8 re-run.
+            gap = bootstrap_gap_difference(fb_h["score"], rd_h["score"],
+                                           seed=H3_BOOTSTRAP_SEEDS[hurricane])
             model_gaps[hurricane] = gap["gap"]
             rows.append({"hypothesis": "H3", "model": model, "hurricane": hurricane, "gap": gap["gap"], "bootstrap_p": gap["p"], "ci_low": gap["ci_low"], "ci_high": gap["ci_high"]})
 
@@ -289,6 +364,11 @@ def run_h3(frames: Dict[str, pd.DataFrame]) -> List[Dict[str, object]]:
 
 
 def run_h4(frames: Dict[str, pd.DataFrame]) -> List[Dict[str, object]]:
+    """H4: does sentiment shift across the sequence of storms within a platform?
+
+    Kruskal-Wallis across the three hurricanes with Bonferroni-corrected
+    pairwise tests, run separately for Reddit and Facebook.
+    """
     rows: List[Dict[str, object]] = []
     for model in ("vader", "roberta"):
         for platform, key in (("reddit", "reddit" if model == "vader" else "reddit_roberta"),
@@ -415,6 +495,12 @@ def run_h5(frames: Dict[str, pd.DataFrame]) -> List[Dict[str, object]]:
 
 
 def run_h7(frames: Dict[str, pd.DataFrame]) -> List[Dict[str, object]]:
+    """H7: how does sentiment on White House threads compare to community discourse?
+
+    Mann-Whitney against Reddit and Facebook, plus Levene's test for a
+    difference in variance (polarization). The two sub-claims rest on different
+    scorers: the negativity result is RoBERTa's, the variance result VADER's.
+    """
     rows: List[Dict[str, object]] = []
     for model in ("vader", "roberta"):
         wh_key = "whitehouse" if model == "vader" else "whitehouse_roberta"
@@ -447,6 +533,7 @@ def run_h7(frames: Dict[str, pd.DataFrame]) -> List[Dict[str, object]]:
 
 
 def write_markdown(results: List[Dict[str, object]], out_path: Path) -> None:
+    """Render every hypothesis result as the markdown results document."""
     lines = ["# Hypothesis Testing Results", "", "Results generated from the VADER and RoBERTa sentiment files in the repository.", ""]
 
     h1_rows = [row for row in results if row["hypothesis"] == "H1"]
@@ -544,6 +631,7 @@ def write_markdown(results: List[Dict[str, object]], out_path: Path) -> None:
 
 
 def main() -> None:
+    """Run H1 through H7 and write both the markdown and CSV result files."""
     frames = load_comment_frames()
     results = []
     results.extend(run_h1(frames))

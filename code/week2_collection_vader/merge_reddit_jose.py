@@ -57,12 +57,18 @@ def _read_many(pattern: str) -> pd.DataFrame:
 
 
 def _days_from_landfall(df: pd.DataFrame) -> pd.Series:
+    """Days between each row's date and its hurricane's landfall (negative = before)."""
     dt = pd.to_datetime(df["created_date"], errors="coerce").dt.normalize()
     land = df["hurricane"].str.lower().map(LANDFALL)
     return (dt - land).dt.days
 
 
 def main() -> int:
+    """Merge the per-subreddit pulls into unified Reddit files.
+
+    Superseded by merge_reddit_angelo.py, which is canonical because it carries
+    the final event windows. Kept as the independent second implementation.
+    """
     if not DATA_DIR.exists():
         sys.exit(f"no data dir at {DATA_DIR}")
     OUT_DIR.mkdir(exist_ok=True)

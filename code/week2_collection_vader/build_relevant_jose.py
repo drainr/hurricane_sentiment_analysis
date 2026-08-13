@@ -23,6 +23,12 @@ BOT_PHRASE = "I am a bot, and this action was performed automatically"
 
 
 def main() -> int:
+    """Build the thread-relevance corpus from the merged Reddit files.
+
+    Superseded by build_relevant_angelo_fixed.py, which is canonical because it
+    also drops the double-counted White House rows. Kept as the independent
+    second implementation.
+    """
     for f in ("reddit_clean.csv", "reddit_posts_all.csv", "reddit_comments_all.csv"):
         if not (COMB / f).exists():
             sys.exit(f"missing {COMB / f} — run merge_reddit.py first")

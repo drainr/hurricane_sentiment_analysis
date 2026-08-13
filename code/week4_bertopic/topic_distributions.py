@@ -36,6 +36,11 @@ EXPECTED_MASTER_ROWS = 187359
 
 
 def cramers_v(cm):
+    """Cramer's V effect size for a contingency table.
+
+    Reported alongside chi-square because at 100k+ rows every test is p<0.001,
+    so the effect size is the number that carries meaning.
+    """
     chi2 = chi2_contingency(cm)[0]
     n = cm.values.sum()
     r, k = cm.shape
@@ -43,6 +48,11 @@ def cramers_v(cm):
 
 
 def chi_block(title, cm, note=""):
+    """Run a chi-square on one contingency table and format it as markdown.
+
+    Drops all-zero rows and columns first, since structural zeros (the White
+    House-only categories) would otherwise break the test.
+    """
     cm = cm.loc[(cm.sum(axis=1) > 0), (cm.sum(axis=0) > 0)]
     chi2, p, dof, _ = chi2_contingency(cm)
     v = cramers_v(cm)
@@ -62,6 +72,12 @@ def chi_block(title, cm, note=""):
 
 
 def main():
+    """Build the topic distribution tables and chi-square results from the master.
+
+    Cross-source comparisons are restricted to the nine shared topic categories;
+    the White House-only categories are structural zeros for Facebook and Reddit,
+    and the 12 White House posts are too few to include.
+    """
     m = pd.read_csv(MASTER, low_memory=False)
     assert len(m) == EXPECTED_MASTER_ROWS, f"master row count {len(m)} != {EXPECTED_MASTER_ROWS}"
 
@@ -73,6 +89,7 @@ def main():
 
     # ---- distribution tables (proportions within each group) ----
     def prop_table(df, group):
+        """Return (counts, column proportions) of topic_category by the given grouping."""
         ct = pd.crosstab(df["topic_category"], df[group])
         ct = ct.reindex(SHARED9).fillna(0).astype(int)
         prop = ct.div(ct.sum(axis=0), axis=1).round(4)

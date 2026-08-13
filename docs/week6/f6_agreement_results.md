@@ -6,12 +6,12 @@
 
 Confusion matrix (rows = VADER, cols = RoBERTa; count / % of total):
 
-| VADER \\ RoBERTa | Negative       | Neutral        | Positive       | row total |
-| ---------------- | -------------- | -------------- | -------------- | --------- |
-| Negative         | 34,544 (18.4%) | 14,923 (8.0%)  | 1,270 (0.7%)   | 50,737    |
-| Neutral          | 10,726 (5.7%)  | 42,154 (22.5%) | 3,313 (1.8%)   | 56,193    |
-| Positive         | 19,306 (10.3%) | 35,338 (18.9%) | 25,785 (13.8%) | 80,429    |
-| **col total**    | 64,576         | 92,415         | 30,368         | 187,359   |
+| VADER \\ RoBERTa | Negative | Neutral | Positive | row total |
+|---|---|---|---|---|
+| Negative | 34,544 (18.4%) | 14,923 (8.0%) | 1,270 (0.7%) | 50,737 |
+| Neutral | 10,726 (5.7%) | 42,154 (22.5%) | 3,313 (1.8%) | 56,193 |
+| Positive | 19,306 (10.3%) | 35,338 (18.9%) | 25,785 (13.8%) | 80,429 |
+| **col total** | 64,576 | 92,415 | 30,368 | 187,359 |
 
 Per-class agreement (VADER label = RoBERTa label, of VADER rows in that class):
 
@@ -20,3 +20,5 @@ Per-class agreement (VADER label = RoBERTa label, of VADER rows in that class):
 - positive: 32.1% (25,785/80,429)
 
 Figure: `figures/f6_vader_roberta_agreement.png/.pdf` (300 dpi).
+
+Status: **built.**

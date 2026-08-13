@@ -52,6 +52,7 @@ ROBERTA_MAP = {"NEG": "negative", "NEU": "neutral", "NEUTRAL": "neutral", "POS":
 
 
 def norm_label(s):
+    """Map RoBERTa's uppercase labels onto VADER's lowercase convention."""
     return s.map(ROBERTA_MAP)
 
 problems = []   # real issues -> non-zero exit / pause
@@ -59,16 +60,24 @@ lines = []      # markdown report
 
 
 def log(s=""):
+    """Print a line and keep it for the markdown report."""
     print(s)
     lines.append(s)
 
 
 def flag(s):
+    """Record a real problem, which makes the run exit non-zero."""
     problems.append(s)
     log(f"  [PROBLEM] {s}")
 
 
 def wc_l(path):
+    """Count physical lines in a file, minus the header.
+
+    Deliberately NOT the row count: comment bodies contain embedded newlines, so
+    this overstates rows badly. Reported only to show the gap against the real
+    parsed count.
+    """
     n = 0
     with open(path, "rb") as fh:
         for _ in fh:
@@ -77,6 +86,7 @@ def wc_l(path):
 
 
 def load(path):
+    """Read a scored file, keeping id columns as strings so leading zeros survive."""
     return pd.read_csv(path, dtype={"id": str, "parent_post_id": str}, low_memory=False)
 
 

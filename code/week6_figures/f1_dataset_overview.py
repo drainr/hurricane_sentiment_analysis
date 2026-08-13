@@ -36,6 +36,11 @@ m["hurricane"] = m["hurricane"].str.lower()
 
 
 def source_bucket(st):
+    """Map a source_type onto a display source.
+
+    Facebook rows carry no source_type (NaN), community_discussion is Reddit,
+    and both government types are the White House.
+    """
     if pd.isna(st):
         return "Facebook"
     if st == "community_discussion":

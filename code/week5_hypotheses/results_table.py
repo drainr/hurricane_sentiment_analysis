@@ -24,6 +24,11 @@ HUR = ["debby", "helene", "milton"]
 
 
 def load(name):
+    """Load one scored file, normalising casing and label conventions.
+
+    RoBERTa emits uppercase NEG/NEUTRAL/POS while VADER uses lowercase, so the
+    labels are mapped onto a single convention here.
+    """
     d = pd.read_csv(PROC / name, low_memory=False)
     d["hurricane"] = d["hurricane"].str.lower()
     d["vader_compound"] = pd.to_numeric(d["vader_compound"], errors="coerce")
@@ -44,11 +49,13 @@ rd["tier"] = rd["subreddit"].map(S2T)
 
 
 def rank_biserial(x, y):
+    """Mann-Whitney U with its rank-biserial effect size, computed as 2U/(n1*n2) - 1."""
     U, p = mannwhitneyu(x, y, alternative="two-sided")
     return U, p, 2 * U / (len(x) * len(y)) - 1
 
 
 def kw_eps2(groups):
+    """Kruskal-Wallis H with epsilon-squared, computed as (H - k + 1)/(n - k)."""
     H, p = kruskal(*groups)
     n = sum(len(g) for g in groups)
     k = len(groups)
@@ -60,6 +67,7 @@ rows = []  # (H, method, test, statistic, p, effect_size)
 
 
 def add(hlabel, method, test, stat, p, eff):
+    """Append one row to the results grid, formatting the p-value for display."""
     pstr = "—" if p is None else ("<1e-300" if p == 0 else f"{p:.2e}")
     rows.append((hlabel, method, test, stat, pstr, eff))
 

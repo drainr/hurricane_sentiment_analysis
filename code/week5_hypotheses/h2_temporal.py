@@ -46,6 +46,12 @@ h2_rows = []
 
 
 def load(name):
+    """Load one scored file, normalising hurricane casing and the numeric columns.
+
+    The RoBERTa score is the continuous `roberta_pos - roberta_neg`, which is
+    the project convention: it keeps the confidence that the discrete label
+    throws away, and a regression slope over a 3-value label is meaningless.
+    """
     df = pd.read_csv(PROC / name, low_memory=False)
     df["hurricane"] = df["hurricane"].str.lower()
     df["days_from_landfall"] = pd.to_numeric(df["days_from_landfall"], errors="coerce")
@@ -57,6 +63,7 @@ def load(name):
 
 
 def in_window(df):
+    """Keep only rows inside their own hurricane's event window."""
     keep = pd.Series(False, index=df.index)
     for h, (lo, hi) in WINDOWS.items():
         keep |= (df["hurricane"] == h) & df["days_from_landfall"].between(lo, hi)
@@ -76,6 +83,7 @@ lines = ["# H2 — Temporal Trajectory Results", "",
 
 
 def ols_one(df, ycol, label):
+    """Fit sentiment against days_from_landfall and return slope, p, CI and R-squared."""
     m = smf.ols(f"{ycol} ~ days_from_landfall", data=df).fit()
     b = m.params["days_from_landfall"]
     p = m.pvalues["days_from_landfall"]
@@ -84,6 +92,11 @@ def ols_one(df, ycol, label):
 
 
 def report_method(ycol, method):
+    """Append the full H2 write-up for one scoring method to the report.
+
+    Covers per-platform slopes and the interaction model that tests whether the
+    trajectories differ between platforms.
+    """
     lines.append(f"## {method}")
     lines.append("")
     # separate slopes
@@ -189,6 +202,7 @@ lines.append("")
 
 # -------- figure: 3 panels, mean compound by day with 95% CI --------
 def daily(df, ycol, h, lo, hi):
+    """Per-day mean and 95% CI half-width for one hurricane's window."""
     sub = df[(df.hurricane == h) & df.days_from_landfall.between(lo, hi)]
     g = sub.groupby("days_from_landfall")[ycol]
     mean = g.mean()

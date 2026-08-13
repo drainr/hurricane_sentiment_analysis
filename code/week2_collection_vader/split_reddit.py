@@ -16,6 +16,10 @@ SRC = WH / "reddit_relevant_vader.csv"
 
 
 def main() -> int:
+    """Split the scored Reddit corpus into separate posts and comments files.
+
+    Yields the canonical 3,413 posts / 121,053 comments.
+    """
     if not SRC.exists():
         raise SystemExit(f"no facebook_master.csv at {SRC}")
 

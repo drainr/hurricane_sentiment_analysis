@@ -50,6 +50,7 @@ def parse_codebook(path):
 
 
 def section_for_file(basename):
+    """Map a filename to its section in the topic codebook, or None."""
     for section, stem in SECTION_TO_FILE.items():
         if basename.startswith(stem):
             return section
@@ -57,6 +58,11 @@ def section_for_file(basename):
 
 
 def main():
+    """Stamp topic_label_human and topic_category onto each BERTopic output file.
+
+    Reads the labels from the codebook markdown so the mapping lives in one
+    reviewed document rather than in code, and writes a *_labeled.csv per source.
+    """
     ap = argparse.ArgumentParser()
     ap.add_argument("--codebook", required=True)
     ap.add_argument("--in_dir", default=".")

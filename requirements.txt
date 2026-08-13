@@ -1,10 +1,14 @@
 # Hurricane Sentiment Analysis — Python dependencies
-# Python 3.12 (working env: 3.12.2)
 #
-# Versions below are pinned from the local analysis environment. The RoBERTa and
-# BERTopic steps ran on Google Colab's GPU tier (see code/week3_roberta_agreement/
-# RoBERTa.ipynb and code/week4_bertopic/BERTopic.ipynb); pin their exact Colab
-# versions during the Week 8 reproducibility pass.
+# Python 3.12 (developed and verified on 3.12.2)
+#     pip install -r requirements.txt
+#
+# Exact RoBERTa model string (do not substitute — the `-latest` checkpoint is the
+# TimeLMs one trained through 2021, which is what every score in this repo used):
+#     cardiffnlp/twitter-roberta-base-sentiment-latest
+#
+# The versions below are pinned from the local analysis environment, which is the
+# one the Week 8 re-run verified byte-for-byte reproducible.
 
 # --- Core analysis (local) ---
 pandas==2.2.2
@@ -13,20 +17,39 @@ scipy==1.13.1
 scikit-learn==1.4.2
 statsmodels==0.14.2
 matplotlib==3.10.8
+seaborn==0.13.2
 vaderSentiment==3.3.2          # standalone, emoji-aware (cjhutto/vaderSentiment)
 tqdm==4.66.4
 numbers-parser==4.18.5         # reads the .numbers manual-annotation file
+pytest==7.4.4
 
 # --- Reddit collection ---
-praw                           # WH author search + comment-tree pulls (pin in Wk8)
+# Only needed to re-run collection, which the re-run deliberately does not do
+# (the Arctic Shift archive has changed since June — see
+# docs/week8/rerun_verification.md).
+requests==2.32.3
+praw==7.7.1
 
-# --- RoBERTa scoring (Colab GPU) ---
-# model: cardiffnlp/twitter-roberta-base-sentiment-latest
-transformers                   # pin in Wk8
-torch                          # pin in Wk8
-
-# --- BERTopic topic modeling (Colab) ---
-bertopic                       # pin in Wk8
-sentence-transformers          # pin in Wk8
-umap-learn                     # pin in Wk8
-hdbscan                        # pin in Wk8
+# --- GPU stages: RoBERTa (week 3) and BERTopic (week 4), both on Google Colab ---
+#
+# These are NOT installed locally. Both notebooks run on Colab's GPU tier and
+# currently `!pip install` them unpinned. Pinned from the version-capture cell
+# (docs/week8/colab_reproducibility_run.md) run on Colab.
+#
+# RoBERTa notebook (captured 2026-07-22 on Colab: Python 3.12.13, CUDA 12.8,
+# Tesla T4; numpy 2.0.2 / pandas 2.2.2 / sklearn 1.6.1 are Colab's, not the
+# local pins above — RoBERTa inference is deterministic and depends only on the
+# transformers + torch versions):
+transformers==5.13.1            # RoBERTa scoring
+torch==2.11.0                   # RoBERTa scoring (Colab build: 2.11.0+cu128)
+#
+# BERTopic notebook (captured 2026-07-22 on Colab). bertopic + sentence-transformers
+# are pinned to the ORIGINAL-run versions from the notebook's saved run-log (they
+# produced the saved topic models/CSVs), which the re-run VERIFIES rather than
+# regenerates (UMAP/HDBSCAN aren't re-run — see docs/week8/colab_reproducibility_run.md).
+# A fresh install today gives sentence-transformers 5.6.0; umap-learn/hdbscan
+# were not printed in the June run-log, so these are the current resolved versions.
+bertopic==0.17.4                # topic modelling (matches saved models)
+sentence-transformers==5.5.1    # all-MiniLM-L6-v2 embeddings (original run; fresh=5.6.0)
+umap-learn==0.5.12              # dimensionality reduction (random_state is set)
+hdbscan==0.8.44                 # clustering

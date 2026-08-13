@@ -38,6 +38,7 @@ m = m[m["type"] == "comment"].copy()
 
 
 def source_bucket(st):
+    """Map a source_type onto a display source (NaN = Facebook)."""
     if pd.isna(st):
         return "Facebook"
     if st == "community_discussion":
@@ -67,6 +68,7 @@ def pct_table(label_col):
 
 
 def plot(label_col, method, fname):
+    """Draw 100% stacked bars of negative/neutral/positive share by source and hurricane."""
     table = pct_table(label_col)
     # x positions grouped by hurricane; sources within
     groups = [(s, h) for h in HURRICANES for s in SOURCES if (s, h) in table]

@@ -17,6 +17,11 @@ SRC = FB / "facebook_master.csv"
 
 
 def main() -> int:
+    """Split facebook_master.csv into facebook_posts.csv and facebook_comments.csv.
+
+    The master is left untouched — the six per-source files are the analysis
+    unit, per the advisor's 'no master CSV' call.
+    """
     if not SRC.exists():
         raise SystemExit(f"no facebook_master.csv at {SRC}")
 
